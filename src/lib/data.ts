@@ -1,6 +1,6 @@
 export const heroSlides = [
   {
-    image: '/assets/LBK.jpeg',
+    image: '/assets/spiti.jpg',
     title: 'Discover the Art of Meaningful Travel',
     subtitle: 'Ahmedabad\'s most authentic travel community crafting memories that stay with you forever.'
   },
