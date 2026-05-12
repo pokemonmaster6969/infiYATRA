@@ -1,12 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-<<<<<<< HEAD
 import { Helmet } from 'react-helmet-async'
 import { MapPin, Calendar, Users, ShieldCheck, MessageCircle, Star, Palmtree } from 'lucide-react'
 import { getWhatsAppLink } from '../lib/data'
-=======
-import { MapPin, Calendar, Users, ShieldCheck, MessageCircle, Star, Palmtree } from 'lucide-react'
->>>>>>> 2c9a9e5 (initial commit with large files)
 
 export default function BaliPage() {
   const itinerary = [
@@ -19,14 +15,10 @@ export default function BaliPage() {
 
   return (
     <div className="bg-charcoal min-h-screen text-white">
-<<<<<<< HEAD
       <Helmet>
         <title>Bali Essence — 7 Day Tropical Escape | INFIYATRA</title>
         <meta name="description" content="Luxury Bali escape with INFIYATRA. 7 days through Ubud & Seminyak with private villas and island tours starting at ₹54,999." />
       </Helmet>
-=======
-      {/* Cinematic Hero Section */}
->>>>>>> 2c9a9e5 (initial commit with large files)
       <section className="relative h-[85vh] overflow-hidden">
         <img 
           src="/assets/bali.jpg" 
@@ -132,11 +124,7 @@ export default function BaliPage() {
                 Claim My Escape
               </button>
               <a 
-<<<<<<< HEAD
                 href={getWhatsAppLink("Hi! I want to plan my Bali Essence trip.")}
-=======
-                href="https://wa.me/919601793485?text=Hi! I want to plan my Bali Essence trip."
->>>>>>> 2c9a9e5 (initial commit with large files)
                 target="_blank"
                 className="w-full liquid-glass-dark py-5 rounded-3xl flex items-center justify-center space-x-3 border-white/10 hover:bg-white/10 transition-all"
               >

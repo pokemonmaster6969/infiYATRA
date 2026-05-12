@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-<<<<<<< HEAD
 import { Helmet } from "react-helmet-async";
 import { heroSlides as staticHeroSlides, getWhatsAppLink } from "../../lib/data";
 import { getHeroSlides } from "../../lib/dataService";
@@ -90,98 +89,12 @@ export default function HeroSection() {
                 {slide.subtitle}
               </p>
             </motion.div>
-=======
-import { heroSlides, getWhatsAppLink } from "../../lib/data";
-
-export default function HeroSection() {
-  // imageIndex transitions first, textIndex follows 1s later
-  const [imageIndex, setImageIndex] = useState(0);
-  const [textIndex, setTextIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      // Step 1: advance the image immediately
-      setImageIndex((prev) => {
-        const next = (prev + 1) % heroSlides.length;
-        // Step 2: update text 1 second after the image starts loading
-        setTimeout(() => {
-          setTextIndex(next);
-        }, 1000);
-        return next;
-      });
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
-
-  // Allow dot-navigation to keep the stagger
-  const goTo = (i: number) => {
-    setImageIndex(i);
-    setTimeout(() => setTextIndex(i), 1000);
-  };
-
-  const imageSlide = heroSlides[imageIndex];
-  const textSlide = heroSlides[textIndex];
-
-  return (
-    <section className="relative h-screen min-h-[600px] overflow-hidden">
-      {/* Background Image — transitions first */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={`img-${imageIndex}`}
-          initial={{ opacity: 0, scale: 1.08 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.2, ease: "easeInOut" }}
-          className="absolute inset-0"
-        >
-          <img
-            src={imageSlide.image}
-            alt={imageSlide.title}
-            className="w-full h-full object-cover"
-          />
-        </motion.div>
-      </AnimatePresence>
-
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60" />
-
-      {/* Text Content — transitions 1s after image */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-center px-4 max-w-4xl">
-          <AnimatePresence mode="wait">
-            <motion.h1
-              key={`title-${textIndex}`}
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.8 }}
-              className="font-display font-black text-4xl sm:text-5xl lg:text-7xl text-white mb-4 leading-tight uppercase tracking-tighter liquid-text"
-            >
-              {textSlide.title}
-            </motion.h1>
-          </AnimatePresence>
-
-          <AnimatePresence mode="wait">
-            <motion.p
-              key={`sub-${textIndex}`}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.8, delay: 0.15 }}
-              className="text-white/80 text-lg sm:text-xl lg:text-2xl mb-8 font-medium italic"
-            >
-              {textSlide.subtitle}
-            </motion.p>
->>>>>>> 2c9a9e5 (initial commit with large files)
           </AnimatePresence>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-<<<<<<< HEAD
             transition={{ duration: 0.8, delay: 0.3 }}
-=======
-            transition={{ duration: 0.8, delay: 0.6 }}
->>>>>>> 2c9a9e5 (initial commit with large files)
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Link
@@ -203,21 +116,13 @@ export default function HeroSection() {
       </div>
 
       {/* Dot Navigation */}
-<<<<<<< HEAD
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-30">
-=======
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
->>>>>>> 2c9a9e5 (initial commit with large files)
         {heroSlides.map((_, i) => (
           <button
             key={i}
             onClick={() => goTo(i)}
             className={`h-1.5 rounded-full transition-all duration-500 ${
-<<<<<<< HEAD
               i === index ? "w-10 bg-secondary" : "w-1.5 bg-white/30 hover:bg-white/60"
-=======
-              i === imageIndex ? "w-10 bg-secondary" : "w-1.5 bg-white/30 hover:bg-white/60"
->>>>>>> 2c9a9e5 (initial commit with large files)
             }`}
           />
         ))}
@@ -226,11 +131,7 @@ export default function HeroSection() {
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-<<<<<<< HEAD
         className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30"
-=======
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
->>>>>>> 2c9a9e5 (initial commit with large files)
       >
         <div className="w-px h-12 bg-gradient-to-b from-white via-white/40 to-transparent"></div>
       </motion.div>

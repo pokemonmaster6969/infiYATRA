@@ -1,10 +1,6 @@
 export const heroSlides = [
   {
-<<<<<<< HEAD
     image: '/assets/GBR.jpg',
-=======
-    image: '/assets/LBK.jpeg',
->>>>>>> 2c9a9e5 (initial commit with large files)
     title: 'Discover the Art of Meaningful Travel',
     subtitle: 'Ahmedabad\'s most authentic travel community crafting memories that stay with you forever.'
   },
@@ -19,11 +15,7 @@ export const heroSlides = [
     subtitle: 'Limestone cliffs and crystal clear waters await in Phuket and Krabi.'
   },
   {
-<<<<<<< HEAD
     image: '/assets/barnowl.jpg',
-=======
-    image: '/assets/goat.jpg',
->>>>>>> 2c9a9e5 (initial commit with large files)
     title: 'Himachal Mystique',
     subtitle: 'Venture into the rugged heart of the Himalayas with our local captain experts.'
   },

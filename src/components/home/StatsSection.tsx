@@ -15,11 +15,7 @@ export default function StatsSection() {
       {/* Background Accent */}
       <div className="absolute top-0 right-0 w-96 h-1/2 bg-primary/20 blur-[120px] rounded-full"></div>
       
-<<<<<<< HEAD
       <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
-=======
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
->>>>>>> 2c9a9e5 (initial commit with large files)
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {stats.map((stat, idx) => (
             <motion.div

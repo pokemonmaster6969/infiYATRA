@@ -1,14 +1,14 @@
 {
   "name": "infiland",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-<<<<<<< HEAD
     "preview": "vite preview",
-    "dev:all": "concurrently \"node server.js\" \"vite\""
+    "server": "node server.js",
+    "dev:all": "concurrently \"npm run server\" \"npm run dev\""
   },
   "dependencies": {
     "cors": "^2.8.6",
@@ -18,32 +18,18 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^3.0.0",
-    "react-router-dom": "^7.13.2"
-=======
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@react-three/drei": "^10.7.7",
-    "@react-three/fiber": "^8.18.0",
-    "framer-motion": "^11.0.0",
-    "liquid-glass-react": "^1.1.1",
-    "lucide-react": "^0.460.0",
-    "maath": "^0.10.8",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "react-router-dom": "^7.13.2",
-    "three": "^0.183.2"
->>>>>>> 2c9a9e5 (initial commit with large files)
+    "three": "^0.183.2",
+    "@react-three/fiber": "^8.18.0",
+    "@react-three/drei": "^10.7.7",
+    "maath": "^0.10.8"
   },
   "devDependencies": {
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
-<<<<<<< HEAD
     "concurrently": "^9.2.1",
-=======
->>>>>>> 2c9a9e5 (initial commit with large files)
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",
     "typescript": "~5.6.2",

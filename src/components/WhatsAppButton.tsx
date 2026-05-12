@@ -1,19 +1,11 @@
 import React from 'react'
 import { MessageCircle } from 'lucide-react'
 import { motion } from 'framer-motion'
-<<<<<<< HEAD
 import { getWhatsAppLink } from '../lib/data'
 
 const WhatsAppButton = () => {
   const message = "Hi Infi Yatra! I'm interested in booking a trip. Could you please help me with the details?"
   const whatsappUrl = getWhatsAppLink(message)
-=======
-
-const WhatsAppButton = () => {
-  const phoneNumber = '9601793485' // Replace with Infi Yatra official number
-  const message = encodeURIComponent("Hi Infi Yatra! I'm interested in booking a trip. Could you please help me with the details?")
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
->>>>>>> 2c9a9e5 (initial commit with large files)
 
   return (
     <motion.a

@@ -8,11 +8,7 @@ export default function NewsletterSection() {
       {/* Background Graphic */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 blur-[150px] rounded-full"></div>
       
-<<<<<<< HEAD
       <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20 relative z-10 text-center">
-=======
-      <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
->>>>>>> 2c9a9e5 (initial commit with large files)
         <div className="space-y-4 mb-20 text-center">
           <span className="text-secondary font-black uppercase tracking-[0.4em] text-[10px] drop-shadow-sm">COMMUNITY EXCLUSIVE</span>
           <h2 className="text-5xl md:text-8xl font-display font-black text-white tracking-tighter uppercase italic leading-none">

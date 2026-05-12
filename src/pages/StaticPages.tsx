@@ -1,20 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-<<<<<<< HEAD
 import { Helmet } from 'react-helmet-async'
 import { CheckCircle2, ShieldCheck, MapPin, Star, UserCheck, MessageCircle, Heart, Users, Share2, Compass } from 'lucide-react'
 
 const PageLayout = ({ children, title, subtitle, seoTitle, seoDescription, className = "" }: { children: React.ReactNode, title: React.ReactNode, subtitle?: string, seoTitle?: string, seoDescription?: string, className?: string }) => (
-=======
-import { CheckCircle2, ShieldCheck, MapPin, Star, UserCheck, MessageCircle, Heart, Users, Share2, Compass } from 'lucide-react'
-
-const PageLayout = ({ children, title, subtitle, className = "" }: { children: React.ReactNode, title: React.ReactNode, subtitle?: string, className?: string }) => (
->>>>>>> 2c9a9e5 (initial commit with large files)
   <motion.div
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
-<<<<<<< HEAD
     className={`min-h-screen pt-40 pb-24 bg-charcoal text-white ${className}`}
   >
     {seoTitle && (
@@ -31,27 +24,11 @@ const PageLayout = ({ children, title, subtitle, className = "" }: { children: R
           className="liquid-glass inline-block px-5 py-2 rounded-full border-white/10 shadow-lg"
         >
           <span className="text-secondary font-black uppercase tracking-[0.4em] text-[9px]">CRAFTING MEMORIES</span>
-=======
-    className={`min-h-screen pt-32 pb-24 bg-charcoal text-white ${className}`}
-  >
-    <div className="max-w-[1800px] mx-auto px-6 md:px-12 lg:px-20">
-      <div className="mb-24 space-y-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="liquid-glass inline-block px-6 py-2 rounded-full border-white/10"
-        >
-          <span className="text-secondary font-black uppercase tracking-[0.4em] text-[10px]">CRAFTING MEMORIES</span>
->>>>>>> 2c9a9e5 (initial commit with large files)
         </motion.div>
         <motion.h1
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-<<<<<<< HEAD
           className="text-5xl md:text-7xl lg:text-[7rem] font-display font-black text-white tracking-tighter uppercase leading-[0.9] liquid-text italic"
-=======
-          className="text-6xl md:text-[9rem] font-display font-black text-white tracking-tighter uppercase leading-[0.8] liquid-text italic"
->>>>>>> 2c9a9e5 (initial commit with large files)
         >
           {title}
         </motion.h1>
@@ -60,11 +37,7 @@ const PageLayout = ({ children, title, subtitle, className = "" }: { children: R
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.1 }}
-<<<<<<< HEAD
             className="text-lg text-white/50 mt-8 font-medium max-w-2xl italic leading-relaxed"
-=======
-            className="text-xl text-white/40 mt-10 font-medium max-w-3xl italic leading-relaxed"
->>>>>>> 2c9a9e5 (initial commit with large files)
           >
             {subtitle}
           </motion.p>
@@ -77,11 +50,8 @@ const PageLayout = ({ children, title, subtitle, className = "" }: { children: R
 
 const About = () => (
   <PageLayout
-<<<<<<< HEAD
     seoTitle="About INFIYATRA — Ahmedabad's Premier Travel Community"
     seoDescription="Learn about Infi Yatra's mission to make travel meaningful, accessible, and community-driven for Ahmedabad."
-=======
->>>>>>> 2c9a9e5 (initial commit with large files)
     title={<>THE INFI<br /><span className="text-primary px-4 drop-shadow-2xl" style={{ WebkitTextStroke: '2px white' }}>YATRA</span> SPIRIT</>}
     subtitle="Infi Yatra is Ahmedabad's premier authentic travel community. We don't just book tours; we craft soul-stirring memories that resonate for a lifetime."
   >
@@ -99,32 +69,19 @@ const About = () => (
           </p>
         </div>
 
-<<<<<<< HEAD
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-=======
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
->>>>>>> 2c9a9e5 (initial commit with large files)
           {[
             { icon: UserCheck, title: "Verified Captains", desc: "Led by Ahmedabad-local experts who live and breathe the terrain." },
             { icon: ShieldCheck, title: "Safety First", desc: "Rigorous safety protocols and 24/7 SOS support for peace of mind." },
             { icon: Users, title: "Community First", desc: "Not just travelers, but a tribe of explorers bound by curiosity." },
             { icon: Compass, title: "Pure Discovery", desc: "Uncovering hidden trails and authentic local stories." }
           ].map((item, i) => (
-<<<<<<< HEAD
             <div key={i} className="liquid-glass-dark p-8 rounded-[2.5rem] border border-white/10 space-y-4 hover:border-secondary/30 transition-all shadow-xl group">
               <div className="bg-secondary/20 p-4 rounded-2xl w-fit group-hover:scale-110 transition-transform">
                 <item.icon className="text-secondary" size={24} />
               </div>
               <h4 className="font-display font-black text-xl uppercase italic tracking-tighter text-white group-hover:text-secondary transition-all">{item.title}</h4>
               <p className="text-[10px] text-white/40 font-black uppercase tracking-widest leading-loose">{item.desc}</p>
-=======
-            <div key={i} className="liquid-glass p-8 rounded-[2.5rem] border-white/5 space-y-4 hover:bg-white/5 transition-all group">
-              <div className="bg-secondary/20 p-4 rounded-2xl w-fit group-hover:scale-110 transition-transform">
-                <item.icon className="text-secondary" size={24} />
-              </div>
-              <h4 className="font-display font-black text-xl uppercase italic tracking-tighter group-hover:text-secondary transition-all">{item.title}</h4>
-              <p className="text-xs text-white/30 font-black uppercase tracking-widest leading-loose">{item.desc}</p>
->>>>>>> 2c9a9e5 (initial commit with large files)
             </div>
           ))}
         </div>
@@ -134,7 +91,6 @@ const About = () => (
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
-<<<<<<< HEAD
         className="relative rounded-[4rem] overflow-hidden group shadow-2xl h-[600px] lg:h-[700px] border border-white/10"
       >
         <img src="/assets/LBK.jpeg" loading="lazy" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]" />
@@ -143,16 +99,6 @@ const About = () => (
           <div className="liquid-glass p-8 rounded-[3rem] border border-white/20 text-center shadow-2xl backdrop-blur-xl">
             <p className="text-4xl lg:text-5xl font-display font-black text-white italic drop-shadow-xl tracking-tighter">"100+ Journeys Crafted"</p>
             <p className="text-[9px] text-white/50 uppercase font-black tracking-[0.4em] mt-3">Founded for the Ahmedabad Spirit</p>
-=======
-        className="relative rounded-[5rem] overflow-hidden group shadow-2xl h-[700px] border-white/10"
-      >
-        <img src="/assets/LBK.jpeg" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-[3s]" />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-black/20 to-transparent"></div>
-        <div className="absolute bottom-16 left-16 right-16">
-          <div className="liquid-glass p-8 rounded-[3rem] border-white/20 text-center">
-            <p className="text-5xl font-display font-black text-white italic drop-shadow-xl tracking-tighter">"100+ Journeys Crafted"</p>
-            <p className="text-[10px] text-white/40 uppercase font-black tracking-[0.4em] mt-4">Founded for the Ahmedabad Spirit</p>
->>>>>>> 2c9a9e5 (initial commit with large files)
           </div>
         </div>
       </motion.div>
@@ -162,7 +108,6 @@ const About = () => (
 
 const Community = () => (
   <PageLayout
-<<<<<<< HEAD
     seoTitle="Community Hub — INFIYATRA Travelers Network"
     seoDescription="Connect with 45K+ fellow travelers. Share stories, find expedition partners, and access local intel."
     title={<>TRAVELER<br /><span className="text-secondary italic px-4 drop-shadow-2xl" style={{ WebkitTextStroke: '2px white' }}>ELITE</span> HUB</>}
@@ -208,12 +153,6 @@ const Community = () => (
 
     {/* Community Features Section */}
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-24">
-=======
-    title={<>TRAVELER<br /><span className="text-secondary italic px-4 drop-shadow-2xl" style={{ WebkitTextStroke: '2px white' }}>ELITE</span> HUB</>}
-    subtitle="The digital campfire for our global tribe. Connect with fellow explorers, share road-side epiphanies, and find your next expedition partner."
-  >
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
->>>>>>> 2c9a9e5 (initial commit with large files)
       {[
         { title: "Tribe Chat", icon: MessageCircle, color: "bg-blue-500/10", desc: "Instant connectivity with travelers on your upcoming voyage." },
         { title: "Memory Share", icon: Share2, color: "bg-orange-500/10", desc: "A cinematic gallery of stories told through raw adventurer lenses." },
@@ -224,7 +163,6 @@ const Community = () => (
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: i * 0.1 }}
-<<<<<<< HEAD
           whileHover={{ y: -10 }}
           className="liquid-glass-dark p-10 rounded-[3.5rem] border border-white/10 flex flex-col items-center justify-center text-center space-y-8 h-[450px] group overflow-hidden relative shadow-2xl hover:border-secondary/30"
         >
@@ -237,26 +175,11 @@ const Community = () => (
             <p className="text-xs text-white/50 font-black uppercase tracking-widest leading-loose max-w-[220px] px-2">{card.desc}</p>
           </div>
           <button className="bg-white/5 text-white/40 px-8 py-3 rounded-full text-[9px] font-black uppercase tracking-[0.2em] group-hover:bg-secondary group-hover:text-white transition-all shadow-lg border border-white/10">ENTER HUB</button>
-=======
-          whileHover={{ y: -15 }}
-          className="liquid-glass-dark p-12 rounded-[4rem] border border-white/5 flex flex-col items-center justify-center text-center space-y-8 h-[500px] group overflow-hidden relative shadow-2xl"
-        >
-          <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 blur-3xl rounded-full"></div>
-          <div className={`${card.color} p-8 rounded-[2.5rem] group-hover:scale-125 transition-all duration-700 shadow-xl shadow-black/20`}>
-            <card.icon className="text-secondary" size={48} />
-          </div>
-          <div className="space-y-4 relative z-10">
-            <h3 className="text-3xl font-display font-black uppercase italic tracking-tighter group-hover:text-secondary transition-all">{card.title}</h3>
-            <p className="text-sm text-white/40 font-black uppercase tracking-widest leading-loose max-w-[240px] px-2">{card.desc}</p>
-          </div>
-          <button className="bg-white/5 text-white/20 px-8 py-3 rounded-full text-[9px] font-black uppercase tracking-widest group-hover:bg-secondary group-hover:text-white transition-all">ENTER HUB</button>
->>>>>>> 2c9a9e5 (initial commit with large files)
         </motion.div>
       ))}
     </div>
 
     {/* Community Impact Section */}
-<<<<<<< HEAD
     <div className="liquid-glass p-16 md:p-20 rounded-[4rem] border border-white/10 text-center space-y-12 shadow-[0_20px_50px_rgba(0,0,0,0.4)] relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/5 blur-[100px] rounded-full z-0"></div>
       <div className="relative z-10">
@@ -274,22 +197,6 @@ const Community = () => (
             </div>
           ))}
         </div>
-=======
-    <div className="liquid-glass p-20 rounded-[5rem] border-white/10 text-center space-y-12">
-      <h2 className="text-4xl md:text-6xl font-display font-black uppercase italic tracking-tighter text-white">Our Shared <span className="text-primary">Legacy</span></h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-        {[
-          { value: "45k+", label: "ACTIVE TRIBE" },
-          { value: "180+", label: "EXPEDITIONS" },
-          { value: "92%", label: "RETURNING SOULS" },
-          { value: " Ahmedabad's #1", label: "RATED COMMUNITY" }
-        ].map((stat, i) => (
-          <div key={i} className="space-y-2">
-            <p className="text-4xl md:text-5xl font-display font-black text-secondary tracking-tighter italic">{stat.value}</p>
-            <p className="text-[10px] text-white/40 font-black uppercase tracking-[0.4em]">{stat.label}</p>
-          </div>
-        ))}
->>>>>>> 2c9a9e5 (initial commit with large files)
       </div>
     </div>
   </PageLayout>
@@ -297,7 +204,6 @@ const Community = () => (
 
 const Wishlist = () => (
   <PageLayout
-<<<<<<< HEAD
     seoTitle="My Wishlist — INFIYATRA Saved Adventures"
     seoDescription="Your personal vault of saved travel adventures. Keep track of trips you want to conquer."
     title={<>YOUR<br /><span className="text-primary italic px-4 drop-shadow-2xl" style={{ WebkitTextStroke: '2px white' }}>DREAMS</span></>}
@@ -312,20 +218,6 @@ const Wishlist = () => (
       <a
         href="/discover"
         className="inline-block bg-white text-charcoal px-12 py-5 rounded-full font-black text-[10px] uppercase tracking-[0.3em] hover:bg-secondary hover:text-white transition-all shadow-xl shadow-black/40 active:scale-95 duration-500"
-=======
-    title={<>YOUR<br /><span className="text-primary italic px-4 drop-shadow-2xl" style={{ WebkitTextStroke: '2px white' }}>DREAMS</span></>}
-    subtitle="The vault of adventures awaiting your signal. Keep track of the soul-stirring voyages you're planning to conquer."
-  >
-    <div className="liquid-glass-dark py-40 rounded-[5rem] border-white/5 text-center shadow-2xl">
-      <div className="relative inline-block mb-12">
-        <Heart size={100} className="mx-auto text-white/5 fill-white/5 group-hover:fill-secondary/20 transition-all scale-110" />
-        <Star size={40} className="absolute -top-4 -right-4 text-secondary animate-pulse" />
-      </div>
-      <h3 className="text-4xl font-display font-black uppercase italic tracking-tighter text-white/20 mb-10">Your Expedition Vault is Empty</h3>
-      <a
-        href="/discover"
-        className="inline-block bg-white text-charcoal px-16 py-6 rounded-2xl font-black text-xs uppercase tracking-[0.4em] hover:bg-secondary hover:text-white transition-all shadow-2xl shadow-black/40 active:scale-95 duration-500"
->>>>>>> 2c9a9e5 (initial commit with large files)
       >
         UNCOVER DESTINATIONS
       </a>

@@ -1,12 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-<<<<<<< HEAD
 import { Helmet } from 'react-helmet-async'
 import { MapPin, Calendar, Users, ShieldCheck, MessageCircle, ArrowRight, Star } from 'lucide-react'
 import { getWhatsAppLink } from '../lib/data'
-=======
-import { MapPin, Calendar, Users, ShieldCheck, MessageCircle, ArrowRight, Star } from 'lucide-react'
->>>>>>> 2c9a9e5 (initial commit with large files)
 
 export default function HimachalPage() {
   const itinerary = [
@@ -19,14 +15,10 @@ export default function HimachalPage() {
 
   return (
     <div className="bg-charcoal min-h-screen text-white">
-<<<<<<< HEAD
       <Helmet>
         <title>Himachal Mystique — 6 Day Expedition | INFIYATRA</title>
         <meta name="description" content="Explore the rugged Himalayas with INFIYATRA. 6-day expedition through Manali, Kasol, and Kheerganga starting at ₹14,999." />
       </Helmet>
-=======
-      {/* Cinematic Hero Section */}
->>>>>>> 2c9a9e5 (initial commit with large files)
       <section className="relative h-[85vh] overflow-hidden">
         <img 
           src="/assets/himalayas-bg.jpg" 
@@ -130,11 +122,7 @@ export default function HimachalPage() {
                 Book My Adventure
               </button>
               <a 
-<<<<<<< HEAD
                 href={getWhatsAppLink("Hi! I want to book the Himachal Mystique trip.")}
-=======
-                href="https://wa.me/919601793485?text=Hi! I want to book the Himachal Mystique trip."
->>>>>>> 2c9a9e5 (initial commit with large files)
                 target="_blank"
                 className="w-full liquid-glass-dark py-5 rounded-3xl flex items-center justify-center space-x-3 border-white/10 hover:bg-white/10 transition-all"
               >

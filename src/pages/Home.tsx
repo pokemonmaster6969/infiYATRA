@@ -1,8 +1,5 @@
 import React from 'react'
-<<<<<<< HEAD
 import { Helmet } from 'react-helmet-async'
-=======
->>>>>>> 2c9a9e5 (initial commit with large files)
 import HeroSection from "../components/home/HeroSection";
 import StatsSection from "../components/home/StatsSection";
 import FeaturedPackages from "../components/home/FeaturedPackages";
@@ -14,7 +11,6 @@ import NewsletterSection from "../components/home/NewsletterSection";
 export default function Home() {
   return (
     <div className="bg-charcoal">
-<<<<<<< HEAD
       <Helmet>
         <title>INFIYATRA — Ahmedabad's Premier Travel Community</title>
         <meta name="description" content="Discover meaningful travel experiences with Ahmedabad's most authentic travel community. Curated domestic and international trips led by verified local captains." />
@@ -22,8 +18,6 @@ export default function Home() {
         <meta property="og:description" content="Curated adventures from the Himalayas to Bali. Join 100K+ travelers." />
         <meta property="og:type" content="website" />
       </Helmet>
-=======
->>>>>>> 2c9a9e5 (initial commit with large files)
       <HeroSection />
       <StatsSection />
       <FeaturedPackages />
