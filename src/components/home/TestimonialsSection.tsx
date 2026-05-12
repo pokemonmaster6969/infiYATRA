@@ -10,11 +10,19 @@ export default function TestimonialsSection() {
   ];
 
   return (
+<<<<<<< HEAD
+    <section className="py-24 bg-charcoal relative overflow-hidden">
+      {/* Background Graphic */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary/10 blur-[150px] rounded-full"></div>
+      
+      <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
+=======
     <section className="py-24 bg-[#0D7377] relative overflow-hidden">
       {/* Background Graphic */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary/10 blur-[150px] rounded-full"></div>
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
+>>>>>>> 2c9a9e5 (initial commit with large files)
         <div className="text-center mb-16 space-y-4">
           <Heart className="text-secondary mx-auto drop-shadow-lg" size={40} />
           <h2 className="text-4xl md:text-6xl font-display font-black text-white tracking-tighter uppercase italic leading-none">
@@ -30,7 +38,11 @@ export default function TestimonialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
               viewport={{ once: true }}
+<<<<<<< HEAD
+              className="liquid-glass-dark p-12 rounded-[4rem] border border-white/10 hover:border-secondary/20 transition-all duration-700 shadow-2xl group"
+=======
               className="bg-white/5 backdrop-blur-3xl p-12 rounded-[4rem] border border-white/10 hover:bg-white/10 transition-all duration-700 shadow-2xl group"
+>>>>>>> 2c9a9e5 (initial commit with large files)
             >
               <p className="text-white/80 font-medium text-lg leading-relaxed italic mb-8">"{test.text}"</p>
               <div className="flex items-center space-x-6">

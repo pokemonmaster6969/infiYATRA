@@ -1,7 +1,11 @@
 import { useRef } from 'react'
 import { motion } from 'framer-motion'
 import { Search, MapPin, TrendingUp, Users, Star } from 'lucide-react'
+<<<<<<< HEAD
+
+=======
 import LiquidGlass from 'liquid-glass-react'
+>>>>>>> 2c9a9e5 (initial commit with large files)
 import StatsSection from "../components/home/StatsSection"
 import FeaturedPackages from "../components/home/FeaturedPackages"
 
@@ -55,6 +59,17 @@ export default function BackupHome() {
           className="absolute left-1/2 -translate-x-1/2"
           style={{ top: '62%' }}
         >
+<<<<<<< HEAD
+          <div
+            style={{
+              backdropFilter: 'blur(16px) saturate(140%)',
+              WebkitBackdropFilter: 'blur(16px) saturate(140%)',
+              background: 'rgba(255,255,255,0.08)',
+              borderRadius: '100px',
+              border: '1px solid rgba(255,255,255,0.15)',
+              padding: '6px 6px',
+            }}
+=======
           <LiquidGlass
             displacementScale={64}
             blurAmount={0.12}
@@ -64,6 +79,7 @@ export default function BackupHome() {
             cornerRadius={100}
             mouseContainer={containerRef}
             padding="6px 6px"
+>>>>>>> 2c9a9e5 (initial commit with large files)
           >
             <div className="flex items-center" style={{ minWidth: '560px' }}>
               <div className="flex-grow flex items-center px-5 border-r border-white/10">
@@ -82,7 +98,11 @@ export default function BackupHome() {
                 SEARCH
               </button>
             </div>
+<<<<<<< HEAD
+          </div>
+=======
           </LiquidGlass>
+>>>>>>> 2c9a9e5 (initial commit with large files)
         </motion.div>
 
         {/* Floating Mini Stats */}

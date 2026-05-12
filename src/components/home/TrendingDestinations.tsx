@@ -9,6 +9,18 @@ export default function TrendingDestinations() {
   ];
 
   return (
+<<<<<<< HEAD
+    <section className="py-24 bg-charcoal">
+      <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 space-y-8 md:space-y-0">
+          <div className="space-y-4">
+            <span className="text-secondary font-black uppercase tracking-[0.4em] text-[10px] drop-shadow-sm">GLOBAL TRENDS</span>
+            <h2 className="text-4xl md:text-6xl font-display font-black text-white tracking-tighter uppercase italic leading-none liquid-text">
+              Destinations <span className="text-primary" style={{ WebkitTextStroke: '1px white' }}>In Demand</span>
+            </h2>
+          </div>
+          <button className="liquid-glass text-white px-10 py-4 rounded-full font-black text-[10px] uppercase tracking-widest hover:bg-white hover:text-charcoal transition-all shadow-xl">Global Map</button>
+=======
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 space-y-8 md:space-y-0">
@@ -19,6 +31,7 @@ export default function TrendingDestinations() {
             </h2>
           </div>
           <button className="bg-charcoal text-white px-10 py-4 rounded-full font-black text-[10px] uppercase tracking-widest hover:bg-secondary transition-all shadow-xl">Global Map</button>
+>>>>>>> 2c9a9e5 (initial commit with large files)
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -31,7 +44,11 @@ export default function TrendingDestinations() {
               viewport={{ once: true }}
               className="relative h-[600px] rounded-[3rem] overflow-hidden group cursor-pointer shadow-2xl"
             >
+<<<<<<< HEAD
+              <img src={dest.img} alt={dest.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s]" />
+=======
               <img src={dest.img} alt={dest.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s]" />
+>>>>>>> 2c9a9e5 (initial commit with large files)
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
               
               <div className="absolute top-8 right-8">

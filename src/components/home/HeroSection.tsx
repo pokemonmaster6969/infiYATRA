@@ -1,6 +1,96 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+<<<<<<< HEAD
+import { Helmet } from "react-helmet-async";
+import { heroSlides as staticHeroSlides, getWhatsAppLink } from "../../lib/data";
+import { getHeroSlides } from "../../lib/dataService";
+
+export default function HeroSection() {
+  const [heroSlides, setHeroSlides] = useState<any[]>([]);
+  const [index, setIndex] = useState(0);
+
+  // Load slides and preload images
+  useEffect(() => {
+    getHeroSlides().then((slides) => {
+      setHeroSlides(slides);
+
+      // Preload all hero images for instant transitions
+      slides.forEach((slide: any) => {
+        const img = new Image();
+        img.src = slide.image;
+      });
+    });
+  }, []);
+
+  // Simplified auto-play logic
+  useEffect(() => {
+    if (heroSlides.length === 0) return;
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % heroSlides.length);
+    }, 6000); // Slightly longer pause for readability
+    return () => clearInterval(timer);
+  }, [heroSlides.length]);
+
+  const goTo = (i: number) => {
+    setIndex(i);
+  };
+
+  const slide = heroSlides[index] || { image: "", title: "", subtitle: "" };
+
+  return (
+    <section className="relative h-screen min-h-[600px] overflow-hidden bg-charcoal">
+      <Helmet>
+        {heroSlides.map((s, i) => (
+          <link key={`preload-${i}`} rel="preload" as="image" href={s.image} />
+        ))}
+      </Helmet>
+      {/* Background Images — Render all to prevent loading delays & ensure smooth crossfade */}
+      {heroSlides.map((s, i) => (
+        <motion.div
+          key={`bg-${i}`}
+          initial={{ opacity: i === 0 ? 1 : 0, scale: 1.1 }}
+          animate={{ 
+            opacity: i === index ? 1 : 0, 
+            scale: i === index ? 1 : 1.05
+          }}
+          transition={{ 
+            opacity: { duration: 1.2, ease: "easeInOut" },
+            scale: { duration: 6, ease: "easeOut" } // Subtle Ken Burns effect
+          }}
+          className="absolute inset-0"
+          style={{ zIndex: i === index ? 1 : 0 }}
+        >
+          <img
+            src={s.image}
+            alt={s.title}
+            className="w-full h-full object-cover"
+            loading="eager"
+          />
+        </motion.div>
+      ))}
+
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70 z-10" />
+
+      {/* Text Content — Dynamic but synchronized */}
+      <div className="absolute inset-0 flex items-center justify-center z-20">
+        <div className="text-center px-4 max-w-4xl">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={`content-${index}`}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-7xl text-white mb-4 leading-tight uppercase tracking-tighter liquid-text">
+                {slide.title}
+              </h1>
+              <p className="text-white/80 text-lg sm:text-xl lg:text-2xl mb-8 font-medium italic">
+                {slide.subtitle}
+              </p>
+            </motion.div>
+=======
 import { heroSlides, getWhatsAppLink } from "../../lib/data";
 
 export default function HeroSection() {
@@ -81,12 +171,17 @@ export default function HeroSection() {
             >
               {textSlide.subtitle}
             </motion.p>
+>>>>>>> 2c9a9e5 (initial commit with large files)
           </AnimatePresence>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
+<<<<<<< HEAD
+            transition={{ duration: 0.8, delay: 0.3 }}
+=======
             transition={{ duration: 0.8, delay: 0.6 }}
+>>>>>>> 2c9a9e5 (initial commit with large files)
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Link
@@ -108,13 +203,21 @@ export default function HeroSection() {
       </div>
 
       {/* Dot Navigation */}
+<<<<<<< HEAD
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-30">
+=======
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
+>>>>>>> 2c9a9e5 (initial commit with large files)
         {heroSlides.map((_, i) => (
           <button
             key={i}
             onClick={() => goTo(i)}
             className={`h-1.5 rounded-full transition-all duration-500 ${
+<<<<<<< HEAD
+              i === index ? "w-10 bg-secondary" : "w-1.5 bg-white/30 hover:bg-white/60"
+=======
               i === imageIndex ? "w-10 bg-secondary" : "w-1.5 bg-white/30 hover:bg-white/60"
+>>>>>>> 2c9a9e5 (initial commit with large files)
             }`}
           />
         ))}
@@ -123,7 +226,11 @@ export default function HeroSection() {
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+<<<<<<< HEAD
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30"
+=======
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
+>>>>>>> 2c9a9e5 (initial commit with large files)
       >
         <div className="w-px h-12 bg-gradient-to-b from-white via-white/40 to-transparent"></div>
       </motion.div>

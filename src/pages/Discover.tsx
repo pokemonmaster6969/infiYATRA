@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Helmet } from 'react-helmet-async'
+import { Filter, Search, MapPin, Calendar, Star, ChevronDown, CheckCircle2, MessageCircle, ShieldCheck } from 'lucide-react'
+import { CATEGORIES, getTripWhatsAppLink } from '../lib/trips'
+import { getTrips } from '../lib/dataService'
+
+const Discover = () => {
+  const [trips, setTrips] = useState<any[]>([])
+  const [activeFilters, setActiveFilters] = useState<string[]>([]);
+
+  useEffect(() => {
+    getTrips().then(setTrips);
+  }, []);
+
+=======
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Filter, Search, MapPin, Calendar, Star, ChevronDown, CheckCircle2, MessageCircle, ShieldCheck } from 'lucide-react'
@@ -88,6 +106,7 @@ const CATEGORIES = ['Adventure', 'Beach', 'Luxury', 'Nature', 'Honeymoon', 'Back
 
 const Discover = () => {
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
+>>>>>>> 2c9a9e5 (initial commit with large files)
   const [searchTerm, setSearchTerm] = useState('');
   const [activeType, setActiveType] = useState<'All' | 'Domestic' | 'International'>('All');
 
@@ -97,7 +116,11 @@ const Discover = () => {
     )
   }
 
+<<<<<<< HEAD
+  const filteredTrips = trips.filter(trip => {
+=======
   const filteredTrips = ALL_TRIPS.filter(trip => {
+>>>>>>> 2c9a9e5 (initial commit with large files)
     const matchesSearch = trip.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       trip.location.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesFilter = activeFilters.length === 0 || activeFilters.includes(trip.category);
@@ -106,6 +129,24 @@ const Discover = () => {
   })
 
   return (
+<<<<<<< HEAD
+    <div className="min-h-screen bg-charcoal text-white pt-28 pb-12">
+      <Helmet>
+        <title>Explore Adventures — INFIYATRA Trips Catalog</title>
+        <meta name="description" content="Browse curated domestic and international travel packages. From Himachal to Bali — find your next adventure with Infi Yatra." />
+      </Helmet>
+      <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20">
+
+        {/* Cinematic Header */}
+        <div className="mb-6 space-y-4">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div className="space-y-2">
+              <span className="text-secondary font-black uppercase tracking-[0.4em] text-[10px] drop-shadow-lg">COLLECTIONS 2024</span>
+              <h1 className="text-4xl md:text-5xl font-display font-black tracking-tighter uppercase italic leading-none liquid-text">
+                The <span className="text-primary" style={{ WebkitTextStroke: '1px white' }}>Adventures</span> Hub
+              </h1>
+              <p className="text-white/40 font-medium text-sm max-w-xl italic leading-relaxed">Curated escapes for the Ahmedabad spirit. From the rugged north to tropical islands.</p>
+=======
     <div className="min-h-screen bg-charcoal text-white pt-32 pb-24">
       <div className="max-w-[1800px] mx-auto px-6 md:px-12">
 
@@ -118,6 +159,7 @@ const Discover = () => {
                 The <span className="text-primary" style={{ WebkitTextStroke: '2px white' }}>Adventures</span> Hub
               </h1>
               <p className="text-white/40 font-medium text-lg max-w-xl italic leading-relaxed">Curated escapes for the Ahmedabad spirit. From the rugged north to tropical islands.</p>
+>>>>>>> 2c9a9e5 (initial commit with large files)
             </div>
 
             {/* Search - Liquid Glass */}
@@ -136,12 +178,20 @@ const Discover = () => {
           </div>
 
           {/* Type Filters */}
+<<<<<<< HEAD
+          <div className="flex flex-wrap gap-2 pt-4 border-t border-white/5">
+=======
           <div className="flex flex-wrap gap-4 pt-10 border-t border-white/5">
+>>>>>>> 2c9a9e5 (initial commit with large files)
             {['All', 'Domestic', 'International'].map((type) => (
               <button
                 key={type}
                 onClick={() => setActiveType(type as any)}
+<<<<<<< HEAD
+                className={`px-6 py-2 rounded-full text-[9px] font-black uppercase tracking-[0.3em] transition-all duration-500 ${activeType === type
+=======
                 className={`px-10 py-4 rounded-full text-[10px] font-black uppercase tracking-[0.3em] transition-all duration-500 ${activeType === type
+>>>>>>> 2c9a9e5 (initial commit with large files)
                   ? 'bg-secondary text-white shadow-2xl shadow-secondary/40'
                   : 'liquid-glass text-white/40 hover:text-white hover:bg-white/10'}`}
               >
@@ -151,12 +201,21 @@ const Discover = () => {
           </div>
         </div>
 
+<<<<<<< HEAD
+        <div className="flex flex-col lg:flex-row gap-8">
+
+          {/* Refined Sidebar */}
+          <aside className="lg:w-64 flex-shrink-0 space-y-6">
+            <div className="liquid-glass-dark p-6 rounded-[2rem] border-white/10 sticky top-32">
+              <div className="flex justify-between items-center mb-6">
+=======
         <div className="flex flex-col lg:flex-row gap-16">
 
           {/* Refined Sidebar */}
           <aside className="lg:w-80 flex-shrink-0 space-y-10">
             <div className="liquid-glass-dark p-10 rounded-[3.5rem] border-white/10 sticky top-32">
               <div className="flex justify-between items-center mb-10">
+>>>>>>> 2c9a9e5 (initial commit with large files)
                 <div className="flex items-center space-x-3">
                   <Filter className="text-secondary" size={20} />
                   <h2 className="text-xl font-display font-black uppercase italic tracking-tighter">Filters</h2>
@@ -205,7 +264,11 @@ const Discover = () => {
 
           {/* Cinematic Wide Grid */}
           <div className="flex-grow">
+<<<<<<< HEAD
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+=======
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-12">
+>>>>>>> 2c9a9e5 (initial commit with large files)
               <AnimatePresence mode="popLayout">
                 {filteredTrips.map((trip) => (
                   <motion.div
@@ -214,6 +277,25 @@ const Discover = () => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.95 }}
+<<<<<<< HEAD
+                    whileHover={{ y: -5 }}
+                    className="group relative bg-charcoal rounded-[2.5rem] overflow-hidden border border-white/10 hover:border-secondary/40 transition-all duration-700 h-[380px] md:h-[420px] shadow-2xl hover:shadow-[0_20px_50px_rgba(255,107,53,0.15)]"
+                  >
+                    {/* Image Visual */}
+                    <div className="absolute inset-0 overflow-hidden">
+                      <img src={trip.image} alt={trip.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[3s]" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+
+                      {/* Floating Tags */}
+                      <div className="absolute top-4 left-4 flex gap-2">
+                        <div className="liquid-glass text-white text-[8px] font-black uppercase px-3 py-1 rounded-full tracking-[0.2em] shadow-xl border-white/20">{trip.duration}</div>
+                        <div className="bg-secondary text-white text-[8px] font-black uppercase px-3 py-1 rounded-full tracking-[0.2em] shadow-xl shadow-secondary/30">{trip.type}</div>
+                      </div>
+
+                      {/* Heart Toggle */}
+                      <div className="absolute top-4 right-4 liquid-glass-dark w-8 h-8 rounded-xl flex items-center justify-center border-white/10 hover:bg-secondary transition-all cursor-pointer">
+                        <Star size={14} className="text-white opacity-40 hover:opacity-100" />
+=======
                     whileHover={{ y: -10 }}
                     className="group relative bg-charcoal rounded-[3.5rem] overflow-hidden border border-white/10 hover:border-secondary/20 transition-all duration-700 h-[650px] shadow-2xl"
                   >
@@ -231,10 +313,46 @@ const Discover = () => {
                       {/* Heart Toggle */}
                       <div className="absolute top-10 right-10 liquid-glass-dark w-12 h-12 rounded-2xl flex items-center justify-center border-white/10 hover:bg-secondary transition-all cursor-pointer">
                         <Star size={18} className="text-white opacity-40 hover:opacity-100" />
+>>>>>>> 2c9a9e5 (initial commit with large files)
                       </div>
                     </div>
 
                     {/* Content Overlay */}
+<<<<<<< HEAD
+                    <div className="absolute bottom-0 left-0 right-0 p-6 space-y-2">
+                      <div className="flex items-center space-x-2 text-secondary">
+                        <MapPin size={12} />
+                        <span className="text-[9px] font-black uppercase tracking-[0.2em] drop-shadow-md">{trip.location}</span>
+                      </div>
+
+                      <h3 className="text-2xl md:text-3xl font-display font-black text-white uppercase italic tracking-tighter leading-none mb-6 drop-shadow-2xl group-hover:text-secondary transition-colors">
+                        {trip.title}
+                      </h3>
+
+                      <div className="pt-4 flex justify-between items-center border-t border-white/10 gap-4">
+                        <div className="flex flex-col">
+                          <span className="text-[7px] font-black text-white/40 uppercase tracking-[0.2em] mb-1">Total Expedition cost</span>
+                          <div className="flex items-baseline space-x-1">
+                            <span className="text-xl font-display font-black text-white tracking-tighter">₹{trip.price}</span>
+                            <span className="text-[8px] text-white/20 font-black uppercase">Individual</span>
+                          </div>
+                        </div>
+
+                        <div className="flex items-center space-x-2 w-full md:w-auto">
+                          <a
+                            href={getTripWhatsAppLink(trip.title)}
+                            target="_blank"
+                            className="liquid-glass-dark p-2 rounded-xl hover:bg-secondary text-white transition-all transform hover:scale-105 border border-white/10"
+                          >
+                            <MessageCircle size={14} />
+                          </a>
+                          <Link
+                            to={`/trip/${trip.id}`}
+                            className="flex-grow md:flex-grow-0 bg-white text-charcoal px-4 py-2 rounded-xl font-black text-[8px] uppercase tracking-[0.2em] hover:bg-secondary hover:text-white transition-all shadow-2xl transform hover:scale-105 active:scale-95 duration-500 text-center"
+                          >
+                            Experience
+                          </Link>
+=======
                     <div className="absolute bottom-0 left-0 right-0 p-12 space-y-6">
                       <div className="flex items-center space-x-3 text-secondary">
                         <MapPin size={16} />
@@ -268,6 +386,7 @@ const Discover = () => {
                           >
                             View Experience
                           </a>
+>>>>>>> 2c9a9e5 (initial commit with large files)
                         </div>
                       </div>
                     </div>
