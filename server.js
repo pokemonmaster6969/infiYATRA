@@ -74,12 +74,12 @@ app.delete('/api/trips/:id', (req, res) => {
 });
 
 // REST Routes for Hero Slides
-app.get('/api/hero', (req, res) => {
+app.get('/api/heroSlides', (req, res) => {
     const db = readDB();
     res.json(db.heroSlides);
 });
 
-app.post('/api/hero', (req, res) => {
+app.post('/api/heroSlides', (req, res) => {
     const db = readDB();
     db.heroSlides = req.body;
     writeDB(db);

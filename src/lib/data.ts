@@ -1,6 +1,6 @@
 export const heroSlides = [
   {
-    image: '/assets/GBR.jpg',
+    image: '/assets/beaut.jpg',
     title: 'Discover the Art of Meaningful Travel',
     subtitle: 'Ahmedabad\'s most authentic travel community crafting memories that stay with you forever.'
   },
@@ -10,19 +10,19 @@ export const heroSlides = [
     subtitle: 'Journey through the tranquil backwaters and misty hills of Kerala.'
   },
   {
-    image: '/assets/thai.jpg',
-    title: 'Thai Island Perfection',
-    subtitle: 'Limestone cliffs and crystal clear waters await in Phuket and Krabi.'
+    image: '/assets/meghaa.jpg',
+    title: 'SERENE MEGHALAYA',
+    subtitle: 'Soak into the beauty and serenity of meghalaya.'
   },
   {
-    image: '/assets/barnowl.jpg',
+    image: '/assets/tains.jpg',
     title: 'Himachal Mystique',
     subtitle: 'Venture into the rugged heart of the Himalayas with our local captain experts.'
   },
   {
-    image: '/assets/bali.jpg',
-    title: 'Bali Essence',
-    subtitle: 'Luxury villa stays and spiritual awakenings in the heart of tropical paradise.'
+    image: '/assets/kashmir.jpg',
+    title: 'Kashmir Beauty',
+    subtitle: 'Luxury villa stays and spiritual awakenings in the heart of Kashmir valley.' 
   }
 ];
 

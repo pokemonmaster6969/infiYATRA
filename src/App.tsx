@@ -9,12 +9,12 @@ import BaliPage from './pages/BaliPage'
 import BackupHome from './pages/BackupHome'
 import TripDetails from './pages/TripDetails'
 import { About, Community, Wishlist } from './pages/StaticPages'
+import UserDashboard from './pages/UserDashboard'
+import Login from './pages/Login'
 import AdminDashboard from './pages/admin/Dashboard'
 import EditTrip from './pages/admin/EditTrip'
 import EditHero from './pages/admin/EditHero'
 import AdminLogin from './pages/admin/Login'
-
-const Dashboard = () => <div className="min-h-screen pt-40 px-8 flex items-center justify-center bg-gray-100 uppercase font-black text-6xl tracking-tighter">User Dashboard Hub Coming Soon...</div>
 
 function App() {
   const location = useLocation();
@@ -34,7 +34,8 @@ function App() {
             <Route path="/community" element={<Community />} />
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/trip/:id" element={<TripDetails />} />
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/dashboard" element={<UserDashboard />} />
+            <Route path="/login" element={<Login />} />
             
             {/* Admin Routes */}
             <Route path="/admin/login" element={<AdminLogin />} />

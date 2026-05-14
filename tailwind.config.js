@@ -26,8 +26,9 @@ export default {
         charcoal: '#333333',
       },
       fontFamily: {
-        sans: ['Inter', 'Poppins', 'sans-serif'],
-        display: ['Poppins', 'sans-serif'],
+        sans: ['Outfit', 'sans-serif'],
+        serif: ['Lora', 'serif'],
+        display: ['Outfit', 'sans-serif'],
       },
       keyframes: {
         fadeIn: {

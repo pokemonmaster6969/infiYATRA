@@ -4,16 +4,16 @@ import { Users, TrendingUp, Heart, MapPin } from 'lucide-react'
 
 export default function StatsSection() {
   const stats = [
-    { label: 'Travelers', value: '100k+', icon: Users },
-    { label: 'Tours', value: '4.5k+', icon: TrendingUp },
-    { label: 'Rating', value: '4.9★', icon: Heart },
-    { label: 'Destinations', value: '80+', icon: MapPin },
+    { label: 'Travelers', value: '100+', icon: Users },
+    { label: 'Tours', value: '40+', icon: TrendingUp },
+    { label: 'Rating', value: '4.1★', icon: Heart },
+    { label: 'Destinations', value: '15+', icon: MapPin },
   ];
 
   return (
     <section className="py-20 bg-charcoal relative overflow-hidden">
       {/* Background Accent */}
-      <div className="absolute top-0 right-0 w-96 h-1/2 bg-primary/20 blur-[120px] rounded-full"></div>
+      <div className="absolute top-0 right-0 w-96 h-1/2 bg-primary/10 blur-[80px] rounded-full pointer-events-none"></div>
       
       <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">

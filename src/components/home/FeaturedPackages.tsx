@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { MapPin, MessageCircle } from 'lucide-react'
 import { getTripWhatsAppLink } from '../../lib/trips'
-import { getTrips } from '../../lib/dataService'
+import { getTrips, optimizeImageUrl } from '../../lib/dataService'
 import { Link } from 'react-router-dom'
 
 export default function FeaturedPackages() {
@@ -52,10 +52,10 @@ export default function FeaturedPackages() {
               >
                 <div className="relative h-full w-full overflow-hidden">
                   <img
-                    src={trip.image}
+                    src={optimizeImageUrl(trip.image, 800, 80)}
                     alt={trip.title}
                     loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s]"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[3s] will-change-transform"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
 

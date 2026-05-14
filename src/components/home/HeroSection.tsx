@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { heroSlides as staticHeroSlides, getWhatsAppLink } from "../../lib/data";
-import { getHeroSlides } from "../../lib/dataService";
+import { getHeroSlides, optimizeImageUrl } from "../../lib/dataService";
 
 export default function HeroSection() {
   const [heroSlides, setHeroSlides] = useState<any[]>([]);
   const [index, setIndex] = useState(0);
 
-  // Load slides and preload images
+  // Load slides and preload first two images
   useEffect(() => {
     getHeroSlides().then((slides) => {
       setHeroSlides(slides);
 
-      // Preload all hero images for instant transitions
-      slides.forEach((slide: any) => {
+      // Preload only the first two images initially for faster FCP
+      slides.slice(0, 2).forEach((slide: any) => {
         const img = new Image();
-        img.src = slide.image;
+        img.src = optimizeImageUrl(slide.image, 1920, 85);
       });
     });
   }, []);
@@ -27,9 +27,17 @@ export default function HeroSection() {
     if (heroSlides.length === 0) return;
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % heroSlides.length);
-    }, 6000); // Slightly longer pause for readability
+    }, 6000); 
+
+    // Preload next image in sequence
+    const nextIndex = (index + 1) % heroSlides.length;
+    if (heroSlides[nextIndex]) {
+      const img = new Image();
+      img.src = optimizeImageUrl(heroSlides[nextIndex].image, 1920, 85);
+    }
+
     return () => clearInterval(timer);
-  }, [heroSlides.length]);
+  }, [heroSlides.length, index]);
 
   const goTo = (i: number) => {
     setIndex(i);
@@ -40,34 +48,42 @@ export default function HeroSection() {
   return (
     <section className="relative h-screen min-h-[600px] overflow-hidden bg-charcoal">
       <Helmet>
-        {heroSlides.map((s, i) => (
+        {heroSlides.slice(0, 2).map((s, i) => (
           <link key={`preload-${i}`} rel="preload" as="image" href={s.image} />
         ))}
       </Helmet>
-      {/* Background Images — Render all to prevent loading delays & ensure smooth crossfade */}
-      {heroSlides.map((s, i) => (
-        <motion.div
-          key={`bg-${i}`}
-          initial={{ opacity: i === 0 ? 1 : 0, scale: 1.1 }}
-          animate={{ 
-            opacity: i === index ? 1 : 0, 
-            scale: i === index ? 1 : 1.05
-          }}
-          transition={{ 
-            opacity: { duration: 1.2, ease: "easeInOut" },
-            scale: { duration: 6, ease: "easeOut" } // Subtle Ken Burns effect
-          }}
-          className="absolute inset-0"
-          style={{ zIndex: i === index ? 1 : 0 }}
-        >
-          <img
-            src={s.image}
-            alt={s.title}
-            className="w-full h-full object-cover"
-            loading="eager"
-          />
-        </motion.div>
-      ))}
+      {/* Background Images — Optimized to render only active and adjacent slides for performance */}
+      {heroSlides.map((s, i) => {
+        const isActive = i === index;
+        const isPrev = i === (index - 1 + heroSlides.length) % heroSlides.length;
+        
+        // Only render current and previous (for exit animation) to save DOM/memory
+        if (!isActive && !isPrev) return null;
+
+        return (
+          <motion.div
+            key={`bg-${i}`}
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ 
+              opacity: isActive ? 1 : 0, 
+              scale: isActive ? 1 : 1.05
+            }}
+            transition={{ 
+              opacity: { duration: 1.2, ease: "easeInOut" },
+              scale: { duration: 6, ease: "easeOut" } 
+            }}
+            className="absolute inset-0"
+            style={{ zIndex: isActive ? 1 : 0 }}
+          >
+            <img
+               src={optimizeImageUrl(s.image, 1920, 85)}
+               alt={s.title}
+               className="w-full h-full object-cover"
+               loading={i === 0 ? "eager" : "lazy"}
+             />
+          </motion.div>
+        );
+      })}
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/70 z-10" />
 

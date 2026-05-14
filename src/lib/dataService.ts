@@ -7,10 +7,19 @@ export interface HeroSlide {
   subtitle: string;
 }
 
+// Utility to optimize Unsplash images for performance
+export const optimizeImageUrl = (url: string, width = 1200, quality = 80) => {
+  if (url.includes('images.unsplash.com')) {
+    const baseUrl = url.split('?')[0];
+    return `${baseUrl}?auto=format&fit=crop&q=${quality}&w=${width}`;
+  }
+  return url;
+};
+
 const STORAGE_KEY = 'infi_yatra_trips'
 const HERO_STORAGE_KEY = 'infi_yatra_hero'
 const VERSION_KEY = 'infi_yatra_version'
-const CURRENT_VERSION = 2.0; // Increment this when making hardcoded data changes
+const CURRENT_VERSION = 3.0; // Increment this when making hardcoded data changes
 
 // Sync logic: Clear stale cache if version mismatch
 const syncData = () => {
