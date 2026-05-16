@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { MapPin, Search, Menu, Phone, User, Heart, X, Plane } from 'lucide-react'
 import { getWhatsAppLink } from '../lib/data'
+import { haptics } from '../lib/haptics'
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -40,25 +41,26 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`fixed left-0 right-0 z-50 transition-all duration-700 transform flex justify-center w-full px-4 md:px-8 pt-4 md:pt-6 ${
+      <nav className={`fixed left-0 right-0 z-50 transition-all duration-700 transform flex justify-center w-full px-4 md:px-12 pt-4 md:pt-6 safe-area-padding ${
         visible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
       }`}>
-        <div className={`w-full max-w-[1920px] mx-auto rounded-full liquid-glass-dark shadow-[0_8px_32px_rgba(0,0,0,0.5)] border border-white/20 px-6 lg:px-10 transition-all duration-500 ${scrolled ? 'py-2' : 'py-3'}`}>
-          <div className="flex justify-between items-center h-12">
-            {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2 group">
+        <div className={`w-full max-w-[1920px] mx-auto rounded-full liquid-glass shadow-2xl transition-all duration-500 relative group/nav ${scrolled ? 'py-1.5 scale-[0.98]' : 'py-2.5 md:py-3'}`}>
+          
+          <div className="flex justify-between items-center h-10 relative z-10 px-4 md:px-10">
+            <Link to="/" onClick={() => haptics.light()} className="flex items-center space-x-2 group">
               <span className="text-2xl font-display font-black tracking-tighter text-white liquid-text">
                 INFI<span className="text-secondary tracking-tighter uppercase text-base ml-0.5">Yatra</span>
               </span>
             </Link>
 
             {/* Desktop Nav */}
-            <div className="hidden md:flex items-center space-x-10">
-              <div className="flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-12">
+              <div className="flex items-center space-x-12">
                 {navLinks.map((link) => (
                   <Link 
                     key={link.name}
                     to={link.path} 
+                    onClick={() => haptics.light()}
                     className="transition-all duration-500 font-bold text-[9px] uppercase tracking-[0.25em] text-white hover:text-secondary relative group drop-shadow-md"
                   >
                     {link.name}
@@ -70,17 +72,18 @@ const Navbar = () => {
               <div className="h-4 w-px bg-white/20"></div>
               
               <div className="flex items-center space-x-6">
-                <Link to="/dashboard" className="transition-colors duration-500 text-white hover:text-secondary">
+                <Link to="/dashboard" onClick={() => haptics.light()} className="transition-colors duration-500 text-white hover:text-secondary">
                   <User size={18} />
                 </Link>
-                <Link to="/wishlist" className="transition-colors duration-500 text-white hover:text-secondary">
+                <Link to="/wishlist" onClick={() => haptics.light()} className="transition-colors duration-500 text-white hover:text-secondary">
                   <Heart size={18} />
                 </Link>
                 <a 
                   href={getWhatsAppLink("Hi Infi Yatra! I'd like to book an adventure.")} 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-secondary text-white px-6 py-2 rounded-full font-black text-[9px] uppercase tracking-widest hover:bg-white hover:text-charcoal transition-all duration-500 shadow-xl shadow-secondary/20 transform hover:scale-105 active:scale-95 border border-transparent hover:border-white/20"
+                  onClick={() => haptics.medium()}
+                  className="bg-secondary text-white px-5 py-2 rounded-full font-black text-[8px] uppercase tracking-widest hover:bg-white hover:text-charcoal transition-all duration-500 shadow-xl shadow-secondary/20 transform hover:scale-105 active:scale-95 border border-transparent hover:border-white/20"
                 >
                   Book Now
                 </a>
@@ -90,7 +93,10 @@ const Navbar = () => {
             {/* Mobile Menu Toggle */}
             <div className="md:hidden flex items-center">
               <button 
-                onClick={() => setIsOpen(true)}
+                onClick={() => {
+                  haptics.light();
+                  setIsOpen(true);
+                }}
                 className="p-2 transition-colors duration-500 text-white"
               >
                 <Menu size={24} />
@@ -100,37 +106,43 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Modern Mobile Sidebar Overlay */}
+      {/* Modern Mobile Hub Overlay */}
       <AnimatePresence>
         {isOpen && (
-          <>
+          <div className="fixed inset-0 z-[60] md:hidden">
             <motion.div 
                initial={{ opacity: 0 }}
                animate={{ opacity: 1 }}
                exit={{ opacity: 0 }}
                onClick={() => setIsOpen(false)}
-               className="fixed inset-0 bg-black/40 backdrop-blur-md z-[60]"
+               className="absolute inset-0 bg-black/20"
             />
             <motion.div 
-               initial={{ x: '100%' }}
-               animate={{ x: 0 }}
-               exit={{ x: '100%' }}
+               initial={{ opacity: 0, scale: 0.9, x: '-50%', y: '-45%' }}
+               animate={{ opacity: 1, scale: 1, x: '-50%', y: '-50%' }}
+               exit={{ opacity: 0, scale: 0.9, x: '-50%', y: '-45%' }}
                transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-               className="fixed top-0 right-0 h-full w-[80%] max-w-sm liquid-glass-dark border-l border-white/10 z-[70] shadow-2xl p-10 flex flex-col"
+               className="absolute top-1/2 left-1/2 w-[90%] max-w-[340px] liquid-glass shadow-2xl p-10 rounded-[3rem] flex flex-col max-h-[85vh] overflow-y-auto"
             >
-              <div className="flex justify-between items-center mb-16">
+              {/* Internal Glass Depth */}
+              <div className="absolute inset-0 bg-charcoal/40 backdrop-blur-2xl rounded-[3rem] pointer-events-none"></div>
+              
+              <div className="flex justify-between items-center mb-10 relative z-10">
                  <span className="text-2xl font-display font-black text-white tracking-tight liquid-text">
                     INFI<span className="text-secondary text-xl ml-1">Yatra</span>
                  </span>
                  <button 
-                   onClick={() => setIsOpen(false)}
+                   onClick={() => {
+                     haptics.light();
+                     setIsOpen(false);
+                   }}
                    className="p-2 liquid-glass rounded-xl text-white hover:bg-white/10 transition-colors border border-white/10"
                  >
                    <X size={24} />
                  </button>
               </div>
 
-              <div className="flex flex-col space-y-8 flex-grow">
+              <div className="flex flex-col space-y-8 flex-grow relative z-10">
                  {navLinks.map((link, idx) => (
                    <motion.div
                      key={link.name}
@@ -140,20 +152,21 @@ const Navbar = () => {
                    >
                      <Link 
                        to={link.path}
-                       className="text-2xl font-display font-black text-white hover:text-secondary transition-colors uppercase italic"
+                       onClick={() => haptics.light()}
+                       className="text-2xl font-display font-black text-white hover:text-secondary transition-colors uppercase italic drop-shadow-lg"
                      >
                        {link.name}
                      </Link>
                    </motion.div>
                  ))}
                  
-                 <div className="h-px bg-white/10 w-full my-4"></div>
+                 <div className="h-px bg-white/20 w-full my-4"></div>
                  
                  <div className="flex items-center space-x-8">
-                   <Link to="/dashboard" className="text-white p-2 hover:bg-white/10 rounded-xl transition-all">
+                   <Link to="/dashboard" onClick={() => haptics.light()} className="text-white p-3 liquid-glass border border-white/20 rounded-2xl hover:bg-white/10 transition-all">
                       <User size={24} />
                    </Link>
-                   <Link to="/wishlist" className="text-white p-2 hover:bg-white/10 rounded-xl transition-all">
+                   <Link to="/wishlist" onClick={() => haptics.light()} className="text-white p-3 liquid-glass border border-white/20 rounded-2xl hover:bg-white/10 transition-all">
                       <Heart size={24} />
                    </Link>
                  </div>
@@ -163,12 +176,13 @@ const Navbar = () => {
                 href={getWhatsAppLink("Hi Infi Yatra! I'd like to book an adventure.")} 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-secondary text-white py-6 rounded-2xl flex items-center justify-center font-black text-xs uppercase tracking-[0.3em] shadow-xl shadow-secondary/30 mt-10 active:scale-95 transition-all outline-none"
+                onClick={() => haptics.medium()}
+                className="w-full bg-secondary text-white py-5 rounded-2xl flex items-center justify-center font-black text-xs uppercase tracking-[0.3em] shadow-xl shadow-secondary/30 mt-10 active:scale-95 transition-all outline-none relative z-10"
               >
                  Book My Adventure
               </a>
             </motion.div>
-          </>
+          </div>
         )}
       </AnimatePresence>
     </>

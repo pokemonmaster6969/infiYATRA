@@ -30,7 +30,7 @@ export default function TrendingDestinations() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="relative h-[600px] rounded-[3rem] overflow-hidden group cursor-pointer shadow-2xl"
+              className="relative h-[450px] rounded-[3rem] overflow-hidden group cursor-pointer shadow-2xl"
             >
               <img src={optimizeImageUrl(dest.img, 800, 80)} alt={dest.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[2s] will-change-transform" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>

@@ -2,6 +2,7 @@ import React from 'react'
 import { MessageCircle } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { getWhatsAppLink } from '../lib/data'
+import { haptics } from '../lib/haptics'
 
 const WhatsAppButton = () => {
   const message = "Hi Infi Yatra! I'm interested in booking a trip. Could you please help me with the details?"
@@ -12,6 +13,7 @@ const WhatsAppButton = () => {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => haptics.medium()}
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       whileHover={{ scale: 1.1 }}

@@ -4,6 +4,7 @@ import { MapPin, MessageCircle } from 'lucide-react'
 import { getTripWhatsAppLink } from '../../lib/trips'
 import { getTrips, optimizeImageUrl } from '../../lib/dataService'
 import { Link } from 'react-router-dom'
+import { haptics } from '../../lib/haptics'
 
 export default function FeaturedPackages() {
   const [category, setCategory] = useState<'Domestic' | 'International'>('Domestic')
@@ -28,7 +29,10 @@ export default function FeaturedPackages() {
             {['Domestic', 'International'].map((tab) => (
               <button
                 key={tab}
-                onClick={() => setCategory(tab as 'Domestic' | 'International')}
+                onClick={() => {
+                  haptics.light();
+                  setCategory(tab as 'Domestic' | 'International');
+                }}
                 className={`px-10 py-3.5 rounded-full text-xs font-black uppercase tracking-widest transition-all duration-500 ${category === tab
                   ? 'bg-secondary text-white shadow-xl shadow-secondary/30'
                   : 'text-white/40 hover:text-white hover:bg-white/5'
@@ -48,7 +52,7 @@ export default function FeaturedPackages() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95 }}
-                className="group relative bg-charcoal rounded-[2.5rem] overflow-hidden border border-white/10 hover:border-secondary/20 transition-all duration-700 h-[480px] shadow-2xl"
+                className="group relative bg-charcoal rounded-[2.5rem] overflow-hidden border border-white/10 hover:border-secondary/20 transition-all duration-700 h-[380px] shadow-2xl"
               >
                 <div className="relative h-full w-full overflow-hidden">
                   <img
@@ -79,11 +83,18 @@ export default function FeaturedPackages() {
                         <a
                           href={getTripWhatsAppLink(trip.title)}
                           target="_blank" rel="noopener noreferrer"
+                          onClick={() => haptics.medium()}
                           className="liquid-glass-dark text-white p-3.5 rounded-2xl hover:bg-secondary transition-all transform hover:scale-105 border border-white/10 shadow-xl"
                         >
                           <MessageCircle size={18} />
                         </a>
-                        <Link to={`/trip/${trip.id}`} className="bg-white text-charcoal px-8 py-3.5 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-secondary hover:text-white transition-all shadow-2xl duration-500">Details</Link>
+                        <Link 
+                          to={`/trip/${trip.id}`} 
+                          onClick={() => haptics.medium()}
+                          className="bg-white text-charcoal px-8 py-3.5 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:bg-secondary hover:text-white transition-all shadow-2xl duration-500"
+                        >
+                          Details
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -94,7 +105,13 @@ export default function FeaturedPackages() {
         </div>
 
         <div className="mt-20 text-center">
-          <Link to="/discover" className="text-secondary font-black uppercase tracking-[0.3em] text-xs border-b-2 border-secondary/20 pb-2 hover:border-secondary transition-all drop-shadow-md">View All Adventures Hub</Link>
+          <Link 
+            to="/discover" 
+            onClick={() => haptics.light()}
+            className="text-secondary font-black uppercase tracking-[0.3em] text-xs border-b-2 border-secondary/20 pb-2 hover:border-secondary transition-all drop-shadow-md"
+          >
+            View All Adventures Hub
+          </Link>
         </div>
       </div>
     </section>

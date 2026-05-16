@@ -221,11 +221,11 @@
       "duration": "6 Days",
       "category": "Backpacking",
       "type": "Domestic",
-      "image": "/public/assets/meghaa.jpg",
+      "image": "/assets/meghaa.jpg",
       "link": "/meghalaya",
       "description": "Dive into the abode of clouds. Trek to the magical living root bridges, explore the deepest caves, and boat on the crystal-clear waters of the Umngot River.",
       "images": [
-        "/public/assets/meghaa.jpg"
+        "/assets/meghaa.jpg"
       ],
       "groupSize": "10-15 Persons",
       "nextBatch": "Sep 10, 2026",
@@ -346,11 +346,11 @@
       "duration": "7 Days",
       "category": "Beach",
       "type": "Domestic",
-      "image": "/public/assets/andaman.jpg",
+      "image": "/assets/andaman.jpg",
       "link": "/andaman",
       "description": "Unwind on pristine white-sand beaches and dive into crystal clear waters. Discover the rich marine life of the Andaman Sea and the historical significance of Port Blair.",
       "images": [
-        "/public/assets/andaman.jpg"
+        "/assets/andaman.jpg"
       ],
       "groupSize": "8-12 Persons",
       "nextBatch": "Jan 12, 2027",

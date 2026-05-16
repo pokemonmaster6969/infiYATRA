@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { heroSlides as staticHeroSlides, getWhatsAppLink } from "../../lib/data";
 import { getHeroSlides, optimizeImageUrl } from "../../lib/dataService";
+import { haptics } from "../../lib/haptics";
 
 export default function HeroSection() {
   const [heroSlides, setHeroSlides] = useState<any[]>([]);
@@ -115,6 +116,7 @@ export default function HeroSection() {
           >
             <Link
               to="/discover"
+              onClick={() => haptics.medium()}
               className="px-10 py-4 bg-secondary text-white rounded-full font-black text-xs uppercase tracking-widest transition-all duration-300 hover:scale-105 hover:bg-white hover:text-charcoal shadow-2xl shadow-secondary/30 min-w-[220px]"
             >
               Explore Packages
@@ -123,7 +125,8 @@ export default function HeroSection() {
               href={getWhatsAppLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-4 liquid-glass text-white rounded-full font-black text-xs uppercase tracking-widest transition-all duration-300 hover:scale-105 border border-white/30 min-w-[220px]"
+              onClick={() => haptics.medium()}
+              className="px-10 py-4 liquid-glass text-white font-black text-xs uppercase tracking-widest transition-all duration-300 hover:scale-105 min-w-[220px] !rounded-full before:!rounded-full after:!rounded-full"
             >
               Contact Us
             </a>
@@ -136,7 +139,10 @@ export default function HeroSection() {
         {heroSlides.map((_, i) => (
           <button
             key={i}
-            onClick={() => goTo(i)}
+            onClick={() => {
+              haptics.light();
+              goTo(i);
+            }}
             className={`h-1.5 rounded-full transition-all duration-500 ${
               i === index ? "w-10 bg-secondary" : "w-1.5 bg-white/30 hover:bg-white/60"
             }`}

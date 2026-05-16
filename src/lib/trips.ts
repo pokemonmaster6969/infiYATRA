@@ -284,6 +284,5 @@ export const ALL_TRIPS: Trip[] = [
 
 export const CATEGORIES = ['Adventure', 'Beach', 'Luxury', 'Nature', 'Honeymoon', 'Backpacking'];
 
-/** Generate a WhatsApp deep-link for a specific trip */
 export const getTripWhatsAppLink = (tripTitle: string) =>
   getWhatsAppLink(`Hi Infi Yatra! I'm interested in the ${tripTitle} package.`);
