@@ -24,7 +24,7 @@ const textVariants = {
 };
 
 export default function HeroSection() {
-    // Seed with static slides immediately — never render an empty hero.
+    // Seed with static slides immediately - never render an empty hero.
     const [heroSlides, setHeroSlides] = useState<any[]>(staticHeroSlides || []);
     const [index, setIndex] = useState(0);
     const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -43,10 +43,8 @@ export default function HeroSection() {
                         img.src = optimizeImageUrl(slide.image, 1920, 85);
                     });
                 }
-                // If API returns empty/malformed, we silently keep the static fallback already on screen.
             })
             .catch((err) => {
-                // Network/API failure — keep static fallback, don't crash or blank out.
                 console.error("HeroSection: getHeroSlides failed, using static fallback", err);
             });
 
@@ -57,7 +55,7 @@ export default function HeroSection() {
 
     const startTimer = useCallback(() => {
         if (timerRef.current) clearInterval(timerRef.current);
-        if (heroSlides.length <= 1) return; // no point cycling a single slide
+        if (heroSlides.length <= 1) return;
         timerRef.current = setInterval(() => {
             setIndex((prev) => (prev + 1) % heroSlides.length);
         }, 6000);
@@ -84,10 +82,9 @@ export default function HeroSection() {
         startTimer();
     };
 
-    // Guard against index drift if slides array shrinks after a live refetch
     const safeIndex = index < heroSlides.length ? index : 0;
     const slide = heroSlides[safeIndex] || {
-        image: "/images/hero-fallback.jpg", // ship a real fallback asset instead of ""
+        image: "/images/hero-fallback.jpg",
         title: "Travel, the way it should feel",
         subtitle: "Curated adventures from the Himalayas to Bali"
     };
@@ -120,7 +117,6 @@ export default function HeroSection() {
                         className="w-full h-full object-cover"
                         loading="eager"
                         onError={(e) => {
-                            // last-ditch guard: swap to fallback if even the optimized URL 404s
                             (e.target as HTMLImageElement).src = "/images/hero-fallback.jpg";
                         }}
                     />
