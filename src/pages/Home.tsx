@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Helmet } from 'react-helmet-async'
 import HeroSection from "../components/home/HeroSection";
 import StatsSection from "../components/home/StatsSection";
@@ -7,6 +7,7 @@ import WhyChooseUs from "../components/home/WhyChooseUs";
 import TrendingDestinations from "../components/home/TrendingDestinations";
 import TestimonialsSection from "../components/home/TestimonialsSection";
 import NewsletterSection from "../components/home/NewsletterSection";
+import SectionErrorBoundary from "../components/common/SectionErrorBoundary";
 
 export default function Home() {
   return (
@@ -18,13 +19,14 @@ export default function Home() {
         <meta property="og:description" content="Curated adventures from the Himalayas to Bali. Join 100K+ travelers." />
         <meta property="og:type" content="website" />
       </Helmet>
-      <HeroSection />
-      <StatsSection />
-      <FeaturedPackages />
-      <WhyChooseUs />
-      <TrendingDestinations />
-      <TestimonialsSection />
-      <NewsletterSection />
+
+      <SectionErrorBoundary name="Hero"><HeroSection /></SectionErrorBoundary>
+      <SectionErrorBoundary name="Stats"><StatsSection /></SectionErrorBoundary>
+      <SectionErrorBoundary name="FeaturedPackages"><FeaturedPackages /></SectionErrorBoundary>
+      <SectionErrorBoundary name="WhyChooseUs"><WhyChooseUs /></SectionErrorBoundary>
+      <SectionErrorBoundary name="TrendingDestinations"><TrendingDestinations /></SectionErrorBoundary>
+      <SectionErrorBoundary name="Testimonials"><TestimonialsSection /></SectionErrorBoundary>
+      <SectionErrorBoundary name="Newsletter"><NewsletterSection /></SectionErrorBoundary>
     </div>
   );
 }
