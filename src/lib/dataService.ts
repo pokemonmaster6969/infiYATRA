@@ -55,7 +55,8 @@ syncData();
 export const getTrips = async (): Promise<Trip[]> => {
   try {
     const res = await fetch('/api/trips');
-    if (res.ok) {
+    const isJson = res.headers.get('content-type')?.includes('application/json');
+    if (res.ok && isJson) {
       const data = await res.json();
       if (data && data.length > 0) return data;
     }
@@ -98,7 +99,8 @@ export const addTrip = async (newTrip: Omit<Trip, 'id'>) => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newTrip),
     });
-    if (res.ok) {
+    const isJson = res.headers.get('content-type')?.includes('application/json');
+    if (res.ok && isJson) {
       const addedTrip = await res.json();
       const trips = await getTrips();
       // sync local
@@ -132,7 +134,8 @@ export const deleteTrip = async (id: number) => {
 export const getHeroSlides = async (): Promise<HeroSlide[]> => {
   try {
     const res = await fetch('/api/heroSlides');
-    if (res.ok) {
+    const isJson = res.headers.get('content-type')?.includes('application/json');
+    if (res.ok && isJson) {
       const data = await res.json();
       if (data && data.length > 0) return data;
     }
@@ -158,7 +161,8 @@ export const updateHeroSlides = async (slides: HeroSlide[]) => {
 export const getCustomTrips = async (): Promise<CustomTripInquiry[]> => {
   try {
     const res = await fetch('/api/custom-trips');
-    if (res.ok) {
+    const isJson = res.headers.get('content-type')?.includes('application/json');
+    if (res.ok && isJson) {
       const data = await res.json();
       if (data) return data;
     }
