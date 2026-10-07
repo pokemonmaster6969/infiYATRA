@@ -1,0 +1,10 @@
+# Exclude large document files and reports from Vercel deployment uploads
+*.docx
+*.pdf
+*.pptx
+*.dgetest.html
+node_modules/
+.git/
+.vscode/
+.agent/
+.kombai/
