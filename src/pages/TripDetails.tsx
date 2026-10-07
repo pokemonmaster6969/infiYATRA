@@ -9,6 +9,7 @@ import {
 import { Helmet } from 'react-helmet-async'
 import { getWhatsAppLink } from '../lib/data'
 import { getTripById } from '../lib/dataService'
+import { haptics } from '../lib/haptics'
 
 const TripDetails = () => {
   const { id } = useParams()
@@ -41,12 +42,16 @@ const TripDetails = () => {
   return (
     <div className="bg-charcoal min-h-screen pt-28 pb-12">
       <Helmet>
-        <title>{trip.title} — INFIYATRA</title>
+        <title>{trip.title} | INFIYATRA</title>
         <meta name="description" content={trip.description.substring(0, 160)} />
       </Helmet>
       {/* Navigation & Header */}
       <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20 py-8">
-        <Link to="/discover" className="inline-flex items-center text-secondary font-black tracking-widest text-xs uppercase hover:gap-3 transition-all mb-8 drop-shadow-md">
+        <Link 
+          to="/discover" 
+          onClick={() => haptics.light()}
+          className="inline-flex items-center text-secondary font-black tracking-widest text-xs uppercase hover:gap-3 transition-all mb-8 drop-shadow-md"
+        >
           <ArrowLeft size={16} className="mr-2" /> Back to Discover
         </Link>
         
@@ -65,12 +70,16 @@ const TripDetails = () => {
             </div>
           </div>
           <div className="flex gap-3">
-            <button className="liquid-glass-dark p-4 border border-white/10 rounded-2xl hover:bg-white/10 transition-colors shadow-xl">
+            <button 
+              onClick={() => haptics.light()}
+              className="liquid-glass-dark p-4 border border-white/10 rounded-2xl hover:bg-white/10 transition-colors shadow-xl"
+            >
               <Instagram size={20} className="text-white/80" />
             </button>
             <a 
               href={getWhatsAppLink(`Hi! I'm interested in the ${trip.title}`)}
               target="_blank" rel="noopener noreferrer"
+              onClick={() => haptics.medium()}
               className="liquid-glass-dark p-4 border border-white/10 rounded-2xl hover:bg-secondary hover:border-secondary transition-colors flex items-center justify-center shadow-xl group"
             >
               <MessageCircle size={20} className="text-secondary group-hover:text-white transition-colors" />
@@ -84,7 +93,7 @@ const TripDetails = () => {
         <div className="lg:col-span-8 space-y-6">
           <motion.div 
             layoutId="main-image"
-            className="relative h-[400px] md:h-[600px] rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10"
+            className="relative h-[350px] md:h-[500px] rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10"
           >
             <img 
               src={trip.images[activeImage] || trip.image} 
@@ -93,7 +102,10 @@ const TripDetails = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent"></div>
             <div className="absolute top-8 right-8">
-              <button className="liquid-glass p-5 rounded-full shadow-2xl hover:scale-110 hover:bg-secondary/20 transition-all border border-white/20">
+              <button 
+                onClick={() => haptics.light()}
+                className="liquid-glass p-5 rounded-full shadow-2xl hover:scale-110 hover:bg-secondary/20 transition-all border border-white/20"
+              >
                 <PlayCircle size={32} className="text-white" />
               </button>
             </div>
@@ -103,8 +115,11 @@ const TripDetails = () => {
             {(trip.images.length > 0 ? trip.images : [trip.image]).map((img: string, idx: number) => (
               <button 
                 key={idx}
-                onClick={() => setActiveImage(idx)}
-                className={`h-24 md:h-32 rounded-[2rem] overflow-hidden border-2 transition-all duration-500 ${activeImage === idx ? 'border-secondary scale-95 shadow-xl shadow-secondary/20' : 'border-white/10 opacity-50 hover:opacity-100 hover:scale-105'}`}
+                onClick={() => {
+                  haptics.light();
+                  setActiveImage(idx);
+                }}
+                className={`h-20 md:h-24 rounded-[2rem] overflow-hidden border-2 transition-all duration-500 ${activeImage === idx ? 'border-secondary scale-95 shadow-xl shadow-secondary/20' : 'border-white/10 opacity-50 hover:opacity-100 hover:scale-105'}`}
               >
                 <img src={img} alt={`Thumb ${idx}`} className="w-full h-full object-cover" />
               </button>
@@ -145,6 +160,7 @@ const TripDetails = () => {
             <a 
               href={getWhatsAppLink(`Hi! I'm interested in booking the ${trip.title}`)}
               target="_blank" rel="noopener noreferrer"
+              onClick={() => haptics.medium()}
               className="w-full bg-secondary text-white py-6 rounded-2xl font-black text-xs uppercase tracking-[0.3em] transition-all shadow-2xl shadow-secondary/30 block text-center transform hover:scale-105 active:scale-95 border border-transparent hover:border-white/20"
             >
               Book Your Slot
@@ -188,7 +204,10 @@ const TripDetails = () => {
             <div className="flex justify-between items-end mb-10">
               <h2 className="text-3xl md:text-5xl font-display font-black text-white tracking-tighter uppercase italic liquid-text">The Itinerary</h2>
               <button 
-                onClick={() => setExpandedDay(expandedDay === null ? 1 : null)}
+                onClick={() => {
+                  haptics.light();
+                  setExpandedDay(expandedDay === null ? 1 : null);
+                }}
                 className="text-secondary font-black text-[10px] uppercase tracking-[0.2em] border-b border-secondary/30 pb-1 hover:border-secondary transition-all"
               >
                 {expandedDay === null ? 'Expand All' : 'Collapse All'}
@@ -200,7 +219,10 @@ const TripDetails = () => {
                 <div 
                   key={item.day}
                   className={`border rounded-3xl transition-all duration-500 overflow-hidden ${expandedDay === item.day ? 'border-secondary/50 liquid-glass-dark shadow-2xl' : 'border-white/10 liquid-glass hover:border-white/30 cursor-pointer'}`}
-                  onClick={() => setExpandedDay(expandedDay === item.day ? null : item.day)}
+                  onClick={() => {
+                    haptics.light();
+                    setExpandedDay(expandedDay === item.day ? null : item.day);
+                  }}
                 >
                   <div className="p-6 md:p-8 flex items-center justify-between">
                     <div className="flex items-center gap-6">

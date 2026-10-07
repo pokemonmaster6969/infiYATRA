@@ -7,6 +7,23 @@ export interface HeroSlide {
   subtitle: string;
 }
 
+export interface CustomTripInquiry {
+  id?: number;
+  destination: string;
+  startDate: string;
+  duration: string;
+  travelers: number;
+  groupType: string;
+  budget: string;
+  hotelTier: string;
+  flightsNeeded: boolean;
+  fullName: string;
+  email: string;
+  phone: string;
+  specialRequests?: string;
+  createdAt?: string;
+}
+
 // Utility to optimize Unsplash images for performance
 export const optimizeImageUrl = (url: string, width = 1200, quality = 80) => {
   if (url.includes('images.unsplash.com')) {
@@ -18,8 +35,9 @@ export const optimizeImageUrl = (url: string, width = 1200, quality = 80) => {
 
 const STORAGE_KEY = 'infi_yatra_trips'
 const HERO_STORAGE_KEY = 'infi_yatra_hero'
+const CUSTOM_TRIPS_STORAGE_KEY = 'infi_yatra_custom_trips'
 const VERSION_KEY = 'infi_yatra_version'
-const CURRENT_VERSION = 3.0; // Increment this when making hardcoded data changes
+const CURRENT_VERSION = 5.0; // Increment this when making hardcoded data changes
 
 // Sync logic: Clear stale cache if version mismatch
 const syncData = () => {
@@ -134,6 +152,59 @@ export const updateHeroSlides = async (slides: HeroSlide[]) => {
     });
   } catch(e) { console.error(e); }
   localStorage.setItem(HERO_STORAGE_KEY, JSON.stringify(slides));
-  // Ensure we mark this data as up-to-date with the current version
   localStorage.setItem(VERSION_KEY, CURRENT_VERSION.toString());
 }
+
+export const getCustomTrips = async (): Promise<CustomTripInquiry[]> => {
+  try {
+    const res = await fetch('/api/custom-trips');
+    if (res.ok) {
+      const data = await res.json();
+      if (data) return data;
+    }
+  } catch (e) {
+    console.warn("Backend not running for custom trips.");
+  }
+  const localData = localStorage.getItem(CUSTOM_TRIPS_STORAGE_KEY);
+  return localData ? JSON.parse(localData) : [];
+}
+
+export const addCustomTrip = async (inquiry: Omit<CustomTripInquiry, 'id' | 'createdAt'>): Promise<CustomTripInquiry> => {
+  const newInquiry: CustomTripInquiry = {
+    ...inquiry,
+    createdAt: new Date().toISOString()
+  };
+  try {
+    const res = await fetch('/api/custom-trips', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(newInquiry)
+    });
+    if (res.ok) {
+      const saved = await res.json();
+      const items = await getCustomTrips();
+      localStorage.setItem(CUSTOM_TRIPS_STORAGE_KEY, JSON.stringify([saved, ...items]));
+      return saved;
+    }
+  } catch (e) {
+    console.error(e);
+  }
+  const items = await getCustomTrips();
+  const id = Date.now();
+  const item = { ...newInquiry, id };
+  const updated = [item, ...items];
+  localStorage.setItem(CUSTOM_TRIPS_STORAGE_KEY, JSON.stringify(updated));
+  return item;
+}
+
+export const deleteCustomTrip = async (id: number) => {
+  try {
+    await fetch(`/api/custom-trips/${id}`, { method: 'DELETE' });
+  } catch (e) {
+    console.error(e);
+  }
+  const items = await getCustomTrips();
+  const filtered = items.filter(i => i.id !== id);
+  localStorage.setItem(CUSTOM_TRIPS_STORAGE_KEY, JSON.stringify(filtered));
+}
+

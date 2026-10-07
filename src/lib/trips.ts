@@ -17,6 +17,7 @@ export interface Trip {
   videoThumbnail?: string;
   groupSize: string;
   nextBatch: string;
+  featured?: boolean;
   highlights: string[];
   captain: {
     name: string;
@@ -53,6 +54,7 @@ export const ALL_TRIPS: Trip[] = [
     duration: '8 Days',
     category: 'Adventure',
     type: 'Domestic',
+    featured: true,
     image: '/assets/spiti.jpg',
     link: '/spiti-valley',
     description: 'Journey through the rugged landscapes of Spiti Valley. Drive along the Indo-Tibetan highway, visit ancient monasteries, and camp under the starry sky at Chandratal Lake.',
@@ -84,11 +86,12 @@ export const ALL_TRIPS: Trip[] = [
     duration: '7 Days',
     category: 'Adventure',
     type: 'Domestic',
+    featured: true,
     image: '/assets/himalayas-bg.jpg',
     link: '/leh-ladakh',
     description: 'Experience the ultimate road trip to the Land of High Passes. Marvel at the changing colors of Pangong Tso, ride camels in Nubra Valley, and conquer Khardung La.',
     images: [
-      '/assets/himalayas-bg.jpg'
+      '/assets/Ladakh2.jpg'
     ],
     groupSize: '10-15 Persons',
     nextBatch: 'Jun 10, 2026',
@@ -114,6 +117,7 @@ export const ALL_TRIPS: Trip[] = [
     duration: '6 Days',
     category: 'Nature',
     type: 'Domestic',
+    featured: true,
     image: '/assets/kashmir.jpg',
     link: '/kashmir',
     description: 'Step into paradise on earth. Sail on the tranquil Dal Lake in a Shikara, experience the thrill of the Gulmarg Gondola, and wander through the scenic valleys of Pahalgam.',
@@ -230,6 +234,7 @@ export const ALL_TRIPS: Trip[] = [
     duration: '8 Days',
     category: 'Honeymoon',
     type: 'International',
+    featured: true,
     image: '/assets/bali.jpg',
     link: '/bali',
     description: 'A romantic getaway to the island of gods. Pristine beaches and vibrant culture.',
@@ -270,6 +275,7 @@ export const ALL_TRIPS: Trip[] = [
     duration: '9 Days',
     category: 'Luxury',
     type: 'International',
+    featured: true,
     image: '/assets/seychelles.jpg',
     link: '#',
     description: 'Luxury island getaway featuring the most beautiful beaches in the world.',
@@ -279,11 +285,92 @@ export const ALL_TRIPS: Trip[] = [
     highlights: ['Island Cruises', 'Marine Park'],
     captain: DEFAULT_CAPTAIN,
     itinerary: [{ day: 1, title: 'Seychelles Arrival', description: 'Victoria city tour.' }]
+  },
+  {
+    id: 10,
+    title: 'Goa & Lakshadweep Luxury Cruise',
+    location: 'Goa, Agatti Island, Kadmat',
+    price: '29,999',
+    rating: 4.9,
+    reviews: 188,
+    duration: '5 Days / 4 Nights',
+    category: 'Cruise',
+    type: 'Domestic',
+    featured: true,
+    image: '/assets/goa.jpg',
+    link: '/cruise',
+    description: 'Sail across the turquoise Arabian Sea on a 5-star luxury cruise liner. Unlimited deck dining, coral island shore excursions, and ocean-view luxury suites.',
+    images: ['/assets/goa.jpg', '/assets/andaman.jpg'],
+    groupSize: '2-6 Persons',
+    nextBatch: 'Nov 18, 2026',
+    highlights: ['Oceanview Balcony Stateroom', 'Lakshadweep Coral Snorkeling', 'All-Inclusive Deck Dining', 'Live Broadway Night Show'],
+    captain: DEFAULT_CAPTAIN,
+    itinerary: [
+      { day: 1, title: 'Embarkation at Mormugao Port Goa', description: 'Welcome drinks on the top deck and sunset sailing away party.' },
+      { day: 2, title: 'At Sea — Deck Parties & Casino', description: 'Enjoy infinity pool deck, spa treatment, and live gala dinner.' },
+      { day: 3, title: 'Lakshadweep Agatti Island Excursion', description: 'Tender boat landing on pristine coral sands, glass-bottom kayaking, and seafood feast.' },
+      { day: 4, title: 'Kadmat Island & Water Sports', description: 'Scuba diving with sea turtles and evening captain cocktail gala.' },
+      { day: 5, title: 'Return to Goa Port', description: 'Disembarkation with lifelong ocean memories.' }
+    ]
+  },
+  {
+    id: 11,
+    title: 'Singapore & Thailand Ocean Odyssey Cruise',
+    location: 'Singapore, Penang, Phuket',
+    price: '64,999',
+    rating: 5.0,
+    reviews: 215,
+    duration: '7 Days / 6 Nights',
+    category: 'Cruise',
+    type: 'International',
+    featured: true,
+    image: '/assets/dubai.jpg',
+    link: '/cruise',
+    description: 'Sail the Malacca Strait on a world-class mega cruise ship. Experience Asian culinary masterclasses, water parks on sea, and vibrant tropical port landings.',
+    images: ['/assets/dubai.jpg', '/assets/thai.jpg'],
+    groupSize: '2-8 Persons',
+    nextBatch: 'Dec 05, 2026',
+    highlights: ['Royal Ocean Promenade', 'Penang Heritage Trail', 'Phuket Island Hopping', 'Symphony Lounge'],
+    captain: DEFAULT_CAPTAIN,
+    itinerary: [
+      { day: 1, title: 'Boarding Marina Bay Cruise Centre', description: 'Check-in and evening departure past Singapore skyline.' },
+      { day: 2, title: 'Penang Cultural Port Stop', description: 'Explore George Town street art and hawker delicacies.' },
+      { day: 3, title: 'Phuket Tropical Island Shore Tour', description: 'Patong beach excursion and traditional Thai massage.' },
+      { day: 4, title: 'Full Sea Day & AquaPark', description: 'Enjoy zip-lining over ocean, surf simulator, and theater shows.' },
+      { day: 5, title: 'Captain Gala Dinner', description: 'Formal black-tie dinner with executive cruise commanders.' },
+      { day: 6, title: 'Singapore Disembarkation', description: 'Arrival back at Marina Bay Harbour.' }
+    ]
+  },
+  {
+    id: 12,
+    title: 'Corporate Leadership & Adventure Offsite',
+    location: 'Manali & Solang Valley',
+    price: '22,500',
+    rating: 4.9,
+    reviews: 94,
+    duration: '4 Days / 3 Nights',
+    category: 'Corporate',
+    type: 'Domestic',
+    featured: true,
+    image: '/assets/group2.jpeg',
+    link: '/corporate',
+    description: 'Custom team building summit for forward-thinking organizations. High-altitude leadership workshops, bonfire networking, and white-water rafting.',
+    images: ['/assets/group2.jpeg', '/assets/group.jpeg', '/assets/PFC.jpeg'],
+    groupSize: '15-100+ Persons',
+    nextBatch: 'Available Year Round',
+    highlights: ['Executive Strategy Keynotes', 'Team River Rafting Challenge', '5-Star Resort Conference & Banquet', 'Pine Forest Gala Dinner'],
+    captain: DEFAULT_CAPTAIN,
+    itinerary: [
+      { day: 1, title: 'Team Arrival & Welcome Banquet', description: 'Check-in to luxury mountain resort followed by team icebreakers.' },
+      { day: 2, title: 'Solang Valley Rafting & Team Challenges', description: 'Outdoor strategy games and white-water raft challenge.' },
+      { day: 3, title: 'Leadership Summit & Gala Evening', description: 'Interactive workshop sessions, awards ceremony, and acoustic live music.' },
+      { day: 4, title: 'Closing Keynote & Departure', description: 'Breakfast and group departure.' }
+    ]
   }
 ];
 
-export const CATEGORIES = ['Adventure', 'Beach', 'Luxury', 'Nature', 'Honeymoon', 'Backpacking'];
+export const CATEGORIES = ['Adventure', 'Beach', 'Luxury', 'Nature', 'Honeymoon', 'Backpacking', 'Cruise', 'Corporate'];
 
-/** Generate a WhatsApp deep-link for a specific trip */
 export const getTripWhatsAppLink = (tripTitle: string) =>
   getWhatsAppLink(`Hi Infi Yatra! I'm interested in the ${tripTitle} package.`);
+

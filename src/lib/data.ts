@@ -22,7 +22,27 @@ export const heroSlides = [
   {
     image: '/assets/kashmir.jpg',
     title: 'Kashmir Beauty',
-    subtitle: 'Luxury villa stays and spiritual awakenings in the heart of Kashmir valley.' 
+    subtitle: 'Luxury villa stays and spiritual awakenings in the heart of Kashmir valley.'
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1599661559886-29177119ff39?auto=format&fit=crop&q=80&w=1920',
+    title: 'Royal Rajasthan',
+    subtitle: 'Experience the grandeur of forts, palaces, and endless desert dunes.'
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&q=80&w=1920',
+    title: 'Sun-Kissed Goa',
+    subtitle: 'Relax on pristine beaches and explore vibrant Portuguese heritage.'
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1626715102506-6966f36611f7?auto=format&fit=crop&q=80&w=1920',
+    title: 'Majestic Ladakh',
+    subtitle: 'Ride through high altitude passes and witness breathtaking azure lakes.'
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&fit=crop&q=80&w=1920',
+    title: 'Andaman Escape',
+    subtitle: 'Dive into crystal clear waters and discover vibrant marine life.'
   }
 ];
 

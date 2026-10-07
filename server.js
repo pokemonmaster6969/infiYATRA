@@ -17,9 +17,14 @@ const DB_FILE = path.join(__dirname, 'db.json');
 const readDB = () => {
     try {
         const data = fs.readFileSync(DB_FILE, 'utf-8');
-        return JSON.parse(data);
+        const parsed = JSON.parse(data);
+        return {
+            trips: parsed.trips || [],
+            heroSlides: parsed.heroSlides || [],
+            customTrips: parsed.customTrips || []
+        };
     } catch (error) {
-        return { trips: [], heroSlides: [] };
+        return { trips: [], heroSlides: [], customTrips: [] };
     }
 };
 
@@ -30,7 +35,7 @@ const writeDB = (data) => {
 
 // Initialize DB if empty
 if (!fs.existsSync(DB_FILE)) {
-    writeDB({ trips: [], heroSlides: [] });
+    writeDB({ trips: [], heroSlides: [], customTrips: [] });
 }
 
 // REST Routes for Trips
@@ -86,7 +91,36 @@ app.post('/api/heroSlides', (req, res) => {
     res.json({ success: true });
 });
 
+// REST Routes for Custom Trips
+app.get('/api/custom-trips', (req, res) => {
+    const db = readDB();
+    res.json(db.customTrips || []);
+});
+
+app.post('/api/custom-trips', (req, res) => {
+    const db = readDB();
+    if (!db.customTrips) db.customTrips = [];
+    const newInquiry = { 
+        ...req.body, 
+        id: Date.now(), 
+        createdAt: req.body.createdAt || new Date().toISOString() 
+    };
+    db.customTrips.unshift(newInquiry);
+    writeDB(db);
+    res.json(newInquiry);
+});
+
+app.delete('/api/custom-trips/:id', (req, res) => {
+    const db = readDB();
+    if (db.customTrips) {
+        db.customTrips = db.customTrips.filter(item => item.id !== parseInt(req.params.id));
+        writeDB(db);
+    }
+    res.json({ success: true });
+});
+
 const PORT = 3001;
 app.listen(PORT, () => {
     console.log(`Backend Server API running on http://localhost:${PORT}`);
 });
+

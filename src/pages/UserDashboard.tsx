@@ -131,7 +131,7 @@ const UserDashboard = () => {
 
             {/* Community Feed Preview */}
             <div className="bg-white p-8 rounded-[3.5rem] shadow-xl border border-gray-100 space-y-6">
-              <h3 className="text-lg font-black text-charcoal uppercase tracking-tight italic">Community Pulse</h3>
+              <h3 className="text-lg font-black text-charcoal uppercase tracking-tight italic">Community Feed</h3>
               <div className="space-y-6">
                 {[1, 2].map((_, i) => (
                   <div key={i} className="flex space-x-4 group cursor-pointer">

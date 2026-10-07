@@ -9,6 +9,9 @@ import BaliPage from './pages/BaliPage'
 import BackupHome from './pages/BackupHome'
 import TripDetails from './pages/TripDetails'
 import { About, Community, Wishlist } from './pages/StaticPages'
+import CruisePage from './pages/CruisePage'
+import CustomizeTrip from './pages/CustomizeTrip'
+import CorporateTours from './pages/CorporateTours'
 import UserDashboard from './pages/UserDashboard'
 import Login from './pages/Login'
 import AdminDashboard from './pages/admin/Dashboard'
@@ -27,6 +30,9 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="/discover" element={<Discover />} />
+            <Route path="/cruise" element={<CruisePage />} />
+            <Route path="/customize" element={<CustomizeTrip />} />
+            <Route path="/corporate" element={<CorporateTours />} />
             <Route path="/himachal" element={<HimachalPage />} />
             <Route path="/bali" element={<BaliPage />} />
             <Route path="/backup" element={<BackupHome />} />
