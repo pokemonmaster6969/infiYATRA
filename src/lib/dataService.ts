@@ -37,7 +37,7 @@ const STORAGE_KEY = 'infi_yatra_trips'
 const HERO_STORAGE_KEY = 'infi_yatra_hero'
 const CUSTOM_TRIPS_STORAGE_KEY = 'infi_yatra_custom_trips'
 const VERSION_KEY = 'infi_yatra_version'
-const CURRENT_VERSION = 6.0; // Increment this when making hardcoded data changes
+const CURRENT_VERSION = 7.0; // Increment this when making hardcoded data changes
 
 // Sync logic: Clear stale cache if version mismatch
 const syncData = () => {
@@ -51,6 +51,11 @@ const syncData = () => {
 }
 
 syncData();
+
+export const resetHeroSlides = () => {
+  localStorage.setItem(HERO_STORAGE_KEY, JSON.stringify(heroSlides));
+  localStorage.setItem(VERSION_KEY, CURRENT_VERSION.toString());
+}
 
 export const getTrips = async (): Promise<Trip[]> => {
   try {

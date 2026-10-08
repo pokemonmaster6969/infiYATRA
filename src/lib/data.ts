@@ -25,7 +25,7 @@ export const heroSlides = [
     subtitle: 'Luxury villa stays and spiritual awakenings in the heart of Kashmir valley.'
   },
   {
-    image: '/assets/jaisel.jpg',
+    image: '/assets/udai.jpg',
     title: 'Royal Rajasthan',
     subtitle: 'Experience the grandeur of forts, palaces, and endless desert dunes.'
   },
