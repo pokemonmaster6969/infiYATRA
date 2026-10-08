@@ -1,9 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { haptics } from '../lib/haptics'
 import Logo from './Logo'
 
 const Footer = () => {
+  const location = useLocation()
+  if (location.pathname.startsWith('/admin')) {
+    return null
+  }
   return (
     <footer className="bg-charcoal text-white pt-20 pb-8 relative overflow-hidden border-t border-white/10">
       <div className="absolute inset-0 liquid-glass-grain pointer-events-none"></div>

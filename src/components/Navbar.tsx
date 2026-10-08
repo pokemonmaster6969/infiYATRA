@@ -10,6 +10,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
 
+  if (location.pathname.startsWith('/admin')) {
+    return null
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40)

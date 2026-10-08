@@ -13,15 +13,21 @@ export default function HeroSection() {
 
   // Load slides and preload initial images
   useEffect(() => {
-    getHeroSlides().then((slides) => {
-      if (slides && slides.length > 0) {
-        setHeroSlides(slides);
-        slides.slice(0, 3).forEach((slide: any) => {
-          const img = new Image();
-          img.src = optimizeImageUrl(slide.image, 1920, 85);
-        });
-      }
-    });
+    const fetchSlides = () => {
+      getHeroSlides().then((slides) => {
+        if (slides && slides.length > 0) {
+          setHeroSlides(slides);
+          slides.slice(0, 3).forEach((slide: any) => {
+            const img = new Image();
+            img.src = optimizeImageUrl(slide.image, 1920, 85);
+          });
+        }
+      });
+    };
+
+    fetchSlides();
+    window.addEventListener('hero_slides_updated', fetchSlides);
+    return () => window.removeEventListener('hero_slides_updated', fetchSlides);
   }, []);
 
   // Auto-play timer

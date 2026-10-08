@@ -42,10 +42,13 @@ const CURRENT_VERSION = 7.0; // Increment this when making hardcoded data change
 // Sync logic: Clear stale cache if version mismatch
 const syncData = () => {
   const savedVersion = localStorage.getItem(VERSION_KEY);
+  const isCustomEdited = localStorage.getItem('infi_hero_custom_edited');
   if (!savedVersion || parseFloat(savedVersion) < CURRENT_VERSION) {
     console.log("Stale data detected. Syncing with fresh codebase...");
     localStorage.setItem(STORAGE_KEY, JSON.stringify(ALL_TRIPS));
-    localStorage.setItem(HERO_STORAGE_KEY, JSON.stringify(heroSlides));
+    if (!isCustomEdited) {
+      localStorage.setItem(HERO_STORAGE_KEY, JSON.stringify(heroSlides));
+    }
     localStorage.setItem(VERSION_KEY, CURRENT_VERSION.toString());
   }
 }
@@ -53,8 +56,12 @@ const syncData = () => {
 syncData();
 
 export const resetHeroSlides = () => {
+  localStorage.removeItem('infi_hero_custom_edited');
   localStorage.setItem(HERO_STORAGE_KEY, JSON.stringify(heroSlides));
   localStorage.setItem(VERSION_KEY, CURRENT_VERSION.toString());
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new Event('hero_slides_updated'));
+  }
 }
 
 export const getTrips = async (): Promise<Trip[]> => {
@@ -160,7 +167,11 @@ export const updateHeroSlides = async (slides: HeroSlide[]) => {
     });
   } catch(e) { console.error(e); }
   localStorage.setItem(HERO_STORAGE_KEY, JSON.stringify(slides));
+  localStorage.setItem('infi_hero_custom_edited', 'true');
   localStorage.setItem(VERSION_KEY, CURRENT_VERSION.toString());
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new Event('hero_slides_updated'));
+  }
 }
 
 export const getCustomTrips = async (): Promise<CustomTripInquiry[]> => {

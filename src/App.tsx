@@ -1,5 +1,5 @@
+import { useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
-import { AnimatePresence } from 'framer-motion'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -21,39 +21,41 @@ import AdminLogin from './pages/admin/Login'
 
 function App() {
   const location = useLocation();
-  const isAdminRoute = location.pathname.startsWith('/admin');
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <div className="flex flex-col min-h-screen selection:bg-secondary/30 w-full overflow-x-hidden">
-      {!isAdminRoute && <Navbar />}
+      <Navbar />
       <main className="flex-grow w-full">
-        <AnimatePresence mode="wait">
-          <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Home />} />
-            <Route path="/discover" element={<Discover />} />
-            <Route path="/cruise" element={<CruisePage />} />
-            <Route path="/customize" element={<CustomizeTrip />} />
-            <Route path="/corporate" element={<CorporateTours />} />
-            <Route path="/himachal" element={<HimachalPage />} />
-            <Route path="/bali" element={<BaliPage />} />
-            <Route path="/backup" element={<BackupHome />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/community" element={<Community />} />
-            <Route path="/wishlist" element={<Wishlist />} />
-            <Route path="/trip/:id" element={<TripDetails />} />
-            <Route path="/dashboard" element={<UserDashboard />} />
-            <Route path="/login" element={<Login />} />
-            
-            {/* Admin Routes */}
-            <Route path="/admin/login" element={<AdminLogin />} />
-            <Route path="/admin/dashboard" element={<AdminDashboard />} />
-            <Route path="/admin/hero" element={<EditHero />} />
-            <Route path="/admin/edit/:id" element={<EditTrip />} />
-            <Route path="/admin/new" element={<EditTrip />} />
-          </Routes>
-        </AnimatePresence>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/discover" element={<Discover />} />
+          <Route path="/cruise" element={<CruisePage />} />
+          <Route path="/customize" element={<CustomizeTrip />} />
+          <Route path="/corporate" element={<CorporateTours />} />
+          <Route path="/himachal" element={<HimachalPage />} />
+          <Route path="/bali" element={<BaliPage />} />
+          <Route path="/backup" element={<BackupHome />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="/trip/:id" element={<TripDetails />} />
+          <Route path="/dashboard" element={<UserDashboard />} />
+          <Route path="/login" element={<Login />} />
+          
+          {/* Admin Routes */}
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/admin/hero" element={<EditHero />} />
+          <Route path="/admin/edit/:id" element={<EditTrip />} />
+          <Route path="/admin/new" element={<EditTrip />} />
+        </Routes>
       </main>
-      {!isAdminRoute && <Footer />}
+      <Footer />
     </div>
   )
 }
