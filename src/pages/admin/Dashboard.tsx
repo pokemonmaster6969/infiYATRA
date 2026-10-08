@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Plus, Edit2, Trash2, LayoutDashboard, LogOut, MapPin, Image as ImageIcon, Star, Calendar, Users, MessageSquare, CheckCircle, Sparkles, MessageCircle } from 'lucide-react'
+import { Plus, Edit2, Trash2, LayoutDashboard, LogOut, MapPin, Image as ImageIcon, Star, Calendar, Users, MessageSquare, CheckCircle, Sparkles, MessageCircle, Globe, ArrowLeft } from 'lucide-react'
 import { getTrips, deleteTrip, updateTrip, getCustomTrips, deleteCustomTrip, CustomTripInquiry } from '../../lib/dataService'
 import { Trip } from '../../lib/trips'
 import { getWhatsAppLink } from '../../lib/data'
@@ -103,13 +103,22 @@ const AdminDashboard = () => {
           </Link>
         </nav>
 
-        <button
-          onClick={handleLogout}
-          className="flex items-center space-x-3 p-4 text-red-400 hover:text-red-300 transition-all font-bold mt-auto"
-        >
-          <LogOut size={20} />
-          <span>Exit Basecamp</span>
-        </button>
+          <Link
+            to="/"
+            onClick={() => haptics.light()}
+            className="flex items-center space-x-3 p-4 text-secondary hover:text-white hover:bg-white/5 transition-all font-bold rounded-2xl"
+          >
+            <Globe size={20} />
+            <span>Back to Main Website</span>
+          </Link>
+
+          <button
+            onClick={handleLogout}
+            className="flex items-center space-x-3 p-4 text-red-400 hover:text-red-300 transition-all font-bold mt-auto"
+          >
+            <LogOut size={20} />
+            <span>Exit Basecamp</span>
+          </button>
       </aside>
 
       {/* Main Content Area */}
@@ -134,17 +143,30 @@ const AdminDashboard = () => {
           <div>
             <header className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10">
               <div>
+                <div className="flex items-center gap-2 mb-2">
+                  <Link to="/" className="inline-flex items-center gap-1.5 text-xs font-bold text-gray-500 hover:text-primary transition-colors bg-white px-3 py-1.5 rounded-full border border-gray-200 shadow-sm">
+                    <ArrowLeft size={14} /> Back to Main Website
+                  </Link>
+                </div>
                 <h2 className="text-3xl md:text-4xl font-display font-black text-charcoal tracking-tighter uppercase italic">
                   Package Inventory & <span className="text-primary">Showcasing</span>
                 </h2>
                 <p className="text-gray-400 font-medium italic mt-1">Manage active tours, edit departure dates, showcase featured trips & gallery images</p>
               </div>
-              <Link
-                to="/admin/new"
-                className="bg-primary text-white px-8 py-4 rounded-2xl font-black text-[10px] uppercase tracking-widest shadow-xl shadow-primary/20 hover:scale-105 transition-all flex items-center"
-              >
-                <Plus size={16} className="mr-2" /> Add Expedition
-              </Link>
+              <div className="flex items-center gap-3">
+                <Link
+                  to="/"
+                  className="bg-charcoal text-white px-5 py-4 rounded-2xl font-bold text-[10px] uppercase tracking-widest hover:bg-black transition-all flex items-center shadow-lg"
+                >
+                  <Globe size={16} className="mr-2" /> Live Site
+                </Link>
+                <Link
+                  to="/admin/new"
+                  className="bg-primary text-white px-7 py-4 rounded-2xl font-black text-[10px] uppercase tracking-widest shadow-xl shadow-primary/20 hover:scale-105 transition-all flex items-center"
+                >
+                  <Plus size={16} className="mr-2" /> Add Expedition
+                </Link>
+              </div>
             </header>
 
             <div className="grid grid-cols-1 gap-6">

@@ -21,10 +21,11 @@ import AdminLogin from './pages/admin/Login'
 
 function App() {
   const location = useLocation();
+  const isAdminRoute = location.pathname.startsWith('/admin');
 
   return (
     <div className="flex flex-col min-h-screen selection:bg-secondary/30 w-full overflow-x-hidden">
-      <Navbar />
+      {!isAdminRoute && <Navbar />}
       <main className="flex-grow w-full">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
@@ -52,7 +53,7 @@ function App() {
           </Routes>
         </AnimatePresence>
       </main>
-      <Footer />
+      {!isAdminRoute && <Footer />}
     </div>
   )
 }
