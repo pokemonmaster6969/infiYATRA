@@ -37,7 +37,7 @@ const STORAGE_KEY = 'infi_yatra_trips'
 const HERO_STORAGE_KEY = 'infi_yatra_hero'
 const CUSTOM_TRIPS_STORAGE_KEY = 'infi_yatra_custom_trips'
 const VERSION_KEY = 'infi_yatra_version'
-const CURRENT_VERSION = 5.0; // Increment this when making hardcoded data changes
+const CURRENT_VERSION = 6.0; // Increment this when making hardcoded data changes
 
 // Sync logic: Clear stale cache if version mismatch
 const syncData = () => {

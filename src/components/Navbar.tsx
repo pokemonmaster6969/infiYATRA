@@ -67,7 +67,7 @@ const Navbar = () => {
               })}
             </div>
 
-            {/* Right Action Icons & Button */}
+            {/* Right Action Icons */}
             <div className="hidden lg:flex items-center space-x-5">
               <Link to="/dashboard" title="User Dashboard" onClick={() => haptics.light()} className="transition-colors duration-300 text-white/80 hover:text-secondary">
                 <User size={18} />
@@ -75,25 +75,10 @@ const Navbar = () => {
               <Link to="/wishlist" title="Wishlist" onClick={() => haptics.light()} className="transition-colors duration-300 text-white/80 hover:text-secondary">
                 <Heart size={18} />
               </Link>
-              <Link 
-                to="/customize"
-                onClick={() => haptics.medium()}
-                className="bg-secondary text-white px-5 py-2 rounded-full font-black text-[9px] uppercase tracking-widest hover:bg-white hover:text-charcoal transition-all duration-300 shadow-xl shadow-secondary/30 transform hover:scale-105 active:scale-95 flex items-center gap-1.5"
-              >
-                <Sparkles size={12} />
-                Book / Customize
-              </Link>
             </div>
 
             {/* Mobile Menu Toggle */}
             <div className="lg:hidden flex items-center gap-3">
-              <Link 
-                to="/customize" 
-                onClick={() => haptics.light()} 
-                className="text-[9px] font-black uppercase tracking-wider bg-secondary text-white px-3.5 py-1.5 rounded-full"
-              >
-                Customize
-              </Link>
               <button 
                 onClick={() => {
                   haptics.light();
