@@ -62,7 +62,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full h-[100vh] min-h-[680px] max-h-[1080px] overflow-hidden bg-charcoal flex flex-col justify-center items-center select-none">
+    <section className="relative w-full h-[100vh] min-h-[680px] max-h-[1080px] overflow-hidden bg-black flex flex-col justify-end items-center select-none">
       <Helmet>
         {heroSlides.slice(0, 2).map((s, i) => (
           <link key={`preload-${i}`} rel="preload" as="image" href={optimizeImageUrl(s.image, 1920, 85)} />
@@ -74,10 +74,10 @@ export default function HeroSection() {
         <AnimatePresence mode="popLayout">
           <motion.div
             key={`bg-${index}`}
-            initial={{ opacity: 0, scale: 1.06 }}
+            initial={{ opacity: 0, scale: 1.08 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.02 }}
-            transition={{ duration: 1.2, ease: "easeInOut" }}
+            transition={{ duration: 1.4, ease: "easeInOut" }}
             className="absolute inset-0 w-full h-full"
           >
             <img
@@ -90,20 +90,24 @@ export default function HeroSection() {
         </AnimatePresence>
       </div>
 
-      {/* Gradient Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-black/35 to-black/50 z-10 pointer-events-none" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.35)_100%)] z-10 pointer-events-none" />
+      {/* Subtle dark overlay — lets the image show through */}
+      <div className="absolute inset-0 z-10 pointer-events-none" style={{
+        background: `
+          linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.25) 100%),
+          radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.3) 100%)
+        `
+      }} />
 
-      {/* Main Hero Content Box - Perfectly Centered */}
-      <div className="relative z-20 w-full max-w-5xl mx-auto px-6 text-center space-y-6 pt-12">
+      {/* Main Hero Content — pushed towards bottom for cinematic feel */}
+      <div className="relative z-20 w-full max-w-5xl mx-auto px-6 text-center pb-32 md:pb-36">
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-5 py-2 rounded-full liquid-glass border border-white/20 shadow-2xl backdrop-blur-xl"
+          className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 border border-white/15 shadow-lg backdrop-blur-md mb-6"
         >
           <Sparkles size={13} className="text-secondary animate-pulse" />
-          <span className="text-[10px] font-black text-white uppercase tracking-[0.3em]">
+          <span className="text-[10px] font-black text-white/90 uppercase tracking-[0.3em]">
             AHMEDABAD'S PREMIER TRAVEL COMMUNITY
           </span>
         </motion.div>
@@ -126,12 +130,12 @@ export default function HeroSection() {
           </motion.div>
         </AnimatePresence>
 
-        {/* Clean CTA Buttons Row */}
+        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="flex flex-wrap items-center justify-center gap-4 pt-3"
+          className="flex flex-wrap items-center justify-center gap-4 mt-8"
         >
           <Link
             to="/discover"
@@ -156,7 +160,7 @@ export default function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => haptics.medium()}
-            className="px-8 py-4 liquid-glass border border-white/30 text-white rounded-full font-black text-xs uppercase tracking-widest transition-all duration-300 hover:bg-white/20 backdrop-blur-md flex items-center gap-2"
+            className="px-8 py-4 bg-white/10 border border-white/25 text-white rounded-full font-black text-xs uppercase tracking-widest transition-all duration-300 hover:bg-white/20 backdrop-blur-md flex items-center gap-2"
           >
             <PhoneCall size={15} />
             Contact Us
@@ -164,11 +168,11 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Prev / Next Circular Navigation Arrows */}
+      {/* Prev / Next Arrows */}
       <button
         onClick={goToPrev}
         aria-label="Previous Slide"
-        className="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full liquid-glass border border-white/25 text-white hover:bg-white hover:text-charcoal transition-all shadow-2xl hover:scale-110 active:scale-95 hidden sm:flex items-center justify-center backdrop-blur-xl"
+        className="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-black/30 border border-white/15 text-white hover:bg-white hover:text-black transition-all shadow-xl hover:scale-110 active:scale-95 hidden sm:flex items-center justify-center backdrop-blur-sm"
       >
         <ChevronLeft size={24} />
       </button>
@@ -176,14 +180,14 @@ export default function HeroSection() {
       <button
         onClick={goToNext}
         aria-label="Next Slide"
-        className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full liquid-glass border border-white/25 text-white hover:bg-white hover:text-charcoal transition-all shadow-2xl hover:scale-110 active:scale-95 hidden sm:flex items-center justify-center backdrop-blur-xl"
+        className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-black/30 border border-white/15 text-white hover:bg-white hover:text-black transition-all shadow-xl hover:scale-110 active:scale-95 hidden sm:flex items-center justify-center backdrop-blur-sm"
       >
         <ChevronRight size={24} />
       </button>
 
-      {/* Bottom Pagination Bar - Guaranteed Bottom Position */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center gap-4 liquid-glass px-5 py-2.5 rounded-full border border-white/20 shadow-2xl backdrop-blur-2xl">
-        <span className="text-[10px] font-black text-white/80 uppercase tracking-widest">
+      {/* Bottom Center Pagination */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex items-center gap-4 bg-black/40 backdrop-blur-md px-5 py-2.5 rounded-full border border-white/10 shadow-xl">
+        <span className="text-[10px] font-black text-white/70 uppercase tracking-widest">
           {String(index + 1).padStart(2, '0')} / {String(heroSlides.length).padStart(2, '0')}
         </span>
         <div className="h-3 w-px bg-white/20" />
