@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, User, Heart, X, Sparkles } from 'lucide-react'
 import { haptics } from '../lib/haptics'
+import Logo from './Logo'
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -38,12 +39,10 @@ const Navbar = () => {
           scrolled ? 'py-2 px-6 scale-[0.99] bg-black/60' : 'py-2.5 px-6 md:px-8'
         }`}>
           
-          <div className="flex justify-between items-center h-10">
+          <div className="flex justify-between items-center h-12 md:h-14">
             {/* Logo */}
-            <Link to="/" onClick={() => haptics.light()} className="flex items-center space-x-2 group">
-              <span className="text-xl md:text-2xl font-display font-black tracking-tighter text-white liquid-text">
-                INFI<span className="text-secondary tracking-tighter uppercase text-sm md:text-base ml-0.5">Yatra</span>
-              </span>
+            <Link to="/" onClick={() => haptics.light()} className="flex items-center group py-1">
+              <Logo size="md" />
             </Link>
 
             {/* Desktop Navigation */}
@@ -129,9 +128,9 @@ const Navbar = () => {
                className="absolute top-1/2 left-1/2 w-[90%] max-w-[360px] liquid-glass shadow-2xl p-8 rounded-[3rem] flex flex-col max-h-[85vh] overflow-y-auto"
             >
               <div className="flex justify-between items-center mb-8 relative z-10">
-                 <span className="text-2xl font-display font-black text-white tracking-tight liquid-text">
-                    INFI<span className="text-secondary text-xl ml-1">Yatra</span>
-                 </span>
+                 <Link to="/" onClick={() => { haptics.light(); setIsOpen(false); }}>
+                   <Logo size="md" showText={true} />
+                 </Link>
                  <button 
                    onClick={() => {
                      haptics.light();

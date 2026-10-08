@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Lock, ShieldCheck, ArrowRight } from 'lucide-react'
+import Logo from '../../components/Logo'
 
 const AdminLogin = () => {
   const [password, setPassword] = useState('')
@@ -31,6 +32,9 @@ const AdminLogin = () => {
         className="w-full max-w-md bg-white/5 backdrop-blur-3xl border border-white/10 p-10 rounded-[3rem] shadow-2xl relative z-10"
       >
         <div className="text-center mb-10">
+          <div className="flex justify-center mb-4">
+            <Logo size="lg" />
+          </div>
           <div className="inline-flex p-4 bg-primary/10 rounded-2xl mb-6">
             <Lock className="text-primary" size={32} />
           </div>

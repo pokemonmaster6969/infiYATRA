@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { haptics } from '../lib/haptics'
+import Logo from './Logo'
 
 const Footer = () => {
   return (
@@ -8,9 +9,9 @@ const Footer = () => {
       <div className="absolute inset-0 liquid-glass-grain pointer-events-none"></div>
       <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
         <div className="space-y-6">
-          <h3 className="text-3xl font-display font-black text-white tracking-tighter liquid-text">
-            INFI<span className="text-secondary text-2xl uppercase ml-1">Yatra</span>
-          </h3>
+          <Link to="/" onClick={() => haptics.light()} className="inline-block">
+            <Logo size="lg" />
+          </Link>
           <p className="text-white/40 leading-relaxed text-xs italic font-medium">
             Ahmedabad's premier community travel platform. Connecting curious travelers with authentic local, cruise, and international experiences.
           </p>

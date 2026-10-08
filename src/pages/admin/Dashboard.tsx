@@ -6,6 +6,7 @@ import { getTrips, deleteTrip, updateTrip, getCustomTrips, deleteCustomTrip, Cus
 import { Trip } from '../../lib/trips'
 import { getWhatsAppLink } from '../../lib/data'
 import { haptics } from '../../lib/haptics'
+import Logo from '../../components/Logo'
 
 const AdminDashboard = () => {
   const [trips, setTrips] = useState<Trip[]>([])
@@ -59,8 +60,9 @@ const AdminDashboard = () => {
       {/* Sidebar */}
       <aside className="w-80 bg-charcoal text-white p-8 hidden lg:flex flex-col border-r border-gray-800">
         <div className="mb-12">
-          <Link to="/" className="text-2xl font-display font-black uppercase italic tracking-tighter">
-            Infi <span className="text-primary">Admin</span>
+          <Link to="/" className="flex items-center gap-2 mb-2">
+            <Logo size="md" />
+            <span className="text-xs bg-primary/20 text-primary px-2 py-0.5 rounded font-black tracking-widest uppercase">Admin</span>
           </Link>
           <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-1">Expedition Control Center</p>
         </div>
