@@ -68,7 +68,7 @@ export const getTrips = async (): Promise<Trip[]> => {
   return localData ? JSON.parse(localData) : ALL_TRIPS;
 }
 
-export const getTripById = async (id: number): Promise<Trip | undefined> => {
+export const getTripById = async (id: string | number): Promise<Trip | undefined> => {
   const trips = await getTrips();
   return trips.find(t => t.id === id);
 }
@@ -113,14 +113,14 @@ export const addTrip = async (newTrip: Omit<Trip, 'id'>) => {
   
   // Fallback local addition
   const trips = await getTrips();
-  const id = Math.max(...trips.map(t => t.id), 0) + 1;
+  const id = Date.now().toString();
   const trip = { ...newTrip, id } as Trip;
   trips.push(trip);
   localStorage.setItem(STORAGE_KEY, JSON.stringify(trips));
   return trip;
 }
 
-export const deleteTrip = async (id: number) => {
+export const deleteTrip = async (id: string | number) => {
   try {
     await fetch(`/api/trips/${id}`, { method: 'DELETE' });
   } catch (e) {

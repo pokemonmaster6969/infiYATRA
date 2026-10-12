@@ -4,8 +4,6 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Discover from './pages/Discover'
-import HimachalPage from './pages/HimachalPage'
-import BaliPage from './pages/BaliPage'
 import BackupHome from './pages/BackupHome'
 import TripDetails from './pages/TripDetails'
 import { About, Community, Wishlist } from './pages/StaticPages'
@@ -33,8 +31,6 @@ function App() {
             <Route path="/cruise" element={<CruisePage />} />
             <Route path="/customize" element={<CustomizeTrip />} />
             <Route path="/corporate" element={<CorporateTours />} />
-            <Route path="/himachal" element={<HimachalPage />} />
-            <Route path="/bali" element={<BaliPage />} />
             <Route path="/backup" element={<BackupHome />} />
             <Route path="/about" element={<About />} />
             <Route path="/community" element={<Community />} />

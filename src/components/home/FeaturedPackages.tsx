@@ -16,7 +16,7 @@ export default function FeaturedPackages() {
 
   return (
     <section className="py-24 bg-charcoal">
-      <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-6xl font-display font-black text-white tracking-tighter uppercase italic leading-none liquid-text">
             Explore Our <span className="text-primary" style={{ WebkitTextStroke: '1px white' }}>Masterpieces</span>
@@ -72,7 +72,7 @@ export default function FeaturedPackages() {
                       <MapPin size={14} className="fill-secondary/20" />
                       <span className="text-[10px] font-black uppercase tracking-[0.2em] drop-shadow-md">{trip.location}</span>
                     </div>
-                    <h3 className="text-2xl font-display font-black text-white uppercase tracking-tighter leading-[0.9] italic group-hover:text-secondary transition-all duration-500 drop-shadow-2xl">{trip.title}</h3>
+                    <h3 className="text-xl sm:text-2xl font-display font-black text-white uppercase tracking-tighter leading-[0.9] italic group-hover:text-secondary transition-all duration-500 drop-shadow-2xl">{trip.title}</h3>
 
                     <div className="pt-6 flex justify-between items-center border-t border-white/10">
                       <div className="flex flex-col">
