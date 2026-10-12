@@ -26,7 +26,7 @@ const AdminDashboard = () => {
     getCustomTrips().then(setCustomTrips)
   }
 
-  const handleDeleteTrip = async (id: number) => {
+  const handleDeleteTrip = async (id: string | number) => {
     if (window.confirm('Are you sure you want to remove this expedition package?')) {
       haptics.medium()
       await deleteTrip(id)

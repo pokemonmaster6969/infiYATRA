@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 flex justify-center w-full px-4 md:px-8 pt-3 md:pt-4 pointer-events-none">
+      <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 flex justify-center w-full px-3 sm:px-4 md:px-8 pt-2 sm:pt-3 md:pt-4 pointer-events-none">
         <div className={`w-full max-w-[1720px] mx-auto rounded-full liquid-glass shadow-2xl transition-all duration-500 pointer-events-auto ${
           scrolled ? 'py-2 px-6 scale-[0.99] bg-black/60' : 'py-2.5 px-6 md:px-8'
         }`}>
@@ -126,7 +126,7 @@ const Navbar = () => {
                animate={{ opacity: 1, scale: 1, x: '-50%', y: '-50%' }}
                exit={{ opacity: 0, scale: 0.9, x: '-50%', y: '-45%' }}
                transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-               className="absolute top-1/2 left-1/2 w-[90%] max-w-[360px] liquid-glass shadow-2xl p-8 rounded-[3rem] flex flex-col max-h-[85vh] overflow-y-auto"
+               className="absolute top-1/2 left-1/2 w-[95%] sm:w-[90%] max-w-[360px] liquid-glass shadow-2xl p-8 rounded-[3rem] flex flex-col max-h-[85vh] overflow-y-auto"
             >
               <div className="flex justify-between items-center mb-8 relative z-10">
                  <span className="text-2xl font-display font-black text-white tracking-tight liquid-text">

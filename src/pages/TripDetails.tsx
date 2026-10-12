@@ -8,7 +8,7 @@ import {
 } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 import { getWhatsAppLink } from '../lib/data'
-import { getTripById } from '../lib/dataService'
+import { getTripById, getTrips } from "../lib/dataService"
 import { haptics } from '../lib/haptics'
 
 const TripDetails = () => {
@@ -46,7 +46,7 @@ const TripDetails = () => {
         <meta name="description" content={trip.description.substring(0, 160)} />
       </Helmet>
       {/* Navigation & Header */}
-      <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20 py-8">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-6 md:px-12 lg:px-20 py-8">
         <Link 
           to="/discover" 
           onClick={() => haptics.light()}
@@ -89,7 +89,7 @@ const TripDetails = () => {
       </div>
 
       {/* Gallery Section */}
-      <section className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
+      <section className="max-w-[1920px] mx-auto px-4 sm:px-6 md:px-12 lg:px-20 grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
         <div className="lg:col-span-8 space-y-6">
           <motion.div 
             layoutId="main-image"
@@ -129,7 +129,7 @@ const TripDetails = () => {
 
         {/* Desktop Booking Widget */}
         <div className="lg:col-span-4">
-          <div className="sticky top-32 liquid-glass-dark border border-white/10 rounded-[3rem] p-8 md:p-10 shadow-[0_15px_60px_rgba(0,0,0,0.5)] space-y-8">
+          <div className="lg:sticky lg:top-32 liquid-glass-dark border border-white/10 rounded-[3rem] p-8 md:p-10 shadow-[0_15px_60px_rgba(0,0,0,0.5)] space-y-8">
             <div className="flex justify-between items-center pb-8 border-b border-white/10">
               <div>
                 <span className="text-[10px] text-white/40 font-black uppercase tracking-[0.3em] drop-shadow-sm">Price per person</span>
@@ -180,7 +180,7 @@ const TripDetails = () => {
       </section>
 
       {/* Details Grid */}
-      <section className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 lg:grid-cols-12 gap-12 pb-24">
+      <section className="max-w-[1920px] mx-auto px-4 sm:px-6 md:px-12 lg:px-20 grid grid-cols-1 lg:grid-cols-12 gap-12 pb-24">
         <div className="lg:col-span-8 space-y-20">
           {/* Overview */}
           <div>

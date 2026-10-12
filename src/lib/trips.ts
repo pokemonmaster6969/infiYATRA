@@ -1,7 +1,7 @@
 import { getWhatsAppLink } from './data';
 
 export interface Trip {
-  id: number;
+  id: string | number;
   title: string;
   location: string;
   price: string;
@@ -45,332 +45,216 @@ const DEFAULT_CAPTAIN = {
 
 export const ALL_TRIPS: Trip[] = [
   {
-    id: 1,
-    title: 'Spiti Valley Expedition',
-    location: 'Shimla, Kaza, Manali',
-    price: '19,999',
-    rating: 4.8,
-    reviews: 245,
-    duration: '8 Days',
-    category: 'Adventure',
-    type: 'Domestic',
-    featured: true,
-    image: '/assets/spiti.jpg',
-    link: '/spiti-valley',
-    description: 'Journey through the rugged landscapes of Spiti Valley. Drive along the Indo-Tibetan highway, visit ancient monasteries, and camp under the starry sky at Chandratal Lake.',
-    images: [
-      '/assets/spiti.jpg'
-    ],
-    groupSize: '12-15 Persons',
-    nextBatch: 'May 15, 2026',
-    highlights: ['Key Monastery Visit', 'Chandratal Lake Camping', 'Kibber Village', 'Kunzum Pass'],
-    captain: DEFAULT_CAPTAIN,
-    itinerary: [
-      { day: 1, title: 'Arrival in Shimla & Drive to Narkanda', description: 'Meet your group and start the beautiful drive through pine forests.' },
-      { day: 2, title: 'Narkanda to Chitkul/Sangla', description: 'Drive to the last Indian village before the Tibet border, breathing in the fresh mountain air.' },
-      { day: 3, title: 'Chitkul to Kalpa', description: 'Witness the majestic Kinnaur Kailash range from the beautiful village of Kalpa.' },
-      { day: 4, title: 'Kalpa to Kaza', description: 'Cross into the barren landscapes of Spiti, visiting the Nako Lake and Tabo Monastery en route.' },
-      { day: 5, title: 'Kaza Local Sightseeing', description: 'Visit Key Monastery, the high-altitude villages of Kibber, Hikkim (highest post office), and Komic.' },
-      { day: 6, title: 'Kaza to Chandratal', description: 'Drive over the mighty Kunzum Pass and camp near the crescent-shaped Chandratal Lake.' },
-      { day: 7, title: 'Chandratal to Manali', description: 'Off-roading experience over the Rohtang Pass down into the lush Kullu Valley.' },
-      { day: 8, title: 'Departure from Manali', description: 'Trip ends with a lifetime of memories.' }
-    ]
-  },
-  {
-    id: 2,
-    title: 'Leh Ladakh Expedition',
-    location: 'Leh, Nubra, Pangong',
-    price: '24,999',
+    id: "himachal-mystique",
+    title: "Himachal Mystique",
+    location: "Manali, Kasol, Kheerganga",
+    price: "14,999",
     rating: 4.9,
-    reviews: 412,
-    duration: '7 Days',
-    category: 'Adventure',
-    type: 'Domestic',
-    featured: true,
-    image: '/assets/himalayas-bg.jpg',
-    link: '/leh-ladakh',
-    description: 'Experience the ultimate road trip to the Land of High Passes. Marvel at the changing colors of Pangong Tso, ride camels in Nubra Valley, and conquer Khardung La.',
+    reviews: 128,
+    duration: "6 Days",
+    category: "Mountains",
+    type: "Domestic",
+    image: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&q=80&w=1200",
+    link: "/trip/himachal-mystique",
+    description: "Join the Infi Yatra community as we venture into the rugged heart of the Himalayas. This isn't just a sightseeing tour; it's a soul-stirring journey through pine forests, snow-clad peaks, and the mystical Parvati Valley. Experience the authentic 'Old Manali' lifestyle curated specifically for the Ahmedabad explorer.",
     images: [
-      '/assets/Ladakh2.jpg'
+      "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=1200"
     ],
-    groupSize: '10-15 Persons',
-    nextBatch: 'Jun 10, 2026',
-    highlights: ['Khardung La Pass', 'Pangong Tso Lake', 'Double-Humped Camel Ride', 'Shanti Stupa'],
-    captain: DEFAULT_CAPTAIN,
+    groupSize: "10-15 Persons",
+    nextBatch: "May 15, 2026",
+    highlights: [
+      "Rohtang Pass Expedition",
+      "Riverside Camping in Kasol",
+      "Kheerganga Hot Springs Trek",
+      "Old Manali Cafe Crawl"
+    ],
+    captain: {
+      name: "Captain Vikram",
+      role: "Lead Mountain Guide",
+      bio: "Born in the Himalayas, Vikram has been guiding trekkers for over a decade. He knows the hidden trails and the best local stories.",
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
+      rating: 5,
+      trips: 120
+    },
     itinerary: [
-      { day: 1, title: 'Arrival in Leh', description: 'Acclimatize to the high altitude. Visit Shanti Stupa and Leh Palace in the evening.' },
-      { day: 2, title: 'Leh to Nubra Valley', description: 'Drive over Khardung La, one of the highest motorable roads. Enjoy the sand dunes in Hunder.' },
-      { day: 3, title: 'Turtuk Excursion', description: 'Day trip to the breathtaking Turtuk village near the LoC, experiencing Balti culture.' },
-      { day: 4, title: 'Nubra to Pangong Tso', description: 'Drive alongside the Shyok river to reach the magnificent blue waters of Pangong Lake.' },
-      { day: 5, title: 'Pangong to Leh', description: 'Wake up to a beautiful sunrise at the lake, then drive back to Leh via Chang La.' },
-      { day: 6, title: 'Local Sightseeing', description: 'Explore Magnetic Hill, Pathar Sahib Gurudwara, and the Hall of Fame.' },
-      { day: 7, title: 'Departure', description: 'Fly out of Leh with incredible Himalayan memories.' }
+      {
+        day: 1,
+        title: "Arrival in Manali",
+        description: "Acclimatization and local café exploration in Old Manali. We'll have a welcome dinner and briefing for the trek."
+      },
+      {
+        day: 2,
+        title: "Rohtang Pass Expedition",
+        description: "Breathtaking snow views and high-altitude photography. We'll spend the day playing in the snow and enjoying the panoramic views of the Himalayas."
+      },
+      {
+        day: 3,
+        title: "Kasol & Parvati Valley",
+        description: "Travel to Kasol. Riverside camping and mystical vibes in the heart of the valley. Evening bonfire and stargazing."
+      },
+      {
+        day: 4,
+        title: "Trek to Kheerganga",
+        description: "A spiritual journey through pine forests to reach natural hot springs. Relax your muscles in the hot water under the open sky."
+      },
+      {
+        day: 5,
+        title: "Kheerganga to Manali",
+        description: "Descend from Kheerganga and travel back to Manali. Free evening for shopping and exploring Mall Road."
+      },
+      {
+        day: 6,
+        title: "The Return Journey",
+        description: "Shopping for local artifacts and departure for Ahmedabad with memories of a lifetime."
+      }
     ]
   },
   {
-    id: 3,
-    title: 'Kashmir Winter Wonderland',
-    location: 'Srinagar, Gulmarg, Pahalgam',
-    price: '19,499',
-    rating: 4.9,
-    reviews: 320,
-    duration: '6 Days',
-    category: 'Nature',
-    type: 'Domestic',
-    featured: true,
-    image: '/assets/kashmir.jpg',
-    link: '/kashmir',
-    description: 'Step into paradise on earth. Sail on the tranquil Dal Lake in a Shikara, experience the thrill of the Gulmarg Gondola, and wander through the scenic valleys of Pahalgam.',
-    images: [
-      '/assets/kashmir.jpg'
-    ],
-    groupSize: '10-12 Persons',
-    nextBatch: 'Dec 20, 2026',
-    highlights: ['Houseboat Stay', 'Gulmarg Gondola Ride', 'Betaab Valley', 'Dal Lake Shikara Ride'],
-    captain: DEFAULT_CAPTAIN,
-    itinerary: [
-      { day: 1, title: 'Arrival in Srinagar', description: 'Check into a traditional houseboat. Evening Shikara ride on the Dal Lake.' },
-      { day: 2, title: 'Srinagar to Gulmarg', description: 'Travel to the meadow of flowers. Take the famous Gondola cable car ride to Apharwat peak.' },
-      { day: 3, title: 'Gulmarg to Pahalgam', description: 'Drive through saffron fields and apple orchards to reach the Valley of Shepherds.' },
-      { day: 4, title: 'Explore Pahalgam', description: 'Visit the stunning Betaab Valley, Aru Valley, and Chandanwari.' },
-      { day: 5, title: 'Pahalgam to Srinagar', description: 'Return to Srinagar. Visit the beautiful Mughal Gardens and local markets.' },
-      { day: 6, title: 'Departure', description: 'Bid farewell to the heavenly valley of Kashmir.' }
-    ]
-  },
-  {
-    id: 4,
-    title: 'Backpacking Meghalaya',
-    location: 'Shillong, Cherrapunji, Dawki',
-    price: '17,999',
-    rating: 4.7,
-    reviews: 189,
-    duration: '6 Days',
-    category: 'Backpacking',
-    type: 'Domestic',
-    image: '/assets/meghaa.jpg',
-    link: '/meghalaya',
-    description: 'Dive into the abode of clouds. Trek to the magical living root bridges, explore the deepest caves, and boat on the crystal-clear waters of the Umngot River.',
-    images: [
-      '/assets/meghaa.jpg'
-    ],
-    groupSize: '10-15 Persons',
-    nextBatch: 'Sep 10, 2026',
-    highlights: ['Double Decker Root Bridge', 'Dawki River Boating', 'Mawsmai Caves', 'Nohkalikai Falls'],
-    captain: DEFAULT_CAPTAIN,
-    itinerary: [
-      { day: 1, title: 'Guwahati to Shillong', description: 'Arrive in Guwahati and drive to the Scotland of the East. Visit Umiam Lake en route.' },
-      { day: 2, title: 'Shillong to Cherrapunji', description: 'Visit Nohkalikai Falls, Seven Sisters Falls, and explore the Mawsmai limestone caves.' },
-      { day: 3, title: 'Nongriat Trek', description: 'Hike down thousands of steps to witness the bio-engineering marvel of the Double Decker Living Root Bridge.' },
-      { day: 4, title: 'Cherrapunji to Dawki', description: 'Drive to the Bangladesh border. Enjoy boating on the crystal clear waters of the Umngot River.' },
-      { day: 5, title: 'Dawki to Shillong via Krang Suri', description: 'Visit the magical blue waters of Krang Suri waterfalls before heading back to Shillong.' },
-      { day: 6, title: 'Departure', description: 'Drive back to Guwahati for your onward journey.' }
-    ]
-  },
-  {
-    id: 5,
-    title: "Kerala Backwaters & Hills",
-    location: 'Munnar, Thekkady, Alleppey',
-    price: '18,499',
-    rating: 4.8,
-    reviews: 210,
-    duration: '5 Days',
-    category: 'Nature',
-    type: 'Domestic',
-    image: '/assets/kerelabeach.jpg',
-    link: '/kerala',
-    description: 'A perfect blend of serene backwaters, lush tea gardens, and rich wildlife. Witness the majestic Western Ghats and cruise through the tranquil waters of Alleppey.',
-    images: [
-      '/assets/kerelabeach.jpg'
-    ],
-    groupSize: '10-12 Persons',
-    nextBatch: 'Nov 05, 2026',
-    highlights: ['Alleppey Houseboat Stay', 'Munnar Tea Gardens', 'Periyar Wildlife Safari', 'Kathakali Show'],
-    captain: DEFAULT_CAPTAIN,
-    itinerary: [
-      { day: 1, title: 'Arrival in Kochi to Munnar', description: 'Drive through winding roads to the beautiful tea hills of Munnar. En route visit Cheeyappara Waterfalls.' },
-      { day: 2, title: 'Munnar Sightseeing', description: 'Explore Eravikulam National Park, Mattupetty Dam, and the Tea Museum.' },
-      { day: 3, title: 'Munnar to Thekkady', description: 'Travel to Periyar. Enjoy an elephant safari and an authentic spice plantation tour.' },
-      { day: 4, title: 'Thekkady to Alleppey', description: 'Board a traditional house-boat. Sail through the palm-fringed backwaters and enjoy Kerala cuisine.' },
-      { day: 5, title: 'Departure', description: 'Drive back to Kochi for your departure flight.' }
-    ]
-  },
-  {
-    id: 6,
-    title: 'Andaman Tropical Escape',
-    location: 'Port Blair, Havelock, Neil Island',
-    price: '34,999',
-    rating: 5.0,
-    reviews: 145,
-    duration: '7 Days',
-    category: 'Beach',
-    type: 'Domestic',
-    image: '/assets/andaman.jpg',
-    link: '/andaman',
-    description: 'Unwind on pristine white-sand beaches and dive into crystal clear waters. Discover the rich marine life of the Andaman Sea and the historical significance of Port Blair.',
-    images: [
-      '/assets/andaman.jpg'
-    ],
-    groupSize: '8-12 Persons',
-    nextBatch: 'Jan 12, 2027',
-    highlights: ['Scuba Diving', 'Radhanagar Beach Sunset', 'Cellular Jail', 'Island Hopping'],
-    captain: DEFAULT_CAPTAIN,
-    itinerary: [
-      { day: 1, title: 'Arrival at Port Blair', description: 'Visit the historic Cellular Jail and attend the spectacular Light and Sound show.' },
-      { day: 2, title: 'Port Blair to Havelock', description: 'Ferry to Havelock Island. Relax at the world-famous Radhanagar Beach.' },
-      { day: 3, title: 'Elephant Beach Excursion', description: 'Enjoy snorkeling or scuba diving to witness vibrant coral reefs and marine life.' },
-      { day: 4, title: 'Havelock to Neil Island', description: 'Take a ferry to the serene Neil Island. Watch a beautiful sunset at Laxmanpur Beach.' },
-      { day: 5, title: 'Explore Neil Island', description: 'Visit the Natural Bridge formation and the pristine Bharatpur Beach.' },
-      { day: 6, title: 'Return to Port Blair', description: 'Ferry back to the capital. Spend the evening shopping for souvenirs.' },
-      { day: 7, title: 'Departure', description: 'Leave with a sun-kissed glow and beautiful memories.' }
-    ]
-  },
-  {
-    id: 7,
-    title: 'Bali Essence Escape',
-    location: 'Indonesia',
-    price: '54,999',
+    id: "bali-essence",
+    title: "Bali Essence Escape",
+    location: "Ubud, Seminyak, Nusa Penida",
+    price: "54,999",
     rating: 4.9,
     reviews: 350,
-    duration: '8 Days',
-    category: 'Honeymoon',
-    type: 'International',
-    featured: true,
-    image: '/assets/bali.jpg',
-    link: '/bali',
-    description: 'A romantic getaway to the island of gods. Pristine beaches and vibrant culture.',
-    images: ['/assets/bali.jpg'],
-    groupSize: '2-4 Persons',
-    nextBatch: 'Sept 10, 2026',
-    highlights: ['Beach Dinners', 'Temple Tours'],
-    captain: DEFAULT_CAPTAIN,
-    itinerary: [{ day: 1, title: 'Ubud Arrival', description: 'Welcome to Bali.' }]
+    duration: "8 Days",
+    category: "Beach",
+    type: "International",
+    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=1200",
+    link: "/trip/bali-essence",
+    description: "A romantic and adventurous getaway to the Island of Gods. Experience the perfect blend of vibrant culture, lush rice terraces in Ubud, thrilling water sports, and pristine beaches on Nusa Penida.",
+    images: [
+      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&q=80&w=1200"
+    ],
+    groupSize: "2-8 Persons",
+    nextBatch: "Sept 10, 2026",
+    highlights: [
+      "Ubud Monkey Forest & Rice Terraces",
+      "Nusa Penida Island Tour (Kelingking Beach)",
+      "Uluwatu Temple Sunset Dance",
+      "Seminyak Beach Clubs"
+    ],
+    captain: {
+      name: "Captain Ayu",
+      role: "Bali Experience Director",
+      bio: "A true Balinese local who loves sharing the culture, hidden beaches, and culinary secrets of her beautiful island.",
+      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200",
+      rating: 4.9,
+      trips: 85
+    },
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival in Bali (Ubud)",
+        description: "Welcome to Bali! Transfer to your resort in Ubud. Spend the evening relaxing and enjoying a traditional Balinese welcome dinner."
+      },
+      {
+        day: 2,
+        title: "Ubud Cultural Tour",
+        description: "Explore the Sacred Monkey Forest, walk through the Tegalalang Rice Terraces, and visit the Tirta Empul water temple."
+      },
+      {
+        day: 3,
+        title: "Mount Batur Sunrise Trek",
+        description: "Early morning trek to Mount Batur to catch a breathtaking sunrise. Return to Ubud for a relaxing spa session."
+      },
+      {
+        day: 4,
+        title: "Ubud to Seminyak via Uluwatu",
+        description: "Transfer to Seminyak. En route, visit Uluwatu Temple perched on a cliff and watch the traditional Kecak Fire Dance at sunset."
+      },
+      {
+        day: 5,
+        title: "Nusa Penida Day Trip",
+        description: "Speedboat to Nusa Penida. Visit the iconic Kelingking Beach (T-Rex shape), Broken Beach, and Angel's Billabong. Return to Seminyak."
+      },
+      {
+        day: 6,
+        title: "Water Sports & Beach Club",
+        description: "Morning water sports at Tanjung Benoa (Parasailing, Jet Ski). Afternoon relaxing at a famous Seminyak beach club like Potato Head."
+      },
+      {
+        day: 7,
+        title: "Leisure & Shopping",
+        description: "A free day to explore local markets, shop for souvenirs, and enjoy the vibrant nightlife of Kuta or Seminyak."
+      },
+      {
+        day: 8,
+        title: "Departure",
+        description: "After breakfast, transfer to the airport for your flight back home with beautiful memories of Bali."
+      }
+    ]
   },
   {
-    id: 8,
-    title: 'Thai Island Perfection',
-    location: 'Phuket & Krabi',
-    price: '48,999',
+    id: "kerala-backwaters",
+    title: "Kerala Backwaters & Hills",
+    location: "Munnar, Thekkady, Alleppey",
+    price: "18,499",
     rating: 4.8,
-    reviews: 156,
-    duration: '7 Days',
-    category: 'Beach',
-    type: 'International',
-    image: '/assets/thai.jpg',
-    link: '#',
-    description: 'Explore the stunning limestone cliffs and crystal clear waters of Thailand.',
-    images: ['/assets/thai.jpg'],
-    groupSize: '8-10 Persons',
-    nextBatch: 'Dec 12, 2026',
-    highlights: ['Island Hopping', 'Night Markets'],
-    captain: DEFAULT_CAPTAIN,
-    itinerary: [{ day: 1, title: 'Phuket Check-in', description: 'Patong beach evening.' }]
-  },
-  {
-    id: 9,
-    title: 'Seychelles Paradise',
-    location: 'Mahé & Praslin',
-    price: '1,24,999',
-    rating: 5.0,
-    reviews: 42,
-    duration: '9 Days',
-    category: 'Luxury',
-    type: 'International',
-    featured: true,
-    image: '/assets/seychelles.jpg',
-    link: '#',
-    description: 'Luxury island getaway featuring the most beautiful beaches in the world.',
-    images: ['/assets/seychelles.jpg'],
-    groupSize: '4-6 Persons',
-    nextBatch: 'Jan 15, 2027',
-    highlights: ['Island Cruises', 'Marine Park'],
-    captain: DEFAULT_CAPTAIN,
-    itinerary: [{ day: 1, title: 'Seychelles Arrival', description: 'Victoria city tour.' }]
-  },
-  {
-    id: 10,
-    title: 'Goa & Lakshadweep Luxury Cruise',
-    location: 'Goa, Agatti Island, Kadmat',
-    price: '29,999',
-    rating: 4.9,
-    reviews: 188,
-    duration: '5 Days / 4 Nights',
-    category: 'Cruise',
-    type: 'Domestic',
-    featured: true,
-    image: '/assets/goa.jpg',
-    link: '/cruise',
-    description: 'Sail across the turquoise Arabian Sea on a 5-star luxury cruise liner. Unlimited deck dining, coral island shore excursions, and ocean-view luxury suites.',
-    images: ['/assets/goa.jpg', '/assets/andaman.jpg'],
-    groupSize: '2-6 Persons',
-    nextBatch: 'Nov 18, 2026',
-    highlights: ['Oceanview Balcony Stateroom', 'Lakshadweep Coral Snorkeling', 'All-Inclusive Deck Dining', 'Live Broadway Night Show'],
-    captain: DEFAULT_CAPTAIN,
+    reviews: 210,
+    duration: "5 Days",
+    category: "Nature",
+    type: "Domestic",
+    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&q=80&w=1200",
+    link: "/trip/kerala-backwaters",
+    description: "A perfect blend of serene backwaters, lush tea gardens, and rich wildlife. Witness the majestic Western Ghats and cruise through the tranquil waters of Alleppey.",
+    images: [
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1574246604907-db69e30fdba6?auto=format&fit=crop&q=80&w=1200"
+    ],
+    groupSize: "10-12 Persons",
+    nextBatch: "Nov 05, 2026",
+    highlights: [
+      "Alleppey Houseboat Stay",
+      "Munnar Tea Gardens",
+      "Periyar Wildlife Safari",
+      "Kathakali Show"
+    ],
+    captain: {
+      name: "Captain Rohan",
+      role: "South India Specialist",
+      bio: "Expert in local ecology and storytelling, making sure you experience the true essence of God's Own Country.",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200",
+      rating: 4.8,
+      trips: 60
+    },
     itinerary: [
-      { day: 1, title: 'Embarkation at Mormugao Port Goa', description: 'Welcome drinks on the top deck and sunset sailing away party.' },
-      { day: 2, title: 'At Sea — Deck Parties & Casino', description: 'Enjoy infinity pool deck, spa treatment, and live gala dinner.' },
-      { day: 3, title: 'Lakshadweep Agatti Island Excursion', description: 'Tender boat landing on pristine coral sands, glass-bottom kayaking, and seafood feast.' },
-      { day: 4, title: 'Kadmat Island & Water Sports', description: 'Scuba diving with sea turtles and evening captain cocktail gala.' },
-      { day: 5, title: 'Return to Goa Port', description: 'Disembarkation with lifelong ocean memories.' }
-    ]
-  },
-  {
-    id: 11,
-    title: 'Singapore & Thailand Ocean Odyssey Cruise',
-    location: 'Singapore, Penang, Phuket',
-    price: '64,999',
-    rating: 5.0,
-    reviews: 215,
-    duration: '7 Days / 6 Nights',
-    category: 'Cruise',
-    type: 'International',
-    featured: true,
-    image: '/assets/dubai.jpg',
-    link: '/cruise',
-    description: 'Sail the Malacca Strait on a world-class mega cruise ship. Experience Asian culinary masterclasses, water parks on sea, and vibrant tropical port landings.',
-    images: ['/assets/dubai.jpg', '/assets/thai.jpg'],
-    groupSize: '2-8 Persons',
-    nextBatch: 'Dec 05, 2026',
-    highlights: ['Royal Ocean Promenade', 'Penang Heritage Trail', 'Phuket Island Hopping', 'Symphony Lounge'],
-    captain: DEFAULT_CAPTAIN,
-    itinerary: [
-      { day: 1, title: 'Boarding Marina Bay Cruise Centre', description: 'Check-in and evening departure past Singapore skyline.' },
-      { day: 2, title: 'Penang Cultural Port Stop', description: 'Explore George Town street art and hawker delicacies.' },
-      { day: 3, title: 'Phuket Tropical Island Shore Tour', description: 'Patong beach excursion and traditional Thai massage.' },
-      { day: 4, title: 'Full Sea Day & AquaPark', description: 'Enjoy zip-lining over ocean, surf simulator, and theater shows.' },
-      { day: 5, title: 'Captain Gala Dinner', description: 'Formal black-tie dinner with executive cruise commanders.' },
-      { day: 6, title: 'Singapore Disembarkation', description: 'Arrival back at Marina Bay Harbour.' }
-    ]
-  },
-  {
-    id: 12,
-    title: 'Corporate Leadership & Adventure Offsite',
-    location: 'Manali & Solang Valley',
-    price: '22,500',
-    rating: 4.9,
-    reviews: 94,
-    duration: '4 Days / 3 Nights',
-    category: 'Corporate',
-    type: 'Domestic',
-    featured: true,
-    image: '/assets/group2.jpeg',
-    link: '/corporate',
-    description: 'Custom team building summit for forward-thinking organizations. High-altitude leadership workshops, bonfire networking, and white-water rafting.',
-    images: ['/assets/group2.jpeg', '/assets/group.jpeg', '/assets/PFC.jpeg'],
-    groupSize: '15-100+ Persons',
-    nextBatch: 'Available Year Round',
-    highlights: ['Executive Strategy Keynotes', 'Team River Rafting Challenge', '5-Star Resort Conference & Banquet', 'Pine Forest Gala Dinner'],
-    captain: DEFAULT_CAPTAIN,
-    itinerary: [
-      { day: 1, title: 'Team Arrival & Welcome Banquet', description: 'Check-in to luxury mountain resort followed by team icebreakers.' },
-      { day: 2, title: 'Solang Valley Rafting & Team Challenges', description: 'Outdoor strategy games and white-water raft challenge.' },
-      { day: 3, title: 'Leadership Summit & Gala Evening', description: 'Interactive workshop sessions, awards ceremony, and acoustic live music.' },
-      { day: 4, title: 'Closing Keynote & Departure', description: 'Breakfast and group departure.' }
+      {
+        day: 1,
+        title: "Arrival in Kochi to Munnar",
+        description: "Drive through winding roads to the beautiful tea hills of Munnar. En route visit Cheeyappara Waterfalls."
+      },
+      {
+        day: 2,
+        title: "Munnar Sightseeing",
+        description: "Explore Eravikulam National Park, Mattupetty Dam, and the Tea Museum."
+      },
+      {
+        day: 3,
+        title: "Munnar to Thekkady",
+        description: "Travel to Periyar. Enjoy an elephant safari and an authentic spice plantation tour."
+      },
+      {
+        day: 4,
+        title: "Thekkady to Alleppey",
+        description: "Board a traditional house-boat. Sail through the palm-fringed backwaters and enjoy Kerala cuisine."
+      },
+      {
+        day: 5,
+        title: "Departure",
+        description: "Drive back to Kochi for your departure flight."
+      }
     ]
   }
 ];
 
-export const CATEGORIES = ['Adventure', 'Beach', 'Luxury', 'Nature', 'Honeymoon', 'Backpacking', 'Cruise', 'Corporate'];
 
 export const getTripWhatsAppLink = (tripTitle: string) =>
   getWhatsAppLink(`Hi Infi Yatra! I'm interested in the ${tripTitle} package.`);
 
+
+export const CATEGORIES = ['Mountains', 'Beach', 'Nature', 'Heritage', 'Adventure'];
