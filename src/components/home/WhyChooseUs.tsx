@@ -1,6 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
-import { ShieldCheck, MessageCircle, MapPin, Search, Users, TrendingUp } from 'lucide-react'
+import { ShieldCheck, MessageCircle, Users } from 'lucide-react'
 
 export default function WhyChooseUs() {
   const reasons = [
@@ -22,24 +21,24 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-24 bg-charcoal">
-      <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {reasons.map((reason, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              viewport={{ once: true }}
-              className="liquid-glass-dark p-12 rounded-[3.5rem] hover:border-secondary/20 transition-all duration-700 group shadow-2xl"
+    <section className="bg-charcoal py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-[1320px] px-5 sm:px-8 lg:px-12">
+        <div className="mb-8 max-w-2xl space-y-3 sm:mb-10">
+          <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-secondary-light">Good trips start with good people</p>
+          <h2 className="font-display text-3xl font-black uppercase italic leading-none tracking-tight text-white sm:text-4xl">A little more <span className="text-primary-light">thoughtful</span></h2>
+        </div>
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
+          {reasons.map((reason) => (
+            <div
+              key={reason.title}
+              className="group rounded-lg border border-white/10 bg-white/[0.025] p-6 transition-colors hover:border-white/20 sm:p-7"
             >
-              <div className="liquid-glass p-6 rounded-[2rem] w-fit mb-8 shadow-xl group-hover:scale-110 transition-transform duration-500 border border-white/10">
-                <reason.icon className="text-white group-hover:text-secondary transition-colors drop-shadow-md" size={32} />
+              <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-full liquid-glass text-[#9bd3c6] transition-colors group-hover:bg-white/20">
+                <reason.icon size={21} />
               </div>
-              <h3 className="text-3xl font-display font-black text-white uppercase tracking-tighter mb-4 italic drop-shadow-2xl">{reason.title}</h3>
-              <p className="text-white/50 font-medium leading-relaxed">{reason.desc}</p>
-            </motion.div>
+              <h3 className="mb-2 font-display text-xl font-bold uppercase tracking-tight text-white">{reason.title}</h3>
+              <p className="text-sm leading-relaxed text-white/55">{reason.desc}</p>
+            </div>
           ))}
         </div>
       </div>

@@ -1,4 +1,21 @@
 import { getWhatsAppLink } from './data';
+import { FLAGSHIP_PACKAGES } from './flagshipPackages';
+
+export interface CruiseCabin {
+  type: string;
+  price: string;
+  description: string;
+  perks?: string[];
+}
+
+export interface DepartureDate {
+  id?: string;
+  date: string;
+  priceOverride?: string;
+  seatsTotal: number;
+  seatsAvailable: number;
+  status: 'Open' | 'Filling Fast' | 'Sold Out' | 'Cancelled';
+}
 
 export interface Trip {
   id: number;
@@ -18,7 +35,12 @@ export interface Trip {
   groupSize: string;
   nextBatch: string;
   featured?: boolean;
+  status?: 'Published' | 'Draft' | 'Archived';
+  badge?: 'Popular' | 'Trending' | 'Best Seller' | string | null;
   highlights: string[];
+  inclusions?: string[];
+  exclusions?: string[];
+  departures?: DepartureDate[];
   captain: {
     name: string;
     role: string;
@@ -31,7 +53,40 @@ export interface Trip {
     day: number;
     title: string;
     description: string;
+    activities?: string[];
+    meals?: string;
+    stay?: string;
+    port?: string;
+    arrival?: string;
+    departure?: string;
   }[];
+  // Cruise-specific fields
+  cruiseLine?: string;
+  shipName?: string;
+  embarkationPort?: string;
+  disembarkationPort?: string;
+  portsOfCall?: string[];
+  cabins?: CruiseCabin[];
+  onboardAmenities?: string[];
+  faqs?: { q: string; a: string }[];
+  // Extended flagship package fields
+  slug?: string;
+  tagline?: string;
+  destination?: string;
+  region?: string;
+  country?: string;
+  priceBands?: { standard: string; deluxe: string; premium: string };
+  bestTime?: { months: string[]; notes: string };
+  difficulty?: string;
+  visaInfo?: string;
+  hotels?: { city: string; name: string; category: string; nights: number }[];
+  transport?: { mode: string; details: string };
+  thingsToCarry?: string[];
+  tips?: string[];
+  cancellationPolicy?: string[] | string;
+  paymentTerms?: string;
+  galleryDetailed?: { src: string; alt: string; caption: string; credit: string; creditUrl: string; source: string }[];
+  seo?: { title: string; description: string };
 }
 
 const DEFAULT_CAPTAIN = {
@@ -44,6 +99,9 @@ const DEFAULT_CAPTAIN = {
 };
 
 export const ALL_TRIPS: Trip[] = [
+  // ─── FLAGSHIP PACKAGES ──────────────────────────────────────────
+  ...FLAGSHIP_PACKAGES,
+
   // ─── DOMESTIC ADVENTURES ────────────────────────────────────────
   {
     id: 1,
@@ -520,10 +578,10 @@ export const ALL_TRIPS: Trip[] = [
       { day: 6, title: 'Departure', description: 'Morning free for duty-free shopping. Transfer to Dubai International Airport.' }
     ]
   },
-  // ─── CRUISE ─────────────────────────────────────────────────────
+  // ─── CRUISE VOYAGES (5 Seeded Realistic Routes) ─────────────────
   {
     id: 10,
-    title: 'Goa & Lakshadweep Cruise',
+    title: 'Goa & Lakshadweep Coral Cruise',
     location: 'Goa, Agatti Island, Kadmat',
     price: '29,999',
     rating: 4.9,
@@ -532,25 +590,45 @@ export const ALL_TRIPS: Trip[] = [
     category: 'Cruise',
     type: 'Domestic',
     featured: true,
+    status: 'Published',
+    badge: 'Popular',
     image: '/assets/goa.jpg',
     link: '/cruise',
     description: 'Sail across the turquoise Arabian Sea on a 5-star luxury cruise liner. Unlimited deck dining, coral island shore excursions, and ocean-view luxury suites.',
-    images: ['/assets/goa.jpg', '/assets/andaman.jpg'],
+    images: ['/assets/goa.jpg', '/assets/andaman.jpg', '/assets/beaut.jpg'],
     groupSize: '2-6 Persons',
     nextBatch: 'Nov 18, 2026',
+    cruiseLine: 'Infi Voyager Ocean Line',
+    shipName: 'Infi Ocean Empress',
+    embarkationPort: 'Mormugao Port, Goa',
+    disembarkationPort: 'Mormugao Port, Goa',
+    portsOfCall: ['Mormugao (Goa)', 'Agatti Island (Lakshadweep)', 'Kadmat Island (Lakshadweep)'],
     highlights: ['Oceanview Balcony Stateroom', 'Lakshadweep Coral Snorkeling', 'All-Inclusive Deck Dining', 'Live Broadway Night Show'],
+    inclusions: ['All meals on board (Buffet & Specialty)', 'Port taxes and entry permits', 'Island tender boat transfers', 'Broadway theatrical shows', 'Access to gym, pools & jacuzzis'],
+    exclusions: ['Scuba diving certifications', 'Alcoholic beverage packages', 'Spa treatments', 'Personal shore shopping'],
+    cabins: [
+      { type: 'Interior Stateroom', price: '₹29,999', description: 'Cozy stateroom with smart virtual porthole, plush queen bed, and 24/7 cabin service.' },
+      { type: 'Oceanview Stateroom', price: '₹36,999', description: 'Large picture window with sweeping sea views, seating lounge, and priority tender boarding.' },
+      { type: 'Balcony Stateroom', price: '₹44,999', description: 'Private open-air veranda with ocean loungers, breakfast service on balcony, and sunset vistas.' },
+      { type: 'Royal Penthouse Suite', price: '₹72,999', description: 'Split-level suite with personal butler, whirlpool tub, VIP lounge access, and champagne reception.' }
+    ],
+    departures: [
+      { id: 'dep-10-1', date: 'Nov 18, 2026', priceOverride: '29,999', seatsTotal: 40, seatsAvailable: 8, status: 'Filling Fast' },
+      { id: 'dep-10-2', date: 'Dec 02, 2026', priceOverride: '32,999', seatsTotal: 40, seatsAvailable: 15, status: 'Open' },
+      { id: 'dep-10-3', date: 'Dec 24, 2026', priceOverride: '39,999', seatsTotal: 40, seatsAvailable: 2, status: 'Filling Fast' }
+    ],
     captain: DEFAULT_CAPTAIN,
     itinerary: [
-      { day: 1, title: 'Embarkation at Mormugao Port Goa', description: 'Welcome drinks on the top deck and sunset sailing away party.' },
-      { day: 2, title: 'At Sea — Deck Parties & Spa', description: 'Enjoy infinity pool deck, spa treatment, and live gala dinner.' },
-      { day: 3, title: 'Lakshadweep Agatti Island Excursion', description: 'Tender boat landing on pristine coral sands, glass-bottom kayaking, and seafood feast.' },
-      { day: 4, title: 'Kadmat Island & Water Sports', description: 'Scuba diving with sea turtles and evening captain cocktail gala.' },
-      { day: 5, title: 'Return to Goa Port', description: 'Disembarkation with lifelong ocean memories.' }
+      { day: 1, title: 'Embarkation at Mormugao Port Goa', description: 'Check-in at Mormugao cruise terminal. Welcome deck cocktails and sail away into the sunset.', port: 'Mormugao, Goa', arrival: '12:00 PM', departure: '05:00 PM' },
+      { day: 2, title: 'At Sea — Deck Parties & Spa Retreat', description: 'Full day cruising the open Arabian Sea. Infinity pool, Broadway live musical, and gala captain dinner.', port: 'At Sea', arrival: 'Sea Day', departure: 'Sea Day' },
+      { day: 3, title: 'Lakshadweep Agatti Island Landing', description: 'Tender boat disembarkation to pristine Agatti lagoon. Coral glass-bottom boating and beach BBQ.', port: 'Agatti Island', arrival: '08:00 AM', departure: '06:00 PM' },
+      { day: 4, title: 'Kadmat Island Coral Reef & Water Sports', description: 'Snorkeling with green sea turtles and kayaking in crystal lagoons followed by deck stargazing.', port: 'Kadmat Island', arrival: '08:30 AM', departure: '05:30 PM' },
+      { day: 5, title: 'Return to Mormugao Port Goa', description: 'Disembarkation after sunrise breakfast on top deck with unforgettable memories.', port: 'Mormugao, Goa', arrival: '09:00 AM', departure: 'Trip Ends' }
     ]
   },
   {
     id: 11,
-    title: 'Singapore & Phuket Cruise',
+    title: 'Singapore, Penang & Phuket Discovery',
     location: 'Singapore, Penang, Phuket',
     price: '64,999',
     rating: 5.0,
@@ -559,24 +637,193 @@ export const ALL_TRIPS: Trip[] = [
     category: 'Cruise',
     type: 'International',
     featured: true,
+    status: 'Published',
+    badge: 'Best Seller',
     image: '/assets/dubai.jpg',
     link: '/cruise',
     description: 'Sail the Malacca Strait on a world-class mega cruise ship. Asian culinary masterclasses, water parks on sea, and vibrant tropical port landings.',
-    images: ['/assets/dubai.jpg', '/assets/thai.jpg'],
+    images: ['/assets/dubai.jpg', '/assets/thai.jpg', '/assets/bali.jpg'],
     groupSize: '2-8 Persons',
     nextBatch: 'Dec 05, 2026',
+    cruiseLine: 'Infi Royal Seas',
+    shipName: 'Malacca Voyager Empress',
+    embarkationPort: 'Marina Bay Cruise Centre, Singapore',
+    disembarkationPort: 'Marina Bay Cruise Centre, Singapore',
+    portsOfCall: ['Singapore', 'Penang (Malaysia)', 'Phuket (Thailand)'],
     highlights: ['Royal Ocean Promenade', 'Penang Heritage Trail', 'Phuket Island Hopping', 'Symphony Lounge Show'],
+    inclusions: ['6 nights ocean stateroom', 'All gourmet dining venues', 'Port fees and international maritime charges', 'Broadway production shows', 'Kids & teens adventure club access'],
+    exclusions: ['Airfare to/from Singapore', 'Passport/Visa fees', 'Shore excursion packages', 'Casino gaming tokens'],
+    cabins: [
+      { type: 'Interior Stateroom', price: '₹64,999', description: 'Modern stateroom with ambient mood lighting, ensuite luxury bath, and plush bedding.' },
+      { type: 'Oceanview Stateroom', price: '₹74,999', description: 'Panoramic sea window overlooking the Straits of Malacca with seating area.' },
+      { type: 'Balcony Stateroom', price: '₹89,999', description: 'Private glass balcony with deck chairs, early embarkation access, and fruit basket.' },
+      { type: 'Royal Penthouse Suite', price: '₹1,35,000', description: 'Grand suite with private sun deck, whirlpool bath, dedicated concierge, and free specialty dining.' }
+    ],
+    departures: [
+      { id: 'dep-11-1', date: 'Dec 05, 2026', priceOverride: '64,999', seatsTotal: 30, seatsAvailable: 5, status: 'Filling Fast' },
+      { id: 'dep-11-2', date: 'Jan 12, 2027', priceOverride: '64,999', seatsTotal: 30, seatsAvailable: 18, status: 'Open' },
+      { id: 'dep-11-3', date: 'Feb 14, 2027', priceOverride: '69,999', seatsTotal: 30, seatsAvailable: 9, status: 'Open' }
+    ],
     captain: DEFAULT_CAPTAIN,
     itinerary: [
-      { day: 1, title: 'Boarding Marina Bay Cruise Centre', description: 'Check-in and evening departure past Singapore skyline.' },
-      { day: 2, title: 'Penang Cultural Port Stop', description: 'Explore George Town street art and hawker delicacies.' },
-      { day: 3, title: 'Phuket Shore Excursion', description: 'Patong beach excursion and traditional Thai massage.' },
-      { day: 4, title: 'Full Sea Day — AquaPark & Shows', description: 'Enjoy zip-lining over ocean, surf simulator, and theater shows.' },
-      { day: 5, title: 'Captain Gala Dinner', description: 'Formal black-tie dinner with executive cruise commanders.' },
-      { day: 6, title: 'Singapore Disembarkation', description: 'Arrival back at Marina Bay.' }
+      { day: 1, title: 'Boarding Marina Bay Cruise Centre', description: 'Check-in and evening departure past Singapore skyline.', port: 'Marina Bay, Singapore', arrival: '01:00 PM', departure: '07:00 PM' },
+      { day: 2, title: 'Penang Cultural Port Stop', description: 'Explore George Town street art and hawker delicacies.', port: 'Penang, Malaysia', arrival: '03:00 PM', departure: '10:00 PM' },
+      { day: 3, title: 'Phuket Shore Excursion', description: 'Patong beach excursion and traditional Thai massage.', port: 'Phuket, Thailand', arrival: '08:00 AM', departure: 'Overnight' },
+      { day: 4, title: 'Phuket Island Hopping & Sunset Sail', description: 'Speedboat tour to Coral Island before weighing anchor.', port: 'Phuket, Thailand', arrival: 'In Port', departure: '04:00 PM' },
+      { day: 5, title: 'Full Sea Day — AquaPark & Shows', description: 'Enjoy zip-lining over ocean, surf simulator, and theater shows.', port: 'Straits of Malacca', arrival: 'Sea Day', departure: 'Sea Day' },
+      { day: 6, title: 'Captain Gala Dinner', description: 'Formal black-tie dinner with executive cruise commanders.', port: 'Cruising', arrival: 'Sea Day', departure: 'Sea Day' },
+      { day: 7, title: 'Singapore Disembarkation', description: 'Morning arrival at Marina Bay. Flight transfer or hotel stay.', port: 'Singapore', arrival: '07:00 AM', departure: 'Trip Ends' }
     ]
   },
-  // ─── CORPORATE ──────────────────────────────────────────────────
+  {
+    id: 13,
+    title: 'Arabian Gulf Royal Oasis Cruise',
+    location: 'Dubai, Abu Dhabi, Sir Bani Yas, Muscat',
+    price: '79,999',
+    rating: 4.9,
+    reviews: 142,
+    duration: '8 Days / 7 Nights',
+    category: 'Cruise',
+    type: 'International',
+    featured: true,
+    status: 'Published',
+    badge: 'Trending',
+    image: '/assets/dubai.jpg',
+    link: '/cruise',
+    description: 'Cruise the gilded waters of the Arabian Gulf aboard a luxury mega liner. Gaze at ultra-modern desert skylines, visit the wildlife sanctuary of Sir Bani Yas Island, and explore ancient Omani souks.',
+    images: ['/assets/dubai.jpg', '/assets/jaisel.jpg', '/assets/beaut.jpg'],
+    groupSize: '2-10 Persons',
+    nextBatch: 'Jan 20, 2027',
+    cruiseLine: 'Infi Emirates Maritime',
+    shipName: 'Pearl of Arabia Star',
+    embarkationPort: 'Port Rashid, Dubai',
+    disembarkationPort: 'Port Rashid, Dubai',
+    portsOfCall: ['Dubai (UAE)', 'Abu Dhabi (UAE)', 'Sir Bani Yas Island (UAE)', 'Muscat (Oman)', 'Doha (Qatar)'],
+    highlights: ['Sheikh Zayed Mosque Excursion', 'Sir Bani Yas Wildlife Safari', 'Muscat Mutrah Souk Walk', 'Arabian Starry Night Gala'],
+    inclusions: ['7 nights luxury cabin accommodation', 'All gourmet dining & international buffets', 'Sir Bani Yas Island beach access', 'Full theater productions & live concerts', 'Port charges and taxes'],
+    exclusions: ['Airfare to Dubai', 'UAE & Oman tourist visas', 'Desert 4x4 dune excursion fee', 'Specialty steakhouse cover charge'],
+    cabins: [
+      { type: 'Interior Stateroom', price: '₹79,999', description: 'Smart ambient room with king bed, marble vanity bathroom, and 24hr room dining.' },
+      { type: 'Oceanview Stateroom', price: '₹92,999', description: 'Large picture window with Arabian Gulf sea views and vanity lounge.' },
+      { type: 'Balcony Stateroom', price: '₹1,09,999', description: 'Private balcony facing Dubai and Abu Dhabi shorelines with lounge recliners.' },
+      { type: 'Royal Penthouse Suite', price: '₹1,69,999', description: 'Palatial presidential suite with private jacuzzi on the balcony and 24hr private butler.' }
+    ],
+    departures: [
+      { id: 'dep-13-1', date: 'Jan 20, 2027', priceOverride: '79,999', seatsTotal: 35, seatsAvailable: 12, status: 'Open' },
+      { id: 'dep-13-2', date: 'Feb 15, 2027', priceOverride: '84,999', seatsTotal: 35, seatsAvailable: 4, status: 'Filling Fast' }
+    ],
+    captain: DEFAULT_CAPTAIN,
+    itinerary: [
+      { day: 1, title: 'Embarkation at Port Rashid Dubai', description: 'Check-in and board your floating palace. Sunset sail past Dubai skyline.', port: 'Dubai, UAE', arrival: '01:00 PM', departure: '07:00 PM' },
+      { day: 2, title: 'Abu Dhabi — Grand Mosque & Louvre', description: 'Dock at Mina Zayed. Shore excursion to Sheikh Zayed Grand Mosque and Louvre Abu Dhabi.', port: 'Abu Dhabi, UAE', arrival: '08:00 AM', departure: '08:00 PM' },
+      { day: 3, title: 'Sir Bani Yas Island Safari', description: 'Private island day with cheetah and Arabian oryx safari in 4x4 open jeeps.', port: 'Sir Bani Yas Island', arrival: '09:00 AM', departure: '06:00 PM' },
+      { day: 4, title: 'Full Day Cruising Arabian Gulf', description: 'Relax by infinity sundeck, enjoy Thalassotherapy spa, and dance at the white party.', port: 'Arabian Gulf', arrival: 'Sea Day', departure: 'Sea Day' },
+      { day: 5, title: 'Muscat Oman Heritage Tour', description: 'Visit Sultan Qaboos Grand Mosque, Mutrah Corniche, and frankincense perfume souks.', port: 'Muscat, Oman', arrival: '08:00 AM', departure: '07:00 PM' },
+      { day: 6, title: 'Doha Qatar Waterfront', description: 'Explore Museum of Islamic Art and Souq Waqif falcon market.', port: 'Doha, Qatar', arrival: '09:00 AM', departure: '09:00 PM' },
+      { day: 7, title: 'Return to Dubai Marina', description: 'Overnight in Dubai port with dinner under the illuminated Burj Al Arab.', port: 'Dubai, UAE', arrival: '02:00 PM', departure: 'Overnight' },
+      { day: 8, title: 'Disembarkation', description: 'Breakfast on deck and final transfer to Dubai International Airport.', port: 'Dubai, UAE', arrival: '08:00 AM', departure: 'Trip Ends' }
+    ]
+  },
+  {
+    id: 14,
+    title: 'Mediterranean Jewels & Greek Isles',
+    location: 'Barcelona, Marseille, Rome, Santorini',
+    price: '1,19,999',
+    rating: 5.0,
+    reviews: 165,
+    duration: '9 Days / 8 Nights',
+    category: 'Cruise',
+    type: 'International',
+    featured: true,
+    status: 'Published',
+    badge: 'Popular',
+    image: '/assets/couple.jpeg',
+    link: '/cruise',
+    description: 'The definitive European summer voyage. Sail from sun-drenched Barcelona through French Riviera ports, historical Rome, and whitewashed cliffs of Santorini over the deep azure sea.',
+    images: ['/assets/couple.jpeg', '/assets/beaut.jpg', '/assets/seychelles.jpg'],
+    groupSize: '2-8 Persons',
+    nextBatch: 'May 10, 2027',
+    cruiseLine: 'Infi Mediterranean Royale',
+    shipName: 'Costa del Sol Grandeur',
+    embarkationPort: 'Port de Barcelona, Spain',
+    disembarkationPort: 'Piraeus Port (Athens), Greece',
+    portsOfCall: ['Barcelona (Spain)', 'Marseille (France)', 'Civitavecchia/Rome (Italy)', 'Naples/Capri (Italy)', 'Santorini (Greece)', 'Piraeus/Athens (Greece)'],
+    highlights: ['Sagrada Familia & Gothic Quarter', 'Vatican & Colosseum Shore Tour', 'Capri Blue Grotto Excursion', 'Oia Sunset in Santorini'],
+    inclusions: ['8 nights stateroom on board', 'Mediterranean specialty dining & wine pairing', 'Broadway musical performances', 'Port taxes & Greek environmental maritime fees'],
+    exclusions: ['Schengen visa fees', 'Transatlantic/international airfare', 'Shore excursion tickets in Rome & Naples', 'Personal shopping'],
+    cabins: [
+      { type: 'Interior Stateroom', price: '₹1,19,999', description: 'Classic European stateroom with premium Egyptian cotton linens and room amenities.' },
+      { type: 'Oceanview Stateroom', price: '₹1,39,999', description: 'Window viewing Mediterranean waters with priority shore excursion bookings.' },
+      { type: 'Balcony Stateroom', price: '₹1,64,999', description: 'Private balcony for enjoying morning espresso while cruising past Italian coasts.' },
+      { type: 'Royal Penthouse Suite', price: '₹2,45,000', description: 'Lavish grand suite with marble jacuzzi, complimentary vintage champagne, and private dining.' }
+    ],
+    departures: [
+      { id: 'dep-14-1', date: 'May 10, 2027', priceOverride: '1,19,999', seatsTotal: 25, seatsAvailable: 6, status: 'Filling Fast' },
+      { id: 'dep-14-2', date: 'Jun 15, 2027', priceOverride: '1,29,999', seatsTotal: 25, seatsAvailable: 14, status: 'Open' }
+    ],
+    captain: DEFAULT_CAPTAIN,
+    itinerary: [
+      { day: 1, title: 'Boarding in Barcelona Port', description: 'Check-in and evening departure from Catalonia shores.', port: 'Barcelona, Spain', arrival: '11:00 AM', departure: '06:00 PM' },
+      { day: 2, title: 'Marseille & Provence Shores', description: 'Visit Notre-Dame de la Garde and lavender fields of Provence.', port: 'Marseille, France', arrival: '08:00 AM', departure: '05:00 PM' },
+      { day: 3, title: 'Rome (Civitavecchia)', description: 'Express train to Rome to see the Colosseum, Vatican, and Trevi Fountain.', port: 'Civitavecchia, Italy', arrival: '07:30 AM', departure: '07:30 PM' },
+      { day: 4, title: 'Naples, Pompeii & Capri', description: 'Visit ancient ruins of Pompeii or take a hydrofoil to the Isle of Capri.', port: 'Naples, Italy', arrival: '08:00 AM', departure: '06:00 PM' },
+      { day: 5, title: 'Cruising the Ionian Sea', description: 'Full day enjoying sundecks, Italian culinary masterclasses, and open air cinema.', port: 'Ionian Sea', arrival: 'Sea Day', departure: 'Sea Day' },
+      { day: 6, title: 'Santorini Caldera & Oia Sunset', description: 'Tender ashore to Santorini. Cable car to Fira and sunset wine tasting in Oia.', port: 'Santorini, Greece', arrival: '08:00 AM', departure: '10:00 PM' },
+      { day: 7, title: 'Mykonos Windmills & Beaches', description: 'Stroll through Little Venice and lounge on paradise beach sands.', port: 'Mykonos, Greece', arrival: '08:00 AM', departure: '06:00 PM' },
+      { day: 8, title: 'Captain Grand Farewell Gala', description: 'Celebratory gala dinner in the grand two-story dining ballroom.', port: 'Aegean Sea', arrival: 'Sea Day', departure: 'Sea Day' },
+      { day: 9, title: 'Athens (Piraeus) Disembarkation', description: 'Arrival at Piraeus port. Visit the Acropolis or airport transfer.', port: 'Piraeus, Greece', arrival: '07:00 AM', departure: 'Trip Ends' }
+    ]
+  },
+  {
+    id: 15,
+    title: 'Norwegian Fjords & Northern Glaciers',
+    location: 'Bergen, Geiranger, Flåm, Ålesund',
+    price: '1,39,999',
+    rating: 5.0,
+    reviews: 118,
+    duration: '8 Days / 7 Nights',
+    category: 'Cruise',
+    type: 'International',
+    featured: true,
+    status: 'Published',
+    badge: 'Trending',
+    image: '/assets/alp.jpg',
+    link: '/cruise',
+    description: 'Glide quietly through dramatic UNESCO-listed fjord valleys, cascading waterfalls like Seven Sisters, and snow-capped peaks aboard an eco-friendly Nordic liner.',
+    images: ['/assets/alp.jpg', '/assets/tains.jpg', '/assets/himal.jpg'],
+    groupSize: '2-6 Persons',
+    nextBatch: 'Jun 20, 2027',
+    cruiseLine: 'Infi Nordic Polar Expeditions',
+    shipName: 'Nordic Aurora Explorer',
+    embarkationPort: 'Bergen Port, Norway',
+    disembarkationPort: 'Bergen Port, Norway',
+    portsOfCall: ['Bergen (Norway)', 'Geirangerfjord (Norway)', 'Flåm (Norway)', 'Ålesund (Norway)', 'Stavanger (Norway)'],
+    highlights: ['Geirangerfjord Seven Sisters Waterfall', 'Flåm Mountain Railway Ride', 'Art Nouveau City of Ålesund', 'Preikestolen Pulpit Rock Hike'],
+    inclusions: ['7 nights premium stateroom', 'Nordic culinary dining experience', 'Heated thermal pool & Nordic sauna access', 'Naturalist lecturer talks and port briefings'],
+    exclusions: ['Airfare to Bergen', 'Norwegian visa costs', 'Flåmsbana railway ticket package', 'Glacier kayak rental'],
+    cabins: [
+      { type: 'Interior Stateroom', price: '₹1,39,999', description: 'Warm Scandinavian design stateroom with heated bathroom tiles and down duvet bedding.' },
+      { type: 'Oceanview Stateroom', price: '₹1,59,999', description: 'Picture window framing cascading waterfalls and snowy Scandinavian peaks.' },
+      { type: 'Balcony Stateroom', price: '₹1,89,999', description: 'Thermal-insulated balcony with windbreakers to sip hot chocolate while cruising the fjords.' },
+      { type: 'Royal Penthouse Suite', price: '₹2,69,999', description: 'Panoramic bow-facing suite with private outdoor hot tub and telescope for wildlife viewing.' }
+    ],
+    departures: [
+      { id: 'dep-15-1', date: 'Jun 20, 2027', priceOverride: '1,39,999', seatsTotal: 20, seatsAvailable: 7, status: 'Open' },
+      { id: 'dep-15-2', date: 'Jul 18, 2027', priceOverride: '1,49,999', seatsTotal: 20, seatsAvailable: 3, status: 'Filling Fast' }
+    ],
+    captain: DEFAULT_CAPTAIN,
+    itinerary: [
+      { day: 1, title: 'Embarkation in Historic Bergen', description: 'Board in Bergen Bryggen harbor and set sail into the western fjords.', port: 'Bergen, Norway', arrival: '12:00 PM', departure: '05:00 PM' },
+      { day: 2, title: 'Geirangerfjord & Seven Sisters', description: 'Cruising the dramatic sheer cliffs and roaring waterfalls of UNESCO Geiranger.', port: 'Geiranger, Norway', arrival: '08:00 AM', departure: '06:00 PM' },
+      { day: 3, title: 'Flåm & The Steep Railway', description: 'Take the breathtaking Flåm railway through mountain gorges and snowfields.', port: 'Flåm, Norway', arrival: '07:30 AM', departure: '06:00 PM' },
+      { day: 4, title: 'Ålesund Coastal Town', description: 'Explore colorful Art Nouveau architecture and hike to Mount Aksla viewpoint.', port: 'Ålesund, Norway', arrival: '08:30 AM', departure: '05:30 PM' },
+      { day: 5, title: 'Sognefjord — King of the Fjords', description: 'Full day cruising Norway\'s longest and deepest fjord surrounded by glaciers.', port: 'Sognefjord', arrival: 'Sea Day', departure: 'Sea Day' },
+      { day: 6, title: 'Stavanger & Lysefjord', description: 'View Pulpit Rock rising 600m above the fjord or join an active ridge hike.', port: 'Stavanger, Norway', arrival: '08:00 AM', departure: '06:00 PM' },
+      { day: 7, title: 'Nordic Midnight Sun Gala', description: 'Celebratory Scandinavian banquet under the perpetual evening light.', port: 'Cruising', arrival: 'Sea Day', departure: 'Sea Day' },
+      { day: 8, title: 'Bergen Disembarkation', description: 'Return to Bergen. Optional Hanseatic wharf walking tour before departure.', port: 'Bergen, Norway', arrival: '08:00 AM', departure: 'Trip Ends' }
+    ]
+  },
+  // ─── CORPORATE PACKAGES ─────────────────────────────────────────
   {
     id: 12,
     title: 'Corporate Leadership Offsite',
@@ -588,6 +835,8 @@ export const ALL_TRIPS: Trip[] = [
     category: 'Corporate',
     type: 'Domestic',
     featured: true,
+    status: 'Published',
+    badge: 'Popular',
     image: '/assets/group2.jpeg',
     link: '/corporate',
     description: 'Custom team building summit for forward-thinking organizations. High-altitude leadership workshops, bonfire networking, and white-water rafting.',
@@ -595,6 +844,8 @@ export const ALL_TRIPS: Trip[] = [
     groupSize: '15-100+ Persons',
     nextBatch: 'Available Year Round',
     highlights: ['Executive Strategy Keynotes', 'Team River Rafting Challenge', '5-Star Resort Conference & Banquet', 'Pine Forest Gala Dinner'],
+    inclusions: ['Luxury resort stay with meeting hall', 'All buffet meals & coffee breaks', 'AV setup & projector stage', 'Guided outdoor team building challenges', 'Airport/station Volvo transfers'],
+    exclusions: ['Airfare', 'Personal alcoholic beverages beyond banquet', 'Individual room service'],
     captain: DEFAULT_CAPTAIN,
     itinerary: [
       { day: 1, title: 'Team Arrival & Welcome Banquet', description: 'Check-in to luxury mountain resort followed by team icebreakers and welcome dinner.' },
@@ -602,10 +853,71 @@ export const ALL_TRIPS: Trip[] = [
       { day: 3, title: 'Leadership Summit & Gala Evening', description: 'Interactive workshop sessions, awards ceremony, and acoustic live music night.' },
       { day: 4, title: 'Closing Keynote & Departure', description: 'Breakfast keynote and group departure.' }
     ]
+  },
+  {
+    id: 16,
+    title: 'Goa Coastal Executive Retreat',
+    location: 'South Goa Beachfront Resort',
+    price: '28,000',
+    rating: 5.0,
+    reviews: 82,
+    duration: '4 Days / 3 Nights',
+    category: 'Corporate',
+    type: 'Domestic',
+    featured: true,
+    status: 'Published',
+    badge: 'Best Seller',
+    image: '/assets/goa.jpg',
+    link: '/corporate',
+    description: 'Reward high-performing squads with a beachfront corporate summit in Goa. Private catamaran sailing regatta, open-air strategy sessions on the lawn, and seafood gala on the beach.',
+    images: ['/assets/goa.jpg', '/assets/group.jpeg', '/assets/beaut.jpg'],
+    groupSize: '20-150+ Persons',
+    nextBatch: 'Available Year Round',
+    highlights: ['Private Sunset Catamaran Charter', 'Beachfront Boardroom & Audiovisual', 'Hackathon & Team Regatta', 'DJ & Seafood Cocktail Night'],
+    inclusions: ['5-star beachfront resort accommodation', 'All meals, gala dinner & live cocktail station', 'Meeting venue with high-speed corporate WiFi', 'Catamaran sailing charter'],
+    exclusions: ['Flights to Goa', 'Personal water sports rentals'],
+    captain: DEFAULT_CAPTAIN,
+    itinerary: [
+      { day: 1, title: 'Airport Transfers & Sunset Lawn Welcome', description: 'VIP coach pickup from MOPA/Dabolim. Sunset lawn cocktails and executive welcome address.' },
+      { day: 2, title: 'Strategy Workstreams & Team Catamaran Regatta', description: 'Morning corporate planning session followed by afternoon catamaran challenge on the Arabian Sea.' },
+      { day: 3, title: 'Innovation Hackathon & Beach Awards Gala', description: 'Collaborative breakout sessions, company milestones celebration, and live acoustic music by the waves.' },
+      { day: 4, title: 'Buffet Brunch & Executive Departure', description: 'Farewell breakfast buffet and coordinated airport drop-offs.' }
+    ]
+  },
+  {
+    id: 17,
+    title: 'Bali Global Team Summit & Retreat',
+    location: 'Ubud & Nusa Dua, Bali',
+    price: '54,000',
+    rating: 5.0,
+    reviews: 67,
+    duration: '5 Days / 4 Nights',
+    category: 'Corporate',
+    type: 'International',
+    featured: true,
+    status: 'Published',
+    badge: 'Trending',
+    image: '/assets/bali.jpg',
+    link: '/corporate',
+    description: 'An unforgettable international corporate getaway. Host company offsites across Ubud rainforest villas and beachfront Nusa Dua convention resorts with cultural team activities.',
+    images: ['/assets/bali.jpg', '/assets/group2.jpeg', '/assets/PFC.jpeg'],
+    groupSize: '20-80 Persons',
+    nextBatch: 'Available Year Round',
+    highlights: ['Ayung River White Water Rafting Challenge', 'Ubud Rainforest Luxury Villa Stay', 'Balinese Fire Dance & Seafood Banquet', 'Global Company Alignment Keynote'],
+    inclusions: ['4 nights in 5-star international MICE resort', 'Roundtrip group airport transfers in Denpasar', 'All conference hall bookings with standard AV', 'Gala team dinner and cultural show'],
+    exclusions: ['International flights to Bali', 'Indonesia visa fees', 'Personal travel insurance'],
+    captain: DEFAULT_CAPTAIN,
+    itinerary: [
+      { day: 1, title: 'Arrival in Denpasar & Ubud Villa Check-in', description: 'Traditional Balinese floral garland welcome and relaxed poolside dinner.' },
+      { day: 2, title: 'Ayung River Rafting Team Challenge', description: 'High-energy white-water rafting through jungle canyons followed by traditional Balinese buffet.' },
+      { day: 3, title: 'Company Vision Summit & Nusa Dua Beach Session', description: 'Full day keynote presentation, awards distribution, and private beach banquet under fairy lights.' },
+      { day: 4, title: 'Kecak Fire Dance & Jimbaran Seafood Sunset', description: 'Team outing to Uluwatu temple followed by private beachside tables at Jimbaran Bay.' },
+      { day: 5, title: 'Morning Yoga, Souvenir Market & Departure', description: 'Optional sunrise meditation, transfer to Ngurah Rai International Airport.' }
+    ]
   }
 ];
 
-export const CATEGORIES = ['Adventure', 'Beach', 'Luxury', 'Nature', 'Heritage', 'Honeymoon', 'Backpacking', 'Cruise', 'Corporate'];
+export const CATEGORIES = ['Adventure', 'Beach', 'Luxury', 'Nature', 'Heritage', 'Honeymoon', 'Family', 'Backpacking', 'Cruise', 'Corporate'];
 
 export const getTripWhatsAppLink = (tripTitle: string) =>
   getWhatsAppLink(`Hi Infi Yatra! I'm interested in the ${tripTitle} package.`);

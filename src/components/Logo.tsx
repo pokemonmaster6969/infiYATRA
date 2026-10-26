@@ -26,8 +26,12 @@ export const Logo: React.FC<LogoProps> = ({
   return (
     <div className={`inline-flex items-center select-none ${className}`}>
       <img
-        src="/infilogo.png"
+        src="/infilogo.webp"
         alt="INFI YATRA Logo"
+        width={480}
+        height={164}
+        fetchPriority="high"
+        decoding="async"
         className={`object-contain transition-transform duration-300 group-hover:scale-105 filter drop-shadow-[0_2px_12px_rgba(255,255,255,0.25)] brightness-110 contrast-125 ${sizeClasses[size]} ${imgClassName}`}
       />
       {showText && (

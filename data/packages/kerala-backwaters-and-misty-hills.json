@@ -1,0 +1,298 @@
+{
+  "id": 103,
+  "slug": "kerala-backwaters-and-misty-hills",
+  "title": "God's Own Country: Munnar Hills, Periyar & Backwaters",
+  "tagline": "Wake up to misty emerald tea plantations, cruise calm backwater lagoons, and breathe fragrant spice groves.",
+  "destination": "Kerala",
+  "region": "South India",
+  "country": "India",
+  "category": ["nature", "family", "honeymoon", "luxury", "spiritual"],
+  "duration": {
+    "nights": 6,
+    "days": 7
+  },
+  "route": [
+    { "city": "Cochin", "nights": 1 },
+    { "city": "Munnar", "nights": 2 },
+    { "city": "Thekkady", "nights": 1 },
+    { "city": "Alleppey (Houseboat)", "nights": 1 },
+    { "city": "Cochin", "nights": 1 }
+  ],
+  "price": {
+    "from": "23,999",
+    "currency": "INR",
+    "per": "person twin sharing",
+    "priceBands": {
+      "standard": "23,999",
+      "deluxe": "32,999",
+      "premium": "52,999"
+    },
+    "offerBadge": "Top Rated"
+  },
+  "bestTime": {
+    "months": ["September", "October", "November", "December", "January", "February", "March", "April"],
+    "notes": "October through March offers cool misty hill weather and sunny, tranquil backwater cruising; monsoon (June-August) provides traditional Ayurvedic rejuvenation."
+  },
+  "difficulty": "Easy",
+  "groupType": "Families, Couples & Nature Enthusiasts",
+  "minAge": 1,
+  "visaInfo": "Domestic destination: Indian travellers require a valid government photo ID card (Aadhaar, Passport, or Voter ID). Foreign travellers require an Indian Visa/e-Visa and passport.",
+  "overview": "Immerse your senses in the verdant paradise of Kerala on this handcrafted seven-day journey across the Western Ghats and palm-sheltered Arabian backwaters. Begin amidst the colonial history of Fort Kochi, watching cantilevered Chinese fishing nets dip into the sunset tide. Journey upward through winding cloud-kissed mountain roads to Munnar, where endless rolling carpeted tea hills stretch toward Anamudi peak. Track the endangered Nilgiri Tahr along the cliff paths of Eravikulam National Park and savor fresh single-estate brew at the historic Tata Tea Museum. Wind through cardamom, cinnamon, and pepper hills to Thekkady for an aromatic spice plantation walk and live Kalaripayattu martial arts display. The journey reaches its serene zenith as you step onto your private traditional thatch-roofed Kettuvallam houseboat in Alleppey, gliding along Vembanad Lake canals while feasting on fresh Karimeen fish and Malabar curries. Complete with verified chauffeur transfers, boutique nature resorts, and daily breakfasts, this is Kerala at its most enchanting.",
+  "highlights": [
+    "Overnight cruise aboard an exclusive traditional thatch-roofed houseboat in Alleppey",
+    "Scenic drive through the Western Ghats with photo stops at Cheeyappara Waterfalls",
+    "High-altitude wildlife spotting of rare Nilgiri Tahr goats in Eravikulam National Park",
+    "Guided tasting of single-estate artisanal teas at the heritage Tata Tea Museum in Munnar",
+    "Aromatic walking tour through cardamom, clove, and vanilla groves in Thekkady",
+    "Evening cultural showcase featuring traditional Kathakali dance and Kalaripayattu martial arts",
+    "Historic walking tour of Fort Kochi: Chinese Fishing Nets, St. Francis Church, and Jew Town",
+    "Authentic multi-course Kerala Sadya feast served on fresh banana leaves with Malabar parottas"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Cochin & Fort Kochi Colonial Heritage",
+      "location": "Cochin",
+      "description": "Arrive at Cochin International Airport (COK) where your private chauffeur welcomes you. Transfer 42 kilometers across backwater bridges to your heritage hotel in historic Fort Kochi. After checking in and freshening up, take a guided afternoon stroll along the waterfront promenade. Watch the iconic 14th-century Chinese fishing nets swing into the Arabian Sea against the golden sunset. Visit St. Francis Church, the oldest European church in India where Vasco da Gama was initially buried, and browse antique curiosities along Jew Street.",
+      "activities": ["Airport Meet & Greet", "Hotel Check-in", "Chinese Fishing Nets Sunset Walk", "St. Francis Church Visit", "Jew Street Antiquities"],
+      "meals": { "breakfast": false, "lunch": false, "dinner": false },
+      "stay": { "category": "4-Star Heritage Hotel", "city": "Cochin" },
+      "transferInfo": "Private AC vehicle transfer from Cochin Airport to Fort Kochi (42 km, 1 hr 15 mins)."
+    },
+    {
+      "day": 2,
+      "title": "Cochin to Munnar via Cheeyappara & Valara Waterfalls",
+      "location": "Munnar",
+      "description": "After a hearty South Indian breakfast, depart Cochin for the four-hour ascent into the misty Western Ghats heading toward Munnar. Watch the coastal plains give way to cascading rubber estates, pineapple groves, and deep forested mountain ravines. En route, pause at the tiered Cheeyappara Waterfalls tumbling down seven rocky tiers, followed by the lush gorge of Valara Falls. Arrive at Munnar (5,200 ft) by early afternoon. Check into your mountain resort perched above misty tea valleys and spend the evening enjoying crisp mountain breezes.",
+      "activities": ["Scenic Mountain Ghat Drive", "Cheeyappara Waterfalls Stop", "Valara Falls Viewpoint", "Resort Mountain View Leisure"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "4-Star Tea Valley Resort", "city": "Munnar" },
+      "transferInfo": "Private vehicle drive from Cochin to Munnar (130 km, 4 hours via NH85 with waterfall stops)."
+    },
+    {
+      "day": 3,
+      "title": "Munnar Tea Plantations, Eravikulam & Mattupetty Dam",
+      "location": "Munnar",
+      "description": "Wake to morning mist swirling across the tea valleys. Travel by department eco-bus into Eravikulam National Park, home to the largest surviving population of the endangered Nilgiri Tahr mountain goat. Hike along gentle paved trails offering sweeping views of Anamudi, South India's highest peak. In the afternoon, visit the historic Tata Tea Museum to witness century-old orthodox tea rolling machinery and sample fresh golden Pekoe. Continue to scenic Mattupetty Dam and Echo Point before returning to the resort for an evening bonfire.",
+      "activities": ["Eravikulam National Park Safari", "Nilgiri Tahr Wildlife Viewing", "Tata Tea Museum & Tasting", "Mattupetty Lake & Echo Point"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "4-Star Tea Valley Resort", "city": "Munnar" },
+      "transferInfo": "Private AC vehicle for full-day Munnar circuit sightseeing (approx. 50 km total)."
+    },
+    {
+      "day": 4,
+      "title": "Munnar to Thekkady: Spice Plantations & Cultural Evening",
+      "location": "Thekkady",
+      "description": "Check out after breakfast and drive south through the Cardamom Hills to Thekkady, the spice capital of Kerala adjoining Periyar Tiger Reserve. The scenic 90-kilometer drive winds past rubber and coffee plantations. Arrive and check into your eco-lodge surrounded by towering trees. In the afternoon, embark on an aromatic guided walking tour through an organic spice plantation to touch and smell growing pepper vines, green cardamom, cinnamon bark, and nutmeg. In the evening, witness an enthralling live performance of Kalaripayattu martial arts.",
+      "activities": ["Cardamom Hills Scenic Drive", "Guided Organic Spice Plantation Tour", "Thekkady Spice Market Shopping", "Live Kalaripayattu Martial Arts Show"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "4-Star Nature Resort", "city": "Thekkady" },
+      "transferInfo": "Private vehicle drive from Munnar to Thekkady (90 km, 3 hours via SH17)."
+    },
+    {
+      "day": 5,
+      "title": "Thekkady Wildlife & Alleppey Backwaters Houseboat Cruise",
+      "location": "Alleppey",
+      "description": "Take an optional early morning boat safari on Periyar Lake inside the sanctuary before descending from the hills toward the coastal backwaters of Alleppey. Arrive at the private jetty by noon and board your traditional thatch-roofed Kettuvallam houseboat. As the captain navigates into the palm-canopied canals of Vembanad Lake, savor a fresh lunch of Karimeen Pollichathu and piping hot red rice prepared by your private onboard chef. Drift past duck farming hamlets, coir-weaving village docks, and water lilies before anchoring for a tranquil starlit dinner.",
+      "activities": ["Periyar Lake Morning Walk", "Descent to Coastal Backwaters", "Houseboat Boarding & Welcome Coconut", "Vembanad Backwaters Canal Cruise"],
+      "meals": { "breakfast": true, "lunch": true, "dinner": true },
+      "stay": { "category": "Deluxe Air-Conditioned Houseboat", "city": "Alleppey" },
+      "transferInfo": "Private vehicle drive from Thekkady to Alleppey jetty (135 km, 3.5 hours) followed by backwater cruise."
+    },
+    {
+      "day": 6,
+      "title": "Alleppey Backwaters to Cochin & Jew Town History",
+      "location": "Cochin",
+      "description": "Savor morning tea on the open sundeck as the sun rises over water lilies and village canoes glide past. Enjoy a freshly prepared breakfast of soft appams and vegetable stew before disembarking at 9:30 AM. Drive 55 kilometers north along the coastal highway to Cochin. Check into your luxury city hotel. Spend the afternoon exploring Mattancherry Palace with its exquisite 16th-century Hindu mythological murals, followed by the Paradesi Jewish Synagogue with its hand-painted blue Cantonese porcelain tiles and historic clock tower.",
+      "activities": ["Morning Backwater Sunrise Cruise", "Houseboat Checkout", "Mattancherry Dutch Palace Tour", "Paradesi Jewish Synagogue Visit", "Spices & Textile Shopping"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "4-Star Luxury City Hotel", "city": "Cochin" },
+      "transferInfo": "Private AC vehicle from Alleppey to Cochin (55 km, 1.5 hours) and afternoon city tour."
+    },
+    {
+      "day": 7,
+      "title": "Lulu Mall Souvenirs & Airport Departure",
+      "location": "Cochin",
+      "description": "Enjoy a relaxed breakfast at your hotel. Spend your morning picking up authentic banana chips fried in pure coconut oil, Kasavu handloom sarees, aromatic tea packs, and Malabar spices at Cochin's vibrant markets or the grand Lulu Mall. Return to the hotel for checkout. Your chauffeur will provide a punctual transfer to Cochin International Airport (COK) or Ernakulam Railway Station for your onward journey, leaving you deeply rejuvenated by the beauty and warmth of God's Own Country.",
+      "activities": ["Morning Leisure & Breakfast", "Traditional Banana Chip & Spice Shopping", "Lulu Mall / Market Stop", "Airport Departure Drop-off"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "Departure", "city": "Cochin" },
+      "transferInfo": "Private AC sedan transfer from hotel to Cochin Airport (COK) (28 km, 45 mins)."
+    }
+  ],
+  "inclusions": [
+    "6 nights premium accommodation (1N Fort Kochi Heritage, 2N Munnar Tea Resort, 1N Thekkady Eco-Lodge, 1N Alleppey Houseboat, 1N Cochin Hotel)",
+    "Daily buffet breakfast at all hotels plus full board (Lunch, Evening Tea & Snacks, Dinner) on the Alleppey Houseboat",
+    "Exclusive private AC sedan / Innova Crysta for all airport transfers, intercity drives, and scheduled sightseeing",
+    "Private overnight cruise aboard a traditional Kettuvallam houseboat on the backwaters of Alleppey",
+    "Guided nature walk through an organic spice plantation in Thekkady explaining medicinal herbs and spices",
+    "Entry passes to Eravikulam National Park (Rajamalai) including forest department transit bus",
+    "Entry ticket and guided tour of the Tata Tea Museum with tea tasting session in Munnar",
+    "Evening cultural ticket for live Kalaripayattu ancient martial arts performance in Thekkady",
+    "Guided walking tour of Fort Kochi covering Chinese fishing nets, St. Francis Church, and Jew Town",
+    "All vehicle toll taxes, interstate permits, parking fees, and chauffeur allowances included"
+  ],
+  "exclusions": [
+    "Airfare or train fare to and from Cochin (COK) (can be booked on request)",
+    "Periyar Wildlife Sanctuary morning boat safari ticket (direct payment / optional)",
+    "Lunches and dinners at hotels (except on the houseboat where all meals are included)",
+    "Personal expenses such as Ayurvedic spa therapies, laundry, minibar, and telephone calls",
+    "Optional boating fees at Mattupetty Dam or Kundala Lake",
+    "Tips, porterage fees, and gratuities for guides, house boat crew, and chauffeur",
+    "Camera and professional video shooting fees at national parks and monuments",
+    "Comprehensive personal travel and health insurance policy"
+  ],
+  "hotels": [
+    {
+      "city": "Cochin (Fort Kochi)",
+      "name": "Fragrant Nature Kochi / Casino Hotel or similar",
+      "category": "4-Star Heritage Hotel",
+      "nights": 1
+    },
+    {
+      "city": "Munnar",
+      "name": "The Tall Trees Resort / Blanket Hotel & Spa or similar",
+      "category": "4-Star Tea Valley Nature Resort",
+      "nights": 2
+    },
+    {
+      "city": "Thekkady",
+      "name": "Greenwoods Resort / Cardamom County or similar",
+      "category": "4-Star Forest Eco-Lodge",
+      "nights": 1
+    },
+    {
+      "city": "Alleppey",
+      "name": "Lakes & Lagoons Luxury Houseboat or similar",
+      "category": "Deluxe Air-Conditioned Private Houseboat",
+      "nights": 1
+    },
+    {
+      "city": "Cochin",
+      "name": "Crowne Plaza Kochi / Trident Cochin or similar",
+      "category": "4-Star Luxury City Hotel",
+      "nights": 1
+    }
+  ],
+  "transport": {
+    "mode": "Private Air-Conditioned Sedan / Innova Crysta",
+    "details": "Dedicated sanitized private vehicle (Swift Dzire/Etios for 2-3 guests; Toyota Innova Crysta for 4-6 guests) with an English/Hindi speaking professional chauffeur for all mountain transfers and tours."
+  },
+  "thingsToCarry": [
+    "Light cotton clothes for coastal Cochin and Alleppey; lightweight woolens or fleece for cool Munnar evenings",
+    "Comfortable walking shoes or trail runners for plantations and national park hikes",
+    "Mosquito repellent cream or spray for backwaters and wildlife areas",
+    "Umbrella or light rain jacket (Kerala's tropical microclimate can produce passing showers)",
+    "Sun hat, sunglasses, and high-protection sunscreen lotion",
+    "Original government-issued photo identity cards for all travellers"
+  ],
+  "tips": [
+    "Eravikulam National Park remains closed annually for approximately 4-6 weeks during the Nilgiri Tahr calving season (usually February to March); during this time, an alternate tea estate viewpoint is provided.",
+    "Houseboat air conditioning operates strictly from 9:00 PM to 6:00 AM on Deluxe category boats per local canal emission rules; Premium category houseboats feature 24-hour climate control.",
+    "Houseboats anchor at dock by 5:30 PM in accordance with Kerala Government water authority rules to allow night fishing nets to be laid out safely.",
+    "Carry modest attire when visiting temples and the Jewish Synagogue; footwear must be removed outside religious premises."
+  ],
+  "cancellationPolicy": [
+    "30 days or more before departure: 100% refund minus processing administrative charge of ₹1,500",
+    "29 to 15 days before departure: 70% refund of total package value",
+    "14 to 8 days before departure: 40% refund of total package value",
+    "Within 7 days of departure: Non-refundable due to non-cancellable houseboat and luxury resort commitments"
+  ],
+  "paymentTerms": "25% advance token to confirm; 50% due 20 days prior to travel; balance 25% payable upon arrival in Cochin.",
+  "faqs": [
+    {
+      "question": "Is the Alleppey houseboat private for our family or shared?",
+      "answer": "Our packages feature an exclusive, fully private houseboat for your travelling party. You will have a dedicated captain, navigator, and private chef on board catering solely to your preferences."
+    },
+    {
+      "question": "What is the food like on board the houseboat?",
+      "answer": "Meals are freshly prepared on board using local ingredients. Typical lunch includes traditional Kerala rice, sambar, thoran, avial, and freshly caught Karimeen fish fry. Vegetarian, Jain, and North Indian meal choices are gladly accommodated on request."
+    },
+    {
+      "question": "How cold does it get in Munnar?",
+      "answer": "Munnar sits at an altitude of 5,200 feet. Daytime temperatures range from 18°C to 24°C, while nighttime temperatures can dip to 10°C to 14°C between November and February. A light fleece jacket or shawl is recommended."
+    },
+    {
+      "question": "Can elderly travellers and young children comfortably do this circuit?",
+      "answer": "Yes. This circuit is one of India's most popular family routes with well-paved highways, gentle walks, and relaxing boat experiences. Vehicles stop at scenic viewpoints to break up hill driving."
+    },
+    {
+      "question": "Are vegetarian and Jain food easily available in Kerala?",
+      "answer": "Yes, Kerala boasts one of India's richest vegetarian culinary traditions with dishes like Sadya, vegetable stew with appams, and dosas. All partner hotels and the houseboat chef gladly prepare pure vegetarian and Jain meals without onion or garlic upon prior notice."
+    },
+    {
+      "question": "What spices are best to buy in Thekkady?",
+      "answer": "Thekkady is world-famous for fresh green cardamom, Tellicherry black peppercorns, whole cinnamon bark, cloves, nutmeg, and organic vanilla pods. We take you to authorized cooperative government-approved spice gardens."
+    },
+    {
+      "question": "What is Kalaripayattu?",
+      "answer": "Kalaripayattu is one of the oldest fighting martial arts systems on earth, originating in Kerala over 3,000 years ago. The live 1-hour evening performance showcases incredible agility, flexibility, sword duels, and fire acrobatics."
+    }
+  ],
+  "departures": [
+    { "date": "2026-11-07", "price": "₹23,999", "seatsTotal": 20, "seatsLeft": 9, "status": "Filling Fast" },
+    { "date": "2026-11-21", "price": "₹23,999", "seatsTotal": 20, "seatsLeft": 13, "status": "Open" },
+    { "date": "2026-12-05", "price": "₹26,999", "seatsTotal": 20, "seatsLeft": 5, "status": "Filling Fast" },
+    { "date": "2026-12-23", "price": "₹34,999", "seatsTotal": 24, "seatsLeft": 2, "status": "Filling Fast" },
+    { "date": "2027-01-09", "price": "₹27,999", "seatsTotal": 20, "seatsLeft": 12, "status": "Open" },
+    { "date": "2027-02-06", "price": "₹25,999", "seatsTotal": 20, "seatsLeft": 16, "status": "Open" },
+    { "date": "2027-03-06", "price": "₹24,999", "seatsTotal": 20, "seatsLeft": 17, "status": "Open" },
+    { "date": "2027-04-10", "price": "₹23,999", "seatsTotal": 24, "seatsLeft": 20, "status": "Open" }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&q=80&w=2400",
+      "alt": "Traditional thatched roof Kerala houseboat cruising across palm tree lined backwaters of Alleppey",
+      "caption": "Traditional thatch-roofed houseboat gliding along the palm-lined canals of Alleppey",
+      "credit": "Naveen Annam",
+      "creditUrl": "https://unsplash.com/@naveenannam",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Misty emerald rolling tea plantations covering green mountain hills of Munnar in Kerala",
+      "caption": "Endless rolling green tea estates blanketed in morning mist in Munnar",
+      "credit": "Akhil Chandran",
+      "creditUrl": "https://unsplash.com/@akhilchandran",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Cheeyappara multi tiered waterfall cascading over dark boulders surrounded by lush jungle foliage in Kerala",
+      "caption": "Cascading mountain waters of Cheeyappara Falls along the Munnar highway",
+      "credit": "Bishnu Sarangi",
+      "creditUrl": "https://unsplash.com/@bishnusarangi",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Silhouette of Chinese fishing nets hanging over calm Arabian Sea at sunset in Fort Kochi",
+      "caption": "Historic Chinese fishing nets at dusk along the Fort Kochi waterfront",
+      "credit": "Karthik Sridharan",
+      "creditUrl": "https://unsplash.com/@karthiksridharan",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Wild elephants bathing by the edge of Periyar Lake sanctuary in Thekkady Kerala",
+      "caption": "Wildlife by the tranquil waters of Periyar Lake in Thekkady",
+      "credit": "Vipin Kumar",
+      "creditUrl": "https://unsplash.com/@vipinkumar",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Colorful Kathakali performer with traditional facial paint and elaborate ornate headdress in Kerala",
+      "caption": "Traditional Kathakali classical dance drama performer in full ceremonial attire",
+      "credit": "Aravind Kumar",
+      "creditUrl": "https://unsplash.com/@aravindkumar",
+      "source": "Unsplash"
+    }
+  ],
+  "seo": {
+    "title": "Kerala Tour Package: 6N/7D Munnar, Thekkady & Alleppey",
+    "description": "Book a 7-day Kerala holiday. Experience Fort Kochi, misty Munnar tea hills, Thekkady spice plantations, and an overnight private Alleppey houseboat cruise."
+  },
+  "status": "published",
+  "featured": true
+}

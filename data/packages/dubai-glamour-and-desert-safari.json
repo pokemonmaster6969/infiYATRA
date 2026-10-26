@@ -1,0 +1,250 @@
+{
+  "id": 104,
+  "slug": "dubai-glamour-and-desert-safari",
+  "title": "Dazzling Dubai: Skyscrapers, Golden Dunes & Grand Mosques",
+  "tagline": "Ascend the iconic Burj Khalifa, surge across red desert dunes in a 4x4, and marvel at the Grand Mosque.",
+  "destination": "Dubai",
+  "region": "Middle East",
+  "country": "United Arab Emirates",
+  "category": ["luxury", "family", "honeymoon", "international", "adventure"],
+  "duration": {
+    "nights": 4,
+    "days": 5
+  },
+  "route": [
+    { "city": "Dubai", "nights": 4 }
+  ],
+  "price": {
+    "from": "29,999",
+    "currency": "INR",
+    "per": "person twin sharing",
+    "priceBands": {
+      "standard": "29,999",
+      "deluxe": "38,999",
+      "premium": "64,999"
+    },
+    "offerBadge": "International Bestseller"
+  },
+  "bestTime": {
+    "months": ["November", "December", "January", "February", "March", "April"],
+    "notes": "November through March provides delightfully pleasant sunny days (22°C to 28°C) perfect for outdoor desert safaris, beach strolls, and al fresco rooftop dining."
+  },
+  "difficulty": "Easy",
+  "groupType": "Small Group, Couples & Family Explorers",
+  "minAge": 1,
+  "visaInfo": "UAE Tourist Visa required for Indian passport holders. We provide complete end-to-end visa assistance (processed within 3-4 working days). Passports must be valid for at least 6 months from the date of travel.",
+  "overview": "Immerse yourself in the world's most visionary metropolis on an unforgettable five-day luxury showcase of Dubai and Abu Dhabi. From the moment you land beneath the soaring palm terminals of Dubai International Airport, experience seamless VIP hospitality. Cruise through the Venetian-inspired Dubai Marina on a traditional glass-enclosed wooden Dhow, dining on an international buffet as neon-lit skyscrapers reflect upon the tranquil waters. Ascend at high speed to the 124th and 125th observation decks of the iconic Burj Khalifa, gazing out across the Arabian Gulf, before witnessing the world's largest synchronized water fountains dance to classical melodies. Journey deep into the sweeping crimson dunes of the Lahbab Desert aboard a rugged 4x4 Land Cruiser for heart-pounding dune bashing, camel rides, and an authentic Bedouin camp feast accompanied by Tanura and fire dancers. Expand your horizons with a full-day excursion to Abu Dhabi to witness the marble domes of the Sheikh Zayed Grand Mosque and the historic BAPS Hindu Mandir.",
+  "highlights": [
+    "Ascent to the 124th & 125th observation floors of the world's tallest tower, the Burj Khalifa",
+    "Thrilling 4x4 Land Cruiser dune bashing across the red sands of the Lahbab Desert",
+    "Bedouin desert camp evening with camel rides, henna painting, fire show, and BBQ dinner",
+    "2-hour evening Marina Dhow Cruise featuring international buffet dining and live music",
+    "Half-day Dubai city tour covering Dubai Frame, Burj Al Arab, and Palm Jumeirah monorail",
+    "Full-day guided excursion to Abu Dhabi covering the magnificent Sheikh Zayed Grand Mosque",
+    "Visit to the newly inaugurated master-crafted BAPS Hindu Mandir in Abu Dhabi",
+    "Sensory exploration of the historic Gold Souk and aromatic Spice Souk in Deira Old Dubai"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Dubai & Marina Dhow Cruise Buffet Dinner",
+      "location": "Dubai",
+      "description": "Touch down at Dubai International Airport (DXB) where our private representative welcomes you in the arrival hall. Enjoy a swift transfer to your centrally located four-star hotel. Take time to relax and refresh after your flight. In the evening at 7:00 PM, transfer to Dubai Marina to board a beautifully illuminated traditional two-deck wooden Dhow. Glide gently through the canal framed by illuminated luxury yachts and towering neon spires. Savor a lavish five-star international buffet dinner with live acoustic melodies before returning to your hotel.",
+      "activities": ["Airport Meet & Assist", "Hotel Check-in & Rest", "Dubai Marina Evening Walk", "Marina Dhow Cruise & Buffet Dinner"],
+      "meals": { "breakfast": false, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Modern City Hotel", "city": "Dubai" },
+      "transferInfo": "Private AC transfer from DXB Airport to hotel (15 km, 20 mins); shared transfer for evening Dhow Cruise."
+    },
+    {
+      "day": 2,
+      "title": "Dubai City Tour, Dubai Mall & Burj Khalifa 124th Floor",
+      "location": "Dubai",
+      "description": "After breakfast, embark on a panoramic guided city tour. Capture iconic photos at the Dubai Frame, pass the palatial royal estates of Zabeel, and pause along Jumeirah Beach overlooking the sail-shaped Burj Al Arab. Drive across the Palm Jumeirah archipelago past the majestic Atlantis The Palm resort. By mid-afternoon, arrive at The Dubai Mall, the world's largest entertainment complex. Board the high-speed elevator to the 124th and 125th floors of the Burj Khalifa for breathtaking 360-degree panoramic views. Conclude with the spectacular evening Dubai Fountain water and light show.",
+      "activities": ["Guided Dubai City Sightseeing", "Burj Al Arab & Palm Jumeirah Photo Stops", "The Dubai Mall Exploration", "Burj Khalifa 124th Floor Observation Deck", "Dubai Fountain Show"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "4-Star Modern City Hotel", "city": "Dubai" },
+      "transferInfo": "Air-conditioned touring coach for morning city tour and afternoon Downtown Dubai transfers."
+    },
+    {
+      "day": 3,
+      "title": "Deira Souk Markets & 4x4 Desert Safari with BBQ Dinner",
+      "location": "Dubai Desert",
+      "description": "Spend a relaxed morning exploring Old Dubai's vibrant trading alleys. Ride an authentic wooden Abra boat across Dubai Creek (AED 1) to browse dazzling window displays in the Gold Souk and breathe in fragrant frankincense at the Spice Souk. At 3:00 PM, get picked up in a rugged 4x4 Land Cruiser heading for the deep Lahbab desert. Experience an adrenaline-charged 30-minute dune bashing adventure over rolling red sands. Stop on a high ridge for sunset photography before entering a traditional Bedouin camp for camel rides, henna art, Tanura dances, and a barbecue dinner under the stars.",
+      "activities": ["Old Dubai Gold & Spice Souk Walk", "Creek Abra Boat Ride", "4x4 Desert Dune Bashing", "Sunset Desert Photography", "Bedouin Camp Fire Show & BBQ Dinner"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Modern City Hotel", "city": "Dubai" },
+      "transferInfo": "4x4 Toyota Land Cruiser private/shared pickup from hotel to Lahbab Desert Camp and return."
+    },
+    {
+      "day": 4,
+      "title": "Full-Day Abu Dhabi: Sheikh Zayed Grand Mosque & BAPS Mandir",
+      "location": "Abu Dhabi",
+      "description": "After an early breakfast, travel 140 kilometers southwest along the Sheikh Zayed desert highway to Abu Dhabi, the capital of the United Arab Emirates. First visit the architectural marvel of the Sheikh Zayed Grand Mosque, admiring its 82 white marble domes, reflective pools, and the world's largest hand-knotted Persian carpet. Next, visit the newly consecrated BAPS Hindu Mandir, a magnificent pink sandstone and Italian Carrara marble temple carved with ancient spiritual motifs. Continue along the Abu Dhabi Corniche past the Emirates Palace and Ferrari World photo stop before returning to Dubai.",
+      "activities": ["Abu Dhabi Scenic Highway Drive", "Sheikh Zayed Grand Mosque Tour", "BAPS Hindu Mandir Darshan", "Corniche Drive & Emirates Palace Photo Stop", "Ferrari World Abu Dhabi Photo Stop"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "4-Star Modern City Hotel", "city": "Dubai" },
+      "transferInfo": "Private or shared air-conditioned coach for full-day Abu Dhabi excursion (140 km each way, 1.5 hours per leg)."
+    },
+    {
+      "day": 5,
+      "title": "Final Shopping, Souvenirs & Airport Departure",
+      "location": "Dubai",
+      "description": "Enjoy a leisurely morning buffet breakfast at the hotel. Spend your remaining hours picking up premium Arabian dates from Bateel, designer chocolates, perfumes, or electronics at the Mall of the Emirates or City Centre Deira. Return to the hotel to pack your luggage and complete checkout formalities. Your private chauffeur will pick you up at the lobby and transfer you seamlessly to Dubai International Airport (DXB) in time for your flight home, concluding an extraordinary Middle Eastern getaway.",
+      "activities": ["Hotel Breakfast & Morning Leisure", "Bateel Dates & Duty Free Shopping", "Hotel Checkout", "Airport Departure Transfer"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "Departure", "city": "Dubai" },
+      "transferInfo": "Private AC sedan transfer from hotel to Dubai International Airport (DXB) (15 km, 20 mins)."
+    }
+  ],
+  "inclusions": [
+    "4 nights accommodation in a premium 4-star centrally located city hotel in Dubai (Al Barsha or Deira)",
+    "Daily international buffet breakfast at the hotel restaurant",
+    "Return Dubai International Airport (DXB) private arrival and departure transfers",
+    "Marina Dhow Cruise dinner ticket with international buffet, soft beverages, and live entertainment",
+    "Half-day guided Dubai City Tour covering Dubai Frame, Burj Al Arab, and Palm Jumeirah in AC coach",
+    "Standard non-prime entry ticket to the Burj Khalifa 124th and 125th floor observation decks",
+    "Full-day Abu Dhabi guided excursion covering Sheikh Zayed Grand Mosque and BAPS Hindu Mandir",
+    "4x4 Desert Safari including dune bashing, sunset photo stop, camel ride, Tanura show, and BBQ dinner",
+    "All UAE local toll taxes (Salik), parking charges, and transport service fees",
+    "24/7 dedicated infiYATRA on-ground multilingual tour coordinator support"
+  ],
+  "exclusions": [
+    "International return flight tickets to and from Dubai (available upon request at competitive fares)",
+    "UAE Tourist Visa fee and travel medical insurance (approx. ₹6,500 per person)",
+    "Mandatory Dubai Tourism Dirham fee (approx. AED 15 per room per night, payable at hotel checkout)",
+    "Lunches and dinners not explicitly specified in the itinerary inclusions",
+    "Optional adventure sports at Desert Safari (quad biking, dune buggy rentals)",
+    "Personal expenses such as alcoholic drinks, laundry, room service, and telephone calls",
+    "Driver and local tour guide tips and gratuities (recommended USD 3-5 per day)",
+    "Any surge surcharge for special festival dates, Gulfood exhibition, or New Year's Eve"
+  ],
+  "hotels": [
+    {
+      "city": "Dubai",
+      "name": "Aloft Dubai Creek / Courtyard by Marriott Al Barsha or similar",
+      "category": "4-Star Modern City Hotel",
+      "nights": 4
+    }
+  ],
+  "transport": {
+    "mode": "Private & Shared Air-Conditioned Coach / 4x4 Land Cruiser",
+    "details": "Private sanitized sedan for airport transfers; modern air-conditioned luxury tour coach for city sightseeing and Abu Dhabi excursion; 4x4 Toyota Land Cruiser for desert safari."
+  },
+  "thingsToCarry": [
+    "Passport with at least 6 months validity from date of travel, plus printed UAE tourist e-Visa copy",
+    "Modest clothing covering shoulders and knees for Sheikh Zayed Grand Mosque and BAPS Hindu Mandir",
+    "Lightweight, breathable cotton clothing for warm daytime city and mall walks",
+    "Light cardigan or shawl for heavily air-conditioned indoor malls and breezy desert safari evenings",
+    "Universal UK/UAE three-pin square power plug adapter (Type G plug)",
+    "International credit card or multi-currency Forex card with international transactions enabled"
+  ],
+  "tips": [
+    "Dress code for Sheikh Zayed Grand Mosque is strictly enforced: women must wear loose ankle-length trousers or skirts, long sleeves, and a headscarf (hijab); men must wear full-length trousers and shirts.",
+    "Dubai tap water is safe for brushing, but bottled mineral water is provided complimentary in hotel rooms and on tours.",
+    "The local currency is the UAE Dirham (AED), pegged to the US Dollar (1 USD = 3.67 AED, approx. ₹22.5 to ₹23 per AED); cards are accepted almost everywhere.",
+    "Metro trains and public transport are remarkably clean and efficient; purchase an RTA Silver Nol Card if you wish to explore independently on free evenings."
+  ],
+  "cancellationPolicy": [
+    "Up to 30 days prior to departure: 100% refund minus visa fee (if already applied) and ₹2,500 admin fee",
+    "29 to 15 days prior to departure: 70% refund of total package value",
+    "14 to 8 days prior to departure: 40% refund of total package value",
+    "Within 7 days of departure: Non-refundable due to strict UAE attraction ticket and hotel guarantee policies"
+  ],
+  "paymentTerms": "Book with a 30% advance token; 50% due 20 days prior to travel; remaining 20% payable 7 days before departure.",
+  "faqs": [
+    {
+      "question": "How long does it take to process a UAE tourist visa for Indian citizens?",
+      "answer": "UAE tourist e-visas are typically processed within 3 to 4 working days. You simply need to provide clear color passport front and back scans, a passport-sized white background photograph, and confirmed flight details."
+    },
+    {
+      "question": "What is the dress code for visiting the Sheikh Zayed Grand Mosque in Abu Dhabi?",
+      "answer": "Modesty is strictly observed. Women must wear loose clothing covering wrists and ankles, and cover their heads with a scarf. Men must wear long trousers and shirts with sleeves. Tight clothing, translucent fabrics, and shorts are strictly forbidden."
+    },
+    {
+      "question": "Is dune bashing safe for seniors and children?",
+      "answer": "Dune bashing is thrilling and bumpy. Pregnant women, travellers with back or neck conditions, and infants under 3 years are advised against dune bashing. We can easily arrange for you to travel directly to the campsite in a gentle, non-bashing 4x4 vehicle."
+    },
+    {
+      "question": "Can I upgrade my Burj Khalifa ticket to the 148th floor (At the Top SKY)?",
+      "answer": "Yes. Our package includes standard tickets to floors 124 and 125. You can easily upgrade to the VIP 148th floor SKY lounge with priority elevators and refreshments for an additional differential fee."
+    },
+    {
+      "question": "Is vegetarian, Jain, or Indian food easily available in Dubai?",
+      "answer": "Dubai is exceptionally welcoming to Indian culinary preferences. Pure vegetarian, Jain, and South/North Indian restaurants are abundant in Bur Dubai, Karama, Deira, and in every major mall food court."
+    },
+    {
+      "question": "What is the Tourism Dirham fee?",
+      "answer": "The Tourism Dirham is a nominal mandatory municipal hospitality tax instituted by the Dubai Department of Economy and Tourism. For 4-star hotels, it is AED 15 (approx. ₹340) per bedroom per night, payable directly to the front desk at checkout."
+    },
+    {
+      "question": "What is the best way to carry money in Dubai?",
+      "answer": "We recommend carrying a zero-forex-markup card (such as Niyo or bookmyforex) or an international credit card for shopping, along with 200 to 400 AED in cash for small purchases, souk bargains, and tips."
+    }
+  ],
+  "departures": [
+    { "date": "2026-11-12", "price": "₹29,999", "seatsTotal": 20, "seatsLeft": 7, "status": "Filling Fast" },
+    { "date": "2026-11-26", "price": "₹29,999", "seatsTotal": 20, "seatsLeft": 11, "status": "Open" },
+    { "date": "2026-12-10", "price": "₹34,999", "seatsTotal": 20, "seatsLeft": 5, "status": "Filling Fast" },
+    { "date": "2026-12-28", "price": "₹49,999", "seatsTotal": 24, "seatsLeft": 2, "status": "Filling Fast" },
+    { "date": "2027-01-14", "price": "₹36,999", "seatsTotal": 20, "seatsLeft": 8, "status": "Filling Fast" },
+    { "date": "2027-02-18", "price": "₹32,999", "seatsTotal": 20, "seatsLeft": 14, "status": "Open" },
+    { "date": "2027-03-18", "price": "₹31,999", "seatsTotal": 20, "seatsLeft": 16, "status": "Open" },
+    { "date": "2027-04-15", "price": "₹29,999", "seatsTotal": 24, "seatsLeft": 21, "status": "Open" }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=2400",
+      "alt": "Panoramic sunset skyline view of Downtown Dubai with towering Burj Khalifa illuminated above city lights",
+      "caption": "The soaring spire of Burj Khalifa presiding over Downtown Dubai at twilight",
+      "credit": "ZQ Lee",
+      "creditUrl": "https://unsplash.com/@zqlee",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Red desert sand dunes with 4x4 Land Cruiser throwing sand during sunset dune bashing in Dubai",
+      "caption": "Thrilling 4x4 dune bashing across golden Arabian desert ridges",
+      "credit": "Darren Lawrence",
+      "creditUrl": "https://unsplash.com/@darrenlawrence",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Sheikh Zayed Grand Mosque in Abu Dhabi with white marble domes and reflective pools at blue hour",
+      "caption": "The monumental marble splendour of Sheikh Zayed Grand Mosque, Abu Dhabi",
+      "credit": "David Rodrigo",
+      "creditUrl": "https://unsplash.com/@davidrodrigo",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Dubai Marina illuminated with modern luxury skyscrapers and dining boats on the canal",
+      "caption": "Evening Dhow Cruise gliding through the dazzling Dubai Marina canal",
+      "credit": "Aleksandar Pasaric",
+      "creditUrl": "https://unsplash.com/@aleksandar-pasaric",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&q=80&w=1600",
+      "alt": "The iconic sail shaped luxury hotel Burj Al Arab standing over Arabian Gulf coast in Dubai",
+      "caption": "The legendary sail-shaped silhouette of Burj Al Arab along Jumeirah shoreline",
+      "credit": "Rami Rezgui",
+      "creditUrl": "https://unsplash.com/@ramirezgui",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Traditional Bedouin desert camp with carpeted low seating and evening performance stage under lanterns",
+      "caption": "Authentic Bedouin desert camp under the desert night sky",
+      "credit": "Nick Fewings",
+      "creditUrl": "https://unsplash.com/@nickfewings",
+      "source": "Unsplash"
+    }
+  ],
+  "seo": {
+    "title": "Dubai Tour Package: 4N/5D Burj Khalifa & Desert Safari",
+    "description": "Book a 5-day luxury Dubai holiday. Enjoy Burj Khalifa 124th floor, 4x4 desert safari, Marina dhow cruise, and Abu Dhabi Sheikh Zayed Grand Mosque."
+  },
+  "status": "published",
+  "featured": true
+}

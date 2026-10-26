@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { haptics } from '../lib/haptics'
 import Logo from './Logo'
+import { getWhatsAppLink } from '../lib/data'
 
 const Footer = () => {
   const location = useLocation()
@@ -9,49 +10,51 @@ const Footer = () => {
     return null
   }
   return (
-    <footer className="bg-charcoal text-white pt-20 pb-8 relative overflow-hidden border-t border-white/10">
-      <div className="absolute inset-0 liquid-glass-grain pointer-events-none"></div>
-      <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
-        <div className="space-y-6">
-          <Link to="/" onClick={() => haptics.light()} className="inline-block">
-            <Logo size="lg" />
+    <footer className="relative overflow-hidden border-t border-white/10 bg-[#0C1D1B] pb-6 pt-12 text-white sm:pt-16">
+      <div className="pointer-events-none absolute inset-0 liquid-glass-grain" />
+      <div className="relative z-10 mx-auto grid max-w-[1320px] grid-cols-2 gap-x-6 gap-y-10 px-5 sm:grid-cols-4 sm:gap-8 sm:px-8 lg:px-12">
+        <div className="col-span-2 space-y-4 sm:col-span-1">
+          <Link to="/" onClick={() => haptics.light()} className="inline-flex rounded-lg liquid-glass px-3 py-1">
+            <Logo size="sm" />
           </Link>
-          <p className="text-white/40 leading-relaxed text-xs italic font-medium">
-            Ahmedabad's premier community travel platform. Connecting curious travelers with authentic local, cruise, and international experiences.
+          <p className="max-w-xs text-xs leading-relaxed text-white/55">
+            Meaningful journeys, thoughtfully planned in Ahmedabad and made for wherever you want to go.
           </p>
         </div>
 
         <div>
-          <h4 className="text-[10px] font-black uppercase tracking-[0.3em] mb-6 text-secondary drop-shadow-md">Quick Navigation</h4>
-          <ul className="space-y-3 text-white/50 text-xs font-bold uppercase tracking-widest">
-            <li><Link to="/discover" onClick={() => haptics.light()} className="hover:text-white transition-colors flex items-center gap-2 group"><span className="w-0 h-px bg-secondary group-hover:w-3 transition-all duration-300"></span>Explore All Packages</Link></li>
-            <li><Link to="/cruise" onClick={() => haptics.light()} className="hover:text-white transition-colors flex items-center gap-2 group"><span className="w-0 h-px bg-secondary group-hover:w-3 transition-all duration-300"></span>Cruise Voyages</Link></li>
-            <li><Link to="/customize" onClick={() => haptics.light()} className="hover:text-white transition-colors flex items-center gap-2 group"><span className="w-0 h-px bg-secondary group-hover:w-3 transition-all duration-300"></span>Customize Trip</Link></li>
-            <li><Link to="/corporate" onClick={() => haptics.light()} className="hover:text-white transition-colors flex items-center gap-2 group"><span className="w-0 h-px bg-secondary group-hover:w-3 transition-all duration-300"></span>Corporate Tours</Link></li>
+          <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.18em] text-[#9bd3c6]">Explore</h2>
+          <ul className="space-y-3 text-xs font-medium text-white/60">
+            <li><Link to="/discover" onClick={() => haptics.light()} className="transition-colors hover:text-white">All journeys</Link></li>
+            <li><Link to="/cruise" onClick={() => haptics.light()} className="transition-colors hover:text-white">Cruise holidays</Link></li>
+            <li><Link to="/customize" onClick={() => haptics.light()} className="transition-colors hover:text-white">Plan a custom trip</Link></li>
+            <li><Link to="/corporate" onClick={() => haptics.light()} className="transition-colors hover:text-white">Corporate travel</Link></li>
           </ul>
         </div>
 
         <div>
-          <h4 className="text-[10px] font-black uppercase tracking-[0.3em] mb-6 text-secondary drop-shadow-md">Community & Support</h4>
-          <ul className="space-y-3 text-white/50 text-xs font-bold uppercase tracking-widest">
-            <li><Link to="/about" onClick={() => haptics.light()} className="hover:text-white transition-colors flex items-center gap-2 group"><span className="w-0 h-px bg-secondary group-hover:w-3 transition-all duration-300"></span>About Infi Yatra</Link></li>
-            <li><Link to="/community" onClick={() => haptics.light()} className="hover:text-white transition-colors flex items-center gap-2 group"><span className="w-0 h-px bg-secondary group-hover:w-3 transition-all duration-300"></span>Traveler Elite Tribe</Link></li>
-            <li><Link to="/admin/login" onClick={() => haptics.light()} className="hover:text-white transition-colors flex items-center gap-2 group"><span className="w-0 h-px bg-secondary group-hover:w-3 transition-all duration-300"></span>Admin Dashboard</Link></li>
+          <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.18em] text-[#9bd3c6]">INFIYATRA</h2>
+          <ul className="space-y-3 text-xs font-medium text-white/60">
+            <li><Link to="/about" onClick={() => haptics.light()} className="transition-colors hover:text-white">Our story</Link></li>
+            <li><Link to="/community" onClick={() => haptics.light()} className="transition-colors hover:text-white">Travel community</Link></li>
+            <li><Link to="/wishlist" onClick={() => haptics.light()} className="transition-colors hover:text-white">Wishlist</Link></li>
+            <li><Link to="/dashboard" onClick={() => haptics.light()} className="transition-colors hover:text-white">My account</Link></li>
+            <li><Link to="/credits" onClick={() => haptics.light()} className="transition-colors hover:text-white">Photo credits</Link></li>
           </ul>
         </div>
 
-        <div>
-          <h4 className="text-[10px] font-black uppercase tracking-[0.3em] mb-6 text-secondary drop-shadow-md">Join the Community</h4>
-          <p className="text-white/40 text-xs mb-4 italic font-medium">Subscribe for secret package deals and trip alerts.</p>
-          <div className="flex liquid-glass-dark rounded-full p-1 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
-            <input type="email" placeholder="YOUR EMAIL" className="bg-transparent border-none focus:ring-0 text-[10px] font-black uppercase tracking-widest px-4 flex-grow text-white placeholder-white/20" />
-            <button className="bg-secondary px-5 py-2.5 rounded-full text-[9px] font-black uppercase tracking-[0.2em] hover:bg-white hover:text-charcoal transition-all shadow-xl shadow-secondary/30">Join</button>
-          </div>
+        <div className="col-span-2 sm:col-span-1">
+          <h2 className="mb-4 text-[10px] font-bold uppercase tracking-[0.18em] text-[#9bd3c6]">Talk to a person</h2>
+          <p className="mb-4 text-xs leading-relaxed text-white/55">Not sure where to begin? Our trip team is a message away.</p>
+          <a href={getWhatsAppLink('Hi INFIYATRA, I would like help choosing a trip.')} target="_blank" rel="noopener noreferrer" onClick={() => haptics.medium()} className="inline-flex min-h-10 items-center gap-2 rounded-lg liquid-glass px-3 text-xs font-semibold text-white transition-colors hover:bg-white/20">
+            WhatsApp our team <span aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
 
-      <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20 mt-16 pt-6 border-t border-white/5 text-center relative z-10">
-        <p className="text-white/30 text-[9px] font-black uppercase tracking-[0.3em]">© 2026 INFIYATRA Travels. All rights reserved. <span className="text-secondary/50">Designed for Ahmedabad, Built for the World.</span></p>
+      <div className="relative z-10 mx-auto mt-10 flex max-w-[1320px] flex-col gap-2 border-t border-white/10 px-5 pt-5 text-[10px] font-medium text-white/35 sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-12">
+          <p className="text-white/75">© {new Date().getFullYear()} INFIYATRA Travels. All rights reserved.</p>
+          <p className="text-white/75">Proudly rooted in Ahmedabad.</p>
       </div>
     </footer>
   )

@@ -1,0 +1,240 @@
+{
+  "id": 102,
+  "slug": "goa-sun-sand-heritage",
+  "title": "Vibrant Goa: Coastal Breezes, Forts & Latin Quarters",
+  "tagline": "Bask on sunlit golden shores, explore historic Portuguese chapels, and sail on a starlit Mandovi cruise.",
+  "destination": "Goa",
+  "region": "West Coast",
+  "country": "India",
+  "category": ["beach", "family", "honeymoon", "budget", "adventure"],
+  "duration": {
+    "nights": 3,
+    "days": 4
+  },
+  "route": [
+    { "city": "North Goa (Candolim / Calangute)", "nights": 3 }
+  ],
+  "price": {
+    "from": "11,999",
+    "currency": "INR",
+    "per": "person twin sharing",
+    "priceBands": {
+      "standard": "11,999",
+      "deluxe": "17,999",
+      "premium": "32,999"
+    },
+    "offerBadge": "Weekend Favorite"
+  },
+  "bestTime": {
+    "months": ["October", "November", "December", "January", "February", "March", "April"],
+    "notes": "November to February offers dry, sun-drenched beach weather with gentle sea breezes; monsoon months (June-September) provide lush countryside greenery."
+  },
+  "difficulty": "Easy",
+  "groupType": "Couples, Friends & Family Leisure",
+  "minAge": 1,
+  "visaInfo": "Domestic destination: Indian citizens require a valid government photo ID (Aadhaar or Passport). International guests require an Indian Visa/e-Visa and passport.",
+  "overview": "Escape to India's sun-drenched sunshine state for a rejuvenating four-day coastal escape blending sun-bleached Arabian Sea shores with storied Indo-Portuguese heritage. Settle into a tranquil palm-fringed boutique resort in North Goa, where warm tropical ocean breezes set the tone for relaxation. Traverse the historic battlements of 17th-century Fort Aguada and its historic lighthouse overlooking panoramic ocean horizons before delving into the thrill of coastal water sports along Baga and Calangute. Shift pace into cultural discovery as you venture south into the UNESCO World Heritage precinct of Old Goa, marvelling at the gilded baroque altars of the Basilica of Bom Jesus and Se Cathedral. Meander through the vibrant pastel-hued alleys of Fontainhas, Asia's only authentic Latin Quarter, before stepping aboard a sunset catamaran cruise across the Mandovi River with traditional folk rhythms. With private sanitized transfers, daily breakfasts, and curated seaside dining, this trip captures Goa's carefree spirit at its very best.",
+  "highlights": [
+    "Three nights at a landscaped palm-fringed boutique resort near Candolim Beach",
+    "Scenic cliffside exploration of 17th-century Portuguese fortress Fort Aguada",
+    "Thrill-packed water sports experience with parasailing and jet-skiing options",
+    "Visit to UNESCO World Heritage shrines: Basilica of Bom Jesus and Se Cathedral",
+    "Walking tour through the vibrant mustard-and-blue alleys of Fontainhas Latin Quarter",
+    "1-hour sunset cruise on the Mandovi River featuring live Goan Dekhnni folk music",
+    "Sunset drinks and panoramic sea-cliff views from Chapora Fort overlooking Vagator",
+    "Authentic Goan culinary tasting of fresh prawn balchao, poee bread, and bebinca"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Goa & Candolim Beach Sunset Leisure",
+      "location": "North Goa",
+      "description": "Arrive at Dabolim Airport (GOI) or Manohar International Airport Mopa (GOX) where your private chauffeur awaits. Enjoy a smooth 45-minute drive past cashew plantations and emerald paddy fields to your beachfront resort in Candolim. Check into your tropical room and unwind by the poolside cabanas with fresh coconut water. In the late afternoon, take a leisurely barefoot stroll along Candolim's golden sand beach as the sky turns fiery crimson over the Arabian Sea. Savor your first authentic Goan coastal dinner at an open-air seaside shack.",
+      "activities": ["Airport Meet & Greet", "Resort Check-in", "Candolim Beach Sunset Walk", "Beach Shack Welcome Dinner"],
+      "meals": { "breakfast": false, "lunch": false, "dinner": false },
+      "stay": { "category": "4-Star Beachfront Resort", "city": "North Goa" },
+      "transferInfo": "Private AC sedan transfer from airport to resort (35-42 km, 45-60 mins depending on airport)."
+    },
+    {
+      "day": 2,
+      "title": "North Goa Coastal Discovery, Fort Aguada & Watersports",
+      "location": "North Goa",
+      "description": "After a lavish buffet breakfast, journey to the dramatic Sinquerim headland to explore 17th-century Fort Aguada and its four-storey stone lighthouse. Gaze out across the endless azure horizon where the Mandovi River meets the open ocean. Next, head to Calangute Beach for a thrilling watersports combo: soar high above the waves while parasailing and skim the surf on a tandem jet-ski. By late afternoon, ascend the ramparts of Chapora Fort for the legendary sunset over Vagator's red cliffs, finishing with music at a hillside lounge.",
+      "activities": ["Fort Aguada Lighthouse Tour", "Calangute Watersports Session", "Chapora Fort Panoramic Walk", "Vagator Beachside Lounge Visit"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "4-Star Beachfront Resort", "city": "North Goa" },
+      "transferInfo": "Private AC vehicle for full North Goa sightseeing loop (approx. 40 km total)."
+    },
+    {
+      "day": 3,
+      "title": "Old Goa Heritage Churches, Latin Quarter & Mandovi Cruise",
+      "location": "South Goa & Panaji",
+      "description": "Delve into Goa's deep spiritual and architectural roots after breakfast. Drive to Old Goa to marvel at the Basilica of Bom Jesus, holding the mortal remains of St. Francis Xavier, and the imposing 16th-century Se Cathedral with its Golden Bell. Continue to the historic Shree Manguesh Temple in Priol before arriving in Panaji. Take a guided heritage walk through Fontainhas, photographing charming Portuguese villas with terracotta roofs and wooden balconies. In the evening, board a scenic Mandovi River sunset cruise featuring live Goan folk dance performances.",
+      "activities": ["Basilica of Bom Jesus Guided Tour", "Se Cathedral Exploration", "Mangueshi Temple Darshan", "Fontainhas Latin Quarter Walk", "Mandovi River Sunset Cruise"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "4-Star Beachfront Resort", "city": "North Goa" },
+      "transferInfo": "Private AC vehicle for South Goa heritage and Panaji riverfront tour (approx. 55 km total)."
+    },
+    {
+      "day": 4,
+      "title": "Local Souvenir Bazaars & Departure Transfer",
+      "location": "North Goa",
+      "description": "Enjoy a slow, sun-dappled morning with breakfast overlooking the swimming pool. Spend your remaining hours shopping for roasted Goan cashews, homemade feni, hand-painted azulejo ceramic tiles, and traditional bebinca sweets at Panaji's vibrant municipal market or Candolim boutique shops. Return to the resort to pack your beachwear and complete checkout formalities. Your private chauffeur will transfer you comfortably to Goa Airport or Madgaon Railway Station for your return journey, refreshed and sun-kissed.",
+      "activities": ["Morning Poolside Leisure", "Panaji Municipal Spice Shopping", "Boutique Craft Purchases", "Airport Departure Drop-off"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "Departure", "city": "Goa" },
+      "transferInfo": "Private AC sedan transfer from resort to airport or railway station (approx. 40 km, 50 mins)."
+    }
+  ],
+  "inclusions": [
+    "3 nights accommodation at a premium 4-star resort with swimming pool in North Goa",
+    "Daily extensive buffet breakfast with Indian and continental selections",
+    "Return airport / railway station transfers in an exclusive private air-conditioned vehicle",
+    "Full-day guided North Goa sightseeing tour covering Fort Aguada and Chapora Fort",
+    "Full-day South Goa heritage cultural tour covering Old Goa churches and Mangueshi temple",
+    "Walking tour through the Portuguese Latin Quarter (Fontainhas) in Panaji",
+    "1-hour evening Mandovi River sunset cruise ticket including live Goan cultural performances",
+    "All vehicle fuel costs, parking fees, highway tolls, and driver allowances",
+    "Complimentary welcome non-alcoholic tropical drink upon resort check-in",
+    "24/7 dedicated infiYATRA on-ground customer concierge assistance"
+  ],
+  "exclusions": [
+    "Domestic flight tickets or train tickets to and from Goa (can be booked on request)",
+    "Watersports activity passes (parasailing, jet ski, banana ride available on direct payment)",
+    "Lunch, dinner, and alcoholic beverages not specified in the package inclusions",
+    "Personal expenses such as laundry, room service, telephone calls, and bellboy gratuities",
+    "Entry tickets to monuments or museums outside the specified itinerary",
+    "Peak holiday season surcharge for Christmas and New Year departures (Dec 22 – Jan 5)",
+    "Mandatory comprehensive personal travel and medical insurance",
+    "Any additional sightseeing or detour mileage not included in the standard route plan"
+  ],
+  "hotels": [
+    {
+      "city": "North Goa (Candolim)",
+      "name": "Santana Beach Resort / Lemon Tree Amarante Beach Resort or similar",
+      "category": "4-Star Beachfront Resort",
+      "nights": 3
+    }
+  ],
+  "transport": {
+    "mode": "Private Air-Conditioned Sedan / SUV",
+    "details": "Dedicated sanitized private sedan (Dzire/Etios) for 2-3 guests or Innova Crysta for larger families, including all intercity transfers and daily scheduled sightseeing."
+  },
+  "thingsToCarry": [
+    "Lightweight cotton and linen beachwear, swimwear, and comfortable sun dresses",
+    "Polarized sunglasses, wide-brim hat, and reef-safe sunscreen SPF 50+",
+    "Waterproof pouch for smartphones and small electronic items during beach outings",
+    "Comfortable flip-flops for beach walks and walking sandals for heritage cobblestone paths",
+    "Modest shoulder and knee-covering attire for entering Old Goa churches and temples",
+    "Government-issued original photo ID card (Aadhaar or Passport) for hotel check-in"
+  ],
+  "tips": [
+    "Old Goa churches (Basilica of Bom Jesus & Se Cathedral) maintain a strict dress code; please ensure shoulders and knees are covered.",
+    "Watersports in Calangute are seasonal and operate strictly weather permitting; life jackets must be worn at all times.",
+    "Bargaining is expected at night markets and beach shacks, but boutique azulejo tile shops have fixed artisan prices.",
+    "Two airports now serve Goa: Dabolim (GOI) in South Goa and Manohar Mopa (GOX) in North Goa; confirm your flight terminal before scheduling transfers."
+  ],
+  "cancellationPolicy": [
+    "Up to 21 days before departure: 100% refund minus nominal processing fee (₹1,000)",
+    "20 to 10 days before departure: 60% refund of total package price",
+    "9 to 4 days before departure: 30% refund of total package price",
+    "Within 72 hours of departure: Non-refundable due to confirmed resort guarantees"
+  ],
+  "paymentTerms": "Book with a 20% advance token; 50% due 15 days before arrival; remaining 30% payable on arrival in Goa.",
+  "faqs": [
+    {
+      "question": "Which airport should I fly into: Dabolim (GOI) or Mopa (GOX)?",
+      "answer": "Both airports are well-connected. If staying in North Goa (Candolim, Calangute, Baga), Mopa (GOX) is slightly closer (approx. 30-40 minutes drive). Dabolim (GOI) is roughly 50-60 minutes away. Our private transfer service operates seamlessly from both terminals."
+    },
+    {
+      "question": "Is North Goa or South Goa better for this short break?",
+      "answer": "North Goa is ideal for a vibrant 4-day trip as it combines lively beaches, water sports, top-rated restaurants, and easy access to Panaji and Old Goa. South Goa is quieter and suited for laid-back luxury stays."
+    },
+    {
+      "question": "Are water sports included in the package base price?",
+      "answer": "Watersports (parasailing, jet-skiing, banana boats) are kept as optional direct-payment add-ons so guests who prefer lounging aren't charged unnecessarily. Packages can be pre-upgraded with an adventure pass."
+    },
+    {
+      "question": "Is the Mandovi River cruise family-friendly?",
+      "answer": "Yes, absolutely. The Mandovi sunset cruise is a popular family activity featuring live Goan brass bands, Dekhnni folk dances, panoramic river sunset views, and safe double-deck catamarans."
+    },
+    {
+      "question": "Can we rent self-drive scooters or cars during our stay?",
+      "answer": "Yes. While our package includes all private sightseeing transfers, our resort reception and concierge can assist you in renting licensed self-drive scooters (approx. ₹400-600/day) with a valid driving license."
+    },
+    {
+      "question": "What is the dress code for visiting churches in Old Goa?",
+      "answer": "Visitors must dress respectfully when entering the Basilica of Bom Jesus and Se Cathedral. Sleeveless tops, short skirts, and beachwear are not permitted inside the consecrated sanctuaries."
+    },
+    {
+      "question": "What local dishes should we not miss in Goa?",
+      "answer": "Be sure to try authentic Goan fish curry with steamed rice, chicken cafreal, pork vindaloo, freshly baked warm poee bread, and the seven-layered traditional dessert bebinca."
+    }
+  ],
+  "departures": [
+    { "date": "2026-11-05", "price": "₹11,999", "seatsTotal": 20, "seatsLeft": 8, "status": "Filling Fast" },
+    { "date": "2026-11-19", "price": "₹11,999", "seatsTotal": 20, "seatsLeft": 14, "status": "Open" },
+    { "date": "2026-12-03", "price": "₹13,999", "seatsTotal": 20, "seatsLeft": 6, "status": "Filling Fast" },
+    { "date": "2026-12-24", "price": "₹22,999", "seatsTotal": 24, "seatsLeft": 3, "status": "Filling Fast" },
+    { "date": "2027-01-14", "price": "₹14,999", "seatsTotal": 20, "seatsLeft": 11, "status": "Open" },
+    { "date": "2027-02-11", "price": "₹13,499", "seatsTotal": 20, "seatsLeft": 15, "status": "Open" },
+    { "date": "2027-03-18", "price": "₹12,499", "seatsTotal": 20, "seatsLeft": 18, "status": "Open" },
+    { "date": "2027-04-15", "price": "₹11,999", "seatsTotal": 24, "seatsLeft": 19, "status": "Open" }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&q=80&w=2400",
+      "alt": "Golden sunset over Candolim beach in Goa with silhouette palm trees and gentle Arabian sea surf",
+      "caption": "Golden dusk unfolding over the palm-lined beaches of North Goa",
+      "credit": "Ashwin Kumar",
+      "creditUrl": "https://unsplash.com/@ashwin_kumar",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Historic stone masonry of Fort Aguada lighthouse overlooking turquoise Arabian sea in Goa",
+      "caption": "17th-century Fort Aguada and historic maritime lighthouse",
+      "credit": "Darshan Chudasama",
+      "creditUrl": "https://unsplash.com/@darshanchudasama",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Colorful Portuguese colonial style heritage houses with wooden balconies in Fontainhas Latin Quarter Panaji",
+      "caption": "Cobbled alleys and pastel heritage facades of Fontainhas Latin Quarter",
+      "credit": "Nikhil Mitra",
+      "creditUrl": "https://unsplash.com/@nikhilmitra",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&q=80&w=1600",
+      "alt": "The magnificent baroque architecture of Basilica of Bom Jesus in Old Goa UNESCO World Heritage site",
+      "caption": "Basilica of Bom Jesus, a masterpiece of Baroque church architecture",
+      "credit": "Abhishek Gaurav",
+      "creditUrl": "https://unsplash.com/@abhishek_gaurav",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Vagator red cliffs beach sunset with crashing waves and cliffside sea view restaurants in North Goa",
+      "caption": "Dramatic red cliffs of Vagator Beach at twilight",
+      "credit": "Sagar Patil",
+      "creditUrl": "https://unsplash.com/@sagarpatil",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Parasailing boat towing colorful parachute over blue ocean waters of Calangute Beach in Goa",
+      "caption": "Parasailing over azure waters off Calangute shoreline",
+      "credit": "Rohan Reddy",
+      "creditUrl": "https://unsplash.com/@rohanreddy",
+      "source": "Unsplash"
+    }
+  ],
+  "seo": {
+    "title": "Goa Tour Package: 3N/4D Beach Resort & Heritage Holiday",
+    "description": "Book a 4-day Goa holiday package. Experience Candolim beach resorts, Fort Aguada, Old Goa churches, Fontainhas Latin Quarter, and Mandovi river cruise."
+  },
+  "status": "published",
+  "featured": true
+}

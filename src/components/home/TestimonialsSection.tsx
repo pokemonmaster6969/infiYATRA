@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import { Heart } from 'lucide-react'
 
 export default function TestimonialsSection() {
@@ -10,39 +9,35 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="py-24 bg-charcoal relative overflow-hidden">
-      {/* Background Graphic */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary/5 blur-[100px] rounded-full pointer-events-none"></div>
-      
-      <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
-        <div className="text-center mb-16 space-y-4">
-          <Heart className="text-secondary mx-auto drop-shadow-lg" size={40} />
-          <h2 className="text-4xl md:text-6xl font-display font-black text-white tracking-tighter uppercase italic leading-none">
-            Traveler <span className="text-secondary">Love</span>
+    <section className="relative overflow-hidden bg-charcoal py-16 sm:py-20 lg:py-24">
+      <div className="relative z-10 mx-auto max-w-[1320px] px-5 sm:px-8 lg:px-12">
+        <div className="mb-8 flex items-end justify-between gap-4 sm:mb-10">
+          <div className="space-y-3">
+          <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-secondary-light">Notes from the road</p>
+          <h2 className="font-display text-3xl font-black uppercase italic leading-none tracking-tight text-white sm:text-4xl">
+            Stories that <span className="text-secondary-light">travel</span>
           </h2>
+          </div>
+          <Heart className="hidden text-secondary sm:block" size={25} />
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-          {testimonials.map((test, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
-              viewport={{ once: true }}
-              className="liquid-glass-dark p-12 rounded-[4rem] border border-white/10 hover:border-secondary/20 transition-all duration-700 shadow-2xl group"
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
+          {testimonials.map((test) => (
+            <div
+              key={test.name}
+              className="rounded-lg border border-white/10 bg-white/[0.025] p-6 transition-colors hover:border-white/20 sm:p-7"
             >
-              <p className="text-white/80 font-medium text-lg leading-relaxed italic mb-8">"{test.text}"</p>
-              <div className="flex items-center space-x-6">
-                <div className="w-16 h-16 rounded-full bg-secondary/20 flex items-center justify-center border border-secondary/20 group-hover:bg-secondary transition-all">
-                  <span className="text-white font-black text-xl">{test.name[0]}</span>
+              <p className="mb-6 text-base font-medium leading-relaxed text-white/80">“{test.text}”</p>
+              <div className="flex items-center gap-4 border-t border-white/10 pt-4">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/30 text-sm font-bold text-[#b6e2d1]">
+                  <span>{test.name[0]}</span>
                 </div>
                 <div>
-                  <h4 className="text-xl font-display font-black text-white uppercase italic tracking-tighter group-hover:text-secondary transition-all">{test.name}</h4>
-                  <p className="text-white/40 text-[10px] font-black uppercase tracking-[0.3em] mt-1">{test.role}</p>
+                  <h3 className="font-display text-sm font-bold uppercase tracking-tight text-white">{test.name}</h3>
+                  <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-white/75">{test.role}</p>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

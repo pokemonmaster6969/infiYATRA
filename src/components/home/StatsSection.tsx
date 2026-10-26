@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import { Users, TrendingUp, Heart, MapPin } from 'lucide-react'
 
 export default function StatsSection() {
@@ -11,29 +10,22 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="py-20 bg-charcoal relative overflow-hidden">
-      {/* Background Accent */}
-      <div className="absolute top-0 right-0 w-96 h-1/2 bg-primary/10 blur-[80px] rounded-full pointer-events-none"></div>
-      
-      <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20 relative z-10">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-          {stats.map((stat, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.1 }}
-              viewport={{ once: true }}
-              className="flex flex-col items-center group cursor-default"
+    <section className="relative overflow-hidden border-y border-white/[0.08] bg-[#102522] py-12 sm:py-16">
+      <div className="relative z-10 mx-auto max-w-[1320px] px-5 sm:px-8 lg:px-12">
+        <div className="grid grid-cols-2 gap-y-8 sm:grid-cols-4 sm:gap-6">
+          {stats.map((stat) => (
+            <div
+              key={stat.label}
+              className="group flex min-w-0 flex-col items-center text-center"
             >
-              <div className="liquid-glass-dark w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-secondary/20 transition-all duration-700">
-                <stat.icon className="text-white opacity-80 group-hover:text-secondary group-hover:opacity-100 transition-all" size={24} />
+              <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-full liquid-glass text-[#9bd3c6] transition-colors group-hover:bg-white/20 sm:mb-4">
+                <stat.icon size={19} />
               </div>
               <div className="text-center">
-                <p className="text-3xl md:text-4xl font-display font-black text-white drop-shadow-2xl tracking-tighter leading-none mb-2 uppercase italic liquid-text">{stat.value}</p>
-                <p className="text-[9px] text-white/40 uppercase tracking-[0.4em] font-black">{stat.label}</p>
+                <p className="mb-1 font-display text-2xl font-bold leading-none text-white sm:text-3xl">{stat.value}</p>
+                <p className="text-[9px] font-semibold uppercase tracking-[0.16em] text-white/75">{stat.label}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

@@ -1,177 +1,116 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, User, Heart, X, Sparkles } from 'lucide-react'
+import { Link, NavLink, useLocation } from 'react-router-dom'
+import { Anchor, BriefcaseBusiness, Compass, Heart, Menu, SlidersHorizontal, User, X } from 'lucide-react'
 import { haptics } from '../lib/haptics'
 import Logo from './Logo'
 
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
 
-  if (location.pathname.startsWith('/admin')) {
-    return null
-  }
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 40)
-    }
-    
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  // Close mobile menu on route change
   useEffect(() => {
     setIsOpen(false)
-  }, [location])
+  }, [location.pathname])
+
+  useEffect(() => {
+    if (!isOpen) return
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setIsOpen(false)
+    }
+    window.addEventListener('keydown', closeOnEscape)
+    return () => window.removeEventListener('keydown', closeOnEscape)
+  }, [isOpen])
+
+  if (location.pathname.startsWith('/admin')) return null
 
   const navLinks = [
-    { name: 'Explore All', path: '/discover' },
-    { name: 'Cruise Voyages', path: '/cruise' },
-    { name: 'Customize Trip', path: '/customize' },
-    { name: 'Corporate Tours', path: '/corporate' },
-    { name: 'About Us', path: '/about' }
+    { name: 'Explore', path: '/discover', icon: Compass },
+    { name: 'Cruises', path: '/cruise', icon: Anchor },
+    { name: 'Custom trips', path: '/customize', icon: SlidersHorizontal },
+    { name: 'Corporate', path: '/corporate', icon: BriefcaseBusiness },
   ]
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 flex justify-center w-full px-4 md:px-8 pt-3 md:pt-4 pointer-events-none">
-        <div className={`w-full max-w-[1720px] mx-auto rounded-full liquid-glass shadow-2xl transition-all duration-500 pointer-events-auto ${
-          scrolled ? 'py-2 px-6 scale-[0.99] bg-black/60' : 'py-2.5 px-6 md:px-8'
-        }`}>
-          
-          <div className="flex justify-between items-center h-12 md:h-14">
-            {/* Logo */}
-            <Link to="/" onClick={() => haptics.light()} className="flex items-center group py-1">
-              <Logo size="md" />
-            </Link>
+      <nav className="fixed inset-x-0 top-0 z-50 px-3 pt-3 md:px-6 md:pt-4" aria-label="Main navigation">
+        <div className="mx-auto flex h-[60px] max-w-[1320px] items-center justify-between rounded-xl liquid-glass px-3 shadow-[0_12px_40px_rgba(5,23,21,0.25)] sm:px-5 md:h-[68px] md:px-6">
+          <Link to="/" onClick={() => haptics.light()} className="group flex h-full items-center" aria-label="INFIYATRA home">
+            <Logo size="sm" />
+          </Link>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-7">
-              {navLinks.map((link) => {
-                const isActive = location.pathname === link.path
-                return (
-                  <Link 
-                    key={link.name}
-                    to={link.path} 
-                    onClick={() => haptics.light()}
-                    className={`transition-all duration-300 font-bold text-[10px] uppercase tracking-[0.2em] relative group py-1 ${
-                      isActive ? 'text-secondary' : 'text-white/80 hover:text-white'
-                    }`}
-                  >
-                    {link.name}
-                    <span className={`absolute bottom-0 left-0 h-0.5 bg-secondary transition-all duration-300 ${
-                      isActive ? 'w-full' : 'w-0 group-hover:w-full'
-                    }`} />
-                  </Link>
-                )
-              })}
-            </div>
-
-            {/* Right Action Icons */}
-            <div className="hidden lg:flex items-center space-x-5">
-              <Link to="/dashboard" title="User Dashboard" onClick={() => haptics.light()} className="transition-colors duration-300 text-white/80 hover:text-secondary">
-                <User size={18} />
-              </Link>
-              <Link to="/wishlist" title="Wishlist" onClick={() => haptics.light()} className="transition-colors duration-300 text-white/80 hover:text-secondary">
-                <Heart size={18} />
-              </Link>
-            </div>
-
-            {/* Mobile Menu Toggle */}
-            <div className="lg:hidden flex items-center gap-3">
-              <button 
-                onClick={() => {
-                  haptics.light();
-                  setIsOpen(true);
-                }}
-                className="p-1.5 transition-colors duration-300 text-white"
-                aria-label="Open Navigation Menu"
+          <div className="hidden items-center gap-1 lg:flex">
+            {navLinks.map(link => (
+              <NavLink
+                key={link.path}
+                to={link.path}
+                onClick={() => haptics.light()}
+                className={({ isActive }) => `flex min-h-10 items-center gap-2 rounded-lg px-3.5 text-[11px] font-semibold transition-colors ${isActive ? 'bg-white/15 text-white' : 'text-white/70 hover:bg-white/10 hover:text-white'}`}
               >
-                <Menu size={24} />
-              </button>
-            </div>
+                <link.icon size={14} /> {link.name}
+              </NavLink>
+            ))}
+          </div>
+
+          <div className="hidden items-center gap-2 lg:flex">
+            <Link to="/about" className="px-3 text-xs font-medium text-white/60 transition-colors hover:text-white">Our story</Link>
+            <Link to="/dashboard" aria-label="Your account" title="Your account" onClick={() => haptics.light()} className="flex h-10 w-10 items-center justify-center rounded-lg text-white/80 transition-colors hover:bg-white/10 hover:text-white"><User size={18} /></Link>
+            <Link to="/wishlist" aria-label="Wishlist" title="Wishlist" onClick={() => haptics.light()} className="flex h-10 w-10 items-center justify-center rounded-lg text-white/80 transition-colors hover:bg-white/10 hover:text-white"><Heart size={18} /></Link>
+            <Link to="/discover" onClick={() => haptics.medium()} className="ml-1 inline-flex min-h-10 items-center gap-2 rounded-lg bg-secondary px-4 text-[11px] font-bold text-white transition-colors hover:bg-secondary-light">Find a trip <Compass size={14} /></Link>
+          </div>
+
+          <div className="flex items-center gap-1 lg:hidden">
+            <Link to="/wishlist" aria-label="Wishlist" className="flex h-10 w-10 items-center justify-center rounded-lg text-white/80 hover:bg-white/10"><Heart size={18} /></Link>
+            <button
+              type="button"
+              onClick={() => { haptics.light(); setIsOpen(open => !open) }}
+              className="flex h-10 w-10 items-center justify-center rounded-lg text-white transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white"
+              aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={isOpen}
+              aria-controls="mobile-navigation"
+            >
+              {isOpen ? <X size={21} /> : <Menu size={21} />}
+            </button>
           </div>
         </div>
       </nav>
 
-      {/* Mobile Menu Drawer */}
-      <AnimatePresence>
-        {isOpen && (
-          <div className="fixed inset-0 z-[60] lg:hidden">
-            <motion.div 
-               initial={{ opacity: 0 }}
-               animate={{ opacity: 1 }}
-               exit={{ opacity: 0 }}
-               onClick={() => setIsOpen(false)}
-               className="absolute inset-0 bg-black/60 backdrop-blur-md"
-            />
-            <motion.div 
-               initial={{ opacity: 0, scale: 0.9, x: '-50%', y: '-45%' }}
-               animate={{ opacity: 1, scale: 1, x: '-50%', y: '-50%' }}
-               exit={{ opacity: 0, scale: 0.9, x: '-50%', y: '-45%' }}
-               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-               className="absolute top-1/2 left-1/2 w-[90%] max-w-[360px] liquid-glass shadow-2xl p-8 rounded-[3rem] flex flex-col max-h-[85vh] overflow-y-auto"
-            >
-              <div className="flex justify-between items-center mb-8 relative z-10">
-                 <Link to="/" onClick={() => { haptics.light(); setIsOpen(false); }}>
-                   <Logo size="md" showText={true} />
-                 </Link>
-                 <button 
-                   onClick={() => {
-                     haptics.light();
-                     setIsOpen(false);
-                   }}
-                   className="p-2 liquid-glass rounded-xl text-white hover:bg-white/10 transition-colors border border-white/10"
-                 >
-                   <X size={22} />
-                 </button>
+      {isOpen && (
+        <div className="fixed inset-0 z-[60] lg:hidden">
+          <button
+            type="button"
+            aria-label="Close navigation menu"
+            onClick={() => setIsOpen(false)}
+            className="absolute inset-0 h-full w-full animate-[fadeIn_160ms_ease-out] bg-[#071311]/65 backdrop-blur-sm"
+          />
+          <div
+            id="mobile-navigation"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Site navigation"
+            className="absolute inset-x-3 top-[82px] max-h-[calc(100dvh-98px)] animate-[slideUp_180ms_ease-out] overflow-y-auto rounded-xl liquid-glass-dark p-5 shadow-2xl sm:inset-x-6 sm:p-6"
+            style={{ paddingBottom: 'max(1.25rem, env(safe-area-inset-bottom))' }}
+          >
+              <div className="mb-4 flex items-center justify-between border-b border-white/10 pb-4">
+                <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-white/45">Plan your next escape</p>
+                <Link to="/dashboard" onClick={() => setIsOpen(false)} className="flex min-h-10 items-center gap-2 rounded-lg px-3 text-xs font-semibold text-white/80 hover:bg-white/10"><User size={16} /> Account</Link>
               </div>
-
-              <div className="flex flex-col space-y-5 flex-grow relative z-10">
-                 {navLinks.map((link, idx) => (
-                   <motion.div
-                     key={link.name}
-                     initial={{ opacity: 0, x: 20 }}
-                     animate={{ opacity: 1, x: 0 }}
-                     transition={{ delay: idx * 0.06 }}
-                   >
-                     <Link 
-                       to={link.path}
-                       onClick={() => setIsOpen(false)}
-                       className="text-xl font-display font-black text-white hover:text-secondary transition-colors uppercase italic drop-shadow-lg block"
-                     >
-                       {link.name}
-                     </Link>
-                   </motion.div>
-                 ))}
-                 
-                 <div className="h-px bg-white/20 w-full my-2" />
-                 
-                 <div className="flex items-center space-x-6">
-                   <Link to="/dashboard" onClick={() => setIsOpen(false)} className="text-white p-3 liquid-glass border border-white/20 rounded-2xl hover:bg-white/10 transition-all flex items-center gap-2 text-xs font-bold">
-                      <User size={18} /> Account
-                   </Link>
-                   <Link to="/admin/login" onClick={() => setIsOpen(false)} className="text-white p-3 liquid-glass border border-white/20 rounded-2xl hover:bg-white/10 transition-all text-xs font-bold">
-                      Admin
-                   </Link>
-                 </div>
+              <div className="grid gap-1">
+                {navLinks.map(link => (
+                  <NavLink
+                    key={link.path}
+                    to={link.path}
+                    onClick={() => { haptics.light(); setIsOpen(false) }}
+                    className={({ isActive }) => `flex min-h-12 items-center gap-3 rounded-lg px-3 text-sm font-semibold ${isActive ? 'bg-white/12 text-white' : 'text-white/70 hover:bg-white/8 hover:text-white'}`}
+                  >
+                    <link.icon size={17} className="text-[#8fd0c4]" /> {link.name}
+                  </NavLink>
+                ))}
+                <NavLink to="/about" onClick={() => setIsOpen(false)} className="flex min-h-12 items-center gap-3 rounded-lg px-3 text-sm font-semibold text-white/70 hover:bg-white/8 hover:text-white"><Compass size={17} className="text-[#8fd0c4]" /> Our story</NavLink>
               </div>
-
-              <Link 
-                to="/customize" 
-                onClick={() => setIsOpen(false)}
-                className="w-full bg-secondary text-white py-4 rounded-2xl flex items-center justify-center font-black text-xs uppercase tracking-[0.25em] shadow-xl shadow-secondary/30 mt-6 active:scale-95 transition-all outline-none relative z-10"
-              >
-                 Customize Trip
-              </Link>
-            </motion.div>
+              <Link to="/discover" onClick={() => setIsOpen(false)} className="mt-4 flex min-h-12 items-center justify-center gap-2 rounded-lg bg-secondary px-4 text-sm font-bold text-white">Browse journeys <Compass size={16} /></Link>
           </div>
-        )}
-      </AnimatePresence>
+        </div>
+      )}
     </>
   )
 }

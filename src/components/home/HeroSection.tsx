@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 import { ChevronLeft, ChevronRight, Compass, Sparkles, SlidersHorizontal, PhoneCall } from "lucide-react";
+import ResponsiveImage from "../ResponsiveImage";
 import { heroSlides as staticHeroSlides, getWhatsAppLink } from "../../lib/data";
 import { getHeroSlides, optimizeImageUrl } from "../../lib/dataService";
 import { haptics } from "../../lib/haptics";
@@ -11,16 +10,11 @@ export default function HeroSection() {
   const [heroSlides, setHeroSlides] = useState<any[]>(staticHeroSlides);
   const [index, setIndex] = useState(0);
 
-  // Load slides and preload initial images
   useEffect(() => {
     const fetchSlides = () => {
       getHeroSlides().then((slides) => {
         if (slides && slides.length > 0) {
           setHeroSlides(slides);
-          slides.slice(0, 3).forEach((slide: any) => {
-            const img = new Image();
-            img.src = optimizeImageUrl(slide.image, 1920, 85);
-          });
         }
       });
     };
@@ -29,22 +23,6 @@ export default function HeroSection() {
     window.addEventListener('hero_slides_updated', fetchSlides);
     return () => window.removeEventListener('hero_slides_updated', fetchSlides);
   }, []);
-
-  // Auto-play timer
-  useEffect(() => {
-    if (heroSlides.length === 0) return;
-    const timer = setInterval(() => {
-      setIndex((prev) => (prev + 1) % heroSlides.length);
-    }, 6000);
-
-    const nextIndex = (index + 1) % heroSlides.length;
-    if (heroSlides[nextIndex]) {
-      const img = new Image();
-      img.src = optimizeImageUrl(heroSlides[nextIndex].image, 1920, 85);
-    }
-
-    return () => clearInterval(timer);
-  }, [heroSlides.length, index]);
 
   const goToPrev = () => {
     haptics.medium();
@@ -68,32 +46,19 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full h-[100vh] min-h-[680px] max-h-[1080px] overflow-hidden bg-black flex flex-col justify-end items-center select-none">
-      <Helmet>
-        {heroSlides.slice(0, 2).map((s, i) => (
-          <link key={`preload-${i}`} rel="preload" as="image" href={optimizeImageUrl(s.image, 1920, 85)} />
-        ))}
-      </Helmet>
-
+    <section className="relative flex h-[100svh] min-h-[660px] max-h-[1080px] w-full select-none flex-col items-center justify-end overflow-hidden bg-black">
       {/* Background Images with smooth fade transition */}
       <div className="absolute inset-0 z-0">
-        <AnimatePresence mode="popLayout">
-          <motion.div
-            key={`bg-${index}`}
-            initial={{ opacity: 0, scale: 1.08 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 1.02 }}
-            transition={{ duration: 1.4, ease: "easeInOut" }}
-            className="absolute inset-0 w-full h-full"
-          >
-            <img
-              src={optimizeImageUrl(slide.image, 1920, 85)}
-              alt={slide.title}
-              className="w-full h-full object-cover"
-              loading="eager"
-            />
-          </motion.div>
-        </AnimatePresence>
+        <div key={`bg-${index}`} className="absolute inset-0 h-full w-full animate-fade-in">
+          <ResponsiveImage
+            src={slide.image}
+            alt={slide.title}
+            sizes="100vw"
+            fetchPriority="high"
+            className="h-full w-full object-cover"
+            loading="eager"
+          />
+        </div>
       </div>
 
       {/* Subtle dark overlay — lets the image show through */}
@@ -105,48 +70,24 @@ export default function HeroSection() {
       }} />
 
       {/* Main Hero Content — pushed towards bottom for cinematic feel */}
-      <div className="relative z-20 w-full max-w-5xl mx-auto px-6 text-center pb-32 md:pb-36">
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 border border-white/15 shadow-lg backdrop-blur-md mb-6"
-        >
-          <Sparkles size={13} className="text-secondary animate-pulse" />
-          <span className="text-[10px] font-black text-white/90 uppercase tracking-[0.3em]">
-            AHMEDABAD'S PREMIER TRAVEL COMMUNITY
-          </span>
-        </motion.div>
+      <div className="relative z-20 mx-auto w-full max-w-[1320px] px-5 pb-28 text-left sm:px-8 sm:pb-32 lg:px-12 lg:pb-36">
 
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={`content-${index}`}
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -15 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            className="space-y-4"
-          >
-            <h1 className="font-display font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-white tracking-tighter uppercase italic leading-[0.95] drop-shadow-2xl liquid-text">
-              {slide.title}
-            </h1>
-            <p className="text-white/80 text-sm sm:text-lg lg:text-xl font-medium italic max-w-2xl mx-auto leading-relaxed drop-shadow-md">
-              {slide.subtitle}
-            </p>
-          </motion.div>
-        </AnimatePresence>
+
+        <div key={`content-${index}`} className="max-w-4xl animate-fade-in space-y-3">
+          <h1 className="font-display text-4xl font-black uppercase italic leading-[0.96] tracking-tight text-white drop-shadow-2xl sm:text-6xl md:text-7xl lg:text-8xl">
+            {slide.title}
+          </h1>
+          <p className="max-w-xl text-sm font-medium leading-relaxed text-white/80 drop-shadow-md sm:text-base lg:text-lg">
+            {slide.subtitle}
+          </p>
+        </div>
 
         {/* CTA Buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="flex flex-wrap items-center justify-center gap-4 mt-8"
-        >
+        <div className="mt-6 flex animate-fade-in flex-col items-stretch gap-2.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3 [animation-delay:180ms]">
           <Link
             to="/discover"
             onClick={() => haptics.medium()}
-            className="px-8 py-4 bg-secondary text-white rounded-full font-black text-xs uppercase tracking-widest transition-all duration-300 hover:scale-105 hover:bg-white hover:text-charcoal shadow-2xl shadow-secondary/40 flex items-center gap-2"
+            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg liquid-glass px-5 text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-white/20 sm:px-6"
           >
             <Compass size={15} />
             Explore Packages
@@ -155,7 +96,7 @@ export default function HeroSection() {
           <Link
             to="/customize"
             onClick={() => haptics.medium()}
-            className="px-8 py-4 bg-primary text-white rounded-full font-black text-xs uppercase tracking-widest transition-all duration-300 hover:scale-105 hover:bg-white hover:text-charcoal shadow-2xl shadow-primary/40 flex items-center gap-2"
+            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg liquid-glass px-5 text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-white/20 sm:px-6"
           >
             <SlidersHorizontal size={15} />
             Customize Trip
@@ -166,19 +107,19 @@ export default function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => haptics.medium()}
-            className="px-8 py-4 bg-white/10 border border-white/25 text-white rounded-full font-black text-xs uppercase tracking-widest transition-all duration-300 hover:bg-white/20 backdrop-blur-md flex items-center gap-2"
+            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg liquid-glass px-5 text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-white/20 sm:px-6"
           >
             <PhoneCall size={15} />
             Contact Us
           </a>
-        </motion.div>
+        </div>
       </div>
 
       {/* Prev / Next Arrows */}
       <button
         onClick={goToPrev}
         aria-label="Previous Slide"
-        className="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-black/30 border border-white/15 text-white hover:bg-white hover:text-black transition-all shadow-xl hover:scale-110 active:scale-95 hidden sm:flex items-center justify-center backdrop-blur-sm"
+        className="absolute left-4 top-1/2 z-30 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full liquid-glass text-white shadow-xl transition-colors hover:bg-white/20 sm:flex lg:left-8"
       >
         <ChevronLeft size={24} />
       </button>
@@ -186,13 +127,13 @@ export default function HeroSection() {
       <button
         onClick={goToNext}
         aria-label="Next Slide"
-        className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-black/30 border border-white/15 text-white hover:bg-white hover:text-black transition-all shadow-xl hover:scale-110 active:scale-95 hidden sm:flex items-center justify-center backdrop-blur-sm"
+        className="absolute right-4 top-1/2 z-30 hidden h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full liquid-glass text-white shadow-xl transition-colors hover:bg-white/20 sm:flex lg:right-8"
       >
         <ChevronRight size={24} />
       </button>
 
       {/* Bottom Center Pagination */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex items-center gap-4 bg-black/40 backdrop-blur-md px-5 py-2.5 rounded-full border border-white/10 shadow-xl">
+      <div className="absolute bottom-4 left-1/2 z-30 flex max-w-[calc(100%-2rem)] -translate-x-1/2 items-center gap-2 rounded-full liquid-glass-dark px-3 py-2 sm:bottom-6 sm:gap-4 sm:px-5 sm:py-2.5">
         <span className="text-[10px] font-black text-white/70 uppercase tracking-widest">
           {String(index + 1).padStart(2, '0')} / {String(heroSlides.length).padStart(2, '0')}
         </span>
@@ -203,10 +144,10 @@ export default function HeroSection() {
               key={i}
               onClick={() => goTo(i)}
               aria-label={`Slide ${i + 1}`}
-              className={`h-2 rounded-full transition-all duration-500 ${
-                i === index ? "w-7 bg-secondary shadow-lg shadow-secondary/50" : "w-2 bg-white/30 hover:bg-white/60"
-              }`}
-            />
+              className="flex h-9 w-9 items-center justify-center rounded-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-white"
+            >
+              <span className={`block h-2 rounded-full transition-all duration-300 ${i === index ? 'w-5 bg-secondary' : 'w-2 bg-white/60'}`} />
+            </button>
           ))}
         </div>
       </div>

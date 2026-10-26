@@ -10,20 +10,20 @@ export default {
       colors: {
         primary: {
           DEFAULT: '#0D7377',
-          light: '#14b1b9',
-          dark: '#0a5a5e',
+          light: '#36A69D',
+          dark: '#095C5F',
         },
         secondary: {
-          DEFAULT: '#FF6B35',
-          light: '#ff8c62',
-          dark: '#e04e18',
+          DEFAULT: '#B34A34',
+          light: '#F29375',
+          dark: '#943926',
         },
         accent: {
-          DEFAULT: '#FFD700',
-          light: '#ffeb33',
-          dark: '#ccac00',
+          DEFAULT: '#E5BD78',
+          light: '#F0D49C',
+          dark: '#B78D4D',
         },
-        charcoal: '#333333',
+        charcoal: '#142A28',
       },
       fontFamily: {
         sans: ['Outfit', 'sans-serif'],

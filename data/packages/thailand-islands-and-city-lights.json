@@ -1,0 +1,269 @@
+{
+  "id": 105,
+  "slug": "thailand-islands-and-city-lights",
+  "title": "Exotic Thailand: Coral Island, Alcazar & Bangkok Temples",
+  "tagline": "Speed across turquoise Gulf waters, marvel at glittering golden spires, and encounter exotic safari wildlife.",
+  "destination": "Thailand",
+  "region": "Southeast Asia",
+  "country": "Thailand",
+  "category": ["international", "family", "beach", "honeymoon", "budget", "adventure"],
+  "duration": {
+    "nights": 5,
+    "days": 6
+  },
+  "route": [
+    { "city": "Pattaya", "nights": 2 },
+    { "city": "Bangkok", "nights": 3 }
+  ],
+  "price": {
+    "from": "18,999",
+    "currency": "INR",
+    "per": "person twin sharing",
+    "priceBands": {
+      "standard": "18,999",
+      "deluxe": "26,999",
+      "premium": "48,999"
+    },
+    "offerBadge": "Visa-Free Special"
+  },
+  "bestTime": {
+    "months": ["November", "December", "January", "February", "March", "April"],
+    "notes": "November through February is Thailand's cool dry season with low humidity and clear turquoise seas; March and April offer warm beach weather and vibrant Songkran celebrations."
+  },
+  "difficulty": "Easy",
+  "groupType": "Small Group, Families, Friends & Couples",
+  "minAge": 1,
+  "visaInfo": "Visa-Free / Visa Exemption for Indian passport holders (valid for stays up to 30 or 60 days per Thai immigration circular). Passports must have at least 6 months validity from departure date, return flight ticket, and confirmed hotel booking proof.",
+  "overview": "Discover the magnetic allure of Southeast Asia on this vibrant six-day voyage uniting the sun-drenched beaches of Pattaya with the imperial temples and soaring sky-scrapers of Bangkok. Begin as you land at Suvarnabhumi Airport, driving directly along the coastal motorway to the lively seaside city of Pattaya. Skim across the turquoise waters of the Gulf of Thailand aboard a high-speed catamaran to Coral Island (Koh Larn), plunging into crystalline coral bays or lounging beneath swaying palms on powdery white sands. By night, witness the theatrical magnificence of the world-acclaimed Alcazar Cabaret with its dazzling pyrotechnics, choreography, and imperial costumes. Journey next into the pulsating heart of Bangkok, paying homage before the solid 5.5-ton Golden Buddha at Wat Traimit and exploring the Italian marble colonnades of Wat Benchamabophit. Encounter free-roaming lions and dolphins at Safari World & Marine Park, before dining on an illuminated Chao Phraya River dinner cruise as Wat Arun glows along the riverbanks.",
+  "highlights": [
+    "High-speed catamaran cruise to Coral Island (Koh Larn) with Indian buffet lunch",
+    "VIP tickets to the internationally acclaimed Alcazar Cabaret theatrical show",
+    "Full-day excursion to Safari World Open Zoo and Marine Park with dolphin shows",
+    "Guided temple tour of Bangkok visiting the 5.5-ton solid Golden Buddha at Wat Traimit",
+    "Architectural tour of the white Italian marble temple Wat Benchamabophit",
+    "Romantic evening dinner cruise on the Chao Phraya River with live international music",
+    "Leisure shopping at luxury IconSiam riverfront mall and vibrant Pratunam wholesale markets",
+    "Authentic Thai culinary tastings of Pad Thai, Tom Yum, and fresh mango sticky rice"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Bangkok & Transfer to Pattaya Beach with Alcazar Show",
+      "location": "Pattaya",
+      "description": "Touch down at Bangkok Suvarnabhumi Airport (BKK) where our local representative warmly welcomes you with chilled mineral water. Board your comfortable air-conditioned coach for a scenic 125-kilometer motorway drive directly to the coastal resort city of Pattaya. Check into your stylish beachside resort and take time to refresh. In the evening at 6:00 PM, transfer to the grand Alcazar Theatre. Enjoy VIP seating for the world-renowned 70-minute Alcazar Cabaret show, featuring spellbinding choreography, dazzling crystal costumes, and state-of-the-art stage lighting. Spend your night strolling the lively beachfront promenade.",
+      "activities": ["Airport Meet & Greet", "Pattaya Scenic Highway Drive", "Resort Check-in & Rest", "Alcazar Cabaret Show VIP Admission", "Pattaya Beach Promenade Walk"],
+      "meals": { "breakfast": false, "lunch": false, "dinner": false },
+      "stay": { "category": "4-Star Beachfront Resort", "city": "Pattaya" },
+      "transferInfo": "Private or shared AC coach from Suvarnabhumi Airport (BKK) to Pattaya (125 km, 1 hr 45 mins)."
+    },
+    {
+      "day": 2,
+      "title": "Speedboat Tour to Coral Island (Koh Larn) & Indian Buffet Lunch",
+      "location": "Coral Island (Koh Larn)",
+      "description": "After an energizing breakfast, transfer to Bali Hai Pier and board a modern twin-engine speedboat across the sparkling Gulf of Thailand to Coral Island (Koh Larn). Step onto the soft white sands of Ta Waen Beach. Spend your morning swimming in crystal-clear waters or opting for exciting marine activities like parasailing from the floating platform and underwater sea walking. At midday, enjoy a warm Indian and international buffet lunch served at an island restaurant. Return by speedboat to Pattaya by 2:30 PM, leaving your afternoon free to unwind at the resort pool.",
+      "activities": ["Bali Hai Pier Boarding", "Speedboat Ride across Gulf of Thailand", "Coral Island Beach Relaxation", "Optional Parasailing & Sea Walking", "Island Indian Buffet Lunch"],
+      "meals": { "breakfast": true, "lunch": true, "dinner": false },
+      "stay": { "category": "4-Star Beachfront Resort", "city": "Pattaya" },
+      "transferInfo": "Shared speedboat transfer from Bali Hai Pier to Coral Island and return (20 mins each way)."
+    },
+    {
+      "day": 3,
+      "title": "Pattaya to Bangkok: Wat Traimit & Wat Benchamabophit Temples",
+      "location": "Bangkok",
+      "description": "Enjoy breakfast, check out of your Pattaya resort, and begin your comfortable drive back to the capital city of Bangkok. Upon entering the city, embark directly on an enriching guided temple tour. First, visit Wat Traimit in Chinatown to marvel at the world's largest solid gold seated Buddha, weighing an astonishing 5.5 tons. Continue to the exquisite Wat Benchamabophit, constructed from white Carrara Italian marble with traditional orange-tiled Thai gables. By afternoon, check into your modern downtown Bangkok hotel and explore vibrant evening street-food alleys in Sukhumvit.",
+      "activities": ["Scenic Drive to Bangkok", "Wat Traimit Golden Buddha Temple", "Wat Benchamabophit Marble Temple Tour", "Gems Gallery Artisan Visit", "Hotel Check-in & Sukhumvit Stroll"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "4-Star Modern City Hotel", "city": "Bangkok" },
+      "transferInfo": "Air-conditioned intercity coach from Pattaya to Bangkok with temple sightseeing (150 km, 2.5 hours)."
+    },
+    {
+      "day": 4,
+      "title": "Safari World Open Zoo & Marine Park with Grand Buffet Lunch",
+      "location": "Bangkok",
+      "description": "Savor an early breakfast before departing on an exciting full-day excursion to Safari World and Marine Park, Asia's premier wildlife park. First drive through the open Safari Park, viewing African giraffes, zebras, rhinoceros, and roaring lions from the safe comfort of your air-conditioned coach. Next, step into the lush Marine Park to witness spectacular choreographed performances including the world-famous Dolphin Show, Sea Lion Show, and Hollywood Cowboy Stunt Show. Relish an extensive international and Indian buffet lunch inside the park before returning to the city by 4:30 PM.",
+      "activities": ["Open Safari Park Wildlife Drive", "Marine Park Dolphin & Sea Lion Shows", "Hollywood Cowboy Stunt Show", "International Grand Buffet Lunch", "Giraffe Feeding Experience"],
+      "meals": { "breakfast": true, "lunch": true, "dinner": false },
+      "stay": { "category": "4-Star Modern City Hotel", "city": "Bangkok" },
+      "transferInfo": "Air-conditioned tour coach transfer from hotel to Safari World and return (45 km each way, 1 hour per leg)."
+    },
+    {
+      "day": 5,
+      "title": "IconSiam Riverfront Mall & Chao Phraya Dinner Cruise",
+      "location": "Bangkok",
+      "description": "Spend your morning browsing Bangkok's premier riverside lifestyle destination, IconSiam, featuring an indoor floating market showcasing crafts and delicacies from Thailand's 77 provinces. In the evening at 7:00 PM, board a luxurious multi-deck cruise ship along the Chao Phraya River. As the vessel sails past floodlit landmarks including the Grand Palace and the porcelain spire of Wat Arun (Temple of Dawn), indulge in an extravagant international buffet featuring fresh seafood, Thai curries, and sushi, serenaded by a live jazz band under the starlit sky.",
+      "activities": ["IconSiam Indoor Floating Market", "Riverside Promenade Leisure", "Chao Phraya River Cruise Boarding", "Illuminated Wat Arun Sightseeing", "International Buffet Dinner & Live Jazz"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Modern City Hotel", "city": "Bangkok" },
+      "transferInfo": "Shared AC transfer from hotel to IconSiam and river cruise pier, returning after dinner."
+    },
+    {
+      "day": 6,
+      "title": "Pratunam Shopping & Suvarnabhumi Airport Departure",
+      "location": "Bangkok",
+      "description": "Enjoy your final morning buffet breakfast in Bangkok. Take advantage of late morning hours for souvenir and clothing shopping at the world-famous wholesale fashion malls of Pratunam and Platinum Fashion Mall, or browse high-tech electronics at MBK Center. Return to the hotel to pack your treasures and check out by noon. Your private driver will provide a smooth, punctual transfer to Bangkok Suvarnabhumi International Airport (BKK) in time for your return flight home, taking back joyful memories of the Land of Smiles.",
+      "activities": ["Hotel Breakfast & Morning Leisure", "Pratunam & Platinum Mall Bargain Shopping", "Hotel Checkout", "Suvarnabhumi Airport Departure Drop-off"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "Departure", "city": "Bangkok" },
+      "transferInfo": "Private AC sedan transfer from hotel to Suvarnabhumi Airport (BKK) (32 km, 45 mins)."
+    }
+  ],
+  "inclusions": [
+    "5 nights accommodation (2N at a 4-star beachside resort in Pattaya, 3N at a 4-star city hotel in central Bangkok)",
+    "Daily international buffet breakfast at hotel restaurants",
+    "2 lavish buffet lunches (Indian & international spread on Coral Island and inside Safari World)",
+    "1 grand international buffet dinner on board the Chao Phraya River Dinner Cruise",
+    "Return Suvarnabhumi Airport (BKK) transfers in an air-conditioned private/shared coach",
+    "Shared speedboat excursion to Coral Island (Koh Larn) with life jackets and island transfers",
+    "VIP reserved seating ticket to the world-famous Alcazar Cabaret Show in Pattaya",
+    "Full-day pass to Safari World Open Zoo & Marine Park with all animal performance shows",
+    "Guided temple and city tour of Bangkok covering Wat Traimit (Golden Buddha) and Wat Benchamabophit",
+    "English-speaking verified local Thai tour guide on all scheduled sightseeing excursions",
+    "24/7 dedicated infiYATRA on-ground customer service and tour manager assistance"
+  ],
+  "exclusions": [
+    "International airfare from India to Bangkok (available on request at competitive group rates)",
+    "Water sports activities on Coral Island (parasailing, sea walking, jet ski available on direct payment)",
+    "Meals and beverages not explicitly mentioned in the itinerary inclusions",
+    "Personal expenses such as alcoholic drinks, laundry, room service, telephone calls, and minibar",
+    "Mandatory driver and local guide tips (standard expectation is approx. 3-5 USD per person per day)",
+    "Camera and photography fees at specific private attractions or animal interaction enclosures",
+    "Any optional tours not mentioned in the inclusions (such as Nong Nooch Botanical Garden)",
+    "Comprehensive international travel and medical insurance"
+  ],
+  "hotels": [
+    {
+      "city": "Pattaya",
+      "name": "Holiday Inn Pattaya / Best Western Premier Bayphere or similar",
+      "category": "4-Star Beachfront Resort",
+      "nights": 2
+    },
+    {
+      "city": "Bangkok",
+      "name": "Rembrandt Hotel Bangkok / Century Park Hotel or similar",
+      "category": "4-Star Modern City Hotel",
+      "nights": 3
+    }
+  ],
+  "transport": {
+    "mode": "Air-Conditioned Luxury Coach / Private Sedan",
+    "details": "Modern air-conditioned luxury tourist coach for all intercity transfers and group sightseeing tours; private sedan for airport transfer; twin-engine speedboat for Coral Island."
+  },
+  "thingsToCarry": [
+    "Original passport with minimum 6 months validity from departure date, return flight ticket, and printed hotel vouchers",
+    "Modest clothing covering shoulders and knees for temple visits (Wat Traimit and Wat Benchamabophit)",
+    "Lightweight, breathable cotton clothes, t-shirts, shorts, and swimwear for beach days",
+    "Waterproof dry pouch for phones, valuables, and cameras during the Coral Island speedboat ride",
+    "Sun hat, polarized sunglasses, and reef-safe sunscreen SPF 50+",
+    "Universal two-pin flat or round pin power plug adapter (Type A/C plug)",
+    "Thai Baht currency in cash (approx. 5,000 to 10,000 THB per person recommended for street food, shopping, and tips)"
+  ],
+  "tips": [
+    "Temple dress codes in Thailand are strictly enforced: visitors wearing sleeveless tops, crop tops, short skirts, or ripped jeans will be denied entry to Wat Traimit and Royal Temples; wrap-around sarongs are available at temple gates.",
+    "Bargaining is polite and standard at outdoor markets (Pratunam, Chatuchak, and night bazaars); start at around 30% below quoted price with a warm smile.",
+    "Local currency is the Thai Baht (THB, approx. 1 THB = ₹2.35 to ₹2.50 INR); airport exchange counters have higher margins, so exchange larger sums at SuperRich counters in the city.",
+    "Indian food and vegetarian restaurants are abundant across Pattaya and Bangkok, especially around Walking Street, Sukhumvit Soi 11, and Pratunam."
+  ],
+  "cancellationPolicy": [
+    "30 days or more before departure: 100% refund minus nominal processing charge of ₹2,000",
+    "29 to 15 days before departure: 70% refund of total package price",
+    "14 to 8 days before departure: 40% refund of total package price",
+    "Within 7 days of departure: Non-refundable due to non-cancellable show passes and confirmed hotel bookings"
+  ],
+  "paymentTerms": "25% advance token to book; 50% due 20 days prior to departure; remaining 25% payable 7 days before departure.",
+  "faqs": [
+    {
+      "question": "Do Indian passport holders need a visa to visit Thailand?",
+      "answer": "Under current Thai immigration regulations, Indian passport holders enjoy Visa-Free entry / Visa Exemption for tourism purposes for stays up to 30 or 60 days. You only need a passport with 6 months validity, confirmed return flight tickets, and hotel accommodation proof."
+    },
+    {
+      "question": "Is the Coral Island speedboat ride suitable for seniors and young children?",
+      "answer": "Speedboats can be bumpy depending on ocean waves. Seniors with chronic back ailments and infants are advised to sit toward the rear of the speedboat where movement is gentler, or opt for a relaxing mainland beach day instead."
+    },
+    {
+      "question": "Are vegetarian and Indian food options available on the tour?",
+      "answer": "Yes, absolutely. Thailand is extremely accommodating to Indian palates. The Coral Island lunch and the Safari World buffet both offer dedicated Indian vegetarian and non-vegetarian buffet spreads. In Bangkok and Pattaya, hundreds of authentic Indian restaurants operate."
+    },
+    {
+      "question": "What is the dress code for the Alcazar Cabaret Show?",
+      "answer": "Smart casual attire is recommended for the Alcazar Show. While there is no rigid black-tie dress code, avoid beach swimwear or excessively casual clothing inside the air-conditioned theatre."
+    },
+    {
+      "question": "Can I feed the giraffes at Safari World?",
+      "answer": "Yes. Safari World features a world-famous open-air elevated wooden feeding deck where guests can purchase small buckets of bananas (approx. 100 THB) and hand-feed hundreds of friendly giraffes up close, providing incredible photography opportunities."
+    },
+    {
+      "question": "How much cash should I carry to Thailand?",
+      "answer": "We recommend carrying approximately 10,000 to 15,000 Thai Baht (or equivalent USD) per couple in cash for shopping, street food, tuk-tuks, and tipping. Most major malls and hotels accept international Visa and Mastercard."
+    },
+    {
+      "question": "Is tap water drinkable in Thailand?",
+      "answer": "Tap water is not recommended for direct drinking in Thailand. Always drink sealed bottled water, which is provided complimentary daily in your hotel rooms and on our tour coaches."
+    }
+  ],
+  "departures": [
+    { "date": "2026-11-10", "price": "₹18,999", "seatsTotal": 20, "seatsLeft": 8, "status": "Filling Fast" },
+    { "date": "2026-11-24", "price": "₹18,999", "seatsTotal": 20, "seatsLeft": 12, "status": "Open" },
+    { "date": "2026-12-08", "price": "₹21,999", "seatsTotal": 20, "seatsLeft": 6, "status": "Filling Fast" },
+    { "date": "2026-12-25", "price": "₹32,999", "seatsTotal": 24, "seatsLeft": 3, "status": "Filling Fast" },
+    { "date": "2027-01-12", "price": "₹22,999", "seatsTotal": 20, "seatsLeft": 11, "status": "Open" },
+    { "date": "2027-02-09", "price": "₹19,999", "seatsTotal": 20, "seatsLeft": 15, "status": "Open" },
+    { "date": "2027-03-09", "price": "₹18,999", "seatsTotal": 20, "seatsLeft": 17, "status": "Open" },
+    { "date": "2027-04-13", "price": "₹21,999", "seatsTotal": 24, "seatsLeft": 14, "status": "Open" }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&q=80&w=2400",
+      "alt": "Panoramic sunset over Wat Arun Temple of Dawn along the Chao Phraya River in Bangkok Thailand",
+      "caption": "The porcelain spires of Wat Arun illuminated at dusk along the Chao Phraya River",
+      "credit": "Mathew Schwartz",
+      "creditUrl": "https://unsplash.com/@cadop",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Turquoise waters and pristine white sand beach of Coral Island Koh Larn near Pattaya Thailand",
+      "caption": "Pristine white sand and crystalline waters at Coral Island (Koh Larn)",
+      "credit": "Sara Dubler",
+      "creditUrl": "https://unsplash.com/@sadswim",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Golden ornate spires and intricate roofs of the Grand Palace in Bangkok Thailand",
+      "caption": "The golden spires and ornate architecture of Bangkok's sacred temples",
+      "credit": "Aleksandar Pasaric",
+      "creditUrl": "https://unsplash.com/@aleksandar-pasaric",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Chao Phraya luxury dinner cruise ship illuminated at night passing under Rama VIII bridge in Bangkok",
+      "caption": "Evening dinner cruise sailing past illuminated Bangkok landmarks",
+      "credit": "Florian Wehde",
+      "creditUrl": "https://unsplash.com/@florianwehde",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Wat Benchamabophit the marble temple in Bangkok with Italian Carrara marble pillars and ornate gables",
+      "caption": "Wat Benchamabophit, the serene Marble Temple of Bangkok",
+      "credit": "Evan Krause",
+      "creditUrl": "https://unsplash.com/@evankrause_",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&q=80&w=1600",
+      "alt": "A towering herd of giraffes feeding at the open air wooden deck in Safari World Bangkok",
+      "caption": "Interactive giraffe feeding experience at Safari World Bangkok",
+      "credit": "Khamkeo Vilaysing",
+      "creditUrl": "https://unsplash.com/@khamkeov",
+      "source": "Unsplash"
+    }
+  ],
+  "seo": {
+    "title": "Thailand Tour Package: 5N/6D Bangkok & Pattaya Holiday",
+    "description": "Book a 6-day Thailand tour package. Experience Coral Island speedboat, Alcazar Cabaret, Safari World, Bangkok temples, and Chao Phraya dinner cruise."
+  },
+  "status": "published",
+  "featured": true
+}

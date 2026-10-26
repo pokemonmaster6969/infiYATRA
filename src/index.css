@@ -1,19 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/outfit-latin-6c18d579fd87.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/lora-latin-ddb8c6603510.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
+  color-scheme: dark;
   --primary: #0D7377;
-  --secondary: #FF6B35;
-  --accent: #FFD700;
-  --charcoal: #333333;
+  --secondary: #B34A34;
+  --accent: #E5BD78;
+  --charcoal: #142A28;
+  --ink: #0C1D1B;
+  --surface: #193431;
+  --paper: #F3F0E7;
 }
 
 body {
   @apply font-sans antialiased bg-charcoal;
-  color: #333333;
+  color: var(--paper);
+  min-width: 320px;
 }
 
 .safe-area-padding {
@@ -47,15 +66,14 @@ button, input, textarea, select, label {
 
 /* 🧊 Master-Grade Liquid Glass System */
 .liquid-glass {
-  background: rgba(255, 255, 255, 0.12) !important;
-  backdrop-filter: blur(12px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(12px) saturate(180%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  background: rgba(232, 244, 237, 0.11) !important;
+  backdrop-filter: blur(18px) saturate(145%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(145%) !important;
+  border: 1px solid rgba(226, 239, 229, 0.22) !important;
   box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.08), 
-    inset 0 1px 0 rgba(255, 255, 255, 0.4), 
-    inset 0 -1px 0 rgba(255, 255, 255, 0.05), 
-    inset 0 0 8px 0px rgba(255, 255, 255, 0.1) !important;
+    0 14px 40px rgba(3, 20, 18, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.04) !important;
   position: relative;
   overflow: hidden;
   transform: translateZ(0);
@@ -131,12 +149,11 @@ button, input, textarea, select, label {
 }
 
 .liquid-glass-dark {
-  background: rgba(0, 0, 0, 0.4) !important;
-  backdrop-filter: blur(16px) saturate(150%) !important;
-  -webkit-backdrop-filter: blur(16px) saturate(150%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.05) !important;
-  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4) !important;
-  will-change: backdrop-filter;
+  background: rgba(12, 29, 27, 0.72) !important;
+  backdrop-filter: blur(20px) saturate(135%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(135%) !important;
+  border: 1px solid rgba(223, 238, 226, 0.12) !important;
+  box-shadow: 0 16px 48px rgba(3, 20, 18, 0.3) !important;
 }
 
 .liquid-text {
@@ -170,7 +187,7 @@ input[type="range"] {
 }
 
 input[type="range"]::-webkit-slider-track {
-  background: linear-gradient(90deg, rgba(59, 130, 246, 0.3), rgba(168, 85, 247, 0.3));
+  background: linear-gradient(90deg, rgba(13, 115, 119, 0.7), rgba(179, 74, 52, 0.7));
   height: 6px;
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -179,37 +196,37 @@ input[type="range"]::-webkit-slider-track {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  background: linear-gradient(135deg, #36A69D, #B34A34);
   height: 24px;
   width: 24px;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 0 0 rgba(96, 165, 250, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 0 0 rgba(54, 166, 157, 0.4);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
 input[type="range"]::-webkit-slider-thumb:hover {
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(135deg, #0D7377, #B34A34);
   transform: scale(1.15);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5), 0 0 0 8px rgba(96, 165, 250, 0.2);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5), 0 0 0 8px rgba(54, 166, 157, 0.2);
   border-color: white;
 }
 
 input[type="range"]::-webkit-slider-thumb:active {
   transform: scale(1.05);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 0 0 12px rgba(96, 165, 250, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 0 0 12px rgba(54, 166, 157, 0.3);
 }
 
 input[type="range"]::-moz-range-track {
-  background: linear-gradient(90deg, rgba(59, 130, 246, 0.3), rgba(168, 85, 247, 0.3));
+  background: linear-gradient(90deg, rgba(13, 115, 119, 0.7), rgba(179, 74, 52, 0.7));
   height: 6px;
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 input[type="range"]::-moz-range-thumb {
-  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  background: linear-gradient(135deg, #36A69D, #B34A34);
   height: 24px;
   width: 24px;
   border-radius: 50%;
@@ -220,7 +237,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 input[type="range"]::-moz-range-thumb:hover {
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(135deg, #0D7377, #B34A34);
   transform: scale(1.15);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
   border-color: white;
@@ -231,5 +248,51 @@ input[type="range"]:focus {
 }
 
 input[type="range"]:focus::-webkit-slider-thumb {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 0 4px rgba(96, 165, 250, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 0 4px rgba(54, 166, 157, 0.3);
+}
+
+.travel-form :is(input, textarea, select) {
+  min-width: 0;
+  border-radius: 0.65rem;
+  border-color: rgba(226, 239, 229, 0.14);
+  background-color: rgba(226, 239, 229, 0.055);
+  color: #f3f0e7;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.travel-form :is(input, select) {
+  min-height: 3rem;
+}
+
+.travel-form textarea {
+  min-height: 7rem;
+  resize: vertical;
+}
+
+.travel-form :is(input, textarea, select)::placeholder {
+  color: rgba(243, 240, 231, 0.4);
+}
+
+.travel-form :is(input, textarea, select):focus {
+  border-color: rgba(54, 166, 157, 0.8);
+  outline: 2px solid rgba(54, 166, 157, 0.2);
+  outline-offset: 1px;
+}
+
+@media (max-width: 640px) {
+  input[type="date"] {
+    min-height: 3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

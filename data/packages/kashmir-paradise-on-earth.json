@@ -1,0 +1,292 @@
+{
+  "id": 101,
+  "slug": "kashmir-paradise-on-earth",
+  "title": "Enchanting Kashmir: Houseboats, Glaciers & Valleys",
+  "tagline": "Glide across serene Dal Lake, ascend Apharwat by gondola, and wander pine-clad Lidder valleys.",
+  "destination": "Kashmir",
+  "region": "Jammu & Kashmir",
+  "country": "India",
+  "category": ["honeymoon", "family", "adventure", "luxury"],
+  "duration": {
+    "nights": 6,
+    "days": 7
+  },
+  "route": [
+    { "city": "Srinagar (Houseboat)", "nights": 1 },
+    { "city": "Pahalgam", "nights": 2 },
+    { "city": "Gulmarg", "nights": 1 },
+    { "city": "Srinagar", "nights": 2 }
+  ],
+  "price": {
+    "from": "24,999",
+    "currency": "INR",
+    "per": "person twin sharing",
+    "priceBands": {
+      "standard": "24,999",
+      "deluxe": "34,999",
+      "premium": "54,999"
+    },
+    "offerBadge": "Bestseller"
+  },
+  "bestTime": {
+    "months": ["March", "April", "May", "June", "September", "October", "December", "January"],
+    "notes": "Spring brings vibrant tulip blossoms; summer delivers pleasant alpine trekking; winter transforms Gulmarg into Asia's premier skiing destination."
+  },
+  "difficulty": "Easy to Moderate",
+  "groupType": "Small Group & Private Couples/Families",
+  "minAge": 5,
+  "visaInfo": "Domestic destination: Indian citizens require valid government photo ID (Aadhaar or Passport). Foreign passport holders require an Indian Tourist Visa and passport registration at Srinagar airport.",
+  "overview": "Surrender to the timeless grandeur of Kashmir on this handcrafted seven-day voyage through India's fabled northern jewel. Your journey begins upon the tranquil mirror of Dal Lake, drifting in a hand-carved cedar houseboat adorned with walnut carvings and fragrant Kashmiri deodar woods. Glide under the golden dusk on a cushioned private Shikara before travelling south through saffron-scented Pampore fields to Pahalgam's whispering pine valleys. Here along the rushing Lidder River, discover Betaab Valley's alpine pastures and the pristine snowmelt waters of Aru. Next, ascend to alpine heights at Gulmarg, riding the legendary Kongdoori Gondola cable car toward snow-capped Apharwat Peak. Complete your Himalayan circle in historic Srinagar with walks through centuries-old terraced Mughal gardens, vibrant old-quarter spice bazaars, and an exhilarating day excursion to the Thajiwas Glacier in Sonmarg. Balanced with private heated transport, handpicked mountain resorts, and daily authentic meals, this is Kashmir experienced with poise, safety, and heartfelt hospitality.",
+  "highlights": [
+    "Overnight stay aboard a heritage cedarwood houseboat on Dal Lake with hot kahwa tea",
+    "Sunset private Shikara cruise gliding past floating gardens and wooden footbridges",
+    "Scenic cable car ascent on the world-famous Gulmarg Gondola Phase 1 toward Kongdoori",
+    "Day exploration of Pahalgam's pristine Aru Valley and cinematic Betaab Valley pastures",
+    "Excursion to Sonmarg's rugged Sindh Valley and pony trail to Thajiwas Glacier snowfields",
+    "Leisurely walk through UNESCO-nominated Mughal terraced gardens: Nishat and Shalimar",
+    "Visit to historic Avantipura temple ruins dating back to the 9th-century King Avantivarman",
+    "Guided tasting of authentic Kashmiri Wazwan delicacies and saffron-infused delicacies"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Srinagar & Dal Lake Sunset Shikara",
+      "location": "Srinagar",
+      "description": "Touch down at Srinagar Airport where your private expedition host greets you warmly with fragrant Kashmiri Kahwa. Transfer 15 kilometers through Chinar-lined avenues to the Dal Lake jetty. Board a wooden Shikara to reach your hand-carved heritage houseboat. After settling into your cedarwood suite, embark on a sunset Shikara ride across the lotus-dappled waters. Glide past floating flower bazaars, Char Chinar island, and heritage wooden houseboats framed by the Zabarwan mountain range before enjoying a traditional multi-course dinner on board.",
+      "activities": ["Airport Meet & Greet", "Houseboat Check-in", "Sunset Dal Lake Shikara Cruise", "Floating Market Visit"],
+      "meals": { "breakfast": false, "lunch": false, "dinner": true },
+      "stay": { "category": "Deluxe Heritage Houseboat", "city": "Srinagar" },
+      "transferInfo": "Private AC sedan transfer from Srinagar Airport (SXR) to Dal Lake Jetty (15 km, 45 mins)."
+    },
+    {
+      "day": 2,
+      "title": "Srinagar to Pahalgam via Saffron Fields & Avantipura",
+      "location": "Pahalgam",
+      "description": "Savor breakfast overlooking the misty lake before checking out for your scenic 90-kilometer drive south to Pahalgam, the Valley of Shepherds. En route, pause at the purple-tinged saffron fields of Pampore to sample organic saffron threads and local dry fruits. Continue past the 9th-century stone carvings of the Avantipura ruins dedicated to Lord Vishnu. By afternoon, ascend into the whispering pine forests flanking the turquoise Lidder River. Check into your riverfront resort and spend a tranquil evening strolling along the pebble riverbanks.",
+      "activities": ["Scenic Highway Drive", "Pampore Saffron Farms Stop", "Avantipura Ruins Guided Walk", "Lidder River Riverside Stroll"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Mountain Resort", "city": "Pahalgam" },
+      "transferInfo": "Private vehicle drive from Srinagar to Pahalgam (90 km, 3 hours via NH44)."
+    },
+    {
+      "day": 3,
+      "title": "Valleys of Pahalgam: Betaab Valley, Aru & Chandanwari",
+      "location": "Pahalgam",
+      "description": "Awake to birdsong and mountain vistas. Board authorized local union vehicles for a comprehensive valley tour. First explore Betaab Valley, named after the Bollywood classic, with its lush meadows ringed by snow-draped deodars and crystal streams. Next, wind upward 12 kilometers to Aru Valley, an idyllic eco-village where quiet shepherds tend grazing flocks amidst wildflower meadows. In the afternoon, visit Chandanwari, the historical gateway to the holy Amarnath Yatra pilgrimage, before returning to Pahalgam town for steaming Rogan Josh and evening shopping.",
+      "activities": ["Betaab Valley Exploration", "Aru Village Eco-Walk", "Chandanwari Snow Point Stop", "Pahalgam Market Craft Walk"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Mountain Resort", "city": "Pahalgam" },
+      "transferInfo": "Local union taxi circuit covering Pahalgam, Aru, Betaab, and Chandanwari (approx. 45 km total)."
+    },
+    {
+      "day": 4,
+      "title": "Pahalgam to Gulmarg Meadow of Flowers",
+      "location": "Gulmarg",
+      "description": "Depart Pahalgam after breakfast on a scenic 140-kilometer drive across the Kashmir valley floor toward the Pir Panjal range. Wind up the forested slopes of Tangmarg where firs tower overhead. By early afternoon, arrive in Gulmarg, perched at 8,690 feet above sea level. Check into your cozy alpine lodge. Spend your afternoon wandering the sprawling green golf course meadows, visiting the heritage wooden St. Mary's Church built during the British era, or simply savoring warm walnut tarts at a traditional hillside cafe.",
+      "activities": ["Scenic Valley Drive", "Tangmarg Ascent", "St. Mary's Church Heritage Walk", "Meadow Sunset Walk"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Alpine Lodge", "city": "Gulmarg" },
+      "transferInfo": "Private vehicle drive from Pahalgam to Gulmarg (140 km, 4.5 hours with tea pauses)."
+    },
+    {
+      "day": 5,
+      "title": "Gulmarg Gondola Ride & Return to Srinagar",
+      "location": "Srinagar",
+      "description": "After an early breakfast, proceed to the Gulmarg Gondola station, one of the highest operating cable cars on earth. Board your enclosed six-seater cabin for the thrilling Phase 1 ascent to Kongdoori mountain bowl at 10,000 feet. Gaze in awe at panoramic snow fields, glacial cirques, and distant Nanga Parbat on clear days. Spend the morning walking amidst alpine snow. In the afternoon, descend to the base and drive 55 kilometers back to Srinagar. Check into your luxury city hotel for a relaxed evening.",
+      "activities": ["Gulmarg Gondola Phase 1 Cable Car", "Kongdoori Snowfields Exploration", "Descent & Mountain Drive", "Srinagar Hotel Check-in"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Premium Hotel", "city": "Srinagar" },
+      "transferInfo": "Private vehicle transfer from Gulmarg to Srinagar (55 km, 2 hours)."
+    },
+    {
+      "day": 6,
+      "title": "Day Excursion to Sonmarg Meadow of Gold & Thajiwas Glacier",
+      "location": "Srinagar",
+      "description": "Set out on an exhilarating morning excursion to Sonmarg, Meadow of Gold, situated 85 kilometers northeast of Srinagar along the roaring Sindh River. Drive through dramatic gorges, walnut groves, and alpine forests with towering granite peaks. Upon arrival in Sonmarg at 9,000 feet, embark on a pony trek or scenic alpine walk to the foot of Thajiwas Glacier. Touch eternal summer snowfields and watch silver waterfalls cascade down glacial moraines. Return to Srinagar by evening for farewell shopping at the Polo View craft market.",
+      "activities": ["Sindh River Valley Drive", "Thajiwas Glacier Trek / Pony Ride", "Alpine Stream Photography", "Polo View Handicrafts Shopping"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Premium Hotel", "city": "Srinagar" },
+      "transferInfo": "Full-day roundtrip excursion Srinagar to Sonmarg and return (85 km each way, 2.5 hours per leg)."
+    },
+    {
+      "day": 7,
+      "title": "Mughal Terraced Gardens & Airport Farewell",
+      "location": "Srinagar",
+      "description": "Conclude your Himalayan sojourn with a morning cultural tour of Srinagar's crown jewels. Walk through Nishat Bagh (Garden of Bliss) built in 1633, with its twelve terraced stone cascades framed by majestic Chinar trees. Next, explore Shalimar Bagh, the romantic garden built by Emperor Jahangir for Queen Nur Jahan. After a farewell sip of saffron tea and last-minute procurement of pure pashmina or walnuts, transfer to Srinagar International Airport for your departure flight, enriched with golden memories of paradise.",
+      "activities": ["Nishat Bagh Mughal Terraced Gardens", "Shalimar Bagh Royal Courtyard", "Pashmina & Walnut Craft Stop", "Airport Departure Drop-off"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "Departure", "city": "Srinagar" },
+      "transferInfo": "Private AC sedan transfer from hotel to Srinagar Airport (SXR) (18 km, 50 mins)."
+    }
+  ],
+  "inclusions": [
+    "6 nights premium accommodation (1N Deluxe Houseboat, 2N Pahalgam Resort, 1N Gulmarg Lodge, 2N Srinagar Hotel)",
+    "Daily buffet breakfast and freshly prepared multi-course dinner at all hotels and houseboat (MAP Plan)",
+    "All intercity and airport transfers in private AC vehicle (heated during winter)",
+    "1-hour private sunset Shikara ride across Dal Lake including Shikara boat transfers",
+    "Pre-reserved Gulmarg Gondola Phase 1 cable car boarding pass (subject to JKCCC operation)",
+    "Pahalgam local union vehicle booking for Aru Valley, Betaab Valley, and Chandanwari",
+    "Full-day excursion to Sonmarg including toll, parking, driver allowance, and road taxes",
+    "Guided heritage tour of Nishat Bagh and Shalimar Bagh Mughal Gardens with entry tickets",
+    "Traditional Kashmiri Kahwa welcome drink on houseboat arrival",
+    "24/7 dedicated infiYATRA on-ground concierge support and verified local driver"
+  ],
+  "exclusions": [
+    "Domestic airfare to and from Srinagar International Airport (available on request)",
+    "Phase 2 Gulmarg Gondola tickets (Apharwat Peak) and ski equipment hire",
+    "Pony / horse rides in Gulmarg, Pahalgam, or Sonmarg Thajiwas Glacier",
+    "Lunches, mid-day snacks, and alcoholic beverages not specified in the meal plan",
+    "Winter snow chains or special Tangmarg 4x4 snow vehicle surcharge during heavy snowfall",
+    "Personal expenses such as laundry, phone calls, camera fees, and tips",
+    "Comprehensive travel and medical insurance (strongly recommended)",
+    "Any expenses caused by unforeseen flight delays, roadblocks, or weather events"
+  ],
+  "hotels": [
+    {
+      "city": "Srinagar (Dal Lake)",
+      "name": "Wangnoo Heritage Luxury Houseboat or similar",
+      "category": "Deluxe Heritage Houseboat",
+      "nights": 1
+    },
+    {
+      "city": "Pahalgam",
+      "name": "Hotel Heevan Pahalgam / Pine N Peak or similar",
+      "category": "4-Star Riverfront Mountain Resort",
+      "nights": 2
+    },
+    {
+      "city": "Gulmarg",
+      "name": "Hotel Highlands Park / Grand Mumtaz Resorts or similar",
+      "category": "4-Star Alpine Heritage Lodge",
+      "nights": 1
+    },
+    {
+      "city": "Srinagar",
+      "name": "The Lalit Grand Palace / Fortune Resort Heevan or similar",
+      "category": "4-Star Premium Heritage Hotel",
+      "nights": 2
+    }
+  ],
+  "transport": {
+    "mode": "Private Chauffeur Sedan / Innova Crysta",
+    "details": "Dedicated sanitized private vehicle (Dzire/Etios for 2-3 guests; Innova Crysta for 4-6 guests) with experienced local mountain driver for all sightseeing and intercity transfers."
+  },
+  "thingsToCarry": [
+    "Warm layered clothing: fleece jacket, thermal inners, woolen socks, and gloves (even during summer evenings)",
+    "Comfortable walking shoes with sturdy rubber grip for cobbled trails and snow patches",
+    "Sunglasses and high-SPF broad-spectrum sunscreen (high altitude UV reflection is strong)",
+    "Government-issued photo identification (Aadhaar Card, Voter ID, or Passport)",
+    "Postpaid mobile connection (Prepaid SIM cards issued outside J&K do not work in the valley; Jio, Airtel, and BSNL postpaid work reliably)",
+    "Personal prescription medicines and motion sickness medication for winding mountain passes"
+  ],
+  "tips": [
+    "Gulmarg Gondola tickets are strictly capacity-controlled by the government; ensure your dates are locked in at least 3-4 weeks ahead of peak season.",
+    "Only postpaid mobile SIM cards function in Jammu & Kashmir due to telecom regulations. Ensure at least one member carries an active BSNL, Airtel, or Jio postpaid SIM.",
+    "Always negotiate pony rates beforehand according to the government rate card displayed prominently at Pahalgam and Sonmarg taxi stands.",
+    "Respect local photography guidelines around military installations and bridge crossings throughout the valley."
+  ],
+  "cancellationPolicy": [
+    "Up to 30 days prior to departure: 100% refund minus nominal processing fee (₹1,500)",
+    "29 to 15 days prior to departure: 75% refund of total package cost",
+    "14 to 7 days prior to departure: 50% refund of total package cost",
+    "Within 7 days of departure: Non-refundable due to hotel guarantee commitments"
+  ],
+  "paymentTerms": "Book with a 25% advance token; 50% due 20 days prior to travel date; remaining 25% payable upon arrival in Srinagar.",
+  "faqs": [
+    {
+      "question": "Is Kashmir safe for families and solo female travellers?",
+      "answer": "Yes, absolutely. Tourism is the heartbeat of Kashmir. Thousands of families and couples visit year-round. Tour operators, hotel staff, and shikara owners extend extraordinary warmth and hospitality. We provide verified local chauffeurs and 24/7 concierge assistance."
+    },
+    {
+      "question": "Why don't outside cabs go to Betaab and Aru Valley in Pahalgam?",
+      "answer": "Per local district administration and taxi union regulations, outside tourist vehicles are permitted only up to the hotel in Pahalgam. Exploring internal spots like Betaab Valley, Aru, and Chandanwari requires local registered union cabs, which are already included in our package."
+    },
+    {
+      "question": "Are Gulmarg Gondola Phase 1 tickets guaranteed?",
+      "answer": "We book your Phase 1 Gondola tickets through the JKCCC portal as soon as your booking is confirmed. However, operations remain subject to daily mountain weather and wind safety protocols determined by the cable car authority."
+    },
+    {
+      "question": "What is the best time to experience snow in Gulmarg?",
+      "answer": "For fresh snow and skiing, mid-December through March is ideal. For pleasant spring meadows, blooming flowers, and cool weather, April through June offers the most comfortable temperatures."
+    },
+    {
+      "question": "Will my mobile phone work in Srinagar, Gulmarg, and Pahalgam?",
+      "answer": "Only Indian postpaid connections (Airtel, Jio, and BSNL) function in Jammu & Kashmir. Prepaid SIM cards purchased outside J&K will stop receiving network signals upon crossing into the state due to national security regulations."
+    },
+    {
+      "question": "What is the difference between Dal Lake and Nigeen Lake houseboats?",
+      "answer": "Dal Lake houseboats offer lively vistas with vibrant floating markets, Shikara traffic, and panoramic Zabarwan mountain views. Nigeen Lake is slightly calmer and quieter. Our standard package includes premier category Dal Lake houseboats."
+    },
+    {
+      "question": "What traditional food should I try during the trip?",
+      "answer": "Do not miss the traditional Kashmiri Wazwan feast featuring Rogan Josh, Rista (meatballs in saffron gravy), Gushtaba, and vegetarian specialties like Nadru Yakhni (lotus stem in yogurt) and Dum Aloo, accompanied by hot walnut chutney."
+    }
+  ],
+  "departures": [
+    { "date": "2026-11-08", "price": "₹24,999", "seatsTotal": 20, "seatsLeft": 6, "status": "Filling Fast" },
+    { "date": "2026-11-22", "price": "₹24,999", "seatsTotal": 20, "seatsLeft": 12, "status": "Open" },
+    { "date": "2026-12-06", "price": "₹27,999", "seatsTotal": 20, "seatsLeft": 4, "status": "Filling Fast" },
+    { "date": "2026-12-20", "price": "₹32,999", "seatsTotal": 24, "seatsLeft": 2, "status": "Filling Fast" },
+    { "date": "2027-01-10", "price": "₹29,999", "seatsTotal": 20, "seatsLeft": 14, "status": "Open" },
+    { "date": "2027-02-07", "price": "₹29,999", "seatsTotal": 20, "seatsLeft": 10, "status": "Open" },
+    { "date": "2027-03-14", "price": "₹26,999", "seatsTotal": 24, "seatsLeft": 18, "status": "Open" },
+    { "date": "2027-04-11", "price": "₹28,999", "seatsTotal": 24, "seatsLeft": 15, "status": "Open" },
+    { "date": "2027-05-09", "price": "₹29,999", "seatsTotal": 24, "seatsLeft": 11, "status": "Open" }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&q=80&w=2400",
+      "alt": "Traditional wooden Shikara boat floating peacefully on Dal Lake Srinagar with Zabarwan mountains backdrop",
+      "caption": "Tranquil sunset Shikara voyage on mirror-calm Dal Lake, Srinagar",
+      "credit": "Aaqib Bhat",
+      "creditUrl": "https://unsplash.com/@aaqibbhat",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Snow clad peaks and pine forested slopes around Gulmarg meadow in Kashmir",
+      "caption": "Pristine alpine slopes and pine forests in Gulmarg valley",
+      "credit": "Imad Clicks",
+      "creditUrl": "https://unsplash.com/@imadclicks",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Crystal clear Lidder River rushing over pebbles through deodar pine woods in Pahalgam",
+      "caption": "The roaring turquoise waters of Lidder River in Pahalgam",
+      "credit": "Sameer Bhat",
+      "creditUrl": "https://unsplash.com/@sameerbhat",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Gulmarg Gondola cable car station climbing high into snowy mountains of Kongdoori",
+      "caption": "Gulmarg Gondola Phase 1 ascending toward Kongdoori mountain bowl",
+      "credit": "Basharat Alam",
+      "creditUrl": "https://unsplash.com/@basharat_alam",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Scenic Thajiwas Glacier mountain valley with melting snow streams and grazing horses in Sonmarg",
+      "caption": "Thajiwas Glacier snowfields framed by jagged peaks in Sonmarg",
+      "credit": "Suhail Rather",
+      "creditUrl": "https://unsplash.com/@suhailrather",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&q=80&w=1600",
+      "alt": "Historic Mughal Garden terraced water canals and century old Chinar trees in Srinagar",
+      "caption": "Nishat Bagh royal terraced gardens cascading toward Dal Lake",
+      "credit": "Muheet Shafi",
+      "creditUrl": "https://unsplash.com/@muheetshafi",
+      "source": "Unsplash"
+    }
+  ],
+  "seo": {
+    "title": "Kashmir Tour Package: 6N/7D Srinagar, Gulmarg & Pahalgam",
+    "description": "Book a 7-day luxury Kashmir holiday. Enjoy heritage houseboats, Dal Lake shikara rides, Gulmarg gondola cable car, and scenic Pahalgam valleys."
+  },
+  "status": "published",
+  "featured": true
+}

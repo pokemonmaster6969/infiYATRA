@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { User, Mail, Lock, ArrowRight, Github, Chrome, Shield, Compass } from 'lucide-react'
 import { haptics } from '../lib/haptics'
+import ResponsiveImage from '../components/ResponsiveImage'
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -31,20 +32,19 @@ const Login = () => {
   }
 
   return (
-    <div className="min-h-screen bg-charcoal flex items-center justify-center p-6 relative overflow-hidden">
+    <div className="relative flex min-h-[100svh] items-center justify-center overflow-hidden bg-charcoal px-4 py-24 text-white sm:px-6">
       {/* Immersive Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
+        <ResponsiveImage
           src="https://images.unsplash.com/photo-1506461883276-594a12b11cf3?auto=format&fit=crop&q=80&w=2000" 
           alt="Travel Background" 
-          className="w-full h-full object-cover opacity-20 scale-105"
+          sizes="100vw"
+          loading="eager"
+          fetchPriority="high"
+          className="h-full w-full object-cover opacity-25"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/80 via-charcoal/60 to-charcoal"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0c1d1b]/90 via-[#0c1d1b]/72 to-[#0c1d1b]/60"></div>
       </div>
-
-      {/* Dynamic Background Accents */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[180px] -translate-y-1/2 translate-x-1/2 z-0"></div>
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[180px] translate-y-1/2 -translate-x-1/2 z-0"></div>
 
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
@@ -52,14 +52,14 @@ const Login = () => {
         className="w-full max-w-lg relative z-10"
       >
         {/* Mode Switcher Tabs */}
-        <div className="flex justify-center mb-4">
-          <div className="liquid-glass-dark p-1 rounded-full border border-white/10 flex gap-1">
+        <div className="mb-3 flex justify-start">
+          <div className="flex gap-1 rounded-lg liquid-glass-dark p-1">
             <button 
               onClick={() => {
                 haptics.light();
                 setMode('user');
               }}
-              className={`px-6 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest transition-all duration-500 flex items-center gap-2 ${mode === 'user' ? 'bg-secondary text-white shadow-lg shadow-secondary/20' : 'text-white/40 hover:text-white'}`}
+              className={`flex min-h-10 items-center gap-2 rounded-md px-4 text-[10px] font-semibold uppercase tracking-wider transition-colors ${mode === 'user' ? 'bg-secondary text-white' : 'text-white/55 hover:text-white'}`}
             >
               <Compass size={12} /> Explorer
             </button>
@@ -68,29 +68,29 @@ const Login = () => {
                 haptics.light();
                 setMode('admin');
               }}
-              className={`px-6 py-2.5 rounded-full text-[9px] font-black uppercase tracking-widest transition-all duration-500 flex items-center gap-2 ${mode === 'admin' ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'text-white/40 hover:text-white'}`}
+              className={`flex min-h-10 items-center gap-2 rounded-md px-4 text-[10px] font-semibold uppercase tracking-wider transition-colors ${mode === 'admin' ? 'bg-primary text-white' : 'text-white/55 hover:text-white'}`}
             >
               <Shield size={12} /> Admin
             </button>
           </div>
         </div>
 
-        <div className="liquid-glass-dark p-8 md:p-10 rounded-[3rem] border border-white/10 shadow-2xl backdrop-blur-3xl">
-          <div className="text-center mb-8">
+        <div className="travel-form rounded-xl border border-white/10 bg-[#0c1d1b]/85 p-5 shadow-2xl backdrop-blur-xl sm:p-8">
+          <div className="mb-6 text-left">
             <motion.div
               key={mode}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-3xl md:text-4xl font-display font-black text-white uppercase italic tracking-tighter liquid-text mb-2">
+              <h1 className="mb-2 font-display text-2xl font-black uppercase italic tracking-tight text-white sm:text-3xl">
                 {mode === 'admin' ? (
                   <>Admin <span className="text-primary">Basecamp</span></>
                 ) : (
                   <>{isLogin ? 'Welcome' : 'Join the'} <span className="text-secondary">Community</span></>
                 )}
               </h1>
-              <p className="text-white/40 font-medium text-xs italic tracking-wide">
+              <p className="text-xs leading-relaxed text-white/55">
                 {mode === 'admin' 
                   ? 'Authorized access for organizers' 
                   : (isLogin ? 'Sign in to your curated expeditions' : 'Ahmedabad\'s premier travel collective')}
@@ -98,10 +98,10 @@ const Login = () => {
             </motion.div>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="travel-form space-y-4">
             {mode === 'user' && !isLogin && (
               <div className="space-y-1">
-                <label className="text-[8px] uppercase font-black text-white/40 tracking-[0.2em] ml-4">Full Name</label>
+                <label className="text-[10px] font-semibold uppercase tracking-wider text-white/60">Full name</label>
                 <div className="relative">
                   <User className="absolute left-5 top-1/2 -translate-y-1/2 text-white/20" size={16} />
                   <input 
@@ -115,7 +115,7 @@ const Login = () => {
 
             {mode === 'user' && (
               <div className="space-y-1">
-                <label className="text-[8px] uppercase font-black text-white/40 tracking-[0.2em] ml-4">Email Address</label>
+                <label className="text-[10px] font-semibold uppercase tracking-wider text-white/60">Email address</label>
                 <div className="relative">
                   <Mail className="absolute left-5 top-1/2 -translate-y-1/2 text-white/20" size={16} />
                   <input 
@@ -131,7 +131,7 @@ const Login = () => {
             )}
 
             <div className="space-y-1">
-              <label className="text-[8px] uppercase font-black text-white/40 tracking-[0.2em] ml-4">
+              <label className="text-[10px] font-semibold uppercase tracking-wider text-white/60">
                 {mode === 'admin' ? 'Access Key' : 'Password'}
               </label>
               <div className="relative">
@@ -149,7 +149,7 @@ const Login = () => {
 
             <button 
               type="submit"
-              className={`w-full py-5 rounded-2xl font-black text-[10px] uppercase tracking-[0.3em] shadow-2xl transition-all flex items-center justify-center group hover:scale-[1.02] active:scale-[0.98] ${mode === 'admin' ? 'bg-primary shadow-primary/20' : 'bg-secondary shadow-secondary/20'} text-white`}
+              className={`flex min-h-12 w-full items-center justify-center rounded-lg px-4 text-xs font-bold uppercase tracking-wider text-white transition-colors ${mode === 'admin' ? 'bg-primary hover:bg-primary-light' : 'bg-secondary hover:bg-secondary-light'}`}
             >
               {mode === 'admin' ? 'Authorize' : (isLogin ? 'Sign In' : 'Join')} 
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={14} />
@@ -163,13 +163,15 @@ const Login = () => {
                 <div className="flex justify-center gap-4">
                   <button 
                     onClick={() => haptics.light()}
-                    className="p-3 bg-white/5 border border-white/10 rounded-xl text-white hover:bg-white/10 transition-all hover:scale-110"
+                    aria-label="Continue with Google"
+                    className="flex h-11 w-11 items-center justify-center rounded-lg liquid-glass text-white transition-colors hover:bg-white/20"
                   >
                     <Chrome size={18} />
                   </button>
                   <button 
                     onClick={() => haptics.light()}
-                    className="p-3 bg-white/5 border border-white/10 rounded-xl text-white hover:bg-white/10 transition-all hover:scale-110"
+                    aria-label="Continue with GitHub"
+                    className="flex h-11 w-11 items-center justify-center rounded-lg liquid-glass text-white transition-colors hover:bg-white/20"
                   >
                     <Github size={18} />
                   </button>

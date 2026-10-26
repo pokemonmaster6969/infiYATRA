@@ -1,38 +1,33 @@
 import React from 'react'
-import { motion } from 'framer-motion'
-import { Send } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { ArrowRight, MessageCircle } from 'lucide-react'
+import { getWhatsAppLink } from '../../lib/data'
+import { haptics } from '../../lib/haptics'
 
 export default function NewsletterSection() {
   return (
-    <section className="py-32 bg-charcoal relative overflow-hidden">
-      {/* Background Graphic */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/10 blur-[150px] rounded-full"></div>
-      
-      <div className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-20 relative z-10 text-center">
-        <div className="space-y-4 mb-20 text-center">
-          <span className="text-secondary font-black uppercase tracking-[0.4em] text-[10px] drop-shadow-sm">COMMUNITY EXCLUSIVE</span>
-          <h2 className="text-5xl md:text-8xl font-display font-black text-white tracking-tighter uppercase italic leading-none">
-            Join the <span className="text-primary italic px-4 drop-shadow-2xl" style={{ WebkitTextStroke: '2px white' }}>Infi Elite</span>
-          </h2>
-          <p className="text-white/40 font-medium text-lg max-w-xl mx-auto py-6 italic leading-relaxed">Early access to expedition openings and exclusive members-only gatherings.</p>
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="liquid-glass-dark max-w-2xl mx-auto p-4 md:p-6 rounded-full flex flex-col md:flex-row items-center gap-4 transition-all hover:bg-white/10 hover:shadow-2xl border border-white/5 group"
-        >
-          <div className="w-full flex items-center px-8 flex-grow">
-            <Send className="text-secondary opacity-70 rotate-12 group-hover:rotate-0 transition-transform" size={24} />
-            <input type="email" placeholder="Your Explorer ID (Email)" className="w-full bg-transparent border-none focus:ring-0 text-white placeholder:text-white/30 font-black text-xl uppercase tracking-tighter py-5 px-6" />
+    <section className="bg-[#102522] py-16 sm:py-20 lg:py-24">
+      <div className="mx-auto max-w-[1320px] px-5 sm:px-8 lg:px-12">
+        <div className="relative overflow-hidden rounded-xl border border-white/15 bg-[#193431] p-6 sm:p-10 lg:p-14">
+          <div className="absolute inset-0 -z-0 bg-[radial-gradient(ellipse_at_100%_0%,rgba(54,166,157,0.2),transparent_55%)]" />
+          <div className="relative z-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-2xl space-y-3">
+              <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-secondary">Your next story starts here</span>
+              <h2 className="font-display text-3xl font-black uppercase italic leading-[1.02] tracking-tight text-white sm:text-4xl lg:text-5xl">
+                Tell us where <span className="text-primary-light">you want to go.</span>
+              </h2>
+              <p className="max-w-xl text-sm leading-relaxed text-white/60 sm:text-base">Our Ahmedabad-based trip planners will help you find the right route, dates, and people to go with.</p>
+            </div>
+            <div className="flex flex-col gap-2 sm:flex-row">
+              <Link to="/customize" onClick={() => haptics.medium()} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-secondary px-5 text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-secondary-light">
+                Plan my trip <ArrowRight size={15} />
+              </Link>
+              <a href={getWhatsAppLink('Hi INFIYATRA, I would like help planning a trip.')} target="_blank" rel="noopener noreferrer" onClick={() => haptics.medium()} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-lg liquid-glass px-5 text-xs font-semibold text-white transition-colors hover:bg-white/20">
+                <MessageCircle size={15} /> Talk to our team
+              </a>
+            </div>
           </div>
-          <button className="bg-secondary text-white px-12 md:px-16 py-5 md:py-6 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:text-charcoal transition-all shadow-2xl shadow-secondary/30 transform hover:scale-105 active:scale-95 duration-500 w-full md:w-auto">
-            Secure Spot
-          </button>
-        </motion.div>
-        
-        <p className="mt-10 text-white/20 text-[10px] uppercase font-black tracking-[0.4em]">Zero Spam. Pure Adventure.</p>
+        </div>
       </div>
     </section>
   )
