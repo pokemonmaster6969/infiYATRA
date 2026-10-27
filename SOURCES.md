@@ -230,3 +230,257 @@ This internal document records competitor research, consensus benchmarks, operat
   - Safari World & Marine Park: 45 km northeast of Bangkok; Open Safari drive through African savanna + live Marine Park shows (dolphin, stunt, sea lion).
 - **Visa & Entry Requirements:**
   - Visa-Free / Visa Exemption for Indian tourists (up to 30 or 60 days per Thai government circular). Passport must be valid for at least 6 months with return flight proof and confirmed hotel vouchers.
+
+---
+
+## 6. Himachal Pradesh: "Shimla & Manali Alpine Serenity" (6 Nights / 7 Days)
+
+### Competitor Packages Researched
+1. **WanderOn & Thrillophilia**
+   - *Package Name:* Shimla Manali Backpacking / Scenic Himachal
+   - *URL / Ref:* https://wanderon.in/trips/shimla-manali-tour / https://www.thrillophilia.com/states/himachal-pradesh/tours
+   - *Duration:* 6 Nights / 7 Days
+   - *Route Split:* Shimla (2N) → Manali (3N) → Chandigarh (1N)
+   - *Hotel Tier:* 3-Star & 4-Star Mountain Resorts
+   - *Price Band:* ₹18,500 – ₹26,000 per person
+   - *Key Inclusions:* Private cab for all transfers & sightseeing, Kufri excursion, Solang Valley adventure day, Atal Tunnel & Sissu (Lahaul) crossing, Mall Road strolls, MAP meal plan.
+
+2. **Thomas Cook India & MakeMyTrip**
+   - *Package Name:* Splendours of Himachal
+   - *URL / Ref:* https://www.thomascook.in/holidays/india-tour-packages/himachal-tour-packages
+   - *Price Band:* ₹21,999 – ₹34,000 per person
+   - *Key Inclusions:* Chandigarh pickup/drop, Jakhu Temple, Rohtang Pass permit assistance, Kasol day trip.
+
+### Consensus Package Specifications
+- **Duration:** 6 Nights / 7 Days
+- **City Split:** Shimla (2N) → Manali (3N) → Chandigarh (1N)
+- **Consensus Price:**
+  - Standard (3-Star): ₹19,999 / person
+  - Deluxe (4-Star): ₹27,999 / person
+  - Premium (5-Star Luxury): ₹42,999 / person
+- **Operational & Route Realism:**
+  - Chandigarh to Shimla: 115 km via Himalayan Expressway, ~3.5 hours.
+  - Shimla to Manali: 250 km along the Beas River valley via Mandi and Pandoh Dam, ~7 hours.
+  - Solang Valley & Atal Tunnel to Sissu (Lahaul Valley): 35 km from Manali, ~1.5 hours through the 9.02 km engineering wonder.
+  - Inclusions: Private AC Sedan/SUV (heater on hilly stretches), daily breakfast and dinner, NGT Rohtang/Sissu green permits, experienced mountain driver.
+
+---
+
+## 7. Rajasthan: "Royal Heritage Triangle" (6 Nights / 7 Days)
+
+### Competitor Packages Researched
+1. **MakeMyTrip & Kesari Tours**
+   - *Package Name:* Royal Rajasthan: Jaipur, Jodhpur & Udaipur
+   - *URL / Ref:* https://www.makemytrip.com/holidays-india/rajasthan-travel-packages.html
+   - *Duration:* 6 Nights / 7 Days
+   - *Route Split:* Jaipur (2N) → Jodhpur (2N) → Udaipur (2N)
+   - *Hotel Tier:* 4-Star Heritage Havelis & Palace Stays
+   - *Price Band:* ₹24,999 – ₹38,000 per person
+   - *Key Inclusions:* Amber Fort elephant/jeep ride, City Palace, Hawa Mahal, Mehrangarh Fort, Jaswant Thada, Lake Pichola boat ride, Saheliyon-ki-Bari.
+
+2. **Thomas Cook India**
+   - *Package Name:* Padharo Mhare Desh: Classic Rajasthan
+   - *URL / Ref:* https://www.thomascook.in/holidays/india-tour-packages/rajasthan-tour-packages
+   - *Price Band:* ₹26,500 – ₹42,000 per person
+   - *Key Inclusions:* Chaupal dinner at Chokhi Dhani, Mehrangarh audio guide, Ranakpur Jain Temple stopover en route to Udaipur.
+
+### Consensus Package Specifications
+- **Duration:** 6 Nights / 7 Days
+- **City Split:** Jaipur (2N) → Jodhpur (2N) → Udaipur (2N)
+- **Consensus Price:**
+  - Standard (3-Star Heritage): ₹26,999 / person
+  - Deluxe (4-Star Heritage Havelis): ₹36,999 / person
+  - Premium (5-Star Luxury Palaces): ₹64,999 / person
+- **Operational & Route Realism:**
+  - Jaipur to Jodhpur: 330 km via NH48/NH25 with optional Ajmer/Pushkar stopover, ~6 hours.
+  - Jodhpur to Udaipur: 260 km via Pali and the intricately carved 1,444 marble pillars of Ranakpur Jain Temple, ~5.5 hours.
+  - Lake Pichola boat cruise timed for sunset around Jag Mandir and Lake Palace.
+
+---
+
+## 8. Andaman & Nicobar: "Tropical Island & Coral Reefs" (5 Nights / 6 Days)
+
+### Competitor Packages Researched
+1. **MakeMyTrip & Thrillophilia**
+   - *Package Name:* Exotic Andamans: Port Blair & Havelock
+   - *URL / Ref:* https://www.thrillophilia.com/states/andaman-and-nicobar-islands/tours
+   - *Duration:* 5 Nights / 6 Days
+   - *Route Split:* Port Blair (2N) → Havelock Island (2N) → Neil Island (1N)
+   - *Hotel Tier:* 3-Star & 4-Star Beachfront Resorts
+   - *Price Band:* ₹26,000 – ₹39,000 per person
+   - *Key Inclusions:* Cellular Jail Light & Sound show, Makruzz/Nautika premium high-speed catamaran ferry tickets, Radhanagar Beach sunset, Elephant Beach boat ride with complimentary snorkeling.
+
+2. **Thomas Cook India**
+   - *Package Name:* Andaman Island Paradise
+   - *URL / Ref:* https://www.thomascook.in/holidays/india-tour-packages/andaman-tour-packages
+   - *Price Band:* ₹28,999 – ₹45,000 per person
+   - *Key Inclusions:* High-speed catamaran, AC transfers, scuba diving booking assistance, Ross Island excursion.
+
+### Consensus Package Specifications
+- **Duration:** 5 Nights / 6 Days
+- **City Split:** Port Blair (2N) → Havelock Island (Swaraj Dweep, 2N) → Neil Island (Shaheed Dweep, 1N)
+- **Consensus Price:**
+  - Standard (3-Star): ₹28,999 / person
+  - Deluxe (4-Star Beachside): ₹39,999 / person
+  - Premium (5-Star Luxury Villa): ₹62,999 / person
+- **Operational Realism:**
+  - Port Blair to Havelock: 90 mins via high-speed catamaran (Makruzz / Green Ocean).
+  - Radhanagar Beach (Beach No. 7) rated among Asia's best beaches by Time and TripAdvisor.
+  - Elephant Beach: speedboats depart from Havelock jetty; water sports subject to weather and coast guard clearance.
+
+---
+
+## 9. Leh Ladakh: "High Passes & Sacred Monasteries" (6 Nights / 7 Days)
+
+### Competitor Packages Researched
+1. **WanderOn & Thrillophilia**
+   - *Package Name:* Ladakh Odyssey with Pangong & Nubra
+   - *URL / Ref:* https://wanderon.in/trips/leh-ladakh-tour / https://www.thrillophilia.com/states/ladakh/tours
+   - *Duration:* 6 Nights / 7 Days
+   - *Route Split:* Leh (3N) → Nubra Valley (2N) → Pangong Tso (1N)
+   - *Hotel Tier:* 3-Star & 4-Star Boutique Hotels + Luxury Camps in Nubra and Pangong
+   - *Price Band:* ₹25,000 – ₹36,000 per person
+   - *Key Inclusions:* Inner Line Permits (ILP), oxygen cylinder in vehicle, Khardung La pass crossing (17,982 ft), Chang La crossing (17,590 ft), Hunder double-humped camel safari, Diskit Monastery, Pangong lake sunrise.
+
+2. **MakeMyTrip Holidays**
+   - *Package Name:* Magical Ladakh Discovery
+   - *URL / Ref:* https://www.makemytrip.com/holidays-india/ladakh-travel-packages.html
+   - *Price Band:* ₹27,999 – ₹41,000 per person
+   - *Key Inclusions:* Mandatory 24-hr Leh acclimatization protocol, environmental fees, magnetic hill visit, confluence of Indus and Zanskar rivers.
+
+### Consensus Package Specifications
+- **Duration:** 6 Nights / 7 Days
+- **City Split:** Leh (3N) → Nubra Valley (Hunder, 2N) → Pangong Tso (Spangmik, 1N)
+- **Consensus Price:**
+  - Standard (3-Star & Swiss Tents): ₹27,999 / person
+  - Deluxe (4-Star & Premium Geodesic Domes): ₹38,999 / person
+  - Premium (5-Star Luxury Resorts & Heritage Stays): ₹62,000 / person
+- **Operational & Altitude Realism:**
+  - Day 1 strictly dedicated to complete bed rest and hydration to acclimatize from sea level to 11,500 ft (Leh).
+  - Khardung La (17,982 ft) transit restricted to 20-30 mins stopover to avoid acute mountain sickness (AMS).
+  - Pangong Tso (14,270 ft) evening temperatures drop below freezing even in summer; insulated dome/tent camps with thermal blankets required.
+
+---
+
+## 10. Bali, Indonesia: "Temples, Waterfalls & Coastal Vibes" (5 Nights / 6 Days)
+
+### Competitor Packages Researched
+1. **MakeMyTrip & Pickyourtrail**
+   - *Package Name:* Best of Bali: Ubud, Kuta & Nusa Penida
+   - *URL / Ref:* https://www.makemytrip.com/holidays-international/bali-tourism-packages.html / https://pickyourtrail.com/packages/bali
+   - *Duration:* 5 Nights / 6 Days
+   - *Route Split:* Ubud (2N) → Kuta / Seminyak (3N)
+   - *Hotel Tier:* 4-Star Jungle & Beachfront Resorts with Private Pool Villas
+   - *Price Band:* ₹32,000 – ₹48,000 per person
+   - *Key Inclusions:* Private airport transfers, Bali Swing & Tegalalang rice terraces, Tegenungan Waterfall, full-day Nusa Penida West island tour by speedboat with lunch (Kelingking Beach, Broken Beach, Angel's Billabong), Uluwatu clifftop temple sunset with Kecak Fire Dance.
+
+2. **Thomas Cook India & Flamingo Transworld**
+   - *Package Name:* Tropical Bali Holiday
+   - *URL / Ref:* https://www.thomascook.in/holidays/international-tour-packages/bali-tour-packages
+   - *Price Band:* ₹34,999 – ₹54,000 per person
+   - *Key Inclusions:* Jimbaran bay sunset seafood dinner, Tanjung Benoa watersports (banana boat, parasailing), Wanagiri Hidden Hills.
+
+### Consensus Package Specifications
+- **Duration:** 5 Nights / 6 Days
+- **City Split:** Ubud Rainforest (2N) → Seminyak / Nusa Dua Coastal (3N)
+- **Consensus Price:**
+  - Standard (4-Star Resorts): ₹34,999 / person
+  - Deluxe (Private Pool Villa): ₹49,999 / person
+  - Premium (5-Star Luxury Stays): ₹79,999 / person
+- **Visa & Entry Requirements:**
+  - Indonesia Visa on Arrival (VoA) for Indian passport holders: 500,000 IDR (approx. ₹2,700), payable online or on arrival.
+  - Bali Tourist Tax (150,000 IDR) payable via official Love Bali portal.
+
+---
+
+## 11. Switzerland: "Alpine Glaciers & Panoramic Rail" (6 Nights / 7 Days)
+
+### Competitor Packages Researched
+1. **Thomas Cook India & MakeMyTrip**
+   - *Package Name:* Swiss Delight: Zurich, Lucerne & Interlaken
+   - *URL / Ref:* https://www.thomascook.in/holidays/international-tour-packages/switzerland-tour-packages
+   - *Duration:** 6 Nights / 7 Days
+   - *Route Split:* Zurich (2N) → Lucerne (2N) → Interlaken (2N)
+   - *Hotel Tier:* 4-Star City & Lakefront Hotels
+   - *Price Band (Land Only):* ₹1,30,000 – ₹1,80,000 per person
+   - *Key Inclusions:* First-Class Swiss Travel Pass (unlimited trains, lake steamers, trams), Mount Titlis with Rotair revolving cable car, Jungfraujoch Top of Europe cogwheel railway, Rhine Falls excursion, Lake Lucerne boat cruise.
+
+2. **Veena World & Kesari**
+   - *Package Name:* Swiss Grandeur
+   - *URL / Ref:* https://www.veenaworld.com/world/europe-tour-packages/switzerland
+   - *Price Band:* ₹1,40,000 – ₹1,95,000 per person
+   - *Key Inclusions:* Daily continental breakfast, Bernese Oberland walking tour, Ice Palace Jungfraujoch, Zurich Altstadt promenade.
+
+### Consensus Package Specifications
+- **Duration:** 6 Nights / 7 Days
+- **City Split:** Zurich (2N) → Lucerne (2N) → Interlaken (2N)
+- **Consensus Price:**
+  - Standard (4-Star City Central): ₹1,35,000 / person
+  - Deluxe (4-Star Superior Lakeview): ₹1,75,000 / person
+  - Premium (5-Star Luxury Alpine Resort): ₹2,45,000 / person
+- **Operational Realism:**
+  - Swiss rail is exceptionally punctual; trains connect Zurich to Lucerne (45 mins) and Lucerne to Interlaken via the scenic GoldenPass line (1 hr 50 mins).
+  - Eiger Express tri-cable gondola from Grindelwald reduces travel time to Jungfraujoch by 47 minutes.
+
+---
+
+## 12. Iceland: "Aurora Borealis & Fire and Ice" (6 Nights / 7 Days)
+
+### Competitor Packages Researched
+1. **MakeMyTrip & Pickyourtrail**
+   - *Package Name:* Iceland Northern Lights & Golden Circle
+   - *URL / Ref:* https://pickyourtrail.com/packages/iceland / https://www.makemytrip.com/holidays-international/iceland-tourism-packages.html
+   - *Duration:* 6 Nights / 7 Days
+   - *Route Split:* Reykjavik (3N) → Vik / South Coast (2N) → Reykjavik (1N)
+   - *Hotel Tier:* 4-Star Nordic Boutique Hotels
+   - *Price Band (Land Only):* ₹1,40,000 – ₹1,85,000 per person
+   - *Key Inclusions:* Blue Lagoon geothermal spa Comfort ticket, Golden Circle tour (Thingvellir National Park, Geysir, Gullfoss waterfall), South Coast waterfalls (Seljalandsfoss, Skogafoss), Reynisfjara Black Sand Beach, Jokulsarlon Glacier Lagoon & Diamond Beach, nightly guided Northern Lights chases.
+
+2. **Thomas Cook India**
+   - *Package Name:* Wonders of Iceland
+   - *URL / Ref:* https://www.thomascook.in/holidays/international-tour-packages/iceland-tour-packages
+   - *Price Band:* ₹1,55,000 – ₹2,10,000 per person
+   - *Key Inclusions:* Private Mercedes Sprinter coach, English-speaking specialist guide, crampons for glacier walks, Northern Lights photo support.
+
+### Consensus Package Specifications
+- **Duration:** 6 Nights / 7 Days
+- **City Split:** Reykjavik (3N) → Vik / Kirkjubaejarklaustur (2N) → Reykjavik (1N)
+- **Consensus Price:**
+  - Standard (4-Star Nordic): ₹1,48,000 / person
+  - Deluxe (4-Star Superior Panorama): ₹1,95,000 / person
+  - Premium (Luxury Wilderness Glass Igloos): ₹2,75,000 / person
+- **Operational Realism:**
+  - Daylight varies dramatically (4-5 hours in winter, up to 20 hours in summer). Northern Lights tours operate mid-September to mid-April with weather-dependent cloud forecasts.
+  - Reynisfjara black sand beach features dangerous sneaker waves; safety briefing strictly enforced.
+
+---
+
+## 13. Japan: "The Classic Golden Route & Shinkansen" (6 Nights / 7 Days)
+
+### Competitor Packages Researched
+1. **Thomas Cook India & MakeMyTrip**
+   - *Package Name:* Simply Japan / Jewels of Japan
+   - *URL / Ref:* https://www.thomascook.in/holidays/international-tour-packages/japan-tour-packages
+   - *Duration:* 6 Nights / 7 Days
+   - *Route Split:* Tokyo (3N) → Hakone / Mt. Fuji (1N) → Kyoto (2N)
+   - *Hotel Tier:* 4-Star City Hotels + Traditional Onsen Ryokan
+   - *Price Band (Land Only):* ₹1,35,000 – ₹1,75,000 per person
+   - *Key Inclusions:* Shinkansen bullet train ticket from Odawara to Kyoto, Hakone Freepass (Lake Ashi cruise & ropeway), Senso-ji temple, teamLab Planets digital art, Fushimi Inari Torii gates, Arashiyama Bamboo Grove, Kinkaku-ji Golden Pavilion, traditional Kaiseki dinner.
+
+2. **Pickyourtrail & Veena World**
+   - *Package Name:* Japan Sakura & Culture Tour
+   - *URL / Ref:* https://pickyourtrail.com/packages/japan / https://www.veenaworld.com/world/asia-tour-packages/japan
+   - *Price Band:* ₹1,45,000 – ₹1,90,000 per person
+   - *Key Inclusions:* Tokyo city tour with Shibuya Crossing, Harajuku, onsen hot spring bath in Hakone, Gion geisha district evening walk.
+
+### Consensus Package Specifications
+- **Duration:** 6 Nights / 7 Days
+- **City Split:** Tokyo (3N) → Hakone (1N) → Kyoto (2N)
+- **Consensus Price:**
+  - Standard (4-Star City & Ryokan): ₹1,42,000 / person
+  - Deluxe (4-Star Superior Onsen Suite): ₹1,85,000 / person
+  - Premium (5-Star Luxury & Heritage Machiya): ₹2,55,000 / person
+- **Operational Realism:**
+  - Shinkansen bullet train travels at 285 km/h, covering Odawara to Kyoto in 2 hours with panoramic views of Mount Fuji on clear days.
+  - Luggage forwarding (Takkyubin) utilized for heavy baggage between Tokyo and Kyoto while traveling light for the Hakone overnight onsen experience.
+

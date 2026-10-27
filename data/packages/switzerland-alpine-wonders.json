@@ -1,0 +1,254 @@
+{
+  "id": 111,
+  "slug": "switzerland-alpine-wonders",
+  "title": "Swiss Alpine Wonder (6N/7D)",
+  "tagline": "Snow peaks of Mount Titlis, cogwheel train to the Top of Europe at Jungfraujoch, and glassy waters of Lake Lucerne.",
+  "destination": "Switzerland",
+  "region": "Central Europe",
+  "country": "Switzerland",
+  "category": ["international", "luxury", "honeymoon", "nature", "family"],
+  "duration": {
+    "nights": 6,
+    "days": 7
+  },
+  "route": [
+    { "city": "Zurich", "nights": 2 },
+    { "city": "Lucerne", "nights": 2 },
+    { "city": "Interlaken", "nights": 2 }
+  ],
+  "price": {
+    "from": "1,35,000",
+    "currency": "INR",
+    "per": "person twin sharing",
+    "priceBands": {
+      "standard": "1,35,000",
+      "deluxe": "1,75,000",
+      "premium": "2,45,000"
+    },
+    "offerBadge": "Bestseller"
+  },
+  "bestTime": {
+    "months": ["May", "June", "July", "August", "September", "December"],
+    "notes": "May through September brings verdant alpine meadows, blooming wildflowers, and mild hiking weather (18°C to 25°C); December offers magical snow-draped ski landscapes."
+  },
+  "difficulty": "Easy",
+  "groupType": "Couples, Families & Luxury Travelers",
+  "minAge": 5,
+  "visaInfo": "Schengen Visa (Short-stay Type C) required for Indian passport holders. Our visa operations desk provides comprehensive document checklists and appointment guidance.",
+  "overview": "Immerse yourself in postcard-perfect alpine panoramas on infiYATRA's flagship holiday across Switzerland. Begin in cosmopolitan Zurich, strolling along the picturesque Limmat River and taking an excursion to Europe's most powerful waterfall, the roaring Rhine Falls. Journey along pristine lakeside rail lines to charming Lucerne, crossing the historic 14th-century wooden Chapel Bridge and ascending to the glacier paradise of Mount Titlis via the world's first revolving Rotair cable car. Continue into the Bernese Oberland heartland of Interlaken, nestled between Lake Thun and Lake Brienz. Board the iconic cogwheel railway winding up to Jungfraujoch—the Top of Europe at 3,454 meters—to step onto eternal Aletsch Glacier ice and wander through glowing Ice Palace tunnels. Featuring confirmed first-class Swiss Travel Pass passes for seamless trains and scenic lake steamers, verified four-star central hotels, daily buffet breakfasts, and expert local logistics, this journey brings alpine dreams to life with Swiss precision.",
+  "highlights": [
+    "Ascend Mount Titlis on the world's first revolving Rotair 360-degree cable car",
+    "Cogwheel train ascent to Jungfraujoch (Top of Europe) and Ice Palace at 3,454m",
+    "Witness Europe's largest waterfall, the roaring Rhine Falls at Schaffhausen",
+    "Scenic lake steamer cruise across glassy blue waters of Lake Lucerne",
+    "Historic medieval Chapel Bridge (Kapellbrücke) and Lion Monument in Lucerne",
+    "Leisure walk through the picturesque alpine resort village of Grindelwald",
+    "First-class Swiss Travel Pass included for unlimited trains, boats, and city trams"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Zurich & Old Town Evening Promenade",
+      "location": "Zurich Arrival",
+      "description": "Touch down at Zurich International Airport (ZRH), where your Swiss rail host meets you with your Swiss Travel Pass. Take a smooth 12-minute train directly into Zurich Hauptbahnhof and check into your handpicked 4-star city hotel. In the late afternoon, embark on a scenic walking tour through Zurich's charming historic Altstadt (Old Town). Wander cobblestone lanes flanking the Limmat River, admire the twin Romanesque spires of Grossmünster cathedral, and stroll down world-famous Bahnhofstrasse, renowned for luxury horology and Swiss chocolatiers. Enjoy a welcoming Swiss fondue and multi-course dinner.",
+      "activities": ["Airport Meet & Greet", "Train to Zurich Center", "Altstadt Old Town Walk", "Bahnhofstrasse Shopping"],
+      "meals": { "breakfast": false, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star City Hotel", "city": "Zurich" },
+      "transferInfo": "Swiss Rail Train Transfer (Airport to City Center, 12 mins)"
+    },
+    {
+      "day": 2,
+      "title": "Rhine Falls Natural Wonder & Historic Stein am Rhein",
+      "location": "Zurich & Schaffhausen Excursion",
+      "description": "After a rich buffet breakfast, take a scenic northward train to Schaffhausen to witness the roaring grandeur of the Rhine Falls, Europe's most powerful natural waterfall. Feel the spray of thunderous tumbling glacial waters on a boat ride right up to the central rock bastion in the middle of the falls. Continue to the storybook medieval village of Stein am Rhein, famous for its exceptionally preserved painted half-timbered merchant houses and peaceful riverfront cafes. Return to Zurich by late afternoon to relax by Lake Zurich before dinner.",
+      "activities": ["Rhine Falls Waterfall", "Rock Bastion Boat Ride", "Stein am Rhein Village Walk"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star City Hotel", "city": "Zurich" },
+      "transferInfo": "Swiss Rail Panorama Route (Zurich - Schaffhausen - Zurich, approx. 45 mins each way)"
+    },
+    {
+      "day": 3,
+      "title": "Scenic Train to Lucerne, Chapel Bridge & Lake Steamer Cruise",
+      "location": "Zurich to Lucerne",
+      "description": "Board a scenic morning train tracing sparkling Lake Zug toward Lucerne, nestled beneath the imposing pyramid peaks of Mount Pilatus. Check in to your lakeside hotel and explore the city on foot. Walk across the 14th-century wooden Chapel Bridge adorned with medieval ceiling paintings, visit the poignant Lion Monument carved into natural sandstone cliff, and stroll the lakeside promenade. In the late afternoon, board a historic paddle steamer for a relaxing 1-hour cruise across Lake Lucerne's fjord-like bays, admiring mountain reflections on the water before dinner.",
+      "activities": ["Scenic Train to Lucerne", "Chapel Bridge (Kapellbrücke)", "Lion Monument", "Lake Lucerne Steamer Cruise"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Lakefront Hotel", "city": "Lucerne" },
+      "transferInfo": "Swiss Rail Train (Zurich to Lucerne, 50 mins)"
+    },
+    {
+      "day": 4,
+      "title": "Mount Titlis Glacier Expedition: Rotair & Cliff Walk",
+      "location": "Lucerne to Mount Titlis & Engelberg",
+      "description": "Take the scenic train to the alpine valley town of Engelberg and board a series of cable cars, culminating in the world's first revolving Titlis Rotair, which rotates a full 360 degrees as you ascend to 3,020 meters altitude. Step out onto eternal snow to cross the Titlis Cliff Walk—Europe's highest suspension bridge—hanging 500 meters above the abyss. Venture deep inside the natural Glacier Cave carved 20 meters beneath the ice surface, and ride the Ice Flyer chairlift over glacial crevasses. Return to Lucerne in the late afternoon for dinner.",
+      "activities": ["Titlis Rotair Revolving Gondola", "Titlis Cliff Walk Suspension Bridge", "Glacier Cave Walk", "Ice Flyer Chairlift"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Lakefront Hotel", "city": "Lucerne" },
+      "transferInfo": "Scenic Train + Cable Car Network (Engelberg Valley, 45 mins train)"
+    },
+    {
+      "day": 5,
+      "title": "GoldenPass Scenic Railway to Interlaken & Grindelwald",
+      "location": "Lucerne to Interlaken",
+      "description": "Embark on the world-renowned GoldenPass panoramic train, winding past three turquoise mountain lakes and climbing the Brunig Pass into Interlaken, the adventure hub nestled between Lake Thun and Lake Brienz. Check into your alpine hotel and take a regional train into the breathtaking glacier valley of Grindelwald. Stroll through the village under the shadow of the sheer North Face of the Eiger, taking in flower-adorned Swiss chalets and listening to cowbells echoing across meadows. Return to Interlaken for a stroll along the Hohematte park before dinner.",
+      "activities": ["GoldenPass Panoramic Train", "Grindelwald Alpine Village", "Hohematte Promenade"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Alpine Resort", "city": "Interlaken" },
+      "transferInfo": "GoldenPass Panoramic Railway (approx. 1 hour 50 mins)"
+    },
+    {
+      "day": 6,
+      "title": "Jungfraujoch: Top of Europe Cogwheel Train at 3,454m",
+      "location": "Interlaken to Jungfraujoch",
+      "description": "Prepare for the pinnacle of your Swiss holiday. Board the modern Eiger Express tricable gondola from Grindelwald Terminal, soaring directly past the Eiger North Face to Eigergletscher station. Transfer to the historic electric cogwheel train burrowing through the Eiger mountain to Jungfraujoch at 3,454 meters, Europe's highest railway station. Step out onto the Sphinx Observation Deck for jaw-dropping views of the 23-kilometer Great Aletsch Glacier, explore the illuminated Ice Palace, and visit the Lindt Swiss Chocolate Heaven before returning to Interlaken for a celebratory gala dinner.",
+      "activities": ["Eiger Express Gondola", "Jungfraujoch Cogwheel Train", "Sphinx Glacier Deck", "Ice Palace Sculpture Walk"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Alpine Resort", "city": "Interlaken" },
+      "transferInfo": "Mountain Railway & Gondola Network (Full day excursion)"
+    },
+    {
+      "day": 7,
+      "title": "Interlaken to Zurich Airport & Departure",
+      "location": "Interlaken to Zurich Airport",
+      "description": "Enjoy a relaxed Swiss breakfast featuring alpine cheeses, artisan pastries, and hot chocolate. Use your Swiss Travel Pass to board the direct intercity train from Interlaken Ost back to Zurich International Airport (ZRH). Savor final glimpses of snowy peaks, mirror-like lakes, and peaceful pastures from your comfortable panoramic carriage before boarding your international flight back home with cherished memories of Switzerland.",
+      "activities": ["Alpine Breakfast", "Scenic Train to Zurich Airport", "Flight Departure"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "Departure Day (No Overnight)", "city": "Zurich" },
+      "transferInfo": "Direct Swiss Intercity Train (Interlaken to Zurich Airport, approx. 2 hours 15 mins)"
+    }
+  ],
+  "inclusions": [
+    "6 nights verified 4-star central accommodations (2N Zurich, 2N Lucerne, 2N Interlaken)",
+    "Daily continental & hot buffet breakfast and multi-course dinners at hotels",
+    "Swiss Travel Pass (Consecutive 8-Day) for unlimited trains, boats, and postal buses",
+    "Mount Titlis cable car ticket including the 360-degree Rotair and Glacier Cave entry",
+    "Jungfraujoch 'Top of Europe' mountain railway pass via the Eiger Express gondola",
+    "Scenic Lake Lucerne cruise ticket aboard a historic lake paddle steamer",
+    "Rhine Falls waterfall excursion including the rock bastion boat ride",
+    "24x7 European concierge assistance and comprehensive digital Swiss travel guidebook"
+  ],
+  "exclusions": [
+    "International roundtrip airfare to and from Zurich (ZRH)",
+    "Schengen Tourist Visa fee and VFS biometric appointment processing fees",
+    "Lunches, daytime snacks, and alcoholic beverages not specified in the meal plan",
+    "Adventure activities in Interlaken (tandem paragliding, canyoning, skydiving)",
+    "Personal expenses such as hotel city taxes (CHF 3-5 / night), phone calls, and tips",
+    "Comprehensive international travel medical and baggage insurance",
+    "Any private taxi or chauffeur services outside the Swiss Rail network",
+    "Optional excursions not listed in the standard tour itinerary"
+  ],
+  "hotels": [
+    { "city": "Zurich", "name": "Radisson Blu / Crowne Plaza Zurich", "category": "4-Star Premium", "nights": 2 },
+    { "city": "Lucerne", "name": "Hotel Monopol Luzern / Radisson Blu Lucerne", "category": "4-Star Lakefront", "nights": 2 },
+    { "city": "Interlaken", "name": "Hotel Interlaken / Metropole Swiss Quality", "category": "4-Star Alpine Resort", "nights": 2 }
+  ],
+  "transport": {
+    "mode": "Swiss Travel Pass (First-Class Rail & Scenic Mountain Trains)",
+    "details": "Unlimited travel across the world's most punctual train network, including lake steamers and alpine cogwheel trains."
+  },
+  "thingsToCarry": [
+    "Warm layered clothing, fleece jacket, windbreaker, and thermal gloves for mountain summits",
+    "Sturdy waterproof walking shoes with anti-slip tread for snow platforms",
+    "UV400 polarized sunglasses to protect against intense alpine glacier reflection",
+    "Universal electrical adapter (Type J Swiss 3-pin or Europlug Type C)"
+  ],
+  "tips": [
+    "Check daily mountain peak webcam feeds before heading up Titlis or Jungfraujoch for optimal visibility.",
+    "The Swiss Travel Pass also includes free admission to over 500 museums across Switzerland.",
+    "Carry a refillable water bottle; public mountain drinking fountains across Swiss towns offer pure alpine water."
+  ],
+  "cancellationPolicy": [
+    "Free cancellation with 100% refund up to 21 days before departure date",
+    "50% cancellation fee between 20 and 10 days prior to departure",
+    "Non-refundable within 9 days of departure"
+  ],
+  "paymentTerms": "Secure booking with 25% advance; remaining balance due 15 days before departure.",
+  "faqs": [
+    {
+      "question": "Do Indian travelers need a visa for Switzerland?",
+      "answer": "Yes, Indian citizens require a valid Schengen Visa. Our visa documentation desk provides personalized appointment booking assistance, verified cover letters, and insurance vouchers."
+    },
+    {
+      "question": "How does the Swiss Travel Pass work for transport?",
+      "answer": "The Swiss Travel Pass provides seamless hop-on hop-off access on all Swiss national trains, city trams, buses, and scenic lake ferries without having to buy separate tickets for each journey."
+    },
+    {
+      "question": "Is Jungfraujoch excursion included in the price?",
+      "answer": "Yes, full return tickets for the modern Eiger Express gondola and electric cogwheel train to the Top of Europe at 3,454 meters, including the Ice Palace and Sphinx Terrace, are included."
+    },
+    {
+      "question": "Can I find vegetarian and Indian food in Switzerland?",
+      "answer": "Yes! Switzerland is extremely welcoming to Indian travelers. Cities like Zurich, Lucerne, and Interlaken feature numerous authentic Indian restaurants as well as vegetarian-friendly cafes."
+    },
+    {
+      "question": "Is luggage transfer between cities manageable by train?",
+      "answer": "Yes, Swiss trains feature spacious luggage racks at coach entrances and overhead. In addition, Swiss rail offers station-to-station luggage forward services if you prefer hands-free travel."
+    },
+    {
+      "question": "What is the local currency and are credit cards accepted?",
+      "answer": "The currency is the Swiss Franc (CHF). International Visa and Mastercard credit and debit cards, as well as forex cards, are accepted virtually everywhere, even for minor purchases."
+    }
+  ],
+  "departures": [
+    { "date": "2026-11-20", "price": "1,35,000", "seatsTotal": 14, "seatsLeft": 5, "status": "Filling Fast" },
+    { "date": "2026-12-15", "price": "1,45,000", "seatsTotal": 16, "seatsLeft": 8, "status": "Open" },
+    { "date": "2026-12-24", "price": "1,65,000", "seatsTotal": 16, "seatsLeft": 2, "status": "Filling Fast" },
+    { "date": "2027-01-20", "price": "1,38,000", "seatsTotal": 14, "seatsLeft": 9, "status": "Open" }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Breathtaking Lauterbrunnen valley with waterfalls and Swiss chalets",
+      "caption": "The dramatic cliffside waterfalls and alpine chalets of Lauterbrunnen near Interlaken",
+      "credit": "Tim Trad",
+      "creditUrl": "https://unsplash.com/@timtrad",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Snow covered peaks of Mount Titlis in Engelberg Switzerland",
+      "caption": "Pristine eternal snow and glacier formations atop Mount Titlis at 3,020 meters",
+      "credit": "Dino Reichmuth",
+      "creditUrl": "https://unsplash.com/@dinoreichmuth",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Turquoise waters of Lake Lucerne framed by historic Chapel Bridge",
+      "caption": "The medieval timber Chapel Bridge reflected in the clear waters of Lake Lucerne",
+      "credit": "Bailey Zindel",
+      "creditUrl": "https://unsplash.com/@baileyzindel",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1574870111867-089730e5a72b?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Panoramic red Swiss mountain train winding past snow capped peaks",
+      "caption": "The world-famous red cogwheel train winding along breathtaking alpine passes",
+      "credit": "Ricardo Gomez Angel",
+      "creditUrl": "https://unsplash.com/@rgaleriacom",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Lush green alpine meadows with wildflowers and grazing cows in Switzerland",
+      "caption": "Sunlit summer alpine meadows and cedar forests framing Grindelwald",
+      "credit": "Luca Bravo",
+      "creditUrl": "https://unsplash.com/@lucabravo",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Rhine Falls the largest waterfall in Europe roaring with mist",
+      "caption": "The thunderous waters of the Rhine Falls surging past central limestone rocks",
+      "credit": "Marc Szeglat",
+      "creditUrl": "https://unsplash.com/@szeglat",
+      "source": "Unsplash"
+    }
+  ],
+  "seo": {
+    "title": "Switzerland Tour Package: 6N/7D Titlis & Jungfraujoch",
+    "description": "Book 6N/7D Switzerland tour package with infiYATRA. Explore Zurich, Lucerne, Mt Titlis, and Jungfraujoch Top of Europe with 4-star stays and Swiss Rail Pass."
+  },
+  "status": "published",
+  "featured": true
+}

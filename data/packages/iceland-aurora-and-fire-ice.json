@@ -1,0 +1,256 @@
+{
+  "id": 112,
+  "slug": "iceland-aurora-and-fire-ice",
+  "title": "Iceland Aurora & Glaciers (6N/7D)",
+  "tagline": "Dancing Northern Lights, thundering waterfalls of Gullfoss and Skogafoss, Reynisfjara black sand beach, and Blue Lagoon geothermal springs.",
+  "destination": "Iceland",
+  "region": "Nordic Europe",
+  "country": "Iceland",
+  "category": ["international", "adventure", "nature", "honeymoon", "luxury"],
+  "duration": {
+    "nights": 6,
+    "days": 7
+  },
+  "route": [
+    { "city": "Reykjavik", "nights": 2 },
+    { "city": "Vik & South Coast", "nights": 2 },
+    { "city": "Golden Circle & Selfoss", "nights": 1 },
+    { "city": "Blue Lagoon & Keflavik", "nights": 1 }
+  ],
+  "price": {
+    "from": "1,48,000",
+    "currency": "INR",
+    "per": "person twin sharing",
+    "priceBands": {
+      "standard": "1,48,000",
+      "deluxe": "1,88,000",
+      "premium": "2,65,000"
+    },
+    "offerBadge": "Exclusive"
+  },
+  "bestTime": {
+    "months": ["September", "October", "November", "December", "January", "February", "March"],
+    "notes": "Optimal Northern Lights viewing season from September to March with dark clear winter nights and solar activity; summer months (June-August) offer 24-hour Midnight Sun."
+  },
+  "difficulty": "Easy",
+  "groupType": "Couples, Nature Photographers & Small Groups",
+  "minAge": 8,
+  "visaInfo": "Schengen Visa required for Indian passport holders (processed via Embassy of Iceland or Denmark VFS). Full documentation assistance provided.",
+  "overview": "Journey to the edge of the Arctic Circle on an extraordinary expedition across the Land of Fire and Ice. Begin in the colorful Nordic capital of Reykjavik before heading into the wild volcanic landscapes of Iceland's famed Golden Circle. Stand in awe as the Strokkur geyser hurls steaming boiling water into the crisp polar sky, marvel at the two-tiered torrents of Gullfoss waterfall, and walk the continental rift valley between North American and Eurasian tectonic plates at Thingvellir National Park. Venture along the dramatic southern coastline, strolling behind the roaring curtain of Seljalandsfoss waterfall and walking beneath towering basalt sea stacks along the brooding volcanic sands of Reynisfjara Black Sand Beach. Watch colossal turquoise icebergs drift out to the Atlantic at Jokulsarlon Glacier Lagoon and glitter on Diamond Beach. By night, chase the ethereal emerald ribbons of the Aurora Borealis under dark Nordic skies, and soak away in the mineral-rich milky geothermal waters of the world-famous Blue Lagoon.",
+  "highlights": [
+    "Guided Northern Lights (Aurora Borealis) hunting tour with professional night photographer",
+    "Walk the Mid-Atlantic tectonic rift valley at UNESCO-listed Thingvellir National Park",
+    "Witness erupting boiling geysers at Geysir and thundering cascades at Gullfoss",
+    "Walk behind the cascading veil of Seljalandsfoss and feel the mist of Skogafoss",
+    "Explore the surreal basalt sea columns and black volcanic sands of Reynisfjara Beach",
+    "Marvel at floating glacial icebergs at Jokulsarlon Lagoon and glistening Diamond Beach",
+    "Rejuvenating soak in the mineral-rich geothermal waters of the world-famous Blue Lagoon"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Reykjavik & Nordic Capital Harbor Walk",
+      "location": "Keflavik to Reykjavik",
+      "description": "Touch down at Keflavik International Airport (KEF), greeted by the fresh sub-arctic air of Iceland. Board your premium heated private transport and drive across the otherworldly moss-covered lava fields of the Reykjanes peninsula into Reykjavik. Check into your contemporary 4-star hotel in the city center. Take a relaxed evening stroll along Laugavegur shopping street, admire the striking modern architecture of Harpa Concert Hall reflecting the harbor waters, and gaze up at the towering spire of Hallgrimskirkja church. Savor a comforting dinner featuring fresh Nordic salmon and warm root vegetables.",
+      "activities": ["Airport Pickup", "Lava Field Drive", "Harpa Concert Hall", "Hallgrimskirkja Viewpoint"],
+      "meals": { "breakfast": false, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star City Hotel", "city": "Reykjavik" },
+      "transferInfo": "Private Heated AC Vehicle (Keflavik to Reykjavik, 50 km, 45 mins)"
+    },
+    {
+      "day": 2,
+      "title": "The Golden Circle: Thingvellir, Geysir & Thundering Gullfoss",
+      "location": "Golden Circle Touring",
+      "description": "Embark on Iceland's most famous scenic route, the Golden Circle. First, explore Thingvellir National Park, where the North American and Eurasian tectonic plates are actively pulling apart, leaving dramatic canyon walkways where the world's oldest parliament met in 930 AD. Continue to the Haukadalur geothermal valley to watch the Strokkur geyser reliably erupt every 6 to 10 minutes, shooting boiling columns 30 meters high. Next, marvel at Gullfoss (Golden Falls) as glacier-fed waters plummet down two massive rocky steps into a rugged canyon. Return to Reykjavik for dinner.",
+      "activities": ["Thingvellir Tectonic Rift", "Strokkur Geysir Eruptions", "Gullfoss Golden Waterfall"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star City Hotel", "city": "Reykjavik" },
+      "transferInfo": "Private Touring Vehicle (Golden Circle route, 230 km roundtrip)"
+    },
+    {
+      "day": 3,
+      "title": "South Coast Waterfalls, Seljalandsfoss & Skogafoss",
+      "location": "Reykjavik to Vik",
+      "description": "Travel east along Iceland's scenic Ring Road, hugged by dramatic sea cliffs and distant snow-covered volcanoes. Pause at Seljalandsfoss, one of the world's rare waterfalls where a secure footpath allows you to walk completely behind the thundering water curtain. Continue to the mighty 60-meter drop of Skogafoss, often crowned with vivid double rainbows in the mist. Visit the nearby Skogar Folk Museum to see traditional turf-roofed farmhouses. Arrive by late afternoon in the coastal village of Vik, check into your boutique hotel, and prepare for night aurora monitoring.",
+      "activities": ["Seljalandsfoss Walk-Behind Path", "Skogafoss Rainbow Waterfall", "Skogar Turf Houses", "Vik Coastal Village"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Coastal Resort", "city": "Vik & South Coast" },
+      "transferInfo": "Private Touring Vehicle (185 km, approx. 3 hours)"
+    },
+    {
+      "day": 4,
+      "title": "Reynisfjara Black Sand Beach & Jokulsarlon Glacier Lagoon",
+      "location": "Vik & Jokulsarlon Excursion",
+      "description": "Spend the morning walking across the jet-black volcanic sands of Reynisfjara Beach, marveling at the colossal hexagonal basalt sea columns and the roaring Atlantic breakers against Reynisdrangar sea stacks. Drive east beneath the massive Vatnajokull ice cap to the breathtaking Jokulsarlon Glacier Lagoon. Watch enormous luminescent blue icebergs calved from the glacier drift slowly toward the sea. Cross the road to Diamond Beach, where sculpted clear ice blocks wash ashore and sparkle like giant diamonds on the pitch-black sand. Return to Vik for dinner.",
+      "activities": ["Reynisfjara Basalt Columns", "Jokulsarlon Glacier Lagoon", "Diamond Beach Ice Crystals"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Coastal Resort", "city": "Vik & South Coast" },
+      "transferInfo": "Private Touring Vehicle (South Coast exploration, 190 km each way)"
+    },
+    {
+      "day": 5,
+      "title": "Lava Fields of Eldhraun, Kerid Crater & Night Aurora Chase",
+      "location": "Vik to Selfoss",
+      "description": "Journey through Eldhraun, the world's largest moss-draped volcanic lava field, created during the catastrophic 1783 Laki eruption. Stop at the dramatic Kerid volcanic crater, gazing down at its vibrant aquamarine mineral lake nestled inside deep crimson volcanic rock walls. Continue to your riverside hotel in Selfoss. After dinner, set out on a dedicated guided Northern Lights hunting excursion into dark, cloud-free valleys far from city lights. Watch in silent wonder as luminous green and violet auroral curtains ripple across the Arctic night sky.",
+      "activities": ["Eldhraun Mossy Lava Field", "Kerid Crater Lake", "Guided Northern Lights Night Hunt"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Riverside Hotel", "city": "Golden Circle & Selfoss" },
+      "transferInfo": "Private Touring Vehicle + Night Aurora Drive (approx. 150 km)"
+    },
+    {
+      "day": 6,
+      "title": "Geothermal Wonders & Blue Lagoon Thermal Spa Experience",
+      "location": "Selfoss to Blue Lagoon & Keflavik",
+      "description": "After breakfast, drive west across the boiling geothermal vents and rugged black hills of the Reykjanes peninsula. Arrive at the world-renowned Blue Lagoon geothermal spa. Slip into the 38°C to 40°C mineral-rich milky blue waters, naturally heated by subterranean volcanic aquifers and infused with skin-nourishing silica and algae. Apply a therapeutic silica mud mask from the in-water bar and relax with a refreshing beverage while steam drifts across black volcanic lava rocks. Transfer to your airport hotel for a celebratory farewell dinner.",
+      "activities": ["Reykjanes Geothermal Drive", "Blue Lagoon Premium Admission", "Silica Mud Mask Treatment", "Farewell Dinner"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Geothermal Hotel", "city": "Blue Lagoon & Keflavik" },
+      "transferInfo": "Private AC Vehicle (Selfoss to Blue Lagoon to Keflavik, 95 km, approx. 1.5 hours)"
+    },
+    {
+      "day": 7,
+      "title": "Keflavik Airport Departure & Memories of Fire and Ice",
+      "location": "Keflavik Airport Departure",
+      "description": "Savor your final Nordic breakfast with artisan rye breads, smoked salmon, and hot skyr. Take a morning breath of the crisp sub-arctic sea air before your chauffeur transfers you directly to Keflavik International Airport (KEF). Check in for your flight home, gazing down over the glaciers, fjords, and volcanic peaks of Iceland as you soar homeward with extraordinary memories of northern magic.",
+      "activities": ["Nordic Breakfast", "Keflavik Airport Transfer", "Flight Departure"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "Departure Day (No Overnight)", "city": "Keflavik" },
+      "transferInfo": "Private AC Transfer to Keflavik Airport (8 km, 12 mins)"
+    }
+  ],
+  "inclusions": [
+    "6 nights verified 4-star Nordic hotels (2N Reykjavik, 2N Vik, 1N Selfoss, 1N Keflavik)",
+    "Daily hearty Nordic buffet breakfast and multi-course chef-curated dinners",
+    "Dedicated private heated winter touring vehicle with certified Icelandic driver-guide",
+    "Comfort admission ticket to the world-famous Blue Lagoon with towel, drink & silica mask",
+    "Guided Northern Lights (Aurora Borealis) night tracking excursion with photo assistance",
+    "Comprehensive Golden Circle tour (Thingvellir, Strokkur Geysir, and Gullfoss falls)",
+    "South Coast tour including Seljalandsfoss, Skogafoss, Reynisfjara, and Jokulsarlon",
+    "All national park permits, geothermal conservation fees, and vehicle toll taxes included"
+  ],
+  "exclusions": [
+    "International roundtrip airfare to and from Keflavik, Iceland (KEF)",
+    "Schengen Tourist Visa fees and biometric processing appointments",
+    "Lunches and alcoholic drinks not specified in the meal plan",
+    "Optional glacier ice cave exploration or snowmobile rides on Vatnajokull",
+    "Personal expenses such as thermal gear rentals, laundry, and guide tips",
+    "Comprehensive international travel medical and emergency rescue insurance",
+    "Costs arising from severe winter storm road closures or flight re-routings",
+    "Sightseeing excursions beyond designated itinerary hours"
+  ],
+  "hotels": [
+    { "city": "Reykjavik", "name": "Fosshotel Reykjavik / Grand Hotel", "category": "4-Star City Hotel", "nights": 2 },
+    { "city": "Vik & South Coast", "name": "Hotel Vik i Myrdal / Black Beach Suites", "category": "4-Star Coastal Resort", "nights": 2 },
+    { "city": "Golden Circle & Selfoss", "name": "Hotel Selfoss & Spa", "category": "4-Star Riverside Hotel", "nights": 1 },
+    { "city": "Blue Lagoon & Keflavik", "name": "Courtyard by Marriott Reykjavik Keflavik", "category": "4-Star Geothermal Hotel", "nights": 1 }
+  ],
+  "transport": {
+    "mode": "Private Heated Winter-Grade Minibus / SUV",
+    "details": "High-clearance vehicle with studded winter tires, Wi-Fi, and certified Icelandic driver-guide."
+  },
+  "thingsToCarry": [
+    "Heavy windproof and waterproof parka down jacket with thermal base layers",
+    "Waterproof trekking boots with ankle support and anti-slip snow crampons",
+    "Woolen beanie, fleece neck gaiter, and touch-screen thermal gloves",
+    "Camera with manual exposure mode and sturdy tripod for Northern Lights photography"
+  ],
+  "tips": [
+    "Always check the Icelandic meteorological forecast (vedur.is) and road safety alerts (road.is) daily.",
+    "Do not approach the shoreline at Reynisfjara Beach; dangerous sneaker waves can surge unexpectedly high.",
+    "Remove silver jewelry before entering the Blue Lagoon, as natural silica can temporarily tarnish silver."
+  ],
+  "cancellationPolicy": [
+    "Free cancellation with 100% refund up to 21 days before departure date",
+    "50% cancellation fee between 20 and 10 days prior to departure",
+    "Non-refundable within 9 days of departure"
+  ],
+  "paymentTerms": "Book with 25% advance token; balance payable 15 days before departure.",
+  "faqs": [
+    {
+      "question": "When is the best time to see the Northern Lights in Iceland?",
+      "answer": "September through March offers the darkest skies and highest probability of solar auroral activity. Our expert guides track cloud coverage and solar storms to position you in prime dark sky spots."
+    },
+    {
+      "question": "Is admission to the Blue Lagoon included in the package?",
+      "answer": "Yes, Comfort Admission to the Blue Lagoon is fully included, providing a complimentary beverage from the swim-up bar, a silica mud face mask, and towel rental."
+    },
+    {
+      "question": "Do Indian passport holders require a visa for Iceland?",
+      "answer": "Yes, a valid Schengen Tourist Visa is required. Our visa support team assists with verified hotel confirmations, detailed itineraries, and application document checklists."
+    },
+    {
+      "question": "Can vegetarian and Indian meals be arranged in Iceland?",
+      "answer": "Yes! Reykjavik and coastal towns feature excellent Indian and vegetarian dining establishments. Our partner hotels also provide hearty vegetarian pasta, soups, and vegetable risottos."
+    },
+    {
+      "question": "How cold does it get in Iceland during winter?",
+      "answer": "Due to the warming North Atlantic Gulf Stream, coastal winter temperatures in Iceland typically hover around -2°C to +4°C, which is warmer than winter in New York or Chicago, though windproof clothing is essential."
+    },
+    {
+      "question": "Are credit cards widely accepted across Iceland?",
+      "answer": "Iceland is virtually a cashless society. International Visa and Mastercard credit and debit cards with chip and PIN are accepted everywhere, even at rural restrooms and roadside cafes."
+    }
+  ],
+  "departures": [
+    { "date": "2026-11-15", "price": "1,48,000", "seatsTotal": 12, "seatsLeft": 4, "status": "Filling Fast" },
+    { "date": "2026-12-05", "price": "1,58,000", "seatsTotal": 14, "seatsLeft": 7, "status": "Open" },
+    { "date": "2026-12-22", "price": "1,78,000", "seatsTotal": 14, "seatsLeft": 2, "status": "Filling Fast" },
+    { "date": "2027-01-18", "price": "1,52,000", "seatsTotal": 12, "seatsLeft": 8, "status": "Open" }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Vibrant emerald green Northern Lights Aurora Borealis dancing across Arctic sky",
+      "caption": "The mystical green ribbons of the Aurora Borealis dancing across Iceland's starry night sky",
+      "credit": "Joshua Earle",
+      "creditUrl": "https://unsplash.com/@joshuaearle",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Thundering Gullfoss waterfall frozen with snow and mist in Golden Circle",
+      "caption": "The roaring golden torrents of Gullfoss waterfall plunging into the deep volcanic canyon",
+      "credit": "Jon Flobrant",
+      "creditUrl": "https://unsplash.com/@jonflobrant",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Reynisfjara black sand beach with dramatic basalt columns and crashing waves",
+      "caption": "Colossal basalt sea columns and midnight black sand beach of Reynisfjara near Vik",
+      "credit": "Luca Bravo",
+      "creditUrl": "https://unsplash.com/@lucabravo",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Blue Lagoon geothermal spa in Iceland with steam rising over milky blue waters",
+      "caption": "Soaking in the mineral-rich milky geothermal thermal waters of the Blue Lagoon",
+      "credit": "Tim Trad",
+      "creditUrl": "https://unsplash.com/@timtrad",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1520769945061-0a448c445915?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Crystal clear icebergs stranded on Diamond Beach in Jokulsarlon Iceland",
+      "caption": "Glacial ice blocks glittering like giant diamonds on the black sand of Diamond Beach",
+      "credit": "Davide Cantelli",
+      "creditUrl": "https://unsplash.com/@cant89",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Seljalandsfoss waterfall cascading down green cliff with path behind water",
+      "caption": "The dramatic veil of Seljalandsfoss waterfall cascading 60 meters from volcanic cliffs",
+      "credit": "Dan Gold",
+      "creditUrl": "https://unsplash.com/@danielcgold",
+      "source": "Unsplash"
+    }
+  ],
+  "seo": {
+    "title": "Iceland Tour Package: 6N/7D Northern Lights & Glaciers",
+    "description": "Book 6N/7D Iceland tour with infiYATRA. See Northern Lights, Golden Circle, Black Sand Beach, and Blue Lagoon with 4-star stays and private heated vehicle."
+  },
+  "status": "published",
+  "featured": true
+}

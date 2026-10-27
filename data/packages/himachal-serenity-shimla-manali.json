@@ -1,0 +1,254 @@
+{
+  "id": 106,
+  "slug": "himachal-serenity-shimla-manali",
+  "title": "Himachal Serenity (6N/7D)",
+  "tagline": "Colonial hills of Shimla, roaring Beas rapids, Solang snow peaks, and cedar trails of Manali.",
+  "destination": "Himachal",
+  "region": "Himalayas",
+  "country": "India",
+  "category": ["adventure", "honeymoon", "family", "nature"],
+  "duration": {
+    "nights": 6,
+    "days": 7
+  },
+  "route": [
+    { "city": "Shimla", "nights": 2 },
+    { "city": "Manali", "nights": 3 },
+    { "city": "Chandigarh", "nights": 1 }
+  ],
+  "price": {
+    "from": "19,999",
+    "currency": "INR",
+    "per": "person twin sharing",
+    "priceBands": {
+      "standard": "19,999",
+      "deluxe": "25,999",
+      "premium": "38,999"
+    },
+    "offerBadge": "Popular"
+  },
+  "bestTime": {
+    "months": ["March", "April", "May", "June", "September", "October", "December"],
+    "notes": "Pleasant summer weather from March to June (15°C to 28°C); magical snowfall and winter adventures from December through February."
+  },
+  "difficulty": "Easy",
+  "groupType": "Couples, Families & Friends (Small Groups)",
+  "minAge": 5,
+  "visaInfo": "No visa or special permits needed for Indian travelers. Valid government photo identification required for hotel check-ins.",
+  "overview": "Embark on an iconic mountain holiday through Himachal Pradesh, connecting the pine-clad colonial ridges of Shimla with the dramatic alpine valleys of Kullu and Manali. Wander along historic Mall Road in Shimla, pause before the gothic Christ Church on the Ridge, and soak in panoramic Himalayan peaks at Kufri. Journey alongside the turquoise Beas River into Manali, where deodar forests shelter the ancient wooden Hadimba Temple and Old Manali's bohemian cafes. Cross through the architectural marvel of the Atal Tunnel into Lahaul's rugged high-altitude desert, and feel the thrill of paragliding or zorbing across Solang Valley's grassy slopes. Round off your expedition with leisurely shopping and architectural garden walks in planned Chandigarh. Thoughtfully paced with seasoned hill drivers, handpicked four-star valley accommodations, wholesome daily breakfast and dinner, and end-to-end private transfers, this flagship route offers quintessential Himalayan tranquility.",
+  "highlights": [
+    "Historic colonial walk along Shimla's Mall Road and Christ Church Ridge",
+    "Panoramic views of snow-dusted Himalayan ranges from Kufri",
+    "Scenic winding drive through Kullu Valley with river rafting stop",
+    "Hadimba Devi wooden temple and historic Vashisht natural hot springs",
+    "High-altitude mountain adventure crossing through the Atal Tunnel",
+    "Paragliding, zorbing, and quad-biking thrill at Solang Valley",
+    "Visit to the world-renowned Rock Garden and Sukhna Lake in Chandigarh"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Chandigarh & Scenic Climb to Shimla",
+      "location": "Chandigarh to Shimla",
+      "description": "Meet your private chauffeur upon arrival at Chandigarh Airport or Railway Station and set off on the scenic ascending drive toward Shimla. Wind through the lush Shivalik foothills as the air turns refreshingly crisp and fragrant pine forests emerge along the winding highway. Check into your boutique mountain resort overlooking the green valley, refresh yourself with hot tea, and take a gentle sunset stroll along the nearby forested lane. Enjoy a rich North Indian dinner prepared with fresh mountain herbs before resting comfortably.",
+      "activities": ["Airport Pickup", "Scenic Foothill Drive", "Mountain Sunset View"],
+      "meals": { "breakfast": false, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Mountain View Resort", "city": "Shimla" },
+      "transferInfo": "Private AC Sedan / SUV (115 km, approx. 3.5 hours)"
+    },
+    {
+      "day": 2,
+      "title": "Kufri Alpine Excursion & Shimla Colonial Heritage Walk",
+      "location": "Shimla & Kufri",
+      "description": "After a hearty breakfast, drive to Kufri at 2,630 meters altitude, renowned for its alpine meadows and wide vistas of the snow-clad Greater Himalayas. Explore the Himalayan National Park, capture pictures of native wildlife, and enjoy gentle walks among cedar woods. In the afternoon, return to Shimla for a guided walking tour along the pedestrian-only Mall Road. Admire the neo-gothic Christ Church on the Ridge, browse the bustling Lakkar Bazaar for wooden handicrafts, and savor evening treats at heritage bakeries before dinner.",
+      "activities": ["Kufri Viewpoint", "Himalayan National Park", "Mall Road Walk", "Christ Church"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Mountain View Resort", "city": "Shimla" },
+      "transferInfo": "Private local sightseeing transfers (35 km roundtrip)"
+    },
+    {
+      "day": 3,
+      "title": "Shimla to Manali Valley via Pandoh Dam & Kullu",
+      "location": "Shimla to Manali",
+      "description": "Depart early following a wholesome breakfast for the picturesque journey toward Manali. Follow the twisting canyon road as it snakes past Sundernagar Lake and the turquoise reservoir of Pandoh Dam. Continue through the orchard-strewn Kullu Valley running parallel to the roaring Beas River, stopping at an authentic Kullu shawl weaving cooperative and local apple orchard. Arrive in Manali by late afternoon, check in to your riverside valley resort, and listen to the relaxing rush of mountain water under star-studded alpine skies.",
+      "activities": ["Pandoh Dam Stop", "Kullu Shawl Weaving Visit", "Beas River Scenic Drive"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Riverview Lodge", "city": "Manali" },
+      "transferInfo": "Private AC Vehicle (250 km, approx. 7 to 8 hours)"
+    },
+    {
+      "day": 4,
+      "title": "Ancient Hadimba Temple, Vashisht Springs & Old Manali",
+      "location": "Manali Local Sightseeing",
+      "description": "Begin the morning exploring the ancient four-tiered pagoda Hadimba Temple, nestled deep within centuries-old giant deodar cedar trees. Cross the river to visit the sacred sage Vashisht temple complex, famous for its natural therapeutic sulfur hot springs where you can dip your feet. Spend the afternoon wandering through the vibrant cobblestone lanes of Old Manali, browsing indie artisan shops, tasting artisan trout, and visiting the peaceful Tibetan Buddhist monastery. Return to your lodge for evening campfire and a delicious buffet dinner.",
+      "activities": ["Hadimba Temple", "Vashisht Hot Springs", "Old Manali Cafes", "Tibetan Monastery"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Riverview Lodge", "city": "Manali" },
+      "transferInfo": "Private local vehicle transfers (25 km roundtrip)"
+    },
+    {
+      "day": 5,
+      "title": "Solang Valley Adventures & Atal Tunnel Crossing",
+      "location": "Solang Valley & Atal Tunnel",
+      "description": "Dedicate today to heart-pumping alpine adventures in the renowned Solang Valley. Depending on the season, partake in paragliding with panoramic views of Pir Panjal peaks, zorbing across lush grassy meadows, or winter snow sledding. Afterwards, continue north through the engineering marvel of the 9.02-kilometer Atal Tunnel, emerging on the North Portal to witness the stark, majestic mountain scenery of Sissu in Lahaul Valley. Return to Manali in the late afternoon for relaxed shopping along the Mall Road before your farewell mountain dinner.",
+      "activities": ["Solang Paragliding", "Atal Tunnel Drive", "Sissu Waterfall Viewpoint"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Riverview Lodge", "city": "Manali" },
+      "transferInfo": "Private mountain-grade vehicle (65 km roundtrip)"
+    },
+    {
+      "day": 6,
+      "title": "Manali to Chandigarh via Mandi & Bilaspur",
+      "location": "Manali to Chandigarh",
+      "description": "Savor your final mountain breakfast overlooking pine ridges before starting the gradual descent back toward the plains of Chandigarh. Trace the Beas River down the Kullu gorge, passing through historic Mandi and terraced farmland. Stop for fresh roadside refreshments and fruit preserves along the route. Arrive in the evening at your contemporary hotel in Chandigarh, unwind from the journey, and enjoy a comfortable dinner showcasing authentic Punjabi cuisine.",
+      "activities": ["Mountain Descent", "Mandi Scenic Stop", "Chandigarh Arrival"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star City Hotel", "city": "Chandigarh" },
+      "transferInfo": "Private AC Vehicle (290 km, approx. 8 hours)"
+    },
+    {
+      "day": 7,
+      "title": "Chandigarh Rock Garden, Sukhna Lake & Departure",
+      "location": "Chandigarh Departure",
+      "description": "After breakfast, check out and embark on a morning tour of Chandigarh's most celebrated landmarks. Marvel at the visionary recycled sculptures of Nek Chand at the iconic Rock Garden, and enjoy a serene lakeside walk beside the placid waters of Sukhna Lake against the backdrop of the Shivalik hills. Later, your chauffeur will transfer you to Chandigarh Airport or Railway Station in good time for your onward journey home with cherished Himalayan memories.",
+      "activities": ["Nek Chand Rock Garden", "Sukhna Lake Walk", "Airport Transfer"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "Departure Day (No Overnight)", "city": "Chandigarh" },
+      "transferInfo": "Private AC Transfer to Airport / Railway Station (20 km, 45 mins)"
+    }
+  ],
+  "inclusions": [
+    "6 nights premium 4-star accommodation (2N Shimla, 3N Manali, 1N Chandigarh)",
+    "Daily buffet breakfast and multi-course chef-curated dinner at all hotels",
+    "Dedicated private AC sedan or SUV for all intercity transfers and sightseeing",
+    "Excursion to Kufri, Solang Valley, and scenic passage through the Atal Tunnel",
+    "Guided walking tours of Shimla Mall Road, Ridge, and Old Manali",
+    "Toll taxes, state road taxes, parking charges, and driver allowances included",
+    "All applicable goods and service taxes (GST) included with no hidden fees",
+    "24x7 on-call mountain travel concierge and certified expert hill chauffeur"
+  ],
+  "exclusions": [
+    "Airfare or train tickets to and from Chandigarh or New Delhi",
+    "Adventure activity charges (paragliding, zorbing, river rafting, ski rentals)",
+    "Monument and botanical garden entrance fees or camera permits",
+    "Lunches and beverages not specified in the meal plan",
+    "Personal expenses such as laundry, phone calls, and tips",
+    "Emergency medical expenses, travel insurance, or evacuation costs",
+    "Costs incurred due to flight delays, roadblocks, landslides, or weather events",
+    "Rohtang Pass special NGT union taxi (can be added on request subject to permits)"
+  ],
+  "hotels": [
+    { "city": "Shimla", "name": "The Grand Willow Hill Resort", "category": "4-Star Premium", "nights": 2 },
+    { "city": "Manali", "name": "Solang Valley Riverside Retreat", "category": "4-Star Riverview", "nights": 3 },
+    { "city": "Chandigarh", "name": "Hotel Mountview / Hyatt Centric", "category": "4-Star City Hotel", "nights": 1 }
+  ],
+  "transport": {
+    "mode": "Private AC Sedan / Crysta SUV",
+    "details": "Dedicated vehicle with verified hill driver for all mountain journeys, tolls, and intercity routes."
+  },
+  "thingsToCarry": [
+    "Warm layered clothing, thermals, and windproof jacket for evenings",
+    "Sturdy walking or trekking shoes with good grip",
+    "UV sunglasses, high SPF sunblock, and moisturizing lip balm",
+    "Valid government photo ID cards for all travelers"
+  ],
+  "tips": [
+    "Carry motion sickness medication if you are prone to dizziness on winding hill roads.",
+    "Book paragliding and adventure sports at Solang Valley through government-certified pilots only.",
+    "Keep cash handy as mobile network connections can occasionally dip along remote mountain passes."
+  ],
+  "cancellationPolicy": [
+    "Free cancellation and 100% refund up to 15 days before departure date",
+    "50% cancellation fee between 14 and 7 days prior to departure",
+    "Non-refundable within 6 days of departure"
+  ],
+  "paymentTerms": "Book with 25% advance token; balance payable 10 days before departure.",
+  "faqs": [
+    {
+      "question": "What is the best time to visit Shimla and Manali?",
+      "answer": "March to June offers pleasant weather for sightseeing and outdoor adventures. December to February is ideal for travelers seeking heavy snowfall, skiing, and winter landscapes."
+    },
+    {
+      "question": "Is crossing the Atal Tunnel included in this itinerary?",
+      "answer": "Yes, the itinerary includes a scenic drive through the 9-kilometer Atal Tunnel to witness the dramatic landscape shift into the Lahaul Valley at Sissu, subject to weather conditions."
+    },
+    {
+      "question": "Can Rohtang Pass be visited on this tour?",
+      "answer": "Rohtang Pass permits are regulated by the National Green Tribunal and operate via local union taxis from May to October. We can easily arrange permits and union vehicles upon request."
+    },
+    {
+      "question": "What vehicle is provided for mountain travel?",
+      "answer": "We provide sanitized, private AC sedans (Dzire/Etios) for couples and comfortable Toyota Innova Crysta SUVs for families, steered by seasoned mountain-certified chauffeurs."
+    },
+    {
+      "question": "Is river rafting in Kullu safe for beginners?",
+      "answer": "Yes, commercial river rafting on the Beas River in Kullu is overseen by licensed river guides with compulsory life jackets and safety gear, suitable for beginners and families."
+    },
+    {
+      "question": "Are vegetarian and Jain meals available at the hotels?",
+      "answer": "Yes, all our handpicked partner resorts provide extensive pure vegetarian and Jain food selections upon prior request at the time of booking."
+    }
+  ],
+  "departures": [
+    { "date": "2026-11-15", "price": "19,999", "seatsTotal": 14, "seatsLeft": 6, "status": "Filling Fast" },
+    { "date": "2026-12-05", "price": "22,999", "seatsTotal": 16, "seatsLeft": 9, "status": "Open" },
+    { "date": "2026-12-24", "price": "25,999", "seatsTotal": 16, "seatsLeft": 4, "status": "Filling Fast" },
+    { "date": "2027-01-10", "price": "21,999", "seatsTotal": 14, "seatsLeft": 10, "status": "Open" }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Snowy pine forest and alpine peaks of Manali Himachal Pradesh",
+      "caption": "Pristine pine forests and snow-capped peaks framing Solang Valley in Manali",
+      "credit": "Ashwini Chaudhary",
+      "creditUrl": "https://unsplash.com/@ashwinichaudhary",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Colonial Christ Church on the Ridge in Shimla Himachal Pradesh",
+      "caption": "Historic Christ Church on the Ridge overlooking mist-wrapped Shimla",
+      "credit": "Aditya Chache",
+      "creditUrl": "https://unsplash.com/@adityachache",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Lush green Kullu valley and rushing Beas river",
+      "caption": "The roaring turquoise waters of the Beas River carving through Kullu Valley",
+      "credit": "Gaurav K",
+      "creditUrl": "https://unsplash.com/@gaurav_k",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Ancient wooden Hadimba Devi temple nestled in cedar woods",
+      "caption": "The pagoda-style wooden sanctuary of Hadimba Temple enveloped by deodar trees",
+      "credit": "Shashank Kumar",
+      "creditUrl": "https://unsplash.com/@shashankkumar",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&q=80&w=1200",
+      "alt": "High altitude Atal Tunnel North Portal scenic landscape in Sissu",
+      "caption": "The dramatic mountain passes emerging beyond the Atal Tunnel into Lahaul",
+      "credit": "Vivek Sharma",
+      "creditUrl": "https://unsplash.com/@vivek_sharma",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Scenic Sukhna Lake in Chandigarh with Shivalik hills backdrop",
+      "caption": "Serene reflective waters of Sukhna Lake with the Shivalik range in the distance",
+      "credit": "Bailey Zindel",
+      "creditUrl": "https://unsplash.com/@baileyzindel",
+      "source": "Unsplash"
+    }
+  ],
+  "seo": {
+    "title": "Himachal Tour Package: 6N/7D Shimla, Manali & Solang",
+    "description": "Book 6N/7D Himachal tour package with infiYATRA. Explore Shimla, Kufri, Manali, Solang Valley and Atal Tunnel with 4-star stays, meals and private cab."
+  },
+  "status": "published",
+  "featured": true
+}

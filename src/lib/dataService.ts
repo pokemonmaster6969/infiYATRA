@@ -106,7 +106,7 @@ const CORP_PHOTOS_KEY = 'infi_yatra_corp_photos'
 const AUDIT_LOGS_KEY = 'infi_yatra_audit_logs'
 const MEDIA_ASSETS_KEY = 'infi_yatra_media_assets'
 const VERSION_KEY = 'infi_yatra_version'
-const CURRENT_VERSION = 8.0; // Bumped to sync 5 cruises and rich models
+const CURRENT_VERSION = 10.0; // Bumped to sync 5 cruises and rich models
 
 const DEFAULT_CORPORATE_TESTIMONIALS: CorporateTestimonial[] = [
   {
@@ -155,67 +155,7 @@ const DEFAULT_MEDIA_ASSETS: MediaAsset[] = [
   { id: 'm-5', url: '/assets/group2.jpeg', title: 'Corporate Expedition Group', altText: 'Team celebrating summit achievement in the Himalayas', createdAt: new Date().toISOString() }
 ];
 
-const DEFAULT_INITIAL_LEADS: Lead[] = [
-  {
-    id: 1730000001,
-    type: 'custom_trip',
-    status: 'New',
-    createdAt: new Date(Date.now() - 3600000 * 3).toISOString(),
-    fullName: 'Aarav Sharma',
-    email: 'aarav.sharma@example.com',
-    phone: '+91 98765 43210',
-    destination: 'Spiti Valley & Chandratal Lake',
-    travelDate: 'May 18, 2026',
-    duration: '8 Nights',
-    travelers: 2,
-    groupType: 'Couple',
-    budget: '₹40,000 - ₹60,000 / person',
-    hotelTier: '4-Star Premium',
-    interests: ['Adventure', 'Nature', 'Culture'],
-    notes: 'Looking for a private stargazing camp at Chandratal.',
-    preferredContactMethod: 'WhatsApp',
-    preferredContactTime: 'Evening'
-  },
-  {
-    id: 1730000002,
-    type: 'corporate',
-    status: 'Contacted',
-    createdAt: new Date(Date.now() - 3600000 * 24).toISOString(),
-    fullName: 'Pooja Kulkarni',
-    email: 'pooja@fintechinnovations.in',
-    phone: '+91 98234 56789',
-    companyName: 'Fintech Innovations India',
-    designation: 'Head of Operations',
-    destination: 'Goa Coastal Retreat',
-    travelDate: 'Nov 12, 2026',
-    duration: '4 Days / 3 Nights',
-    travelers: 65,
-    groupType: 'Corporate Squad',
-    budget: '₹25,000 / person',
-    hotelTier: '5-Star Beach Resort',
-    notes: 'Need conference hall for 65 pax on Day 2 morning, plus sunset catamaran charter.',
-    preferredContactMethod: 'Phone Call',
-    preferredContactTime: 'Morning'
-  },
-  {
-    id: 1730000003,
-    type: 'cruise',
-    status: 'Quote Sent',
-    createdAt: new Date(Date.now() - 3600000 * 48).toISOString(),
-    fullName: 'Vikram & Priya Singhania',
-    email: 'singhania.v@gmail.com',
-    phone: '+91 99100 23456',
-    destination: 'Singapore, Penang & Phuket Discovery Cruise',
-    travelDate: 'Dec 05, 2026',
-    duration: '7 Days',
-    travelers: 4,
-    groupType: 'Family',
-    budget: '₹80,000 / person',
-    hotelTier: 'Balcony Stateroom',
-    notes: 'Inquiring for 2 connecting Balcony staterooms.',
-    preferredContactMethod: 'WhatsApp'
-  }
-];
+const DEFAULT_INITIAL_LEADS: Lead[] = [];
 
 const getFallbackTrips = async (): Promise<Trip[]> => {
   const savedVersion = localStorage.getItem(VERSION_KEY);
@@ -394,7 +334,18 @@ export const getLeads = async (): Promise<Lead[]> => {
   }
 
   const local = localStorage.getItem(LEADS_STORAGE_KEY);
-  if (local) return JSON.parse(local);
+  if (local) {
+    try {
+      const parsed: Lead[] = JSON.parse(local);
+      const cleaned = parsed.filter(l => l.id !== 1730000001 && l.id !== 1730000002 && l.id !== 1730000003);
+      if (cleaned.length !== parsed.length) {
+        localStorage.setItem(LEADS_STORAGE_KEY, JSON.stringify(cleaned));
+      }
+      return cleaned;
+    } catch {
+      return [];
+    }
+  }
 
   localStorage.setItem(LEADS_STORAGE_KEY, JSON.stringify(DEFAULT_INITIAL_LEADS));
   return DEFAULT_INITIAL_LEADS;

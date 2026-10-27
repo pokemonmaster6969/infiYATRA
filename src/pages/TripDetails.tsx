@@ -23,7 +23,6 @@ const TripDetails = () => {
   const [expandedFaq, setExpandedFaq] = useState<number | null>(0)
   const [selectedCabin, setSelectedCabin] = useState<number>(0)
   const [selectedDeparture, setSelectedDeparture] = useState<string>('')
-  const [selectedPriceBand, setSelectedPriceBand] = useState<'standard' | 'deluxe' | 'premium'>('standard')
 
   // Quick inquiry form
   const [inquiryName, setInquiryName] = useState('')
@@ -58,12 +57,16 @@ const TripDetails = () => {
     )
   }
 
-  // Active displayed price based on priceBand or cabin
+  // Active displayed price based on cabin or single package rate
+  const formattedPrice = typeof trip.price === 'number'
+    ? `₹${trip.price.toLocaleString('en-IN')}`
+    : typeof trip.price === 'string' && trip.price.startsWith('₹')
+    ? trip.price
+    : `₹${trip.price}`
+
   const currentPrice = trip.cabins && trip.cabins[selectedCabin]
     ? trip.cabins[selectedCabin].price
-    : trip.priceBands && trip.priceBands[selectedPriceBand]
-    ? `₹${trip.priceBands[selectedPriceBand]}`
-    : `₹${trip.price}`
+    : formattedPrice
 
   const handleInquirySubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -80,7 +83,7 @@ const TripDetails = () => {
         destination: trip.title,
         travelDate: inquiryDate || selectedDeparture || trip.nextBatch,
         travelers: parseInt(inquiryGuests) || 2,
-        notes: `Inquiry submitted for ${trip.title} (Tier: ${selectedPriceBand})`
+        notes: `Inquiry submitted for ${trip.title} (${currentPrice})`
       })
       setInquirySubmitted(true)
     } catch (e) {
@@ -223,50 +226,43 @@ const TripDetails = () => {
         {/* Desktop Booking & Pricing Widget */}
         <div className="lg:col-span-4">
           <div className="space-y-5 rounded-lg liquid-glass-dark p-5 sm:p-6 lg:sticky lg:top-28 lg:space-y-6 lg:p-7">
-            <div className="flex items-center justify-between border-b border-white/10 pb-5">
-              <div>
-                <span className="text-[10px] font-semibold uppercase tracking-wider text-white/50">
-                  {trip.cabins && trip.cabins[selectedCabin] 
-                    ? `${trip.cabins[selectedCabin].type} rate`
-                    : trip.priceBands 
-                    ? `${selectedPriceBand.toUpperCase()} tier / person` 
-                    : 'Price per person'}
-                </span>
-                <div className="mt-1 font-display text-4xl font-bold tracking-tight text-white">
+            <div className="border-b border-white/10 pb-5">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-secondary">
+                {trip.category === 'Cruise' ? 'Stateroom Rate per Guest' : 'All-Inclusive Tour Package'}
+              </span>
+              <div className="mt-1 flex items-baseline justify-between gap-2">
+                <div className="font-display text-4xl font-black tracking-tight text-white">
                   {currentPrice}
                 </div>
-              </div>
-              <div className="min-w-[72px] rounded-lg liquid-glass p-3 text-center">
-                <div className="text-xl font-bold text-white">{trip.duration.split(' ')[0]}</div>
-                <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider text-white/60">Days</div>
-              </div>
-            </div>
-
-            {/* Price Tier Buttons (Standard / Deluxe / Premium) */}
-            {trip.priceBands && (
-              <div className="space-y-1.5">
-                <label className="text-[10px] font-bold uppercase tracking-wider text-white/60 block">
-                  Select Accommodation Tier
-                </label>
-                <div className="grid grid-cols-3 gap-1.5">
-                  {(['standard', 'deluxe', 'premium'] as const).map(tier => (
-                    <button
-                      key={tier}
-                      type="button"
-                      onClick={() => { haptics.light(); setSelectedPriceBand(tier); }}
-                      className={`py-2 px-2 rounded-lg text-center transition-all ${
-                        selectedPriceBand === tier
-                          ? 'bg-secondary text-white font-bold shadow-md shadow-secondary/25'
-                          : 'bg-white/5 text-white/70 hover:bg-white/10 font-medium'
-                      }`}
-                    >
-                      <div className="text-[10px] uppercase font-bold tracking-wider">{tier}</div>
-                      <div className="text-xs font-mono mt-0.5">₹{trip.priceBands[tier]}</div>
-                    </button>
-                  ))}
+                <div className="rounded-lg liquid-glass px-3 py-1.5 text-center">
+                  <span className="text-sm font-bold text-white">{trip.duration.split(' ')[0]}</span>
+                  <span className="ml-1 text-[9px] font-semibold uppercase tracking-wider text-white/60">Days</span>
                 </div>
               </div>
-            )}
+              <p className="mt-1 text-[11px] text-white/60 leading-relaxed">
+                Per person on twin-sharing basis • Handpicked 4-star stays, daily meals & private sightseeing included
+              </p>
+            </div>
+
+            {/* Quick Inclusions Highlights */}
+            <div className="grid grid-cols-2 gap-2 text-[11px] font-medium text-white/75 bg-white/5 p-3 rounded-xl border border-white/5">
+              <div className="flex items-center gap-1.5">
+                <CheckCircle2 size={13} className="text-secondary shrink-0" />
+                <span>4★ Verified Stays</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <CheckCircle2 size={13} className="text-secondary shrink-0" />
+                <span>Daily Breakfast & Dinner</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <CheckCircle2 size={13} className="text-secondary shrink-0" />
+                <span>Private Cab & Transfers</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <CheckCircle2 size={13} className="text-secondary shrink-0" />
+                <span>24x7 Trip Captain</span>
+              </div>
+            </div>
 
             {/* Cabin Selector for Cruises */}
             {trip.cabins && trip.cabins.length > 0 && (
@@ -306,7 +302,7 @@ const TripDetails = () => {
                 <select
                   value={selectedDeparture}
                   onChange={e => setSelectedDeparture(e.target.value)}
-                  className="w-full bg-[#1b2b29] border border-white/15 rounded-lg p-2.5 text-xs font-semibold text-white outline-none focus:border-secondary"
+                  className="w-full bg-[#0F172A] border border-white/15 rounded-lg p-2.5 text-xs font-semibold text-white outline-none focus:border-secondary"
                 >
                   {trip.departures.map((dep: any) => (
                     <option key={dep.id || dep.date} value={dep.date}>
@@ -356,10 +352,10 @@ const TripDetails = () => {
             
             <div className="pt-6 space-y-4 border-t border-white/10">
               <div className="flex items-center gap-2 text-xs font-medium text-white/65">
-                <ShieldCheck size={18} className="text-emerald-400 mr-3 shrink-0" /> Verified Captains & Guides
+                <ShieldCheck size={18} className="text-secondary mr-3 shrink-0" /> Verified Captains & Guides
               </div>
               <div className="flex items-center gap-2 text-xs font-medium text-white/65">
-                <CheckCircle2 size={18} className="text-emerald-400 mr-3 shrink-0" /> Secure Protected Bookings
+                <CheckCircle2 size={18} className="text-secondary mr-3 shrink-0" /> Secure Protected Bookings
               </div>
             </div>
           </div>
@@ -512,14 +508,14 @@ const TripDetails = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Inclusions */}
                 {trip.inclusions && trip.inclusions.length > 0 && (
-                  <div className="p-6 rounded-3xl liquid-glass border border-emerald-500/20 space-y-4">
-                    <h3 className="text-base font-bold text-emerald-400 flex items-center gap-2">
+                  <div className="p-6 rounded-3xl liquid-glass border border-secondary/30 space-y-4">
+                    <h3 className="text-base font-bold text-secondary flex items-center gap-2">
                       <ShieldCheck size={20} /> What's Included
                     </h3>
                     <ul className="space-y-2.5">
                       {trip.inclusions.map((inc: string, idx: number) => (
                         <li key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-white/80">
-                          <CheckCircle2 size={16} className="text-emerald-400 shrink-0 mt-0.5" />
+                          <CheckCircle2 size={16} className="text-secondary shrink-0 mt-0.5" />
                           <span>{inc}</span>
                         </li>
                       ))}

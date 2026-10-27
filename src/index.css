@@ -20,13 +20,13 @@
 
 :root {
   color-scheme: dark;
-  --primary: #0D7377;
-  --secondary: #B34A34;
-  --accent: #E5BD78;
-  --charcoal: #142A28;
-  --ink: #0C1D1B;
-  --surface: #193431;
-  --paper: #F3F0E7;
+  --primary: #0A1C60;
+  --secondary: #FF5B00;
+  --accent: #F59E0B;
+  --charcoal: #0A0E1A;
+  --ink: #070B14;
+  --surface: #0F172A;
+  --paper: #F8FAFC;
 }
 
 body {
@@ -66,12 +66,12 @@ button, input, textarea, select, label {
 
 /* 🧊 Master-Grade Liquid Glass System */
 .liquid-glass {
-  background: rgba(232, 244, 237, 0.11) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
   backdrop-filter: blur(18px) saturate(145%) !important;
   -webkit-backdrop-filter: blur(18px) saturate(145%) !important;
-  border: 1px solid rgba(226, 239, 229, 0.22) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
   box-shadow: 
-    0 14px 40px rgba(3, 20, 18, 0.24),
+    0 14px 40px rgba(2, 6, 23, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.28),
     inset 0 -1px 0 rgba(255, 255, 255, 0.04) !important;
   position: relative;
@@ -149,11 +149,11 @@ button, input, textarea, select, label {
 }
 
 .liquid-glass-dark {
-  background: rgba(12, 29, 27, 0.72) !important;
+  background: rgba(11, 19, 43, 0.78) !important;
   backdrop-filter: blur(20px) saturate(135%) !important;
   -webkit-backdrop-filter: blur(20px) saturate(135%) !important;
-  border: 1px solid rgba(223, 238, 226, 0.12) !important;
-  box-shadow: 0 16px 48px rgba(3, 20, 18, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 16px 48px rgba(2, 6, 23, 0.45) !important;
 }
 
 .liquid-text {

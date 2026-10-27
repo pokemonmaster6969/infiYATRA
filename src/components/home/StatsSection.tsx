@@ -3,10 +3,10 @@ import { Users, TrendingUp, Heart, MapPin } from 'lucide-react'
 
 export default function StatsSection() {
   const stats = [
-    { label: 'Travelers', value: '100+', icon: Users },
-    { label: 'Tours', value: '40+', icon: TrendingUp },
-    { label: 'Rating', value: '4.1★', icon: Heart },
-    { label: 'Destinations', value: '15+', icon: MapPin },
+    { label: 'Travelers', value: '1000+', icon: Users },
+    { label: 'Tours', value: '100+', icon: TrendingUp },
+    { label: 'Rating', value: '4.5★', icon: Heart },
+    { label: 'Destinations', value: '30+', icon: MapPin },
   ];
 
   return (

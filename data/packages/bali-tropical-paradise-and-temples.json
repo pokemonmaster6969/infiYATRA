@@ -1,0 +1,242 @@
+{
+  "id": 110,
+  "slug": "bali-tropical-paradise-and-temples",
+  "title": "Bali Island Magic (5N/6D)",
+  "tagline": "Jungle swings and rice terraces of Ubud, sunset cliff temple of Uluwatu, and dramatic sea arches of Nusa Penida.",
+  "destination": "Bali",
+  "region": "Southeast Asia",
+  "country": "Indonesia",
+  "category": ["international", "honeymoon", "beach", "nature", "adventure"],
+  "duration": {
+    "nights": 5,
+    "days": 6
+  },
+  "route": [
+    { "city": "Ubud", "nights": 2 },
+    { "city": "Kuta & Seminyak", "nights": 3 }
+  ],
+  "price": {
+    "from": "34,999",
+    "currency": "INR",
+    "per": "person twin sharing",
+    "priceBands": {
+      "standard": "34,999",
+      "deluxe": "46,999",
+      "premium": "74,999"
+    },
+    "offerBadge": "Popular"
+  },
+  "bestTime": {
+    "months": ["April", "May", "June", "July", "August", "September", "October"],
+    "notes": "Dry, sunny season with low humidity, gentle tropical breezes, and optimal sea conditions for snorkeling and island hopping."
+  },
+  "difficulty": "Easy",
+  "groupType": "Couples, Honeymooners & Friends",
+  "minAge": 5,
+  "visaInfo": "Visa on Arrival (VoA) available for Indian passport holders (approx. 500,000 IDR / ~₹2,700). Passport must have at least 6 months validity.",
+  "overview": "Immerse yourself in the enchanting culture and breathtaking tropical scenery of the Island of the Gods on an authentic Bali holiday. Begin nestled in the lush emerald heart of Ubud, wandering through the ancient stepped rice terraces of Tegalalang, soaring above jungle canopies on the famous Bali jungle swing, and exploring sacred lotus temples and monkey sanctuaries. Continue south to the vibrant coastal beaches of Kuta and Seminyak. Embark on an exhilarating speedboat day excursion to Nusa Penida island to gaze down at the colossal T-Rex shaped coastal cliffs of Kelingking Beach and swim in the natural infinity pool of Angel's Billabong. Marvel at dramatic cliffside Indian Ocean sunsets at Uluwatu Temple, accompanied by the hypnotic chanting and fire choreography of a traditional Kecak dance, capped by a romantic seafood dinner directly on Jimbaran Bay's soft sands. Complete with verified private AC van transfers, dedicated local Balinese guide, handpicked four-star resorts, daily breakfasts and dinners, this flagship Bali tour delivers a truly sublime tropical escape.",
+  "highlights": [
+    "Soar high above Ubud's tropical jungle on the famous Bali Swing",
+    "Marvel at UNESCO-listed emerald stepped rice terraces in Tegalalang",
+    "Full-day speedboat excursion to breathtaking Nusa Penida Island",
+    "Capture iconic photos at Kelingking Beach (T-Rex Cliff) and Angel's Billabong",
+    "Cliffside sunset experience at sacred Uluwatu Temple overlooking the ocean",
+    "Hypnotic live fire Kecak dance performance against a crimson sunset sky",
+    "Candlelit fresh seafood dinner on the soft white sands of Jimbaran Bay"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Bali & Scenic Transfer to Ubud Rainforest",
+      "location": "Denpasar to Ubud",
+      "description": "Touch down at Ngurah Rai International Airport (DPS) in Denpasar, welcomed by warm tropical breezes and a fragrant frangipani flower garland from your private Balinese guide. Drive north into the cultural heartland of Ubud, winding through traditional craft villages specializing in stone carving, batik textiles, and silver jewelry. Check into your rainforest resort overlooking misty jungle ravines. Settle in with a refreshing tropical welcome mocktail, unwind by the infinity pool, and enjoy an authentic Balinese multi-course dinner featuring fragrant chicken satay and spicy sambal under the stars.",
+      "activities": ["Airport Floral Welcome", "Scenic Transfer to Ubud", "Rainforest Resort Check-in"],
+      "meals": { "breakfast": false, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Rainforest Resort", "city": "Ubud" },
+      "transferInfo": "Private AC Vehicle (Airport to Ubud, 38 km, approx. 1.5 hours)"
+    },
+    {
+      "day": 2,
+      "title": "Tegalalang Rice Terraces, Bali Jungle Swing & Kintamani Volcano",
+      "location": "Ubud & Kintamani Excursion",
+      "description": "After an energizing tropical breakfast, journey to the dramatic Tegalalang Rice Terraces, marveling at the ancient subak irrigation engineering that sustains these emerald valley contours. Buckle up for an unforgettable flight on the famous Bali jungle swing high above the canopy. Continue to Kintamani to take in panoramic views of active Mount Batur volcano and its shimmering crater lake. On your return, visit a local coffee plantation to learn the secrets of Luwak coffee brewing, followed by an evening walk through Ubud Art Market before dinner.",
+      "activities": ["Tegalalang Rice Terraces", "Bali Jungle Swing", "Mount Batur Viewpoint", "Luwak Coffee Tasting"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Rainforest Resort", "city": "Ubud" },
+      "transferInfo": "Private AC touring van (Full day excursion, 65 km)"
+    },
+    {
+      "day": 3,
+      "title": "Sacred Monkey Forest, Tegenungan Waterfall & Coastal Transfer",
+      "location": "Ubud to Kuta & Seminyak",
+      "description": "Begin the morning exploring the ancient sacred banyan trees and moss-covered dragon statues of the Ubud Monkey Forest, home to hundreds of playful long-tailed macaques. Drive south toward the sparkling coastal shores, pausing at Tegenungan Waterfall to feel the cool mountain mist in a lush green gorge. Arrive in the buzzing beachside hub of Kuta/Seminyak, check into your contemporary resort, and enjoy an afternoon lounging on the beach or discovering chic designer boutiques. Enjoy an international buffet dinner at your resort.",
+      "activities": ["Ubud Monkey Forest", "Tegenungan Waterfall Stop", "Coastal Resort Check-in"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Beachside Resort", "city": "Kuta & Seminyak" },
+      "transferInfo": "Private AC Vehicle (Ubud to Seminyak, 35 km, approx. 1 hour)"
+    },
+    {
+      "day": 4,
+      "title": "Nusa Penida Island Tour: Kelingking, Broken Beach & Billabong",
+      "location": "Nusa Penida Island Excursion",
+      "description": "Board a morning high-speed boat from Sanur Harbour slicing across the Badung Strait to rugged Nusa Penida island. Drive across dramatic coastal ridges to Kelingking Beach, marveling at the colossal T-Rex shaped cliff plunging into brilliant turquoise waters below. Explore the natural circular limestone arch at Broken Beach and look down into the crystal-clear emerald tide pool of Angel's Billabong. Savor an island lunch, capture unforgettable photos, and board the afternoon speedboat back to the mainland for dinner.",
+      "activities": ["Speedboat to Nusa Penida", "Kelingking Beach T-Rex Cliff", "Broken Beach Arch", "Angel's Billabong Pool"],
+      "meals": { "breakfast": true, "lunch": true, "dinner": true },
+      "stay": { "category": "4-Star Beachside Resort", "city": "Kuta & Seminyak" },
+      "transferInfo": "Private AC vehicle transfers + Return Speedboat Cruise (45 mins each way)"
+    },
+    {
+      "day": 5,
+      "title": "Tanjung Benoa Water Sports, Uluwatu Cliff Temple & Jimbaran Sunset",
+      "location": "South Bali & Uluwatu",
+      "description": "Head to Tanjung Benoa peninsula in the morning for fun coastal watersports including banana boat rides and parasailing. In the late afternoon, drive along the Bukit Peninsula to the dramatic sea cliff of Uluwatu Temple, perched 230 feet above crashing Indian Ocean swells. As the sky turns fiery orange and violet, watch the hypnotic live Kecak fire dance performance narrating the Ramayana epic. Afterward, celebrate your final evening with a candlelit fresh seafood dinner directly on the sandy shores of Jimbaran Bay.",
+      "activities": ["Tanjung Benoa Water Sports", "Uluwatu Sea Cliff Temple", "Live Kecak Fire Dance", "Jimbaran Beach Dinner"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Beachside Resort", "city": "Kuta & Seminyak" },
+      "transferInfo": "Private AC touring vehicle (50 km roundtrip)"
+    },
+    {
+      "day": 6,
+      "title": "Bali Souvenir Shopping & Departure Transfer",
+      "location": "Denpasar Airport Departure",
+      "description": "Savor your final tropical breakfast by the resort pool, enjoying fresh dragon fruit, mangoes, and Balinese coffee. Take a leisurely morning walk along Seminyak beach or pick up handcrafted souvenirs, handmade aromatic soaps, and Balinese sarongs at Krishna Souvenir Center. Your private chauffeur will assist with luggage and transfer you smoothly to Ngurah Rai International Airport for your flight home, filled with magical memories of Bali.",
+      "activities": ["Poolside Breakfast", "Handicrafts Shopping", "Airport Departure Transfer"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "Departure Day (No Overnight)", "city": "Kuta & Seminyak" },
+      "transferInfo": "Private AC Transfer to Airport (12 km, approx. 30 mins)"
+    }
+  ],
+  "inclusions": [
+    "5 nights verified 4-star accommodations (2N Ubud Rainforest, 3N Kuta/Seminyak Beach)",
+    "Daily international buffet breakfast and chef-crafted multi-course dinner at resorts",
+    "Return high-speed boat tickets and private island touring van on Nusa Penida",
+    "Entry ticket to the Bali Jungle Swing experience and Tegalalang rice terraces",
+    "Uluwatu Temple entry ticket and reserved seating for the live sunset Kecak dance",
+    "Romantic beachside dinner setup on Jimbaran Bay with fresh seafood delicacies",
+    "Dedicated private air-conditioned van and English-speaking Balinese driver throughout",
+    "All local road tolls, parking fees, fuel, and passenger insurance included"
+  ],
+  "exclusions": [
+    "International roundtrip airfare to Denpasar, Bali (DPS)",
+    "Indonesia Visa on Arrival (approx. 500,000 IDR / ~₹2,700 payable at airport counter)",
+    "Bali Tourist Levy (approx. 150,000 IDR / ~₹800 payable online or at airport)",
+    "Watersports packages at Tanjung Benoa (jet ski, scuba, flyboard)",
+    "Lunches and alcoholic beverages not specified in the inclusions",
+    "Personal expenses such as spa treatments, laundry, and guide tips",
+    "Comprehensive international travel insurance with overseas medical coverage",
+    "Optional extensions or excursions not listed in the standard itinerary"
+  ],
+  "hotels": [
+    { "city": "Ubud", "name": "Maya Ubud Resort / Plataran Ubud Hotel", "category": "4-Star Rainforest Resort", "nights": 2 },
+    { "city": "Kuta & Seminyak", "name": "Courtyard by Marriott / Grand Mercure Seminyak", "category": "4-Star Beachside Resort", "nights": 3 }
+  ],
+  "transport": {
+    "mode": "Private AC Tourist Van + Speedboat",
+    "details": "Dedicated air-conditioned touring van with verified local Balinese chauffeur and reserved speedboats."
+  },
+  "thingsToCarry": [
+    "Light cotton summer clothing, beach swimwear, and waterproof footwear",
+    "Universal electrical travel adapter (Type C/F two round pins, 230V)",
+    "Reef-safe sunscreen, sunglasses, and mosquito repellent spray",
+    "Valid passport with at least 6 months validity from date of arrival"
+  ],
+  "tips": [
+    "Wear a respectful sarong and sash when entering sacred temple grounds (provided at entrances).",
+    "Beware of clever monkeys at Uluwatu and Monkey Forest; secure sunglasses and loose jewelry in bags.",
+    "Pay the official Bali Tourist Levy online at lovebali.baliprov.go.id prior to departure for expedited exit."
+  ],
+  "cancellationPolicy": [
+    "Free cancellation with 100% refund up to 15 days before departure date",
+    "50% cancellation fee between 14 and 7 days prior to departure",
+    "Non-refundable within 6 days of departure"
+  ],
+  "paymentTerms": "Book with 25% advance token; balance payable 10 days before departure.",
+  "faqs": [
+    {
+      "question": "Do Indian passport holders get Visa on Arrival in Bali?",
+      "answer": "Yes, Indian passport holders easily obtain a 30-day Visa on Arrival (VoA) at the immigration counters in Denpasar Airport for approx. 500,000 IDR (~₹2,700), payable in cash, card, or USD."
+    },
+    {
+      "question": "Is the Nusa Penida day trip included in this package?",
+      "answer": "Yes, return speedboat transfers, entry permits, and a dedicated private vehicle on Nusa Penida to visit Kelingking Beach, Broken Beach, and Angel's Billabong are fully included."
+    },
+    {
+      "question": "Are vegetarian and Indian meal options available in Bali?",
+      "answer": "Yes! Bali has an abundance of authentic Indian restaurants (both North and South Indian) as well as pure vegetarian and vegan cafes across Ubud, Seminyak, and Kuta."
+    },
+    {
+      "question": "What currency should I carry to Bali?",
+      "answer": "The official currency is the Indonesian Rupiah (IDR). You can carry USD or international multi-currency forex debit cards to withdraw IDR easily from verified bank ATMs across Bali."
+    },
+    {
+      "question": "Is the famous Bali Jungle Swing safe?",
+      "answer": "Yes, certified safety harnesses, double tethering ropes, and trained adventure crews supervise every swing at reputable parks like Aloha Ubud and Wanagiri."
+    },
+    {
+      "question": "Can honeymooners request special room decorations?",
+      "answer": "Yes! We arrange complimentary honeymoon floral bed decorations and a welcome cake at your partner resorts in Ubud and Seminyak upon prior request at booking."
+    }
+  ],
+  "departures": [
+    { "date": "2026-11-18", "price": "34,999", "seatsTotal": 14, "seatsLeft": 6, "status": "Filling Fast" },
+    { "date": "2026-12-10", "price": "38,999", "seatsTotal": 16, "seatsLeft": 8, "status": "Open" },
+    { "date": "2026-12-26", "price": "44,999", "seatsTotal": 16, "seatsLeft": 2, "status": "Filling Fast" },
+    { "date": "2027-01-22", "price": "35,999", "seatsTotal": 14, "seatsLeft": 10, "status": "Open" }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Dramatic cliffside Kelingking Beach T-Rex view on Nusa Penida Bali",
+      "caption": "The monumental T-Rex limestone promontory soaring above turquoise waters on Nusa Penida",
+      "credit": "Oliver Sjöström",
+      "creditUrl": "https://unsplash.com/@ollivves",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Lush emerald stepped Tegalalang Rice Terraces in Ubud Bali",
+      "caption": "The world-famous layered emerald rice paddies of Tegalalang in Ubud",
+      "credit": "Paolo Nicolello",
+      "creditUrl": "https://unsplash.com/@paolonicolello",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Majestic Uluwatu cliff temple perched high above crashing ocean waves in Bali",
+      "caption": "Historic Uluwatu sea temple perched on dramatic 70-meter ocean cliffs",
+      "credit": "Guillaume Marques",
+      "creditUrl": "https://unsplash.com/@gmarq",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Balinese temple split gate Candi Bentar framed by tropical mountains",
+      "caption": "Traditional Balinese Candi Bentar gateway opening toward misted volcanic hills",
+      "credit": "Jeremy Bishop",
+      "creditUrl": "https://unsplash.com/@jeremybishop",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Jungle swing soaring high above tropical palm canopy in Ubud Bali",
+      "caption": "The exhilarating thrill of the Bali Jungle Swing soaring high over valley canopies",
+      "credit": "Harry Kessell",
+      "creditUrl": "https://unsplash.com/@harrykessell",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Romantic candlelit tables along Jimbaran beach for sunset seafood banquet",
+      "caption": "Candlelit sunset dinner tables on the soft sands of Jimbaran Bay",
+      "credit": "Sean Oulashin",
+      "creditUrl": "https://unsplash.com/@oulashin",
+      "source": "Unsplash"
+    }
+  ],
+  "seo": {
+    "title": "Bali Tour Package: 5N/6D Ubud, Seminyak & Nusa Penida",
+    "description": "Book 5N/6D Bali tour package with infiYATRA. Ubud jungle swing, Nusa Penida Kelingking beach, Uluwatu sunset, 4-star stays, and private cab transfers."
+  },
+  "status": "published",
+  "featured": true
+}

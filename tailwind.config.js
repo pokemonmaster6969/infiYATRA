@@ -9,21 +9,21 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#0D7377',
-          light: '#36A69D',
-          dark: '#095C5F',
+          DEFAULT: '#0A1C60',
+          light: '#1E3A8A',
+          dark: '#061038',
         },
         secondary: {
-          DEFAULT: '#B34A34',
-          light: '#F29375',
-          dark: '#943926',
+          DEFAULT: '#FF5B00',
+          light: '#FF7A29',
+          dark: '#D64B00',
         },
         accent: {
-          DEFAULT: '#E5BD78',
-          light: '#F0D49C',
-          dark: '#B78D4D',
+          DEFAULT: '#F59E0B',
+          light: '#FBBF24',
+          dark: '#D97706',
         },
-        charcoal: '#142A28',
+        charcoal: '#0A0E1A',
       },
       fontFamily: {
         sans: ['Outfit', 'sans-serif'],

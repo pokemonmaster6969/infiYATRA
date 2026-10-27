@@ -320,7 +320,7 @@ const AdminDashboard = () => {
           <button
             onClick={() => { haptics.light(); setActiveTab('overview'); }}
             className={`w-full flex items-center justify-between p-3.5 rounded-xl font-bold transition-all text-xs uppercase tracking-wider ${
-              activeTab === 'overview' ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'text-white/60 hover:text-white hover:bg-white/5'
+              activeTab === 'overview' ? 'bg-secondary text-white shadow-lg shadow-secondary/25' : 'text-white/60 hover:text-white hover:bg-white/5'
             }`}
           >
             <div className="flex items-center space-x-3">
@@ -333,7 +333,7 @@ const AdminDashboard = () => {
           <button
             onClick={() => { haptics.light(); setActiveTab('inventory'); }}
             className={`w-full flex items-center justify-between p-3.5 rounded-xl font-bold transition-all text-xs uppercase tracking-wider ${
-              activeTab === 'inventory' ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'text-white/60 hover:text-white hover:bg-white/5'
+              activeTab === 'inventory' ? 'bg-secondary text-white shadow-lg shadow-secondary/25' : 'text-white/60 hover:text-white hover:bg-white/5'
             }`}
           >
             <div className="flex items-center space-x-3">
@@ -347,7 +347,7 @@ const AdminDashboard = () => {
           <button
             onClick={() => { haptics.light(); setActiveTab('leads'); }}
             className={`w-full flex items-center justify-between p-3.5 rounded-xl font-bold transition-all text-xs uppercase tracking-wider ${
-              activeTab === 'leads' ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'text-white/60 hover:text-white hover:bg-white/5'
+              activeTab === 'leads' ? 'bg-secondary text-white shadow-lg shadow-secondary/25' : 'text-white/60 hover:text-white hover:bg-white/5'
             }`}
           >
             <div className="flex items-center space-x-3">
@@ -365,7 +365,7 @@ const AdminDashboard = () => {
           <button
             onClick={() => { haptics.light(); setActiveTab('departures'); }}
             className={`w-full flex items-center justify-between p-3.5 rounded-xl font-bold transition-all text-xs uppercase tracking-wider ${
-              activeTab === 'departures' ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'text-white/60 hover:text-white hover:bg-white/5'
+              activeTab === 'departures' ? 'bg-secondary text-white shadow-lg shadow-secondary/25' : 'text-white/60 hover:text-white hover:bg-white/5'
             }`}
           >
             <div className="flex items-center space-x-3">
@@ -379,7 +379,7 @@ const AdminDashboard = () => {
           <button
             onClick={() => { haptics.light(); setActiveTab('corporate'); }}
             className={`w-full flex items-center justify-between p-3.5 rounded-xl font-bold transition-all text-xs uppercase tracking-wider ${
-              activeTab === 'corporate' ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'text-white/60 hover:text-white hover:bg-white/5'
+              activeTab === 'corporate' ? 'bg-secondary text-white shadow-lg shadow-secondary/25' : 'text-white/60 hover:text-white hover:bg-white/5'
             }`}
           >
             <div className="flex items-center space-x-3">
@@ -392,7 +392,7 @@ const AdminDashboard = () => {
           <button
             onClick={() => { haptics.light(); setActiveTab('media'); }}
             className={`w-full flex items-center justify-between p-3.5 rounded-xl font-bold transition-all text-xs uppercase tracking-wider ${
-              activeTab === 'media' ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'text-white/60 hover:text-white hover:bg-white/5'
+              activeTab === 'media' ? 'bg-secondary text-white shadow-lg shadow-secondary/25' : 'text-white/60 hover:text-white hover:bg-white/5'
             }`}
           >
             <div className="flex items-center space-x-3">
@@ -406,7 +406,7 @@ const AdminDashboard = () => {
           <button
             onClick={() => { haptics.light(); setActiveTab('audit'); }}
             className={`w-full flex items-center justify-between p-3.5 rounded-xl font-bold transition-all text-xs uppercase tracking-wider ${
-              activeTab === 'audit' ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'text-white/60 hover:text-white hover:bg-white/5'
+              activeTab === 'audit' ? 'bg-secondary text-white shadow-lg shadow-secondary/25' : 'text-white/60 hover:text-white hover:bg-white/5'
             }`}
           >
             <div className="flex items-center space-x-3">
@@ -468,7 +468,7 @@ const AdminDashboard = () => {
             <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
               <div>
                 <h1 className="text-3xl font-display font-black text-charcoal tracking-tight uppercase italic">
-                  Operations <span className="text-primary">Dashboard</span>
+                  Operations <span className="text-secondary">Dashboard</span>
                 </h1>
                 <p className="text-gray-400 font-medium text-xs mt-1">Real-time status of packages, inquiries, departures, and conversion pipeline.</p>
               </div>
@@ -482,7 +482,7 @@ const AdminDashboard = () => {
                 </button>
                 <Link
                   to="/admin/new"
-                  className="bg-primary text-white px-5 py-2.5 rounded-xl font-black text-xs uppercase tracking-wider shadow-lg shadow-primary/20 hover:scale-105 transition-all flex items-center gap-1.5"
+                  className="bg-secondary text-white px-5 py-2.5 rounded-xl font-black text-xs uppercase tracking-wider shadow-lg shadow-secondary/20 hover:bg-secondary-light transition-all flex items-center gap-1.5"
                 >
                   <Plus size={15} /> Add Expedition
                 </Link>
@@ -517,7 +517,7 @@ const AdminDashboard = () => {
                 <span className="text-[10px] font-black uppercase tracking-wider text-gray-400 block">Upcoming Departures</span>
                 <div className="flex items-baseline justify-between">
                   <span className="text-3xl font-display font-black text-charcoal">{allDeparturesCount}</span>
-                  <span className="text-xs font-bold text-primary bg-primary/10 px-2 py-0.5 rounded">
+                  <span className="text-xs font-bold text-secondary bg-secondary/10 px-2 py-0.5 rounded">
                     Live
                   </span>
                 </div>
@@ -544,7 +544,7 @@ const AdminDashboard = () => {
                 <h3 className="font-display font-bold text-lg text-charcoal uppercase">Recent Leads & Enquiries</h3>
                 <button
                   onClick={() => setActiveTab('leads')}
-                  className="text-xs font-bold text-primary hover:underline flex items-center gap-1"
+                  className="text-xs font-bold text-secondary hover:underline flex items-center gap-1"
                 >
                   View All ({leads.length}) <ChevronRight size={14} />
                 </button>
@@ -562,39 +562,48 @@ const AdminDashboard = () => {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-50">
-                    {leads.slice(0, 5).map(lead => (
-                      <tr key={lead.id} className="hover:bg-gray-50/50">
-                        <td className="py-3 font-bold text-charcoal">
-                          {lead.fullName}
-                          <span className="block text-[11px] font-normal text-gray-400">{lead.phone}</span>
-                        </td>
-                        <td className="py-3 text-gray-600">{lead.destination}</td>
-                        <td className="py-3">
-                          <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-gray-100 text-gray-700">
-                            {lead.type.replace('_', ' ')}
-                          </span>
-                        </td>
-                        <td className="py-3">
-                          <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold ${
-                            lead.status === 'New' ? 'bg-secondary/15 text-secondary' :
-                            lead.status === 'Confirmed' ? 'bg-emerald-100 text-emerald-700' :
-                            lead.status === 'Quote Sent' ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-600'
-                          }`}>
-                            {lead.status}
-                          </span>
-                        </td>
-                        <td className="py-3 text-right">
-                          <a
-                            href={getWhatsAppLink(`Hi ${lead.fullName}! Reaching out regarding your ${lead.destination} inquiry with INFIYATRA.`)}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-600 hover:underline"
-                          >
-                            <MessageCircle size={13} /> Reply
-                          </a>
+                    {leads.length === 0 ? (
+                      <tr>
+                        <td colSpan={5} className="py-8 text-center text-gray-400">
+                          <p className="font-semibold text-xs text-charcoal">No inbound leads yet</p>
+                          <p className="text-[11px] text-gray-400 mt-1">Real submissions from Customize Trip, Bookings, Corporate Tours, and Cruises will appear here in real time.</p>
                         </td>
                       </tr>
-                    ))}
+                    ) : (
+                      leads.slice(0, 5).map(lead => (
+                        <tr key={lead.id} className="hover:bg-gray-50/50">
+                          <td className="py-3 font-bold text-charcoal">
+                            {lead.fullName}
+                            <span className="block text-[11px] font-normal text-gray-400">{lead.phone}</span>
+                          </td>
+                          <td className="py-3 text-gray-600">{lead.destination}</td>
+                          <td className="py-3">
+                            <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-gray-100 text-gray-700">
+                              {lead.type.replace('_', ' ')}
+                            </span>
+                          </td>
+                          <td className="py-3">
+                            <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold ${
+                              lead.status === 'New' ? 'bg-secondary/15 text-secondary' :
+                              lead.status === 'Confirmed' ? 'bg-emerald-100 text-emerald-700' :
+                              lead.status === 'Quote Sent' ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-600'
+                            }`}>
+                              {lead.status}
+                            </span>
+                          </td>
+                          <td className="py-3 text-right">
+                            <a
+                              href={getWhatsAppLink(`Hi ${lead.fullName}! Reaching out regarding your ${lead.destination} inquiry with INFIYATRA.`)}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-600 hover:underline"
+                            >
+                              <MessageCircle size={13} /> Reply
+                            </a>
+                          </td>
+                        </tr>
+                      ))
+                    )}
                   </tbody>
                 </table>
               </div>

@@ -19,24 +19,43 @@ import {
   User,
   Clock,
   Building,
-  HeartHandshake
+  HeartHandshake,
+  Globe,
+  X,
+  ChevronDown
 } from 'lucide-react'
 import { addLead } from '../lib/dataService'
 import { getWhatsAppLink } from '../lib/data'
 import { haptics } from '../lib/haptics'
 
-const POPULAR_DESTINATIONS = [
-  'Spiti Valley',
-  'Leh Ladakh',
+const DOMESTIC_DESTINATIONS = [
   'Kashmir Paradise',
-  'Goa & Lakshadweep Cruise',
-  'Bali Island',
-  'Singapore & Phuket Cruise',
-  'Kerala Backwaters',
-  'Meghalaya',
-  'Dubai & Abu Dhabi',
-  'Vietnam',
-  'Himachal Pradesh'
+  'Himachal Serenity (Manali & Shimla)',
+  'Kerala Backwaters & Munnar',
+  'Goa Beach & Coastal Escape',
+  'Leh Ladakh & Pangong Lake',
+  'Royal Rajasthan (Jaipur & Udaipur)',
+  'Andaman Tropical Islands',
+  'Spiti Valley & Chandratal',
+  'Meghalaya & Living Root Bridges',
+  'Uttarakhand (Rishikesh & Mussoorie)',
+  'Coorg & Ooty Hill Stations',
+  'Lakshadweep Island Cruise'
+]
+
+const INTERNATIONAL_DESTINATIONS = [
+  'Dubai & Abu Dhabi (UAE)',
+  'Thailand Explorer (Bangkok & Pattaya)',
+  'Bali Island Retreat (Indonesia)',
+  'Swiss Alpine Wonder (Switzerland)',
+  'Iceland Northern Lights & Glaciers',
+  'Japan Sakura & Neon (Tokyo & Kyoto)',
+  'Singapore & Sentosa Island',
+  'Vietnam & Halong Bay',
+  'Maldives Luxury Overwater Villas',
+  'Sri Lanka Cultural Highlands',
+  'Paris & France Romance',
+  'Georgia & Caucasus Explorer'
 ]
 
 const INTEREST_TAGS = [
@@ -67,8 +86,9 @@ const CustomizeTrip = () => {
   const [errors, setErrors] = useState<Record<string, string>>({})
 
   // Form State
+  const [destinationCategory, setDestinationCategory] = useState<'all' | 'domestic' | 'international'>('all')
   const [selectedDestinations, setSelectedDestinations] = useState<string[]>(
-    initialDestination ? [initialDestination] : ['Spiti Valley']
+    initialDestination ? [initialDestination] : ['Kashmir Paradise']
   )
   const [customDestination, setCustomDestination] = useState('')
   const [startDate, setStartDate] = useState('')
@@ -338,32 +358,118 @@ ${specialNotes ? `📝 Requests: ${specialNotes}` : ''}`
                         Step 1: Where do you want to explore?
                       </h2>
                       <p className="text-xs text-white/50 mt-1">
-                        Select one or more destinations, or add your custom dream place.
+                        Choose your destinations with our domestic & international selector, or add a custom place.
                       </p>
                     </div>
 
-                    {/* Destination Chips */}
-                    <div className="space-y-3">
-                      <div className="flex flex-wrap gap-2">
-                        {POPULAR_DESTINATIONS.map(dest => {
-                          const isSelected = selectedDestinations.includes(dest)
-                          return (
-                            <button
-                              key={dest}
-                              type="button"
-                              onClick={() => toggleDestination(dest)}
-                              className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 ${
-                                isSelected
-                                  ? 'bg-secondary text-white shadow-md shadow-secondary/30 scale-[1.02]'
-                                  : 'bg-white/5 border border-white/10 text-white/70 hover:bg-white/10 hover:text-white'
-                              }`}
-                            >
-                              {isSelected && <CheckCircle2 size={13} />}
-                              {dest}
-                            </button>
-                          )
-                        })}
+                    {/* Filter Tabs & Dropdown Selection */}
+                    <div className="space-y-4">
+                      {/* Filter Tabs */}
+                      <div className="flex flex-wrap items-center gap-2 border-b border-white/10 pb-3">
+                        <button
+                          type="button"
+                          onClick={() => { haptics.light(); setDestinationCategory('all'); }}
+                          className={`px-3.5 py-1.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 ${
+                            destinationCategory === 'all'
+                              ? 'bg-secondary text-white shadow-md shadow-secondary/30'
+                              : 'bg-white/5 text-white/60 hover:text-white hover:bg-white/10'
+                          }`}
+                        >
+                          <Compass size={14} /> All ({DOMESTIC_DESTINATIONS.length + INTERNATIONAL_DESTINATIONS.length})
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => { haptics.light(); setDestinationCategory('domestic'); }}
+                          className={`px-3.5 py-1.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 ${
+                            destinationCategory === 'domestic'
+                              ? 'bg-secondary text-white shadow-md shadow-secondary/30'
+                              : 'bg-white/5 text-white/60 hover:text-white hover:bg-white/10'
+                          }`}
+                        >
+                          <MapPin size={14} /> Domestic India ({DOMESTIC_DESTINATIONS.length})
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => { haptics.light(); setDestinationCategory('international'); }}
+                          className={`px-3.5 py-1.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-1.5 ${
+                            destinationCategory === 'international'
+                              ? 'bg-secondary text-white shadow-md shadow-secondary/30'
+                              : 'bg-white/5 text-white/60 hover:text-white hover:bg-white/10'
+                          }`}
+                        >
+                          <Globe size={14} /> International ({INTERNATIONAL_DESTINATIONS.length})
+                        </button>
                       </div>
+
+                      {/* Dropdown Selector */}
+                      <div className="space-y-2">
+                        <label className="text-[11px] font-bold uppercase tracking-wider text-white/70 block">
+                          Select Destination from Dropdown
+                        </label>
+                        <div className="relative">
+                          <select
+                            defaultValue=""
+                            onChange={e => {
+                              if (e.target.value) {
+                                toggleDestination(e.target.value);
+                                e.target.value = '';
+                              }
+                            }}
+                            className="w-full appearance-none bg-[#0F172A] border border-white/15 rounded-xl px-4 py-3.5 text-xs font-semibold text-white focus:border-secondary focus:outline-none cursor-pointer pr-10 shadow-inner"
+                          >
+                            <option value="" disabled className="text-white/40">
+                              -- Choose a destination to add --
+                            </option>
+                            {(destinationCategory === 'all' || destinationCategory === 'domestic') && (
+                              <optgroup label="🇮🇳 Domestic India Destinations" className="bg-[#0A0E1A] text-secondary font-bold">
+                                {DOMESTIC_DESTINATIONS.map(d => (
+                                  <option key={d} value={d} className="bg-[#0F172A] text-white font-medium py-1">
+                                    {d} {selectedDestinations.includes(d) ? '✓ (Added)' : ''}
+                                  </option>
+                                ))}
+                              </optgroup>
+                            )}
+                            {(destinationCategory === 'all' || destinationCategory === 'international') && (
+                              <optgroup label="✈️ International Destinations" className="bg-[#0A0E1A] text-secondary font-bold">
+                                {INTERNATIONAL_DESTINATIONS.map(d => (
+                                  <option key={d} value={d} className="bg-[#0F172A] text-white font-medium py-1">
+                                    {d} {selectedDestinations.includes(d) ? '✓ (Added)' : ''}
+                                  </option>
+                                ))}
+                              </optgroup>
+                            )}
+                          </select>
+                          <ChevronDown size={16} className="absolute right-4 top-1/2 -translate-y-1/2 text-white/50 pointer-events-none" />
+                        </div>
+                      </div>
+
+                      {/* Selected Destinations Tags */}
+                      {selectedDestinations.length > 0 && (
+                        <div className="space-y-2 pt-1">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-white/50 block">
+                            Your Selected Destinations ({selectedDestinations.length}):
+                          </span>
+                          <div className="flex flex-wrap gap-2">
+                            {selectedDestinations.map(dest => (
+                              <span
+                                key={dest}
+                                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-secondary/15 text-white text-xs font-semibold border border-secondary/30 shadow-sm"
+                              >
+                                <CheckCircle2 size={13} className="text-secondary" />
+                                {dest}
+                                <button
+                                  type="button"
+                                  onClick={() => toggleDestination(dest)}
+                                  className="ml-1 hover:text-red-400 text-white/60 transition-colors"
+                                  aria-label={`Remove ${dest}`}
+                                >
+                                  <X size={13} />
+                                </button>
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
 
                       {/* Add Custom Destination */}
                       <div className="flex gap-2 pt-2">
@@ -372,7 +478,7 @@ ${specialNotes ? `📝 Requests: ${specialNotes}` : ''}`
                           value={customDestination}
                           onChange={e => setCustomDestination(e.target.value)}
                           onKeyDown={e => { if (e.key === 'Enter') { e.preventDefault(); addCustomDest(); } }}
-                          placeholder="Other destination (e.g. Iceland, Bhutan, Seychelles)..."
+                          placeholder="Type other custom destination (e.g. Greece, Bhutan, Kenya)..."
                           className="flex-grow bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-xs font-medium text-white placeholder:text-white/30 focus:border-secondary focus:outline-none"
                         />
                         <button

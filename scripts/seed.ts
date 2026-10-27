@@ -145,12 +145,12 @@ export const FLAGSHIP_PACKAGES: Trip[] = ${JSON.stringify(mappedTrips, null, 2)}
 fs.writeFileSync(FLAGSHIP_FILE, flagshipCode, 'utf-8')
 console.log(`✅ Generated ${FLAGSHIP_FILE} with ${mappedTrips.length} publish-ready flagship packages.`)
 
-// 5. Update dataService.ts version bump to 9.0 to bust browser caches
+// 5. Update dataService.ts version bump to 10.0 to bust browser caches
 if (fs.existsSync(DATA_SERVICE_FILE)) {
   let code = fs.readFileSync(DATA_SERVICE_FILE, 'utf-8')
-  code = code.replace(/CURRENT_VERSION = '[^']+'/, `CURRENT_VERSION = '9.0'`)
+  code = code.replace(/CURRENT_VERSION = [0-9.]+;/, `CURRENT_VERSION = 10.0;`)
   fs.writeFileSync(DATA_SERVICE_FILE, code, 'utf-8')
-  console.log(`✅ Bumped client cache version to 9.0 in src/lib/dataService.ts`)
+  console.log(`✅ Bumped client cache version to 10.0 in src/lib/dataService.ts`)
 }
 
 console.log('🎉 Seed completed successfully!')

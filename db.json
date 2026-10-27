@@ -1,8 +1,633 @@
 {
   "trips": [
     {
+      "id": 108,
+      "title": "Andaman Tropical (5N/6D)",
+      "location": "Andaman, India",
+      "price": "28,999",
+      "rating": 4.9,
+      "reviews": 142,
+      "duration": "6 Days / 5 Nights",
+      "category": "Honeymoon",
+      "type": "Domestic",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=1200",
+      "link": "/trip/108",
+      "description": "Escape to the pristine archipelago of the Andaman and Nicobar Islands, where powdery white coral sands merge into turquoise waters and dense tropical rainforests. Begin in Port Blair with an evocative journey through Indian freedom struggle history at the historic Cellular Jail, capped by its poignant evening Light and Sound show. Board an air-conditioned luxury catamaran across the open ocean to Havelock Island (Swaraj Dweep). Sunkissed hours await at Asia's celebrated Radhanagar Beach, consistently rated among the world's most breathtaking coastlines for its epic crimson sunsets, and at Elephant Beach with its vibrant fringing coral reefs teeming with marine life. Journey onward to peaceful Neil Island (Shaheed Dweep) to wander across the natural geological wonder of Howrah Bridge and relax on Bharatpur and Laxmanpur beaches. Complete with inter-island cruise transfers, verified beachfront four-star resorts, daily breakfasts and dinners, and round-the-clock island coordination, this tropical getaway guarantees an extraordinary island reverie.",
+      "images": [
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1510414842594-a61752afb392?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200"
+      ],
+      "groupSize": "Couples, Beach Lovers & Adventure Seekers",
+      "nextBatch": "2026-11-12",
+      "featured": true,
+      "status": "Published",
+      "badge": "Popular",
+      "highlights": [
+        "Historic Cellular Jail guided tour and evocative evening Sound & Light show",
+        "Scenic high-speed luxury catamaran cruise transfers across Andaman waters",
+        "Sunset at world-famous Radhanagar Beach (Beach No. 7) on Havelock Island",
+        "Snorkeling, sea walk, or glass-bottom boat ride at Elephant Beach coral reef",
+        "Exploration of the unique natural living rock formation at Howrah Bridge on Neil",
+        "Relaxed sunset stroll along the shell-strewn white sands of Laxmanpur Beach",
+        "Private air-conditioned transfers for all airport and jetty movements"
+      ],
+      "inclusions": [
+        "5 nights verified 4-star beachfront stays (2N Port Blair, 2N Havelock, 1N Neil Island)",
+        "Daily buffet breakfast and multi-course coastal dinner at all island resorts",
+        "Confirmed high-speed luxury catamaran tickets (Makruzz / Nautika / Green Ocean)",
+        "Speedboat transfers and snorkeling gear session at Elephant Beach in Havelock",
+        "Entry tickets and reserved seating for the Cellular Jail Sound & Light show",
+        "All inter-island jetty and airport private transfers in air-conditioned vehicles",
+        "All applicable island taxes, parking permits, and driver charges included",
+        "24x7 local Andaman island coordinator and certified island travel concierge"
+      ],
+      "exclusions": [
+        "Airfare to and from Port Blair from the Indian mainland",
+        "Scuba diving, undersea walking, or jet ski fees (can be added on request)",
+        "Personal expenses such as laundry, room service, alcoholic drinks, and tips",
+        "Camera and professional photography fees at monuments and parks",
+        "Lunches and daytime snacks not specified in the meal plan",
+        "Costs incurred due to ferry schedule adjustments caused by stormy weather",
+        "Comprehensive personal travel insurance and medical evacuation expenses",
+        "Sightseeing or cab usage beyond designated itinerary hours"
+      ],
+      "departures": [
+        {
+          "date": "2026-11-12",
+          "seatsTotal": 14,
+          "seatsAvailable": 6,
+          "priceOverride": "28,999",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2026-12-08",
+          "seatsTotal": 16,
+          "seatsAvailable": 8,
+          "priceOverride": "31,999",
+          "status": "Open"
+        },
+        {
+          "date": "2026-12-23",
+          "seatsTotal": 16,
+          "seatsAvailable": 3,
+          "priceOverride": "36,999",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2027-01-20",
+          "seatsTotal": 14,
+          "seatsAvailable": 10,
+          "priceOverride": "29,999",
+          "status": "Open"
+        }
+      ],
+      "captain": {
+        "name": "Captain Rohan Shah",
+        "role": "Lead Expedition Specialist",
+        "bio": "Expert in curated itineraries, cultural storytelling, and on-ground logistics.",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
+        "rating": 5,
+        "trips": 45
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Port Blair & Historic Cellular Jail Light Show",
+          "description": "Land at Veer Savarkar International Airport in Port Blair, greeted by ocean air and tropical warmth. Meet your private island escort and transfer to your seaside resort. After relaxing, visit the national memorial of Cellular Jail in the afternoon. Walk through its historic central tower and solitary confinement wings where Indian freedom fighters made untold sacrifices. At dusk, witness the deeply moving Light and Sound show narrating the epic struggle for independence under a star-filled island sky. Enjoy a coastal seafood dinner at your resort.",
+          "activities": [
+            "Airport Meet & Greet",
+            "Cellular Jail National Memorial",
+            "Sound and Light Show"
+          ],
+          "meals": "Dinner Included",
+          "stay": "4-Star Seaside Resort, Port Blair"
+        },
+        {
+          "day": 2,
+          "title": "Catamaran Cruise to Havelock & Radhanagar Sunset",
+          "description": "After an early breakfast, transfer to Phoenix Bay Jetty to board a high-speed luxury private catamaran (Makruzz or Green Ocean) bound for Havelock Island. Watch flying fish leap alongside the ship as you cruise across the deep blue Andaman Sea. Arrive at Havelock Jetty, transfer to your beachfront resort, and settle in among swaying coconut palms. In the late afternoon, head to world-renowned Radhanagar Beach (Beach No. 7). Walk along the wide white sands, swim in warm crystalline waters, and watch an unforgettable fiery sunset over the horizon.",
+          "activities": [
+            "Catamaran Cruise",
+            "Havelock Island Arrival",
+            "Radhanagar Beach Sunset Walk"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Beachfront Resort, Havelock Island"
+        },
+        {
+          "day": 3,
+          "title": "Elephant Beach Coral Reef Exploration & Water Sports",
+          "description": "Set out by speedboat in the morning to Elephant Beach, famous for its thriving near-shore coral reefs. Strap on snorkel gear or board a glass-bottom boat to witness vibrant brain corals, sea anemones, and schools of colorful clownfish and parrotfish gliding through warm tropical water. Thrill-seekers can try tandem jet skiing, banana boat rides, or undersea walking. Return to your resort by midday for an afternoon at leisure lounging by the pool or bicycling through village lanes. Relish a romantic candlelit dinner by the shore.",
+          "activities": [
+            "Speedboat to Elephant Beach",
+            "Coral Snorkeling",
+            "Optional Undersea Walking",
+            "Beach Leisure"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Beachfront Resort, Havelock Island"
+        },
+        {
+          "day": 4,
+          "title": "Havelock to Neil Island: Natural Bridge & Laxmanpur Sunset",
+          "description": "Board a morning ferry from Havelock across to tranquil Neil Island (Shaheed Dweep), the vegetable bowl of the Andamans. Check in to your eco-resort and set off to explore the geological wonder of the Natural Rock Formation, locally known as Howrah Bridge, revealed during low tide along the dead coral beds. Continue to Laxmanpur Beach in the evening, a secluded white sand beach famous for its deep orange sunsets and scattered decorative seashells. Enjoy a relaxed tropical island dinner under the palms.",
+          "activities": [
+            "Ferry to Neil Island",
+            "Natural Living Rock Bridge",
+            "Laxmanpur Sunset Point"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Island Resort, Neil Island"
+        },
+        {
+          "day": 5,
+          "title": "Bharatpur Beach Coral Lagoon & Return to Port Blair",
+          "description": "Spend a peaceful morning at Bharatpur Beach, renowned for its crystal-clear shallow lagoon and gentle turquoise waves ideal for swimming and glass-bottom coral viewing. Later, transfer to Neil Jetty for your return catamaran voyage back to Port Blair. Arrive by afternoon and check into your hotel. Spend the evening browsing Aberdeen Bazaar for unique Andaman sea-shell souvenirs, coconut shell lamps, and local island honey before a special farewell coastal dinner featuring fresh catch of the day.",
+          "activities": [
+            "Bharatpur Beach Swimming",
+            "Catamaran Cruise to Port Blair",
+            "Aberdeen Bazaar Souvenirs"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Seaside Resort, Port Blair"
+        },
+        {
+          "day": 6,
+          "title": "Port Blair Farewell & Airport Departure",
+          "description": "Enjoy your final island breakfast with tropical fruits overlooking the Bay of Bengal. Take in the fresh ocean breeze and capture last photos of the palm-fringed shoreline. Your private chauffeur will transfer you comfortably to Veer Savarkar International Airport in Port Blair with ample time for your return flight home, carrying sun-kissed memories of emerald island waters and tropical tranquility.",
+          "activities": [
+            "Resort Breakfast",
+            "Souvenir Checkout",
+            "Airport Departure Transfer"
+          ],
+          "meals": "Breakfast Included",
+          "stay": "Departure Day (No Overnight), Port Blair"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Do Indian citizens need a passport or visa to visit Andaman?",
+          "a": "No, Indian citizens do not need a passport or visa. A valid government photo identity card (such as Aadhaar Card, Voter ID, or Driving License) is sufficient for all travel."
+        },
+        {
+          "q": "Which catamaran ferries are used for island transfers?",
+          "a": "We book confirmed luxury air-conditioned catamarans such as Makruzz, Nautika, or Green Ocean with comfortable pushback seats, panoramic sea-view windows, and onboard snack kiosks."
+        },
+        {
+          "q": "Can non-swimmers try snorkeling and scuba diving?",
+          "a": "Yes! Both snorkeling at Elephant Beach and introductory scuba diving are conducted with certified PADI divemasters who hold your hand throughout the experience with full safety gear."
+        },
+        {
+          "q": "Is Radhanagar Beach safe for swimming?",
+          "a": "Yes, Radhanagar Beach has gentle slopes and clean waters, with trained lifeguards stationed during daylight hours, making it one of the safest beaches in Asia for family swimming."
+        },
+        {
+          "q": "How is mobile network connectivity in the Andaman Islands?",
+          "a": "Airtel and BSNL provide reliable 4G connectivity across Port Blair, Havelock, and Neil Island. Resort Wi-Fi is available for essential messaging and browsing."
+        },
+        {
+          "q": "Are pure vegetarian and Jain meal options available on the islands?",
+          "a": "Yes, all our verified partner beachfront resorts feature dedicated vegetarian cooking stations and offer delicious North and South Indian vegetarian meals including Jain preparations."
+        }
+      ],
+      "slug": "andaman-tropical-island-escape",
+      "tagline": "Turquoise waters of Radhanagar Beach, historic Cellular Jail sound-and-light, and coral reefs of Havelock and Neil.",
+      "destination": "Andaman",
+      "region": "Bay of Bengal",
+      "country": "India",
+      "priceBands": {
+        "standard": "28,999",
+        "deluxe": "38,999",
+        "premium": "59,999"
+      },
+      "bestTime": {
+        "months": [
+          "October",
+          "November",
+          "December",
+          "January",
+          "February",
+          "March",
+          "April",
+          "May"
+        ],
+        "notes": "Ideal tropical island weather from October to May with crystal-clear turquoise seas, calm waters, and underwater visibility up to 25 meters."
+      },
+      "difficulty": "Easy",
+      "visaInfo": "No passport or domestic permit needed for Indian citizens. Restricted Area Permit (RAP) is waived for standard tourist islands.",
+      "hotels": [
+        {
+          "city": "Port Blair",
+          "name": "Sea Shell Port Blair / Symphony Samudra",
+          "category": "4-Star Beach Resort",
+          "nights": 2
+        },
+        {
+          "city": "Havelock Island",
+          "name": "Silver Sand Beach Resort / Barefoot",
+          "category": "4-Star Beachfront Villa",
+          "nights": 2
+        },
+        {
+          "city": "Neil Island",
+          "name": "Sea Shell Neil / Summer Sands",
+          "category": "4-Star Island Resort",
+          "nights": 1
+        }
+      ],
+      "transport": {
+        "mode": "Private AC Cab + Luxury Catamaran Ferry",
+        "details": "Dedicated air-conditioned road transfers on all islands plus premium reserved catamaran seats."
+      },
+      "thingsToCarry": [
+        "Comfortable beachwear, quick-dry swimsuits, and cotton resort outfits",
+        "Reef-safe sunscreen, polarized UV sunglasses, and wide-brim hat",
+        "Waterproof pouch for smartphones and dry bag for speedboat transfers",
+        "Valid government photo ID (Aadhaar or Passport) mandatory for all ferry boarding"
+      ],
+      "tips": [
+        "Always reach ferry jetties at least 45 minutes prior to scheduled catamaran departure times.",
+        "Do not collect or remove coral shells from beaches, as strict forest protection laws apply at airports.",
+        "ATMs on Havelock and Neil can run out of cash during peak holiday weekends; carry emergency cash from Port Blair."
+      ],
+      "cancellationPolicy": [
+        "Free cancellation with 100% refund up to 15 days before departure date",
+        "50% cancellation fee between 14 and 7 days prior to departure",
+        "Non-refundable within 6 days of departure"
+      ],
+      "paymentTerms": "Book with 25% advance token; balance payable 10 days before departure.",
+      "galleryDetailed": [
+        {
+          "src": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Crystal clear turquoise water and pristine white sand of Radhanagar Beach",
+          "caption": "The powdery white sands and azure waves of world-famous Radhanagar Beach on Havelock",
+          "credit": "Tatiana Zhukova",
+          "creditUrl": "https://unsplash.com/@tatianazhukova",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Tropical palm trees framing tranquil turquoise Andaman lagoon",
+          "caption": "Verdant coconut palms leaning over gentle coral lagoons on Neil Island",
+          "credit": "Sean Oulashin",
+          "creditUrl": "https://unsplash.com/@oulashin",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Snorkeling and scuba diving along coral reef in Andaman sea",
+          "caption": "Thriving underwater coral gardens and tropical marine life at Elephant Beach",
+          "credit": "Sebastian Pena",
+          "creditUrl": "https://unsplash.com/@sebaspenalambarri",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1510414842594-a61752afb392?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Sunset over calm ocean waves on Laxmanpur beach Neil Island",
+          "caption": "Golden hour glow across the scattered shells and coral flats of Laxmanpur Beach",
+          "credit": "Jeremy Bishop",
+          "creditUrl": "https://unsplash.com/@jeremybishop",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Natural Bridge coral rock formation on Neil Island Andaman",
+          "caption": "The distinctive living rock bridge formation carved by tides on Neil Island",
+          "credit": "Bailey Zindel",
+          "creditUrl": "https://unsplash.com/@baileyzindel",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Secluded tropical beach resort with ocean view in Andaman",
+          "caption": "Private beachfront luxury cottages nestled along the peaceful coast of Havelock",
+          "credit": "Federico Bottos",
+          "creditUrl": "https://unsplash.com/@federicobottos",
+          "source": "Unsplash"
+        }
+      ],
+      "seo": {
+        "title": "Andaman Tour Package: 5N/6D Havelock & Neil Island",
+        "description": "Book 5N/6D Andaman package with infiYATRA. Visit Port Blair, Radhanagar Beach on Havelock, and Neil Island with 4-star stays, catamaran ferry and transfers."
+      }
+    },
+    {
+      "id": 110,
+      "title": "Bali Island Magic (5N/6D)",
+      "location": "Bali, Indonesia",
+      "price": "34,999",
+      "rating": 4.9,
+      "reviews": 142,
+      "duration": "6 Days / 5 Nights",
+      "category": "Honeymoon",
+      "type": "International",
+      "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=1200",
+      "link": "/trip/110",
+      "description": "Immerse yourself in the enchanting culture and breathtaking tropical scenery of the Island of the Gods on an authentic Bali holiday. Begin nestled in the lush emerald heart of Ubud, wandering through the ancient stepped rice terraces of Tegalalang, soaring above jungle canopies on the famous Bali jungle swing, and exploring sacred lotus temples and monkey sanctuaries. Continue south to the vibrant coastal beaches of Kuta and Seminyak. Embark on an exhilarating speedboat day excursion to Nusa Penida island to gaze down at the colossal T-Rex shaped coastal cliffs of Kelingking Beach and swim in the natural infinity pool of Angel's Billabong. Marvel at dramatic cliffside Indian Ocean sunsets at Uluwatu Temple, accompanied by the hypnotic chanting and fire choreography of a traditional Kecak dance, capped by a romantic seafood dinner directly on Jimbaran Bay's soft sands. Complete with verified private AC van transfers, dedicated local Balinese guide, handpicked four-star resorts, daily breakfasts and dinners, this flagship Bali tour delivers a truly sublime tropical escape.",
+      "images": [
+        "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200"
+      ],
+      "groupSize": "Couples, Honeymooners & Friends",
+      "nextBatch": "2026-11-18",
+      "featured": true,
+      "status": "Published",
+      "badge": "Popular",
+      "highlights": [
+        "Soar high above Ubud's tropical jungle on the famous Bali Swing",
+        "Marvel at UNESCO-listed emerald stepped rice terraces in Tegalalang",
+        "Full-day speedboat excursion to breathtaking Nusa Penida Island",
+        "Capture iconic photos at Kelingking Beach (T-Rex Cliff) and Angel's Billabong",
+        "Cliffside sunset experience at sacred Uluwatu Temple overlooking the ocean",
+        "Hypnotic live fire Kecak dance performance against a crimson sunset sky",
+        "Candlelit fresh seafood dinner on the soft white sands of Jimbaran Bay"
+      ],
+      "inclusions": [
+        "5 nights verified 4-star accommodations (2N Ubud Rainforest, 3N Kuta/Seminyak Beach)",
+        "Daily international buffet breakfast and chef-crafted multi-course dinner at resorts",
+        "Return high-speed boat tickets and private island touring van on Nusa Penida",
+        "Entry ticket to the Bali Jungle Swing experience and Tegalalang rice terraces",
+        "Uluwatu Temple entry ticket and reserved seating for the live sunset Kecak dance",
+        "Romantic beachside dinner setup on Jimbaran Bay with fresh seafood delicacies",
+        "Dedicated private air-conditioned van and English-speaking Balinese driver throughout",
+        "All local road tolls, parking fees, fuel, and passenger insurance included"
+      ],
+      "exclusions": [
+        "International roundtrip airfare to Denpasar, Bali (DPS)",
+        "Indonesia Visa on Arrival (approx. 500,000 IDR / ~₹2,700 payable at airport counter)",
+        "Bali Tourist Levy (approx. 150,000 IDR / ~₹800 payable online or at airport)",
+        "Watersports packages at Tanjung Benoa (jet ski, scuba, flyboard)",
+        "Lunches and alcoholic beverages not specified in the inclusions",
+        "Personal expenses such as spa treatments, laundry, and guide tips",
+        "Comprehensive international travel insurance with overseas medical coverage",
+        "Optional extensions or excursions not listed in the standard itinerary"
+      ],
+      "departures": [
+        {
+          "date": "2026-11-18",
+          "seatsTotal": 14,
+          "seatsAvailable": 6,
+          "priceOverride": "34,999",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2026-12-10",
+          "seatsTotal": 16,
+          "seatsAvailable": 8,
+          "priceOverride": "38,999",
+          "status": "Open"
+        },
+        {
+          "date": "2026-12-26",
+          "seatsTotal": 16,
+          "seatsAvailable": 2,
+          "priceOverride": "44,999",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2027-01-22",
+          "seatsTotal": 14,
+          "seatsAvailable": 10,
+          "priceOverride": "35,999",
+          "status": "Open"
+        }
+      ],
+      "captain": {
+        "name": "Captain Rohan Shah",
+        "role": "Lead Expedition Specialist",
+        "bio": "Expert in curated itineraries, cultural storytelling, and on-ground logistics.",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
+        "rating": 5,
+        "trips": 45
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Bali & Scenic Transfer to Ubud Rainforest",
+          "description": "Touch down at Ngurah Rai International Airport (DPS) in Denpasar, welcomed by warm tropical breezes and a fragrant frangipani flower garland from your private Balinese guide. Drive north into the cultural heartland of Ubud, winding through traditional craft villages specializing in stone carving, batik textiles, and silver jewelry. Check into your rainforest resort overlooking misty jungle ravines. Settle in with a refreshing tropical welcome mocktail, unwind by the infinity pool, and enjoy an authentic Balinese multi-course dinner featuring fragrant chicken satay and spicy sambal under the stars.",
+          "activities": [
+            "Airport Floral Welcome",
+            "Scenic Transfer to Ubud",
+            "Rainforest Resort Check-in"
+          ],
+          "meals": "Dinner Included",
+          "stay": "4-Star Rainforest Resort, Ubud"
+        },
+        {
+          "day": 2,
+          "title": "Tegalalang Rice Terraces, Bali Jungle Swing & Kintamani Volcano",
+          "description": "After an energizing tropical breakfast, journey to the dramatic Tegalalang Rice Terraces, marveling at the ancient subak irrigation engineering that sustains these emerald valley contours. Buckle up for an unforgettable flight on the famous Bali jungle swing high above the canopy. Continue to Kintamani to take in panoramic views of active Mount Batur volcano and its shimmering crater lake. On your return, visit a local coffee plantation to learn the secrets of Luwak coffee brewing, followed by an evening walk through Ubud Art Market before dinner.",
+          "activities": [
+            "Tegalalang Rice Terraces",
+            "Bali Jungle Swing",
+            "Mount Batur Viewpoint",
+            "Luwak Coffee Tasting"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Rainforest Resort, Ubud"
+        },
+        {
+          "day": 3,
+          "title": "Sacred Monkey Forest, Tegenungan Waterfall & Coastal Transfer",
+          "description": "Begin the morning exploring the ancient sacred banyan trees and moss-covered dragon statues of the Ubud Monkey Forest, home to hundreds of playful long-tailed macaques. Drive south toward the sparkling coastal shores, pausing at Tegenungan Waterfall to feel the cool mountain mist in a lush green gorge. Arrive in the buzzing beachside hub of Kuta/Seminyak, check into your contemporary resort, and enjoy an afternoon lounging on the beach or discovering chic designer boutiques. Enjoy an international buffet dinner at your resort.",
+          "activities": [
+            "Ubud Monkey Forest",
+            "Tegenungan Waterfall Stop",
+            "Coastal Resort Check-in"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Beachside Resort, Kuta & Seminyak"
+        },
+        {
+          "day": 4,
+          "title": "Nusa Penida Island Tour: Kelingking, Broken Beach & Billabong",
+          "description": "Board a morning high-speed boat from Sanur Harbour slicing across the Badung Strait to rugged Nusa Penida island. Drive across dramatic coastal ridges to Kelingking Beach, marveling at the colossal T-Rex shaped cliff plunging into brilliant turquoise waters below. Explore the natural circular limestone arch at Broken Beach and look down into the crystal-clear emerald tide pool of Angel's Billabong. Savor an island lunch, capture unforgettable photos, and board the afternoon speedboat back to the mainland for dinner.",
+          "activities": [
+            "Speedboat to Nusa Penida",
+            "Kelingking Beach T-Rex Cliff",
+            "Broken Beach Arch",
+            "Angel's Billabong Pool"
+          ],
+          "meals": "Breakfast, Lunch, Dinner Included",
+          "stay": "4-Star Beachside Resort, Kuta & Seminyak"
+        },
+        {
+          "day": 5,
+          "title": "Tanjung Benoa Water Sports, Uluwatu Cliff Temple & Jimbaran Sunset",
+          "description": "Head to Tanjung Benoa peninsula in the morning for fun coastal watersports including banana boat rides and parasailing. In the late afternoon, drive along the Bukit Peninsula to the dramatic sea cliff of Uluwatu Temple, perched 230 feet above crashing Indian Ocean swells. As the sky turns fiery orange and violet, watch the hypnotic live Kecak fire dance performance narrating the Ramayana epic. Afterward, celebrate your final evening with a candlelit fresh seafood dinner directly on the sandy shores of Jimbaran Bay.",
+          "activities": [
+            "Tanjung Benoa Water Sports",
+            "Uluwatu Sea Cliff Temple",
+            "Live Kecak Fire Dance",
+            "Jimbaran Beach Dinner"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Beachside Resort, Kuta & Seminyak"
+        },
+        {
+          "day": 6,
+          "title": "Bali Souvenir Shopping & Departure Transfer",
+          "description": "Savor your final tropical breakfast by the resort pool, enjoying fresh dragon fruit, mangoes, and Balinese coffee. Take a leisurely morning walk along Seminyak beach or pick up handcrafted souvenirs, handmade aromatic soaps, and Balinese sarongs at Krishna Souvenir Center. Your private chauffeur will assist with luggage and transfer you smoothly to Ngurah Rai International Airport for your flight home, filled with magical memories of Bali.",
+          "activities": [
+            "Poolside Breakfast",
+            "Handicrafts Shopping",
+            "Airport Departure Transfer"
+          ],
+          "meals": "Breakfast Included",
+          "stay": "Departure Day (No Overnight), Kuta & Seminyak"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Do Indian passport holders get Visa on Arrival in Bali?",
+          "a": "Yes, Indian passport holders easily obtain a 30-day Visa on Arrival (VoA) at the immigration counters in Denpasar Airport for approx. 500,000 IDR (~₹2,700), payable in cash, card, or USD."
+        },
+        {
+          "q": "Is the Nusa Penida day trip included in this package?",
+          "a": "Yes, return speedboat transfers, entry permits, and a dedicated private vehicle on Nusa Penida to visit Kelingking Beach, Broken Beach, and Angel's Billabong are fully included."
+        },
+        {
+          "q": "Are vegetarian and Indian meal options available in Bali?",
+          "a": "Yes! Bali has an abundance of authentic Indian restaurants (both North and South Indian) as well as pure vegetarian and vegan cafes across Ubud, Seminyak, and Kuta."
+        },
+        {
+          "q": "What currency should I carry to Bali?",
+          "a": "The official currency is the Indonesian Rupiah (IDR). You can carry USD or international multi-currency forex debit cards to withdraw IDR easily from verified bank ATMs across Bali."
+        },
+        {
+          "q": "Is the famous Bali Jungle Swing safe?",
+          "a": "Yes, certified safety harnesses, double tethering ropes, and trained adventure crews supervise every swing at reputable parks like Aloha Ubud and Wanagiri."
+        },
+        {
+          "q": "Can honeymooners request special room decorations?",
+          "a": "Yes! We arrange complimentary honeymoon floral bed decorations and a welcome cake at your partner resorts in Ubud and Seminyak upon prior request at booking."
+        }
+      ],
+      "slug": "bali-tropical-paradise-and-temples",
+      "tagline": "Jungle swings and rice terraces of Ubud, sunset cliff temple of Uluwatu, and dramatic sea arches of Nusa Penida.",
+      "destination": "Bali",
+      "region": "Southeast Asia",
+      "country": "Indonesia",
+      "priceBands": {
+        "standard": "34,999",
+        "deluxe": "46,999",
+        "premium": "74,999"
+      },
+      "bestTime": {
+        "months": [
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "notes": "Dry, sunny season with low humidity, gentle tropical breezes, and optimal sea conditions for snorkeling and island hopping."
+      },
+      "difficulty": "Easy",
+      "visaInfo": "Visa on Arrival (VoA) available for Indian passport holders (approx. 500,000 IDR / ~₹2,700). Passport must have at least 6 months validity.",
+      "hotels": [
+        {
+          "city": "Ubud",
+          "name": "Maya Ubud Resort / Plataran Ubud Hotel",
+          "category": "4-Star Rainforest Resort",
+          "nights": 2
+        },
+        {
+          "city": "Kuta & Seminyak",
+          "name": "Courtyard by Marriott / Grand Mercure Seminyak",
+          "category": "4-Star Beachside Resort",
+          "nights": 3
+        }
+      ],
+      "transport": {
+        "mode": "Private AC Tourist Van + Speedboat",
+        "details": "Dedicated air-conditioned touring van with verified local Balinese chauffeur and reserved speedboats."
+      },
+      "thingsToCarry": [
+        "Light cotton summer clothing, beach swimwear, and waterproof footwear",
+        "Universal electrical travel adapter (Type C/F two round pins, 230V)",
+        "Reef-safe sunscreen, sunglasses, and mosquito repellent spray",
+        "Valid passport with at least 6 months validity from date of arrival"
+      ],
+      "tips": [
+        "Wear a respectful sarong and sash when entering sacred temple grounds (provided at entrances).",
+        "Beware of clever monkeys at Uluwatu and Monkey Forest; secure sunglasses and loose jewelry in bags.",
+        "Pay the official Bali Tourist Levy online at lovebali.baliprov.go.id prior to departure for expedited exit."
+      ],
+      "cancellationPolicy": [
+        "Free cancellation with 100% refund up to 15 days before departure date",
+        "50% cancellation fee between 14 and 7 days prior to departure",
+        "Non-refundable within 6 days of departure"
+      ],
+      "paymentTerms": "Book with 25% advance token; balance payable 10 days before departure.",
+      "galleryDetailed": [
+        {
+          "src": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Dramatic cliffside Kelingking Beach T-Rex view on Nusa Penida Bali",
+          "caption": "The monumental T-Rex limestone promontory soaring above turquoise waters on Nusa Penida",
+          "credit": "Oliver Sjöström",
+          "creditUrl": "https://unsplash.com/@ollivves",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Lush emerald stepped Tegalalang Rice Terraces in Ubud Bali",
+          "caption": "The world-famous layered emerald rice paddies of Tegalalang in Ubud",
+          "credit": "Paolo Nicolello",
+          "creditUrl": "https://unsplash.com/@paolonicolello",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Majestic Uluwatu cliff temple perched high above crashing ocean waves in Bali",
+          "caption": "Historic Uluwatu sea temple perched on dramatic 70-meter ocean cliffs",
+          "credit": "Guillaume Marques",
+          "creditUrl": "https://unsplash.com/@gmarq",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Balinese temple split gate Candi Bentar framed by tropical mountains",
+          "caption": "Traditional Balinese Candi Bentar gateway opening toward misted volcanic hills",
+          "credit": "Jeremy Bishop",
+          "creditUrl": "https://unsplash.com/@jeremybishop",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Jungle swing soaring high above tropical palm canopy in Ubud Bali",
+          "caption": "The exhilarating thrill of the Bali Jungle Swing soaring high over valley canopies",
+          "credit": "Harry Kessell",
+          "creditUrl": "https://unsplash.com/@harrykessell",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Romantic candlelit tables along Jimbaran beach for sunset seafood banquet",
+          "caption": "Candlelit sunset dinner tables on the soft sands of Jimbaran Bay",
+          "credit": "Sean Oulashin",
+          "creditUrl": "https://unsplash.com/@oulashin",
+          "source": "Unsplash"
+        }
+      ],
+      "seo": {
+        "title": "Bali Tour Package: 5N/6D Ubud, Seminyak & Nusa Penida",
+        "description": "Book 5N/6D Bali tour package with infiYATRA. Ubud jungle swing, Nusa Penida Kelingking beach, Uluwatu sunset, 4-star stays, and private cab transfers."
+      }
+    },
+    {
       "id": 104,
-      "title": "Dazzling Dubai: Skyscrapers, Golden Dunes & Grand Mosques",
+      "title": "Dazzling Dubai (4N/5D)",
       "location": "Dubai, United Arab Emirates",
       "price": "29,999",
       "rating": 4.9,
@@ -337,7 +962,7 @@
     },
     {
       "id": 102,
-      "title": "Vibrant Goa: Coastal Breezes, Forts & Latin Quarters",
+      "title": "Goa Beach Escape (3N/4D)",
       "location": "Goa, India",
       "price": "11,999",
       "rating": 4.9,
@@ -657,8 +1282,1003 @@
       }
     },
     {
+      "id": 106,
+      "title": "Himachal Serenity (6N/7D)",
+      "location": "Himachal, India",
+      "price": "19,999",
+      "rating": 4.9,
+      "reviews": 142,
+      "duration": "7 Days / 6 Nights",
+      "category": "Honeymoon",
+      "type": "Domestic",
+      "image": "https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&q=80&w=1200",
+      "link": "/trip/106",
+      "description": "Embark on an iconic mountain holiday through Himachal Pradesh, connecting the pine-clad colonial ridges of Shimla with the dramatic alpine valleys of Kullu and Manali. Wander along historic Mall Road in Shimla, pause before the gothic Christ Church on the Ridge, and soak in panoramic Himalayan peaks at Kufri. Journey alongside the turquoise Beas River into Manali, where deodar forests shelter the ancient wooden Hadimba Temple and Old Manali's bohemian cafes. Cross through the architectural marvel of the Atal Tunnel into Lahaul's rugged high-altitude desert, and feel the thrill of paragliding or zorbing across Solang Valley's grassy slopes. Round off your expedition with leisurely shopping and architectural garden walks in planned Chandigarh. Thoughtfully paced with seasoned hill drivers, handpicked four-star valley accommodations, wholesome daily breakfast and dinner, and end-to-end private transfers, this flagship route offers quintessential Himalayan tranquility.",
+      "images": [
+        "https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200"
+      ],
+      "groupSize": "Couples, Families & Friends (Small Groups)",
+      "nextBatch": "2026-11-15",
+      "featured": true,
+      "status": "Published",
+      "badge": "Popular",
+      "highlights": [
+        "Historic colonial walk along Shimla's Mall Road and Christ Church Ridge",
+        "Panoramic views of snow-dusted Himalayan ranges from Kufri",
+        "Scenic winding drive through Kullu Valley with river rafting stop",
+        "Hadimba Devi wooden temple and historic Vashisht natural hot springs",
+        "High-altitude mountain adventure crossing through the Atal Tunnel",
+        "Paragliding, zorbing, and quad-biking thrill at Solang Valley",
+        "Visit to the world-renowned Rock Garden and Sukhna Lake in Chandigarh"
+      ],
+      "inclusions": [
+        "6 nights premium 4-star accommodation (2N Shimla, 3N Manali, 1N Chandigarh)",
+        "Daily buffet breakfast and multi-course chef-curated dinner at all hotels",
+        "Dedicated private AC sedan or SUV for all intercity transfers and sightseeing",
+        "Excursion to Kufri, Solang Valley, and scenic passage through the Atal Tunnel",
+        "Guided walking tours of Shimla Mall Road, Ridge, and Old Manali",
+        "Toll taxes, state road taxes, parking charges, and driver allowances included",
+        "All applicable goods and service taxes (GST) included with no hidden fees",
+        "24x7 on-call mountain travel concierge and certified expert hill chauffeur"
+      ],
+      "exclusions": [
+        "Airfare or train tickets to and from Chandigarh or New Delhi",
+        "Adventure activity charges (paragliding, zorbing, river rafting, ski rentals)",
+        "Monument and botanical garden entrance fees or camera permits",
+        "Lunches and beverages not specified in the meal plan",
+        "Personal expenses such as laundry, phone calls, and tips",
+        "Emergency medical expenses, travel insurance, or evacuation costs",
+        "Costs incurred due to flight delays, roadblocks, landslides, or weather events",
+        "Rohtang Pass special NGT union taxi (can be added on request subject to permits)"
+      ],
+      "departures": [
+        {
+          "date": "2026-11-15",
+          "seatsTotal": 14,
+          "seatsAvailable": 6,
+          "priceOverride": "19,999",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2026-12-05",
+          "seatsTotal": 16,
+          "seatsAvailable": 9,
+          "priceOverride": "22,999",
+          "status": "Open"
+        },
+        {
+          "date": "2026-12-24",
+          "seatsTotal": 16,
+          "seatsAvailable": 4,
+          "priceOverride": "25,999",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2027-01-10",
+          "seatsTotal": 14,
+          "seatsAvailable": 10,
+          "priceOverride": "21,999",
+          "status": "Open"
+        }
+      ],
+      "captain": {
+        "name": "Captain Rohan Shah",
+        "role": "Lead Expedition Specialist",
+        "bio": "Expert in curated itineraries, cultural storytelling, and on-ground logistics.",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
+        "rating": 5,
+        "trips": 45
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Chandigarh & Scenic Climb to Shimla",
+          "description": "Meet your private chauffeur upon arrival at Chandigarh Airport or Railway Station and set off on the scenic ascending drive toward Shimla. Wind through the lush Shivalik foothills as the air turns refreshingly crisp and fragrant pine forests emerge along the winding highway. Check into your boutique mountain resort overlooking the green valley, refresh yourself with hot tea, and take a gentle sunset stroll along the nearby forested lane. Enjoy a rich North Indian dinner prepared with fresh mountain herbs before resting comfortably.",
+          "activities": [
+            "Airport Pickup",
+            "Scenic Foothill Drive",
+            "Mountain Sunset View"
+          ],
+          "meals": "Dinner Included",
+          "stay": "4-Star Mountain View Resort, Shimla"
+        },
+        {
+          "day": 2,
+          "title": "Kufri Alpine Excursion & Shimla Colonial Heritage Walk",
+          "description": "After a hearty breakfast, drive to Kufri at 2,630 meters altitude, renowned for its alpine meadows and wide vistas of the snow-clad Greater Himalayas. Explore the Himalayan National Park, capture pictures of native wildlife, and enjoy gentle walks among cedar woods. In the afternoon, return to Shimla for a guided walking tour along the pedestrian-only Mall Road. Admire the neo-gothic Christ Church on the Ridge, browse the bustling Lakkar Bazaar for wooden handicrafts, and savor evening treats at heritage bakeries before dinner.",
+          "activities": [
+            "Kufri Viewpoint",
+            "Himalayan National Park",
+            "Mall Road Walk",
+            "Christ Church"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Mountain View Resort, Shimla"
+        },
+        {
+          "day": 3,
+          "title": "Shimla to Manali Valley via Pandoh Dam & Kullu",
+          "description": "Depart early following a wholesome breakfast for the picturesque journey toward Manali. Follow the twisting canyon road as it snakes past Sundernagar Lake and the turquoise reservoir of Pandoh Dam. Continue through the orchard-strewn Kullu Valley running parallel to the roaring Beas River, stopping at an authentic Kullu shawl weaving cooperative and local apple orchard. Arrive in Manali by late afternoon, check in to your riverside valley resort, and listen to the relaxing rush of mountain water under star-studded alpine skies.",
+          "activities": [
+            "Pandoh Dam Stop",
+            "Kullu Shawl Weaving Visit",
+            "Beas River Scenic Drive"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Riverview Lodge, Manali"
+        },
+        {
+          "day": 4,
+          "title": "Ancient Hadimba Temple, Vashisht Springs & Old Manali",
+          "description": "Begin the morning exploring the ancient four-tiered pagoda Hadimba Temple, nestled deep within centuries-old giant deodar cedar trees. Cross the river to visit the sacred sage Vashisht temple complex, famous for its natural therapeutic sulfur hot springs where you can dip your feet. Spend the afternoon wandering through the vibrant cobblestone lanes of Old Manali, browsing indie artisan shops, tasting artisan trout, and visiting the peaceful Tibetan Buddhist monastery. Return to your lodge for evening campfire and a delicious buffet dinner.",
+          "activities": [
+            "Hadimba Temple",
+            "Vashisht Hot Springs",
+            "Old Manali Cafes",
+            "Tibetan Monastery"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Riverview Lodge, Manali"
+        },
+        {
+          "day": 5,
+          "title": "Solang Valley Adventures & Atal Tunnel Crossing",
+          "description": "Dedicate today to heart-pumping alpine adventures in the renowned Solang Valley. Depending on the season, partake in paragliding with panoramic views of Pir Panjal peaks, zorbing across lush grassy meadows, or winter snow sledding. Afterwards, continue north through the engineering marvel of the 9.02-kilometer Atal Tunnel, emerging on the North Portal to witness the stark, majestic mountain scenery of Sissu in Lahaul Valley. Return to Manali in the late afternoon for relaxed shopping along the Mall Road before your farewell mountain dinner.",
+          "activities": [
+            "Solang Paragliding",
+            "Atal Tunnel Drive",
+            "Sissu Waterfall Viewpoint"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Riverview Lodge, Manali"
+        },
+        {
+          "day": 6,
+          "title": "Manali to Chandigarh via Mandi & Bilaspur",
+          "description": "Savor your final mountain breakfast overlooking pine ridges before starting the gradual descent back toward the plains of Chandigarh. Trace the Beas River down the Kullu gorge, passing through historic Mandi and terraced farmland. Stop for fresh roadside refreshments and fruit preserves along the route. Arrive in the evening at your contemporary hotel in Chandigarh, unwind from the journey, and enjoy a comfortable dinner showcasing authentic Punjabi cuisine.",
+          "activities": [
+            "Mountain Descent",
+            "Mandi Scenic Stop",
+            "Chandigarh Arrival"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star City Hotel, Chandigarh"
+        },
+        {
+          "day": 7,
+          "title": "Chandigarh Rock Garden, Sukhna Lake & Departure",
+          "description": "After breakfast, check out and embark on a morning tour of Chandigarh's most celebrated landmarks. Marvel at the visionary recycled sculptures of Nek Chand at the iconic Rock Garden, and enjoy a serene lakeside walk beside the placid waters of Sukhna Lake against the backdrop of the Shivalik hills. Later, your chauffeur will transfer you to Chandigarh Airport or Railway Station in good time for your onward journey home with cherished Himalayan memories.",
+          "activities": [
+            "Nek Chand Rock Garden",
+            "Sukhna Lake Walk",
+            "Airport Transfer"
+          ],
+          "meals": "Breakfast Included",
+          "stay": "Departure Day (No Overnight), Chandigarh"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What is the best time to visit Shimla and Manali?",
+          "a": "March to June offers pleasant weather for sightseeing and outdoor adventures. December to February is ideal for travelers seeking heavy snowfall, skiing, and winter landscapes."
+        },
+        {
+          "q": "Is crossing the Atal Tunnel included in this itinerary?",
+          "a": "Yes, the itinerary includes a scenic drive through the 9-kilometer Atal Tunnel to witness the dramatic landscape shift into the Lahaul Valley at Sissu, subject to weather conditions."
+        },
+        {
+          "q": "Can Rohtang Pass be visited on this tour?",
+          "a": "Rohtang Pass permits are regulated by the National Green Tribunal and operate via local union taxis from May to October. We can easily arrange permits and union vehicles upon request."
+        },
+        {
+          "q": "What vehicle is provided for mountain travel?",
+          "a": "We provide sanitized, private AC sedans (Dzire/Etios) for couples and comfortable Toyota Innova Crysta SUVs for families, steered by seasoned mountain-certified chauffeurs."
+        },
+        {
+          "q": "Is river rafting in Kullu safe for beginners?",
+          "a": "Yes, commercial river rafting on the Beas River in Kullu is overseen by licensed river guides with compulsory life jackets and safety gear, suitable for beginners and families."
+        },
+        {
+          "q": "Are vegetarian and Jain meals available at the hotels?",
+          "a": "Yes, all our handpicked partner resorts provide extensive pure vegetarian and Jain food selections upon prior request at the time of booking."
+        }
+      ],
+      "slug": "himachal-serenity-shimla-manali",
+      "tagline": "Colonial hills of Shimla, roaring Beas rapids, Solang snow peaks, and cedar trails of Manali.",
+      "destination": "Himachal",
+      "region": "Himalayas",
+      "country": "India",
+      "priceBands": {
+        "standard": "19,999",
+        "deluxe": "25,999",
+        "premium": "38,999"
+      },
+      "bestTime": {
+        "months": [
+          "March",
+          "April",
+          "May",
+          "June",
+          "September",
+          "October",
+          "December"
+        ],
+        "notes": "Pleasant summer weather from March to June (15°C to 28°C); magical snowfall and winter adventures from December through February."
+      },
+      "difficulty": "Easy",
+      "visaInfo": "No visa or special permits needed for Indian travelers. Valid government photo identification required for hotel check-ins.",
+      "hotels": [
+        {
+          "city": "Shimla",
+          "name": "The Grand Willow Hill Resort",
+          "category": "4-Star Premium",
+          "nights": 2
+        },
+        {
+          "city": "Manali",
+          "name": "Solang Valley Riverside Retreat",
+          "category": "4-Star Riverview",
+          "nights": 3
+        },
+        {
+          "city": "Chandigarh",
+          "name": "Hotel Mountview / Hyatt Centric",
+          "category": "4-Star City Hotel",
+          "nights": 1
+        }
+      ],
+      "transport": {
+        "mode": "Private AC Sedan / Crysta SUV",
+        "details": "Dedicated vehicle with verified hill driver for all mountain journeys, tolls, and intercity routes."
+      },
+      "thingsToCarry": [
+        "Warm layered clothing, thermals, and windproof jacket for evenings",
+        "Sturdy walking or trekking shoes with good grip",
+        "UV sunglasses, high SPF sunblock, and moisturizing lip balm",
+        "Valid government photo ID cards for all travelers"
+      ],
+      "tips": [
+        "Carry motion sickness medication if you are prone to dizziness on winding hill roads.",
+        "Book paragliding and adventure sports at Solang Valley through government-certified pilots only.",
+        "Keep cash handy as mobile network connections can occasionally dip along remote mountain passes."
+      ],
+      "cancellationPolicy": [
+        "Free cancellation and 100% refund up to 15 days before departure date",
+        "50% cancellation fee between 14 and 7 days prior to departure",
+        "Non-refundable within 6 days of departure"
+      ],
+      "paymentTerms": "Book with 25% advance token; balance payable 10 days before departure.",
+      "galleryDetailed": [
+        {
+          "src": "https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Snowy pine forest and alpine peaks of Manali Himachal Pradesh",
+          "caption": "Pristine pine forests and snow-capped peaks framing Solang Valley in Manali",
+          "credit": "Ashwini Chaudhary",
+          "creditUrl": "https://unsplash.com/@ashwinichaudhary",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Colonial Christ Church on the Ridge in Shimla Himachal Pradesh",
+          "caption": "Historic Christ Church on the Ridge overlooking mist-wrapped Shimla",
+          "credit": "Aditya Chache",
+          "creditUrl": "https://unsplash.com/@adityachache",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Lush green Kullu valley and rushing Beas river",
+          "caption": "The roaring turquoise waters of the Beas River carving through Kullu Valley",
+          "credit": "Gaurav K",
+          "creditUrl": "https://unsplash.com/@gaurav_k",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Ancient wooden Hadimba Devi temple nestled in cedar woods",
+          "caption": "The pagoda-style wooden sanctuary of Hadimba Temple enveloped by deodar trees",
+          "credit": "Shashank Kumar",
+          "creditUrl": "https://unsplash.com/@shashankkumar",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&q=80&w=1200",
+          "alt": "High altitude Atal Tunnel North Portal scenic landscape in Sissu",
+          "caption": "The dramatic mountain passes emerging beyond the Atal Tunnel into Lahaul",
+          "credit": "Vivek Sharma",
+          "creditUrl": "https://unsplash.com/@vivek_sharma",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Scenic Sukhna Lake in Chandigarh with Shivalik hills backdrop",
+          "caption": "Serene reflective waters of Sukhna Lake with the Shivalik range in the distance",
+          "credit": "Bailey Zindel",
+          "creditUrl": "https://unsplash.com/@baileyzindel",
+          "source": "Unsplash"
+        }
+      ],
+      "seo": {
+        "title": "Himachal Tour Package: 6N/7D Shimla, Manali & Solang",
+        "description": "Book 6N/7D Himachal tour package with infiYATRA. Explore Shimla, Kufri, Manali, Solang Valley and Atal Tunnel with 4-star stays, meals and private cab."
+      }
+    },
+    {
+      "id": 112,
+      "title": "Iceland Aurora & Glaciers (6N/7D)",
+      "location": "Iceland, Iceland",
+      "price": "1,48,000",
+      "rating": 4.9,
+      "reviews": 142,
+      "duration": "7 Days / 6 Nights",
+      "category": "Honeymoon",
+      "type": "International",
+      "image": "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?auto=format&fit=crop&q=80&w=1200",
+      "link": "/trip/112",
+      "description": "Journey to the edge of the Arctic Circle on an extraordinary expedition across the Land of Fire and Ice. Begin in the colorful Nordic capital of Reykjavik before heading into the wild volcanic landscapes of Iceland's famed Golden Circle. Stand in awe as the Strokkur geyser hurls steaming boiling water into the crisp polar sky, marvel at the two-tiered torrents of Gullfoss waterfall, and walk the continental rift valley between North American and Eurasian tectonic plates at Thingvellir National Park. Venture along the dramatic southern coastline, strolling behind the roaring curtain of Seljalandsfoss waterfall and walking beneath towering basalt sea stacks along the brooding volcanic sands of Reynisfjara Black Sand Beach. Watch colossal turquoise icebergs drift out to the Atlantic at Jokulsarlon Glacier Lagoon and glitter on Diamond Beach. By night, chase the ethereal emerald ribbons of the Aurora Borealis under dark Nordic skies, and soak away in the mineral-rich milky geothermal waters of the world-famous Blue Lagoon.",
+      "images": [
+        "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1520769945061-0a448c445915?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&q=80&w=1200"
+      ],
+      "groupSize": "Couples, Nature Photographers & Small Groups",
+      "nextBatch": "2026-11-15",
+      "featured": true,
+      "status": "Published",
+      "badge": "Exclusive",
+      "highlights": [
+        "Guided Northern Lights (Aurora Borealis) hunting tour with professional night photographer",
+        "Walk the Mid-Atlantic tectonic rift valley at UNESCO-listed Thingvellir National Park",
+        "Witness erupting boiling geysers at Geysir and thundering cascades at Gullfoss",
+        "Walk behind the cascading veil of Seljalandsfoss and feel the mist of Skogafoss",
+        "Explore the surreal basalt sea columns and black volcanic sands of Reynisfjara Beach",
+        "Marvel at floating glacial icebergs at Jokulsarlon Lagoon and glistening Diamond Beach",
+        "Rejuvenating soak in the mineral-rich geothermal waters of the world-famous Blue Lagoon"
+      ],
+      "inclusions": [
+        "6 nights verified 4-star Nordic hotels (2N Reykjavik, 2N Vik, 1N Selfoss, 1N Keflavik)",
+        "Daily hearty Nordic buffet breakfast and multi-course chef-curated dinners",
+        "Dedicated private heated winter touring vehicle with certified Icelandic driver-guide",
+        "Comfort admission ticket to the world-famous Blue Lagoon with towel, drink & silica mask",
+        "Guided Northern Lights (Aurora Borealis) night tracking excursion with photo assistance",
+        "Comprehensive Golden Circle tour (Thingvellir, Strokkur Geysir, and Gullfoss falls)",
+        "South Coast tour including Seljalandsfoss, Skogafoss, Reynisfjara, and Jokulsarlon",
+        "All national park permits, geothermal conservation fees, and vehicle toll taxes included"
+      ],
+      "exclusions": [
+        "International roundtrip airfare to and from Keflavik, Iceland (KEF)",
+        "Schengen Tourist Visa fees and biometric processing appointments",
+        "Lunches and alcoholic drinks not specified in the meal plan",
+        "Optional glacier ice cave exploration or snowmobile rides on Vatnajokull",
+        "Personal expenses such as thermal gear rentals, laundry, and guide tips",
+        "Comprehensive international travel medical and emergency rescue insurance",
+        "Costs arising from severe winter storm road closures or flight re-routings",
+        "Sightseeing excursions beyond designated itinerary hours"
+      ],
+      "departures": [
+        {
+          "date": "2026-11-15",
+          "seatsTotal": 12,
+          "seatsAvailable": 4,
+          "priceOverride": "1,48,000",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2026-12-05",
+          "seatsTotal": 14,
+          "seatsAvailable": 7,
+          "priceOverride": "1,58,000",
+          "status": "Open"
+        },
+        {
+          "date": "2026-12-22",
+          "seatsTotal": 14,
+          "seatsAvailable": 2,
+          "priceOverride": "1,78,000",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2027-01-18",
+          "seatsTotal": 12,
+          "seatsAvailable": 8,
+          "priceOverride": "1,52,000",
+          "status": "Open"
+        }
+      ],
+      "captain": {
+        "name": "Captain Rohan Shah",
+        "role": "Lead Expedition Specialist",
+        "bio": "Expert in curated itineraries, cultural storytelling, and on-ground logistics.",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
+        "rating": 5,
+        "trips": 45
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Reykjavik & Nordic Capital Harbor Walk",
+          "description": "Touch down at Keflavik International Airport (KEF), greeted by the fresh sub-arctic air of Iceland. Board your premium heated private transport and drive across the otherworldly moss-covered lava fields of the Reykjanes peninsula into Reykjavik. Check into your contemporary 4-star hotel in the city center. Take a relaxed evening stroll along Laugavegur shopping street, admire the striking modern architecture of Harpa Concert Hall reflecting the harbor waters, and gaze up at the towering spire of Hallgrimskirkja church. Savor a comforting dinner featuring fresh Nordic salmon and warm root vegetables.",
+          "activities": [
+            "Airport Pickup",
+            "Lava Field Drive",
+            "Harpa Concert Hall",
+            "Hallgrimskirkja Viewpoint"
+          ],
+          "meals": "Dinner Included",
+          "stay": "4-Star City Hotel, Reykjavik"
+        },
+        {
+          "day": 2,
+          "title": "The Golden Circle: Thingvellir, Geysir & Thundering Gullfoss",
+          "description": "Embark on Iceland's most famous scenic route, the Golden Circle. First, explore Thingvellir National Park, where the North American and Eurasian tectonic plates are actively pulling apart, leaving dramatic canyon walkways where the world's oldest parliament met in 930 AD. Continue to the Haukadalur geothermal valley to watch the Strokkur geyser reliably erupt every 6 to 10 minutes, shooting boiling columns 30 meters high. Next, marvel at Gullfoss (Golden Falls) as glacier-fed waters plummet down two massive rocky steps into a rugged canyon. Return to Reykjavik for dinner.",
+          "activities": [
+            "Thingvellir Tectonic Rift",
+            "Strokkur Geysir Eruptions",
+            "Gullfoss Golden Waterfall"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star City Hotel, Reykjavik"
+        },
+        {
+          "day": 3,
+          "title": "South Coast Waterfalls, Seljalandsfoss & Skogafoss",
+          "description": "Travel east along Iceland's scenic Ring Road, hugged by dramatic sea cliffs and distant snow-covered volcanoes. Pause at Seljalandsfoss, one of the world's rare waterfalls where a secure footpath allows you to walk completely behind the thundering water curtain. Continue to the mighty 60-meter drop of Skogafoss, often crowned with vivid double rainbows in the mist. Visit the nearby Skogar Folk Museum to see traditional turf-roofed farmhouses. Arrive by late afternoon in the coastal village of Vik, check into your boutique hotel, and prepare for night aurora monitoring.",
+          "activities": [
+            "Seljalandsfoss Walk-Behind Path",
+            "Skogafoss Rainbow Waterfall",
+            "Skogar Turf Houses",
+            "Vik Coastal Village"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Coastal Resort, Vik & South Coast"
+        },
+        {
+          "day": 4,
+          "title": "Reynisfjara Black Sand Beach & Jokulsarlon Glacier Lagoon",
+          "description": "Spend the morning walking across the jet-black volcanic sands of Reynisfjara Beach, marveling at the colossal hexagonal basalt sea columns and the roaring Atlantic breakers against Reynisdrangar sea stacks. Drive east beneath the massive Vatnajokull ice cap to the breathtaking Jokulsarlon Glacier Lagoon. Watch enormous luminescent blue icebergs calved from the glacier drift slowly toward the sea. Cross the road to Diamond Beach, where sculpted clear ice blocks wash ashore and sparkle like giant diamonds on the pitch-black sand. Return to Vik for dinner.",
+          "activities": [
+            "Reynisfjara Basalt Columns",
+            "Jokulsarlon Glacier Lagoon",
+            "Diamond Beach Ice Crystals"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Coastal Resort, Vik & South Coast"
+        },
+        {
+          "day": 5,
+          "title": "Lava Fields of Eldhraun, Kerid Crater & Night Aurora Chase",
+          "description": "Journey through Eldhraun, the world's largest moss-draped volcanic lava field, created during the catastrophic 1783 Laki eruption. Stop at the dramatic Kerid volcanic crater, gazing down at its vibrant aquamarine mineral lake nestled inside deep crimson volcanic rock walls. Continue to your riverside hotel in Selfoss. After dinner, set out on a dedicated guided Northern Lights hunting excursion into dark, cloud-free valleys far from city lights. Watch in silent wonder as luminous green and violet auroral curtains ripple across the Arctic night sky.",
+          "activities": [
+            "Eldhraun Mossy Lava Field",
+            "Kerid Crater Lake",
+            "Guided Northern Lights Night Hunt"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Riverside Hotel, Golden Circle & Selfoss"
+        },
+        {
+          "day": 6,
+          "title": "Geothermal Wonders & Blue Lagoon Thermal Spa Experience",
+          "description": "After breakfast, drive west across the boiling geothermal vents and rugged black hills of the Reykjanes peninsula. Arrive at the world-renowned Blue Lagoon geothermal spa. Slip into the 38°C to 40°C mineral-rich milky blue waters, naturally heated by subterranean volcanic aquifers and infused with skin-nourishing silica and algae. Apply a therapeutic silica mud mask from the in-water bar and relax with a refreshing beverage while steam drifts across black volcanic lava rocks. Transfer to your airport hotel for a celebratory farewell dinner.",
+          "activities": [
+            "Reykjanes Geothermal Drive",
+            "Blue Lagoon Premium Admission",
+            "Silica Mud Mask Treatment",
+            "Farewell Dinner"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Geothermal Hotel, Blue Lagoon & Keflavik"
+        },
+        {
+          "day": 7,
+          "title": "Keflavik Airport Departure & Memories of Fire and Ice",
+          "description": "Savor your final Nordic breakfast with artisan rye breads, smoked salmon, and hot skyr. Take a morning breath of the crisp sub-arctic sea air before your chauffeur transfers you directly to Keflavik International Airport (KEF). Check in for your flight home, gazing down over the glaciers, fjords, and volcanic peaks of Iceland as you soar homeward with extraordinary memories of northern magic.",
+          "activities": [
+            "Nordic Breakfast",
+            "Keflavik Airport Transfer",
+            "Flight Departure"
+          ],
+          "meals": "Breakfast Included",
+          "stay": "Departure Day (No Overnight), Keflavik"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "When is the best time to see the Northern Lights in Iceland?",
+          "a": "September through March offers the darkest skies and highest probability of solar auroral activity. Our expert guides track cloud coverage and solar storms to position you in prime dark sky spots."
+        },
+        {
+          "q": "Is admission to the Blue Lagoon included in the package?",
+          "a": "Yes, Comfort Admission to the Blue Lagoon is fully included, providing a complimentary beverage from the swim-up bar, a silica mud face mask, and towel rental."
+        },
+        {
+          "q": "Do Indian passport holders require a visa for Iceland?",
+          "a": "Yes, a valid Schengen Tourist Visa is required. Our visa support team assists with verified hotel confirmations, detailed itineraries, and application document checklists."
+        },
+        {
+          "q": "Can vegetarian and Indian meals be arranged in Iceland?",
+          "a": "Yes! Reykjavik and coastal towns feature excellent Indian and vegetarian dining establishments. Our partner hotels also provide hearty vegetarian pasta, soups, and vegetable risottos."
+        },
+        {
+          "q": "How cold does it get in Iceland during winter?",
+          "a": "Due to the warming North Atlantic Gulf Stream, coastal winter temperatures in Iceland typically hover around -2°C to +4°C, which is warmer than winter in New York or Chicago, though windproof clothing is essential."
+        },
+        {
+          "q": "Are credit cards widely accepted across Iceland?",
+          "a": "Iceland is virtually a cashless society. International Visa and Mastercard credit and debit cards with chip and PIN are accepted everywhere, even at rural restrooms and roadside cafes."
+        }
+      ],
+      "slug": "iceland-aurora-and-fire-ice",
+      "tagline": "Dancing Northern Lights, thundering waterfalls of Gullfoss and Skogafoss, Reynisfjara black sand beach, and Blue Lagoon geothermal springs.",
+      "destination": "Iceland",
+      "region": "Nordic Europe",
+      "country": "Iceland",
+      "priceBands": {
+        "standard": "1,48,000",
+        "deluxe": "1,88,000",
+        "premium": "2,65,000"
+      },
+      "bestTime": {
+        "months": [
+          "September",
+          "October",
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "notes": "Optimal Northern Lights viewing season from September to March with dark clear winter nights and solar activity; summer months (June-August) offer 24-hour Midnight Sun."
+      },
+      "difficulty": "Easy",
+      "visaInfo": "Schengen Visa required for Indian passport holders (processed via Embassy of Iceland or Denmark VFS). Full documentation assistance provided.",
+      "hotels": [
+        {
+          "city": "Reykjavik",
+          "name": "Fosshotel Reykjavik / Grand Hotel",
+          "category": "4-Star City Hotel",
+          "nights": 2
+        },
+        {
+          "city": "Vik & South Coast",
+          "name": "Hotel Vik i Myrdal / Black Beach Suites",
+          "category": "4-Star Coastal Resort",
+          "nights": 2
+        },
+        {
+          "city": "Golden Circle & Selfoss",
+          "name": "Hotel Selfoss & Spa",
+          "category": "4-Star Riverside Hotel",
+          "nights": 1
+        },
+        {
+          "city": "Blue Lagoon & Keflavik",
+          "name": "Courtyard by Marriott Reykjavik Keflavik",
+          "category": "4-Star Geothermal Hotel",
+          "nights": 1
+        }
+      ],
+      "transport": {
+        "mode": "Private Heated Winter-Grade Minibus / SUV",
+        "details": "High-clearance vehicle with studded winter tires, Wi-Fi, and certified Icelandic driver-guide."
+      },
+      "thingsToCarry": [
+        "Heavy windproof and waterproof parka down jacket with thermal base layers",
+        "Waterproof trekking boots with ankle support and anti-slip snow crampons",
+        "Woolen beanie, fleece neck gaiter, and touch-screen thermal gloves",
+        "Camera with manual exposure mode and sturdy tripod for Northern Lights photography"
+      ],
+      "tips": [
+        "Always check the Icelandic meteorological forecast (vedur.is) and road safety alerts (road.is) daily.",
+        "Do not approach the shoreline at Reynisfjara Beach; dangerous sneaker waves can surge unexpectedly high.",
+        "Remove silver jewelry before entering the Blue Lagoon, as natural silica can temporarily tarnish silver."
+      ],
+      "cancellationPolicy": [
+        "Free cancellation with 100% refund up to 21 days before departure date",
+        "50% cancellation fee between 20 and 10 days prior to departure",
+        "Non-refundable within 9 days of departure"
+      ],
+      "paymentTerms": "Book with 25% advance token; balance payable 15 days before departure.",
+      "galleryDetailed": [
+        {
+          "src": "https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Vibrant emerald green Northern Lights Aurora Borealis dancing across Arctic sky",
+          "caption": "The mystical green ribbons of the Aurora Borealis dancing across Iceland's starry night sky",
+          "credit": "Joshua Earle",
+          "creditUrl": "https://unsplash.com/@joshuaearle",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Thundering Gullfoss waterfall frozen with snow and mist in Golden Circle",
+          "caption": "The roaring golden torrents of Gullfoss waterfall plunging into the deep volcanic canyon",
+          "credit": "Jon Flobrant",
+          "creditUrl": "https://unsplash.com/@jonflobrant",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Reynisfjara black sand beach with dramatic basalt columns and crashing waves",
+          "caption": "Colossal basalt sea columns and midnight black sand beach of Reynisfjara near Vik",
+          "credit": "Luca Bravo",
+          "creditUrl": "https://unsplash.com/@lucabravo",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Blue Lagoon geothermal spa in Iceland with steam rising over milky blue waters",
+          "caption": "Soaking in the mineral-rich milky geothermal thermal waters of the Blue Lagoon",
+          "credit": "Tim Trad",
+          "creditUrl": "https://unsplash.com/@timtrad",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1520769945061-0a448c445915?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Crystal clear icebergs stranded on Diamond Beach in Jokulsarlon Iceland",
+          "caption": "Glacial ice blocks glittering like giant diamonds on the black sand of Diamond Beach",
+          "credit": "Davide Cantelli",
+          "creditUrl": "https://unsplash.com/@cant89",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Seljalandsfoss waterfall cascading down green cliff with path behind water",
+          "caption": "The dramatic veil of Seljalandsfoss waterfall cascading 60 meters from volcanic cliffs",
+          "credit": "Dan Gold",
+          "creditUrl": "https://unsplash.com/@danielcgold",
+          "source": "Unsplash"
+        }
+      ],
+      "seo": {
+        "title": "Iceland Tour Package: 6N/7D Northern Lights & Glaciers",
+        "description": "Book 6N/7D Iceland tour with infiYATRA. See Northern Lights, Golden Circle, Black Sand Beach, and Blue Lagoon with 4-star stays and private heated vehicle."
+      }
+    },
+    {
+      "id": 113,
+      "title": "Classic Japan (6N/7D)",
+      "location": "Japan, Japan",
+      "price": "1,42,000",
+      "rating": 4.9,
+      "reviews": 142,
+      "duration": "7 Days / 6 Nights",
+      "category": "Nature",
+      "type": "International",
+      "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+      "link": "/trip/113",
+      "description": "Experience the magical harmony of ancient traditions and futuristic marvels with infiYATRA's 7-day Classic Japan Golden Route expedition. Your voyage commences amidst the neon skyscapes and bustling crosswalks of Tokyo, where century-old Senso-ji Temple rubs shoulders with vibrant Harajuku youth culture and cutting-edge digital art installations at teamLab Planets. Ascend into the peaceful mountain atmosphere of Hakone for postcard-perfect vistas of sacred Mount Fuji, taking an exhilarating ride on the Hakone Komagatake Ropeway and relaxing in therapeutic natural volcanic onsens followed by an authentic multi-course Kaiseki dinner. Board the lightning-fast Shinkansen bullet train hurtling across Honshu to Kyoto, the historic heart of Japan. Wander through thousands of vermilion torii gates at Fushimi Inari Taisha, listen to rustling green stalks in the ethereal Arashiyama Bamboo Grove, admire the glimmering gold pavilion of Kinkaku-ji, and stroll through lantern-lit alleyways of Gion seeking glimpses of graceful Geishas. With 4-star handpicked accommodations, dedicated English-speaking local guides, and seamless transport arrangements, Japan's finest wonders unfold effortlessly.",
+      "images": [
+        "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1528164344705-475426879c0d?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80&w=1200"
+      ],
+      "groupSize": "Couples, Families & Solo Explorers",
+      "nextBatch": "2026-11-15",
+      "featured": true,
+      "status": "Published",
+      "badge": "Bestseller",
+      "highlights": [
+        "Marvel at sacred Mount Fuji and cruise scenic Lake Ashi aboard a pirate ship",
+        "Ride the famous Shinkansen bullet train across Honshu at speeds up to 285 km/h",
+        "Immerse yourself in digital futuristic art exhibits at teamLab Planets Tokyo",
+        "Walk through thousands of iconic vermilion torii gates at Fushimi Inari Taisha",
+        "Wander amidst the whispering green stalks of the Arashiyama Bamboo Grove",
+        "Soak in restorative volcanic mineral hot springs (onsen) in Hakone",
+        "Explore historic Gion geisha district and the glittering Golden Pavilion Kinkaku-ji"
+      ],
+      "inclusions": [
+        "6 nights accommodation in premium 4-star hotels and authentic Hakone Onsen resort",
+        "Daily buffet breakfast and 1 traditional multi-course Kaiseki dinner in Hakone",
+        "Shinkansen bullet train reserved ordinary car ticket from Odawara to Kyoto",
+        "Hakone sightseeing pass including Lake Ashi pirate cruise and Komagatake ropeway",
+        "Entry ticket to teamLab Planets Tokyo interactive digital art exhibition",
+        "Full-day guided Tokyo city sightseeing tour with English-speaking licensed guide",
+        "Full-day guided Kyoto sightseeing tour covering Fushimi Inari, Arashiyama, and Kinkaku-ji",
+        "Private airport transfers upon arrival in Tokyo and departure from Kyoto / Osaka",
+        "Pocket Wi-Fi device or Japan eSIM card with unlimited high-speed mobile data",
+        "All applicable Japanese consumption taxes, hotel bath taxes, and service charges"
+      ],
+      "exclusions": [
+        "International return economy flight tickets between India and Japan",
+        "Japan tourist visa processing and single-entry visa fee",
+        "Lunches and dinners not explicitly specified in the meal plan",
+        "Mandatory overseas travel insurance covering medical emergency and baggage loss",
+        "Optional activities such as traditional Kimono rental or tea ceremony experience",
+        "Early check-in and late checkout fees at hotels",
+        "Personal expenses including laundry, phone calls, beverages, and tips for guides",
+        "City tourist tax collected directly by Kyoto municipality (approx. 200-500 JPY per night)"
+      ],
+      "departures": [
+        {
+          "date": "2026-11-15",
+          "seatsTotal": 14,
+          "seatsAvailable": 6,
+          "priceOverride": "1,42,000",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2026-12-05",
+          "seatsTotal": 16,
+          "seatsAvailable": 9,
+          "priceOverride": "1,48,000",
+          "status": "Open"
+        },
+        {
+          "date": "2027-03-25",
+          "seatsTotal": 16,
+          "seatsAvailable": 3,
+          "priceOverride": "1,65,000",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2027-04-05",
+          "seatsTotal": 14,
+          "seatsAvailable": 4,
+          "priceOverride": "1,68,000",
+          "status": "Filling Fast"
+        }
+      ],
+      "captain": {
+        "name": "Captain Rohan Shah",
+        "role": "Lead Expedition Specialist",
+        "bio": "Expert in curated itineraries, cultural storytelling, and on-ground logistics.",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
+        "rating": 5,
+        "trips": 45
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Tokyo | Welcome to Shinjuku",
+          "description": "Touch down at Tokyo Haneda or Narita International Airport where an infiYATRA airport representative welcomes you and escorts you via private airport transfer to your upscale hotel in Shinjuku. After settling in and freshening up, take your first evening stroll into the bustling Shinjuku district. Marvel at the kaleidoscopic glow of digital billboards, wander past the legendary Godzilla head, and sample your first steaming bowls of artisanal ramen or crispy gyoza at local izakayas before resting up for an exhilarating adventure.",
+          "activities": [
+            "Airport Meet & Greet",
+            "Private Hotel Transfer",
+            "Shinjuku Neon Evening Walk",
+            "Ramen & Izakaya Dining"
+          ],
+          "meals": "Dinner Included",
+          "stay": "4-Star City Hotel, Tokyo"
+        },
+        {
+          "day": 2,
+          "title": "Tokyo Metropolis: Senso-ji, Shibuya Crossing & Harajuku",
+          "description": "Begin your exploration with a hearty breakfast before meeting your guide for a full-day Tokyo immersion. Visit Senso-ji, Tokyo's oldest Buddhist temple in historic Asakusa, browsing lively Nakamise shopping street for traditional souvenirs and matcha treats. Next, immerse yourself in youth trends along Harajuku’s Takeshita Street before finding quiet serenity beneath the towering camphor trees of Meiji Jingu Shrine. Conclude your afternoon navigating the famous scramble crossing at Shibuya and snapping photos with the bronze statue of faithful Hachiko.",
+          "activities": [
+            "Senso-ji Temple & Asakusa",
+            "Nakamise Dori Shopping",
+            "Meiji Jingu Shrine",
+            "Harajuku Takeshita Street",
+            "Shibuya Scramble Crossing"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star City Hotel, Tokyo"
+        },
+        {
+          "day": 3,
+          "title": "TeamLab Planets, Akihabara & Tokyo Bay Cruise",
+          "description": "Step into the future today with pre-booked morning admission to teamLab Planets in Toyosu, where you walk barefoot through immersive interactive digital water and blooming light crystal exhibits. Afterwards, head over to Akihabara Electric Town to discover multi-level electronics plazas and anime collectibles. Later in the afternoon, embark on a relaxing Tokyo Bay sightseeing cruise from Hinode Pier to Odaiba, admiring the illuminated Rainbow Bridge and miniature Statue of Liberty before enjoying dinner overlooking the bay waterfront.",
+          "activities": [
+            "teamLab Planets Digital Museum",
+            "Akihabara Electric Town",
+            "Tokyo Bay Waterfront Cruise",
+            "Odaiba Seaside Park"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star City Hotel, Tokyo"
+        },
+        {
+          "day": 4,
+          "title": "Hakone & Mount Fuji Scenic Excursion & Onsen Kaiseki",
+          "description": "Bid farewell to Tokyo as your private transfer heads toward picturesque Hakone National Park at the foot of Mount Fuji. Embark on a pirate ship cruise across shimmering Lake Ashi offering breathtaking views of sacred Fuji reflected on calm waters. Board the Hakone Ropeway gliding above smoking sulfuric vents of Owakudani volcanic valley, where you can taste boiled black eggs reputed to prolong longevity. Check into your traditional onsen resort, soak in mineral hot springs, and savor an authentic Kaiseki banquet dinner.",
+          "activities": [
+            "Mount Fuji Vistas",
+            "Lake Ashi Pirate Ship Cruise",
+            "Hakone Ropeway Cable Car",
+            "Owakudani Volcanic Valley",
+            "Traditional Onsen Mineral Baths"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Onsen Resort, Hakone"
+        },
+        {
+          "day": 5,
+          "title": "Shinkansen Bullet Train to Kyoto & Gion Geisha District",
+          "description": "Following breakfast, transfer to Odawara Station to board the sleek Shinkansen bullet train racing along the Pacific coastline to cultural Kyoto at speeds exceeding 285 km/h. Arrive in Kyoto by noon and check into your centrally located hotel. In the late afternoon, join a walking tour through historic Gion, Kyoto's premier geisha quarter. Amble down preserved wooden Machiya shopfronts of Hanami-koji Lane and Shirakawa canal, soaking in the timeless atmosphere as paper lanterns flicker to life at dusk.",
+          "activities": [
+            "Shinkansen Bullet Train Ride",
+            "Kyoto Arrival",
+            "Historic Gion Walking Tour",
+            "Hanami-koji Lantern Stroll"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Heritage Hotel, Kyoto"
+        },
+        {
+          "day": 6,
+          "title": "Kyoto Shrines & Arashiyama Bamboo Grove",
+          "description": "Embark on an enchanting full-day tour of Kyoto’s most treasured UNESCO World Heritage sites. Start early at Fushimi Inari Taisha, hiking through thousands of bright vermilion torii gates winding up the sacred forested mountain. Continue to western Kyoto to step inside the mesmerizing Arashiyama Bamboo Grove and cross the historic Togetsukyo Bridge. Conclude your journey admiring Kinkaku-ji, the Golden Pavilion whose top two floors are covered in pure gold leaf shimmering over a tranquil mirror pond.",
+          "activities": [
+            "Fushimi Inari Torii Gate Hike",
+            "Arashiyama Bamboo Sanctuary",
+            "Togetsukyo Bridge",
+            "Kinkaku-ji Golden Pavilion"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Heritage Hotel, Kyoto"
+        },
+        {
+          "day": 7,
+          "title": "Kyoto to Osaka Departure | Sayonara Japan",
+          "description": "Savor your final Japanese breakfast at the hotel and spend your morning gathering handcrafted souvenirs, green tea delicacies, and ceramics in downtown Kyoto or Nishiki Market. At the scheduled time, our private transfer picks you up from the hotel lobby and drives you smoothly to Osaka Kansai International Airport (KIX) or Tokyo Haneda for your return flight back to India, carrying unforgettable memories of the Land of the Rising Sun with infiYATRA.",
+          "activities": [
+            "Nishiki Food Market Morning Stroll",
+            "Souvenir Shopping",
+            "Hotel Checkout",
+            "Airport Departure Transfer"
+          ],
+          "meals": "Breakfast Included",
+          "stay": "Departure Day (No Stay), Kyoto"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What is the best season to book this Japan Golden Route tour?",
+          "a": "Spring (late March to mid-April) is famed for cherry blossoms (Sakura), while autumn (October to November) offers glorious vibrant fall foliage and crisp clear skies with the best Fuji visibility. Both seasons are prime times to travel."
+        },
+        {
+          "q": "Do Indian passport holders require a tourist visa for Japan?",
+          "a": "Yes, Indian citizens require a valid Japan tourist visa prior to departure. infiYATRA assists with full documentation guidance, hotel booking vouchers, and itinerary cover letters for submission to the VFS Japan application center."
+        },
+        {
+          "q": "Is luggage forwarding available between Tokyo and Kyoto?",
+          "a": "Yes! Japan's luggage courier service (Takkyubin) is world-renowned. For overnight stays in Hakone, you can conveniently ship your large suitcase directly to Kyoto for approx. 2,000 JPY, traveling light with an overnight bag."
+        },
+        {
+          "q": "Are vegetarian and Indian food options readily available in Japan?",
+          "a": "Yes, major cities like Tokyo and Kyoto have numerous authentic Indian restaurants. Furthermore, our guides help you navigate vegetarian-friendly Japanese ramen, soba, tempura, and convenience store favorites."
+        },
+        {
+          "q": "What are the rules for enjoying the traditional onsen hot springs in Hakone?",
+          "a": "Traditional Japanese onsens are gender-separated and entered without clothing after thoroughly washing at the shower stations. Guests with small tattoos can be provided waterproof covers or book private family onsens."
+        },
+        {
+          "q": "How fast does the Shinkansen bullet train travel?",
+          "a": "The Tokaido Shinkansen bullet train operates at operational speeds up to 285 km/h, delivering an ultra-smooth, punctually timed, and scenic journey between the Tokyo region and Kyoto in just over two hours."
+        }
+      ],
+      "slug": "japan-sakura-and-bullet-train",
+      "tagline": "Bullet trains across Honshu, glowing Shinjuku skyscapes, sacred Mount Fuji in Hakone, and thousand-torii gates of Kyoto.",
+      "destination": "Japan",
+      "region": "East Asia",
+      "country": "Japan",
+      "priceBands": {
+        "standard": "1,42,000",
+        "deluxe": "1,85,000",
+        "premium": "2,55,000"
+      },
+      "bestTime": {
+        "months": [
+          "March",
+          "April",
+          "May",
+          "October",
+          "November"
+        ],
+        "notes": "Spring (late March to mid-April) brings blooming pink Sakura cherry blossoms; Autumn (October to November) features vibrant crimson Japanese maples and crystal-clear skies for Mount Fuji views."
+      },
+      "difficulty": "Easy",
+      "visaInfo": "Single-entry Japan Tourist Visa required for Indian passport holders. Our visa operations desk provides end-to-end document review, appointment guidance, and confirmed itinerary vouchers.",
+      "hotels": [
+        {
+          "city": "Tokyo",
+          "name": "Hotel Gracery Shinjuku / Shinjuku Granbell",
+          "category": "4-Star City Hotel",
+          "nights": 3
+        },
+        {
+          "city": "Hakone",
+          "name": "Hakone Ashinoko Hanaori Onsen Resort",
+          "category": "4-Star Onsen Resort",
+          "nights": 1
+        },
+        {
+          "city": "Kyoto",
+          "name": "Hotel Keihan Kyoto Grande / Miyako Hotel",
+          "category": "4-Star Heritage Hotel",
+          "nights": 2
+        }
+      ],
+      "transport": {
+        "mode": "JR Shinkansen Bullet Train & Private Transfers",
+        "details": "Reserved ordinary car Shinkansen ticket between Odawara and Kyoto, Hakone Freepass with pirate ship cruise and ropeway, and private airport arrival and departure transfers."
+      },
+      "thingsToCarry": [
+        "Comfortable slip-on walking shoes suitable for frequent temple visits",
+        "Japan Rail compatible lightweight luggage or small travel backpack for Hakone",
+        "Universal electrical travel adapter (Type A flat two-pin plugs used in Japan)",
+        "Small hand towel and waterproof bag for Hakone onsen visits"
+      ],
+      "tips": [
+        "Japan is predominantly cashless for transit cards (Suica/Pasmo), but carry 10,000-20,000 JPY cash for street food and temple souvenir stamps (Goshuin).",
+        "Tipping is not customary in Japan and can sometimes cause confusion; exceptional service is already standard and appreciated with a polite bow.",
+        "Utilize Takkyubin luggage delivery services to ship bulky suitcases ahead between Tokyo and Kyoto so you can explore Hakone unencumbered."
+      ],
+      "cancellationPolicy": [
+        "Free cancellation with 100% refund up to 30 days before departure date",
+        "50% cancellation fee between 29 and 15 days prior to departure",
+        "Non-refundable within 14 days of departure"
+      ],
+      "paymentTerms": "Secure booking with 25% advance; remaining balance due 20 days prior to departure.",
+      "galleryDetailed": [
+        {
+          "src": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Kyoto Yasaka pagoda framed by blooming pink cherry blossom branches",
+          "caption": "Historic Yasaka Pagoda illuminated amidst springtime cherry blossoms in Kyoto",
+          "credit": "Su San Lee",
+          "creditUrl": "https://unsplash.com/@susan_lee",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Tokyo Tower rising majestically into vibrant twilight sky above city street",
+          "caption": "Iconic Tokyo Tower illuminating the metropolitan skyline as dusk settles",
+          "credit": "Louie Martinez",
+          "creditUrl": "https://unsplash.com/@louiemartinez",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1528164344705-475426879c0d?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Endless corridor of vibrant orange vermilion Torii gates at Fushimi Inari",
+          "caption": "Thousands of bright vermilion torii gates winding up sacred Mount Inari",
+          "credit": "Manuel Cosentino",
+          "creditUrl": "https://unsplash.com/@manuelcosentino",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Snow-capped summit of Mount Fuji rising gracefully behind five-story pagoda",
+          "caption": "Majestic snow-capped summit of sacred Mount Fuji towering over the Chureito Pagoda",
+          "credit": "Alain Wong",
+          "creditUrl": "https://unsplash.com/@alain_wong",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Lush green bamboo stalks reaching into sky along Arashiyama bamboo grove path",
+          "caption": "Ethereal natural sanctuary of the Arashiyama Bamboo Grove in western Kyoto",
+          "credit": "Sora Sagano",
+          "creditUrl": "https://unsplash.com/@sorasagano",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Shibuya Crossing bustling with crowds under giant illuminated neon video billboards",
+          "caption": "The energetic pulse of Shibuya Scramble Crossing beneath neon skyscrapers",
+          "credit": "Jezael Melgoza",
+          "creditUrl": "https://unsplash.com/@jezael",
+          "source": "Unsplash"
+        }
+      ],
+      "seo": {
+        "title": "Japan Tour Package: 6N/7D Tokyo, Mt Fuji & Kyoto",
+        "description": "Book 6N/7D classic Japan tour package with infiYATRA. Shinkansen bullet train, Mt Fuji, Kyoto shrines, teamLab Tokyo, 4-star hotels, and onsen experience."
+      }
+    },
+    {
       "id": 101,
-      "title": "Enchanting Kashmir: Houseboats, Glaciers & Valleys",
+      "title": "Kashmir Paradise (6N/7D)",
       "location": "Kashmir, India",
       "price": "24,999",
       "rating": 4.9,
@@ -1043,7 +2663,7 @@
     },
     {
       "id": 103,
-      "title": "God's Own Country: Munnar Hills, Periyar & Backwaters",
+      "title": "Kerala Backwaters (6N/7D)",
       "location": "Kerala, India",
       "price": "23,999",
       "rating": 4.9,
@@ -1428,8 +3048,988 @@
       }
     },
     {
+      "id": 109,
+      "title": "Leh Ladakh Odyssey (6N/7D)",
+      "location": "Ladakh, India",
+      "price": "27,999",
+      "rating": 4.9,
+      "reviews": 142,
+      "duration": "7 Days / 6 Nights",
+      "category": "Adventure",
+      "type": "Domestic",
+      "image": "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&q=80&w=1200",
+      "link": "/trip/109",
+      "description": "Embark on an unforgettable high-altitude expedition across Ladakh, the Land of High Passes, where dramatic lunar valleys meet azure glacial lakes beneath the rooftop of the world. Begin in Leh with essential acclimatization, discovering the sacred halls of Thiksey Monastery, the cliffside historic Leh Palace, and the gravity-defying marvel of Magnetic Hill. Ascend through the legendary Khardung La at 17,982 feet into the fertile oasis of Nubra Valley. Ride double-humped Bactrian camels across the silver sand dunes of Hunder against a backdrop of snow-capped peaks, and visit the serene 106-foot golden Maitreya Buddha at Diskit Monastery. Traverse the rugged Shyok canyon route to reach the ethereal, color-shifting waters of Pangong Tso Lake at 14,270 feet, spending a starlit night in luxury insulated lakeside camps. Steered by certified high-altitude mountain drivers in 4x4 vehicles with onboard medical oxygen, heated rooms, and warm meals, this expedition promises the ultimate Himalayan journey.",
+      "images": [
+        "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1510414842594-a61752afb392?auto=format&fit=crop&q=80&w=1200"
+      ],
+      "groupSize": "Adventure Seekers, Couples & Small Groups",
+      "nextBatch": "2026-05-25",
+      "featured": true,
+      "status": "Published",
+      "badge": "Popular",
+      "highlights": [
+        "Ascent across world-famous Khardung La pass at 17,982 feet elevation",
+        "Overnight stay beside the color-changing blue waters of Pangong Tso lake",
+        "Double-humped Bactrian camel safari across Hunder sand dunes in Nubra Valley",
+        "Visit to the monumental 106-foot Maitreya Buddha and Diskit Monastery",
+        "Scenic stop at Magnetic Hill and the sacred confluence of Indus & Zanskar rivers",
+        "Spiritual sunrise prayer experience at the multi-tiered Thiksey Monastery",
+        "Inner Line Permits (ILP) and Wildlife Environment fees included with full oxygen backup"
+      ],
+      "inclusions": [
+        "6 nights verified 4-star stays (3N Leh, 2N Nubra Valley, 1N Pangong Luxury Camp)",
+        "Daily buffet breakfast and wholesome hot mountain dinner at all resorts and camps",
+        "Dedicated 4x4 SUV (Toyota Innova / Crysta / Scorpio) with experienced mountain driver",
+        "All Inner Line Permits (ILP), Wildlife Sanctuary fees, and Red Cross contributions",
+        "Emergency oxygen cylinder in the vehicle for high-altitude passes",
+        "Bactrian camel ride experience ticket on Hunder sand dunes in Nubra Valley",
+        "All toll taxes, parking fees, environmental cess, and driver allowances included",
+        "24x7 local Ladakhi logistics coordination and high-altitude emergency support"
+      ],
+      "exclusions": [
+        "Airfare to and from Leh (Kushok Bakula Rimpochee Airport)",
+        "Monument and monastery entry fees (Thiksey, Diskit, Leh Palace)",
+        "Lunches and extra snacks not specified in the itinerary meal plan",
+        "Personal expenses such as laundry, extra heating charges, and driver tips",
+        "ATV / quad biking rental charges at Hunder sand dunes",
+        "Personal travel and medical insurance with high-altitude evacuation coverage",
+        "Costs arising from sudden landslides, roadblocks, flight cancellations, or bad weather",
+        "Any personal vehicle usage beyond the scheduled tour itinerary"
+      ],
+      "departures": [
+        {
+          "date": "2026-05-25",
+          "seatsTotal": 14,
+          "seatsAvailable": 6,
+          "priceOverride": "27,999",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2026-06-15",
+          "seatsTotal": 16,
+          "seatsAvailable": 9,
+          "priceOverride": "29,999",
+          "status": "Open"
+        },
+        {
+          "date": "2026-07-10",
+          "seatsTotal": 16,
+          "seatsAvailable": 4,
+          "priceOverride": "31,999",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2026-08-20",
+          "seatsTotal": 14,
+          "seatsAvailable": 8,
+          "priceOverride": "28,999",
+          "status": "Open"
+        }
+      ],
+      "captain": {
+        "name": "Captain Rohan Shah",
+        "role": "Lead Expedition Specialist",
+        "bio": "Expert in curated itineraries, cultural storytelling, and on-ground logistics.",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
+        "rating": 5,
+        "trips": 45
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Leh & Crucial High-Altitude Acclimatization",
+          "description": "Touch down at Kushok Bakula Rimpochee Airport in Leh at 11,500 feet altitude, surrounded by dramatic barren peaks. Meet your local Ladakhi escort and transfer to your hotel. Strict complete rest is mandatory for the remainder of the day to allow your body to comfortably acclimatize to the thin mountain air. Drink plenty of warm water, ginger-lemon tea, and garlic soup. In the evening, take a gentle stroll around Leh Market or admire the illuminated white dome of Shanti Stupa in the distance before an early dinner.",
+          "activities": [
+            "Airport Pickup",
+            "Acclimatization Rest",
+            "Gentle Evening Stroll"
+          ],
+          "meals": "Dinner Included",
+          "stay": "4-Star Mountain View Resort, Leh"
+        },
+        {
+          "day": 2,
+          "title": "Sham Valley: Hall of Fame, Magnetic Hill & Sangam Confluence",
+          "description": "After a hearty breakfast, set out along the picturesque Leh-Srinagar highway to explore the cultural landmarks of Sham Valley. Pay homage to brave soldiers at the Indian Army Hall of Fame museum. Experience the gravity-defying optical phenomenon at Magnetic Hill, where vehicles appear to roll uphill in neutral. Stop at Gurudwara Pathar Sahib, maintained by army regiments. Continue to the dramatic confluence of the muddy Indus River and turquoise Zanskar River at Nimmu. Return to Leh in the late afternoon to visit the Shanti Stupa for sunset over the Zanskar range.",
+          "activities": [
+            "Hall of Fame",
+            "Magnetic Hill Phenomenon",
+            "Indus-Zanskar Sangam",
+            "Shanti Stupa Sunset"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Mountain View Resort, Leh"
+        },
+        {
+          "day": 3,
+          "title": "Leh to Nubra Valley via Majestic Khardung La Pass",
+          "description": "Depart early after breakfast for an exhilarating mountain drive over Khardung La, one of the highest motorable mountain passes on Earth at 17,982 feet. Pause at the summit prayer flags for triumphant photos of the snow-clad Karakoram Range before descending into the fertile Nubra Valley, historically part of the ancient Silk Route. Arrive at Diskit to witness the magnificent 106-foot statue of Maitreya Buddha perched over the valley. Continue to Hunder village, check into your luxury valley resort, and relax among apricot trees.",
+          "activities": [
+            "Khardung La Pass Crossing",
+            "Diskit Monastery Buddha",
+            "Hunder Arrival"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Luxury Valley Resort, Nubra Valley"
+        },
+        {
+          "day": 4,
+          "title": "Hunder White Sand Dunes & Turtuk Border Village Excursion",
+          "description": "Begin the day riding rare double-humped Bactrian camels across the silver sand dunes of Hunder, a surreal desert landscape nestled against icy peaks. Afterward, drive alongside the turquoise Shyok River to Turtuk, India's northernmost village near the Line of Control, opened to tourists only in 2010. Explore stone-paved lanes, apricot orchards, and the historic palace of the Yabgo royal dynasty in this unique Balti Muslim enclave. Taste fresh dried apricots and walnut chutney before returning to your Nubra resort for dinner under a brilliant canopy of stars.",
+          "activities": [
+            "Bactrian Camel Safari",
+            "Turtuk Border Village",
+            "Balti Cultural Walk"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Luxury Valley Resort, Nubra Valley"
+        },
+        {
+          "day": 5,
+          "title": "Nubra Valley to Pangong Tso Lake via Shyok River Canyon",
+          "description": "After breakfast, depart Hunder along the rugged, dramatic canyon road of the Shyok River route directly connecting Nubra to Pangong Tso. As you climb the final ridge, the breathless sight of Pangong Tso opens up—a 134-kilometer-long lake extending into Tibet, shifting between shades of deep sapphire, cerulean, and emerald green under changing sunlight. Check into your deluxe lakeside camp at 14,270 feet. Walk along the tranquil shore, watch the sunset paint the barren mountains in violet and amber, and stargaze into the Milky Way after dinner.",
+          "activities": [
+            "Shyok River Route",
+            "First View of Pangong Tso",
+            "Lakeside Sunset Stroll",
+            "Milky Way Stargazing"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Luxury Lakeview Camp, Pangong Tso"
+        },
+        {
+          "day": 6,
+          "title": "Pangong Sunrise to Leh via Chang La Pass & Thiksey Monastery",
+          "description": "Wake early to witness a magical Himalayan sunrise reflecting across the glassy waters of Pangong Tso. After a warm breakfast, begin the return journey to Leh crossing the formidable Chang La pass at 17,590 feet altitude. Descend into the Indus Valley, stopping to explore the grand 12-story Thiksey Monastery, famed for its striking architectural resemblance to Lhasa's Potala Palace. Also pause at the historic Shey Palace before arriving in Leh by late afternoon. Spend your final evening shopping for pashmina shawls and prayer wheels before a celebratory farewell Ladakhi dinner.",
+          "activities": [
+            "Pangong Lake Sunrise",
+            "Chang La Pass Crossing",
+            "Thiksey Monastery Guided Visit",
+            "Leh Bazaar Shopping"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Mountain View Resort, Leh"
+        },
+        {
+          "day": 7,
+          "title": "Leh Farewell & Early Morning Flight Departure",
+          "description": "Enjoy an early breakfast and bid farewell to the majestic mountains of Ladakh. Your private chauffeur will transfer you to Kushok Bakula Rimpochee Airport in Leh for your morning flight back home. Gaze out of your aircraft window as you soar above endless rows of snow-clad Himalayan peaks, concluding an inspiring expedition through the rooftop of the world.",
+          "activities": [
+            "Farewell Mountain Breakfast",
+            "Leh Airport Transfer"
+          ],
+          "meals": "Breakfast Included",
+          "stay": "Departure Day (No Overnight), Leh"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Is Acute Mountain Sickness (AMS) common, and how is it managed?",
+          "a": "Because Leh sits at 11,500 feet, mild symptoms like light headaches can occur. Day 1 is dedicated entirely to acclimatization. We also carry medical oxygen cylinders in every vehicle and advise plenty of fluids."
+        },
+        {
+          "q": "Do I need special permits for Nubra and Pangong?",
+          "a": "Yes, Inner Line Permits (ILP) are required for all domestic tourists visiting border regions like Nubra, Turtuk, and Pangong. Our operations team arranges all permits in advance, included in your package."
+        },
+        {
+          "q": "Are the luxury camps at Pangong Tso heated and comfortable?",
+          "a": "Yes, our luxury partner camps at Pangong feature weather-insulated heavy canvas walls, attached private western toilets, hot water buckets, and warm thermal blankets."
+        },
+        {
+          "q": "What is the best month to book this Ladakh tour?",
+          "a": "June through September is the prime window when all mountain passes including Khardung La and Chang La are clear of snow, roads are in optimal condition, and daytime weather is sunny and pleasant."
+        },
+        {
+          "q": "Can senior citizens or children join this tour?",
+          "a": "Yes, healthy seniors and children above 8 years old routinely complete this tour comfortably. A routine doctor consultation regarding high altitude travel is recommended prior to booking."
+        },
+        {
+          "q": "Are pure vegetarian and Jain food options available in Ladakh?",
+          "a": "Yes, all our partner resorts and luxury camps in Leh, Nubra, and Pangong provide freshly prepared pure vegetarian and Jain meals upon request."
+        }
+      ],
+      "slug": "leh-ladakh-high-passes-odyssey",
+      "tagline": "Azure expanse of Pangong Tso, high passes of Khardung La and Chang La, and sand dunes of Nubra Valley.",
+      "destination": "Ladakh",
+      "region": "Trans-Himalayas",
+      "country": "India",
+      "priceBands": {
+        "standard": "27,999",
+        "deluxe": "37,999",
+        "premium": "56,999"
+      },
+      "bestTime": {
+        "months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September"
+        ],
+        "notes": "Peak travel season from late May to late September with clear blue skies, open high passes, daytime temperatures between 15°C and 24°C, and night temperatures dipping to 5°C."
+      },
+      "difficulty": "Moderate",
+      "visaInfo": "Inner Line Permits (ILP) are mandatory for all domestic tourists visiting Nubra and Pangong; handled and included directly by our operations team.",
+      "hotels": [
+        {
+          "city": "Leh",
+          "name": "The Grand Dragon / Spic N Span Leh",
+          "category": "4-Star Mountain View Resort",
+          "nights": 3
+        },
+        {
+          "city": "Nubra Valley",
+          "name": "Stone Hedge / Nubra Organic Retreat",
+          "category": "4-Star Luxury Valley Resort",
+          "nights": 2
+        },
+        {
+          "city": "Pangong Tso",
+          "name": "Pangong Sarai Deluxe Luxury Camp",
+          "category": "4-Star Luxury Lakeview Camp",
+          "nights": 1
+        }
+      ],
+      "transport": {
+        "mode": "Private Mountain-Grade SUV (Innova / Crysta / 4x4)",
+        "details": "Dedicated high-clearance mountain vehicle equipped with emergency oxygen kit and experienced hill chauffeur."
+      },
+      "thingsToCarry": [
+        "Warm thermal innerwear, fleece sweaters, down jacket, and woolen beanie",
+        "High SPF 50+ sunscreen, cold cream, and medicated lip balm for dry air",
+        "Polarized sunglasses to protect eyes from intense high-altitude glare and snow reflection",
+        "Prescribed Diamox (for acclimatization) and personal first-aid medical kit"
+      ],
+      "tips": [
+        "Adhere strictly to 24 hours of complete rest upon arrival in Leh on Day 1; avoid running or strenuous effort.",
+        "Drink at least 3 to 4 liters of water and soups daily to keep your body well hydrated at high altitudes.",
+        "Postpaid BSNL, Airtel, and Jio SIM cards function in Leh and Nubra; prepaid SIM cards from outside J&K do not work."
+      ],
+      "cancellationPolicy": [
+        "Free cancellation with 100% refund up to 15 days before departure date",
+        "50% cancellation fee between 14 and 7 days prior to departure",
+        "Non-refundable within 6 days of departure"
+      ],
+      "paymentTerms": "Book with 25% advance token; balance payable 10 days before departure.",
+      "galleryDetailed": [
+        {
+          "src": "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Crystal clear azure waters of Pangong Tso Lake reflecting barren mountain peaks",
+          "caption": "The shifting sapphire and turquoise shades of Pangong Tso Lake at 14,270 feet",
+          "credit": "Devesh Trivedi",
+          "creditUrl": "https://unsplash.com/@deveshtrivedi",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Hunder silver sand dunes in Nubra Valley Ladakh with double humped camels",
+          "caption": "Bactrian double-humped camels wandering the high-altitude sand dunes of Hunder",
+          "credit": "Bailey Zindel",
+          "creditUrl": "https://unsplash.com/@baileyzindel",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Monk in red robes looking out from Thiksey Monastery in Indus Valley Leh",
+          "caption": "The majestic multi-tiered Thiksey Monastery perched over the Indus Valley",
+          "credit": "Prateek Katyal",
+          "creditUrl": "https://unsplash.com/@prateekkatyal",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Khardung La mountain pass sign board at 17982 feet altitude in Ladakh",
+          "caption": "Prayer flags fluttering in strong mountain winds across the Khardung La summit",
+          "credit": "Vivek Sharma",
+          "creditUrl": "https://unsplash.com/@vivek_sharma",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Colossal 106-foot golden Maitreya Buddha statue in Diskit Nubra Valley",
+          "caption": "The colossal Maitreya Buddha statue gazing serenely over the Nubra Valley",
+          "credit": "Aditya Chache",
+          "creditUrl": "https://unsplash.com/@adityachache",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1510414842594-a61752afb392?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Scenic Sangam confluence of Indus and Zanskar rivers in Ladakh",
+          "caption": "The striking color contrast at the sacred confluence of Indus and Zanskar rivers",
+          "credit": "Jeremy Bishop",
+          "creditUrl": "https://unsplash.com/@jeremybishop",
+          "source": "Unsplash"
+        }
+      ],
+      "seo": {
+        "title": "Ladakh Tour Package: 6N/7D Leh, Nubra & Pangong Lake",
+        "description": "Book 6N/7D Leh Ladakh package with infiYATRA. Cross Khardung La, ride Bactrian camels in Nubra, and camp beside Pangong Tso with 4-star stays and 4x4 cab."
+      }
+    },
+    {
+      "id": 107,
+      "title": "Royal Rajasthan (6N/7D)",
+      "location": "Rajasthan, India",
+      "price": "26,999",
+      "rating": 4.9,
+      "reviews": 142,
+      "duration": "7 Days / 6 Nights",
+      "category": "Nature",
+      "type": "Domestic",
+      "image": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&q=80&w=1200",
+      "link": "/trip/107",
+      "description": "Step into the regal grandeur of the Land of Kings on an authentic journey through Rajasthan's three most fabled royal capitals: Jaipur, Jodhpur, and Udaipur. Ascend the imposing ramparts of Amber Fort in the Pink City, marvel at the intricate honeycomb façade of Hawa Mahal, and explore the astronomical wonders of Jantar Mantar. Travel west across arid desert scrubland to Jodhpur, the Blue City, where the sheer cliffside bastions of Mehrangarh Fort guard centuries of Rajput valor and Jaswant Thada's white marble shimmers. Wind south through the Aravalli hills to Udaipur, the City of Lakes. Wander through the sprawling courtyards of the City Palace, witness classical Rajasthani folk performances at Bagore Ki Haveli, and glide past the floating Lake Palace on a serene evening boat cruise across Lake Pichola. With verified heritage haveli stays, daily royal breakfasts and dinners, private air-conditioned vehicle transfers, and verified local historical guides, this journey brings Indian royal history to life with unmatched warmth.",
+      "images": [
+        "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1579613832125-5d34a13ffe0a?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=1200"
+      ],
+      "groupSize": "Couples, Families & Heritage Travelers",
+      "nextBatch": "2026-11-10",
+      "featured": true,
+      "status": "Published",
+      "badge": "Best Seller",
+      "highlights": [
+        "Grand exploration of Amber Fort, Hawa Mahal, and City Palace in Jaipur",
+        "Astronomical discoveries at UNESCO-listed Jantar Mantar observatory",
+        "Panoramic fortress views from Mehrangarh Fort towering above Jodhpur",
+        "Visit to the royal marble cenotaph of Jaswant Thada in the Blue City",
+        "Scenic drive through the scenic Aravalli hills to romantic Udaipur",
+        "Sunset boat cruise on Lake Pichola with views of the floating Lake Palace",
+        "Folk dance and puppet performance at historical Bagore Ki Haveli"
+      ],
+      "inclusions": [
+        "6 nights premium heritage accommodations (2N Jaipur, 1N Jodhpur, 3N Udaipur)",
+        "Daily royal buffet breakfast and multi-course chef-curated dinner at all hotels",
+        "Dedicated private air-conditioned sedan or SUV for all intercity transfers and tours",
+        "Sunset boat cruise ticket on Lake Pichola in Udaipur",
+        "Cultural Rajasthani folk dance evening show entry at Bagore Ki Haveli",
+        "All toll taxes, state road taxes, parking fees, and driver night allowances",
+        "All applicable goods and service taxes (GST) included with complete transparency",
+        "24x7 dedicated heritage travel concierge and certified expert royal chauffeur"
+      ],
+      "exclusions": [
+        "Airfare or train tickets to Jaipur and from Udaipur",
+        "Monument, museum, and fort entry tickets (Amber Fort, Mehrangarh, City Palace)",
+        "Lunches and daytime snacks not specified in the meal inclusions",
+        "Camera and professional photography permits at monuments",
+        "Personal expenses such as alcoholic beverages, laundry, and tipping",
+        "Optional elephant or jeep ride charges at Amber Fort",
+        "Travel insurance, medical expenses, or emergency evacuation costs",
+        "Any personal sightseeing or cab usage beyond the designated itinerary hours"
+      ],
+      "departures": [
+        {
+          "date": "2026-11-10",
+          "seatsTotal": 14,
+          "seatsAvailable": 5,
+          "priceOverride": "26,999",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2026-11-28",
+          "seatsTotal": 16,
+          "seatsAvailable": 8,
+          "priceOverride": "28,999",
+          "status": "Open"
+        },
+        {
+          "date": "2026-12-18",
+          "seatsTotal": 16,
+          "seatsAvailable": 3,
+          "priceOverride": "32,999",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2027-01-15",
+          "seatsTotal": 14,
+          "seatsAvailable": 9,
+          "priceOverride": "27,999",
+          "status": "Open"
+        }
+      ],
+      "captain": {
+        "name": "Captain Rohan Shah",
+        "role": "Lead Expedition Specialist",
+        "bio": "Expert in curated itineraries, cultural storytelling, and on-ground logistics.",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
+        "rating": 5,
+        "trips": 45
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in the Pink City & Hawa Mahal Evening Exploration",
+          "description": "Arrive at Jaipur International Airport or Railway Station, where your private chauffeur welcomes you with traditional Rajasthani warmth. Transfer to your handpicked heritage haveli, adorned with ornate arches and tranquil courtyards. In the late afternoon, take a relaxed drive past the iconic pink sandstone lattice facade of Hawa Mahal (Palace of Winds). Stroll through the lively Johari Bazaar and Bapu Bazaar, savoring fragrant kachoris and browsing colorful block-printed textiles and blue pottery. Return to your haveli for a welcoming royal Rajasthani dinner by candlelit courtyards.",
+          "activities": [
+            "Chauffeur Pickup",
+            "Hawa Mahal Photo Stop",
+            "Bazaar Walking Tour"
+          ],
+          "meals": "Dinner Included",
+          "stay": "4-Star Heritage Haveli, Jaipur"
+        },
+        {
+          "day": 2,
+          "title": "Amber Fort Ramparts, Jal Mahal & Royal City Palace",
+          "description": "After a royal breakfast, journey to the rugged hills of Amer to explore the majestic Amber Fort. Marvel at the gleaming Sheesh Mahal (Mirror Palace) where candlelight creates a dazzling starry illusion, and admire the sweeping views over Maota Lake. Stop on your return to photograph the serene water palace of Jal Mahal resting gracefully in Man Sagar Lake. In the afternoon, visit the sprawling City Palace complex and the astronomical wonders of UNESCO World Heritage Jantar Mantar. Enjoy an authentic dinner featuring Dal Baati Churma in a heritage courtyard setting.",
+          "activities": [
+            "Amber Fort Guided Tour",
+            "Sheesh Mahal Mirrors",
+            "Jal Mahal Viewpoint",
+            "City Palace",
+            "Jantar Mantar"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Heritage Haveli, Jaipur"
+        },
+        {
+          "day": 3,
+          "title": "Jaipur to Jodhpur & Mehrangarh Sunset Ramparts",
+          "description": "Depart Jaipur after breakfast on a scenic western highway drive toward the sun-drenched Thar desert fringes of Jodhpur. Arrive by early afternoon in the Blue City and check in to your heritage hotel. Head straight to the monumental Mehrangarh Fort, perched atop a 400-foot cliff, to explore its royal palanquins, weaponry museum, and vast courtyards. Watch the sun dip over the sprawling sea of indigo-blue painted houses below from the fort's western cannon ramparts. Visit nearby Jaswant Thada, the serene white marble royal cenotaph, before an evening rooftop dinner.",
+          "activities": [
+            "Intercity Scenic Drive",
+            "Mehrangarh Fort Tour",
+            "Jaswant Thada Cenotaph",
+            "Rooftop Sunset Dinner"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Heritage Palace Hotel, Jodhpur"
+        },
+        {
+          "day": 4,
+          "title": "Jodhpur to Udaipur via Ranakpur Jain Temple",
+          "description": "Enjoy breakfast before driving south through the winding Aravalli Range toward Udaipur. Break your journey at Ranakpur to marvel at the 15th-century marble Jain Temple, renowned for its 1,444 uniquely carved pillars where no two carvings are identical. Continue through lush green valleys, arriving in the romantic City of Lakes by late afternoon. Check into your lakeview hotel, unwind with refreshing spiced tea, and take an evening promenade along Fateh Sagar Lake as decorative streetlights reflect softly across the ripples. Relish a lakeside multi-course dinner under starry skies.",
+          "activities": [
+            "Aravalli Hills Drive",
+            "Ranakpur Marble Temple Visit",
+            "Fateh Sagar Lake Walk"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Lakeview Resort, Udaipur"
+        },
+        {
+          "day": 5,
+          "title": "Grand City Palace, Saheliyon Ki Bari & Sunset Pichola Cruise",
+          "description": "Spend a captivating day uncovering Udaipur's royal heritage. Begin with a guided exploration of the magnificent City Palace, the largest palace complex in Rajasthan, admiring its peacocks mosaics, glass mirror chambers, and panoramic lake balconies. Visit Saheliyon Ki Bari (Garden of the Maids of Honor) with its lotus pools and marble elephant fountains. In the late afternoon, board a private boat on Lake Pichola, gliding past Jag Mandir and the world-famous Taj Lake Palace as the setting sun bathes the palace walls in brilliant gold. Enjoy dinner overlooking the illuminated lake.",
+          "activities": [
+            "City Palace Guided Tour",
+            "Saheliyon Ki Bari Fountains",
+            "Lake Pichola Sunset Boat Ride"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Lakeview Resort, Udaipur"
+        },
+        {
+          "day": 6,
+          "title": "Monsoon Palace Sajjangarh & Folk Cultural Evening",
+          "description": "Drive up the winding peak to the hilltop Sajjangarh Fort (Monsoon Palace), which offers dramatic 360-degree vistas across the entire lake valley and surrounding mountain sanctuaries. Spend the afternoon shopping for authentic miniature paintings, silver jewelry, and handcrafted leather journals in the quaint artisan lanes near Jagdish Temple. At dusk, witness the celebrated Dharohar Rajasthani folk dance and puppet performance at historical Bagore Ki Haveli on Gangaur Ghat, followed by a celebratory farewell dinner featuring authentic Mewari specialties.",
+          "activities": [
+            "Monsoon Palace Sajjangarh",
+            "Artisan Miniature Paintings",
+            "Bagore Ki Haveli Folk Dance"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Lakeview Resort, Udaipur"
+        },
+        {
+          "day": 7,
+          "title": "Udaipur Farewell & Airport Departure",
+          "description": "Savor your final breakfast overlooking the calm waters of Lake Pichola. Depending on your flight schedule, enjoy a relaxed morning walk around the heritage ghats or pick up last-minute handmade souvenirs and spices. Your chauffeur will assist with luggage and transfer you comfortably to Maharana Pratap Airport or Udaipur Railway Station for your flight home, concluding an unforgettable journey through the royal kingdoms of Rajasthan.",
+          "activities": [
+            "Morning Lake Walk",
+            "Souvenir Shopping",
+            "Airport Transfer"
+          ],
+          "meals": "Breakfast Included",
+          "stay": "Departure Day (No Overnight), Udaipur"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What is the best time of year to visit Rajasthan?",
+          "a": "October through March is the ideal season, offering sunny pleasant daytime temperatures around 22°C to 26°C and cool crisp evenings, perfect for outdoor palace exploration."
+        },
+        {
+          "q": "Are the hotels authentic royal heritage properties?",
+          "a": "Yes, we exclusively partner with verified heritage havelis and historic boutique palace hotels that feature traditional Rajasthani architecture, ornate jharokhas, and courtyard pools."
+        },
+        {
+          "q": "Is the Lake Pichola boat cruise included in the package?",
+          "a": "Yes, standard boat cruise tickets across Lake Pichola offering close views of the Taj Lake Palace and Jag Mandir island are included in the package cost."
+        },
+        {
+          "q": "Can this itinerary be customized for different cities?",
+          "a": "Absolutely. You can easily add extensions to the golden sand dunes of Jaisalmer or Pushkar by clicking the Customize Trip button on the site."
+        },
+        {
+          "q": "Is Rajasthan safe for family travel and senior citizens?",
+          "a": "Rajasthan is one of the safest and most hospitable destinations in India. Our private vehicles and attentive drivers ensure senior citizens and children travel with complete comfort."
+        },
+        {
+          "q": "Are pure vegetarian and Jain meals available throughout the tour?",
+          "a": "Yes, Rajasthan is world-renowned for its rich vegetarian cuisine. All our partner hotels and recommended restaurants provide authentic pure vegetarian and Jain meal preparations."
+        }
+      ],
+      "slug": "rajasthan-royal-heritage",
+      "tagline": "Gilded palaces of Jaipur, towering Mehrangarh in Jodhpur, and romantic sunset boat rides on Lake Pichola in Udaipur.",
+      "destination": "Rajasthan",
+      "region": "Northwest India",
+      "country": "India",
+      "priceBands": {
+        "standard": "26,999",
+        "deluxe": "36,999",
+        "premium": "58,999"
+      },
+      "bestTime": {
+        "months": [
+          "October",
+          "November",
+          "December",
+          "January",
+          "February",
+          "March"
+        ],
+        "notes": "Pleasant, sunny days and cool royal evenings (12°C to 26°C); ideal for sightseeing forts, palaces, and desert drives."
+      },
+      "difficulty": "Easy",
+      "visaInfo": "No visa or domestic permits required for Indian travelers. Valid government-issued photo ID required at hotels.",
+      "hotels": [
+        {
+          "city": "Jaipur",
+          "name": "Alsisar Haveli / Shahpura House",
+          "category": "4-Star Heritage Haveli",
+          "nights": 2
+        },
+        {
+          "city": "Jodhpur",
+          "name": "Ranbanka Palace / Ajit Bhawan",
+          "category": "4-Star Heritage Palace",
+          "nights": 1
+        },
+        {
+          "city": "Udaipur",
+          "name": "Fateh Garh / Trident Udaipur",
+          "category": "4-Star Lakeview Resort",
+          "nights": 3
+        }
+      ],
+      "transport": {
+        "mode": "Private AC Sedan / Innova Crysta",
+        "details": "Dedicated sanitized private vehicle with verified experienced chauffeur for all highway and local transfers."
+      },
+      "thingsToCarry": [
+        "Comfortable cotton clothing for daytime and light woolen jacket for chilly desert nights",
+        "Walking shoes or cushioned sandals suitable for cobbled fort ramparts",
+        "Sunglasses, wide-brim hat, and high SPF sunscreen lotion",
+        "Valid government photo ID cards for hotel check-in protocols"
+      ],
+      "tips": [
+        "Keep spare cash for local bazaar shopping as small artisans may not always accept cards.",
+        "Visit Mehrangarh Fort and Amber Fort in the early morning to beat afternoon heat and crowds.",
+        "Modest dress covering shoulders and knees is recommended when entering historical temples."
+      ],
+      "cancellationPolicy": [
+        "Free cancellation with 100% refund up to 15 days before departure date",
+        "50% cancellation fee between 14 and 7 days prior to departure",
+        "Non-refundable within 6 days of departure"
+      ],
+      "paymentTerms": "Secure your booking with 25% advance; remaining balance due 10 days before travel.",
+      "galleryDetailed": [
+        {
+          "src": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Majestic Amber Fort reflecting in Maota Lake in Jaipur Rajasthan",
+          "caption": "The massive sandstone bastions of Amber Fort soaring above Maota Lake",
+          "credit": "Annie Spratt",
+          "creditUrl": "https://unsplash.com/@anniespratt",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Intricate pink sandstone Hawa Mahal Palace of Winds in Jaipur",
+          "caption": "The iconic honeycombed lattice facade of Hawa Mahal along Jaipur's street",
+          "credit": "Felipe Portella",
+          "creditUrl": "https://unsplash.com/@felipepelaquim",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1579613832125-5d34a13ffe0a?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Mehrangarh Fort towering on high cliff above indigo Blue City Jodhpur",
+          "caption": "Mehrangarh Fort rising dramatically above the vibrant blue houses of Jodhpur",
+          "credit": "Sudipta Mondal",
+          "creditUrl": "https://unsplash.com/@sudiptamondal",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Lake Pichola boat cruise in Udaipur with City Palace background",
+          "caption": "Sunset boat ride on Lake Pichola with the glowing City Palace on the shore",
+          "credit": "Aditya Chache",
+          "creditUrl": "https://unsplash.com/@adityachache",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Ornate white marble pillars of Ranakpur Jain Temple in Rajasthan",
+          "caption": "The exquisite 1,444 uniquely carved marble columns of Ranakpur Jain Temple",
+          "credit": "Prateek Katyal",
+          "creditUrl": "https://unsplash.com/@prateekkatyal",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Historic Bagore Ki Haveli courtyard by Gangaur Ghat on Lake Pichola",
+          "caption": "Heritage lakeside architecture of Bagore Ki Haveli at Gangaur Ghat",
+          "credit": "Sylwia Bartyzel",
+          "creditUrl": "https://unsplash.com/@sylwiabartyzel",
+          "source": "Unsplash"
+        }
+      ],
+      "seo": {
+        "title": "Rajasthan Tour Package: 6N/7D Jaipur, Jodhpur & Udaipur",
+        "description": "Book 6N/7D Royal Rajasthan package with infiYATRA. Explore Jaipur forts, Mehrangarh in Jodhpur, and Lake Pichola in Udaipur with heritage stays and private cab."
+      }
+    },
+    {
+      "id": 111,
+      "title": "Swiss Alpine Wonder (6N/7D)",
+      "location": "Switzerland, Switzerland",
+      "price": "1,35,000",
+      "rating": 4.9,
+      "reviews": 142,
+      "duration": "7 Days / 6 Nights",
+      "category": "Honeymoon",
+      "type": "International",
+      "image": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&q=80&w=1200",
+      "link": "/trip/111",
+      "description": "Immerse yourself in postcard-perfect alpine panoramas on infiYATRA's flagship holiday across Switzerland. Begin in cosmopolitan Zurich, strolling along the picturesque Limmat River and taking an excursion to Europe's most powerful waterfall, the roaring Rhine Falls. Journey along pristine lakeside rail lines to charming Lucerne, crossing the historic 14th-century wooden Chapel Bridge and ascending to the glacier paradise of Mount Titlis via the world's first revolving Rotair cable car. Continue into the Bernese Oberland heartland of Interlaken, nestled between Lake Thun and Lake Brienz. Board the iconic cogwheel railway winding up to Jungfraujoch—the Top of Europe at 3,454 meters—to step onto eternal Aletsch Glacier ice and wander through glowing Ice Palace tunnels. Featuring confirmed first-class Swiss Travel Pass passes for seamless trains and scenic lake steamers, verified four-star central hotels, daily buffet breakfasts, and expert local logistics, this journey brings alpine dreams to life with Swiss precision.",
+      "images": [
+        "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1574870111867-089730e5a72b?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&q=80&w=1200",
+        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=1200"
+      ],
+      "groupSize": "Couples, Families & Luxury Travelers",
+      "nextBatch": "2026-11-20",
+      "featured": true,
+      "status": "Published",
+      "badge": "Bestseller",
+      "highlights": [
+        "Ascend Mount Titlis on the world's first revolving Rotair 360-degree cable car",
+        "Cogwheel train ascent to Jungfraujoch (Top of Europe) and Ice Palace at 3,454m",
+        "Witness Europe's largest waterfall, the roaring Rhine Falls at Schaffhausen",
+        "Scenic lake steamer cruise across glassy blue waters of Lake Lucerne",
+        "Historic medieval Chapel Bridge (Kapellbrücke) and Lion Monument in Lucerne",
+        "Leisure walk through the picturesque alpine resort village of Grindelwald",
+        "First-class Swiss Travel Pass included for unlimited trains, boats, and city trams"
+      ],
+      "inclusions": [
+        "6 nights verified 4-star central accommodations (2N Zurich, 2N Lucerne, 2N Interlaken)",
+        "Daily continental & hot buffet breakfast and multi-course dinners at hotels",
+        "Swiss Travel Pass (Consecutive 8-Day) for unlimited trains, boats, and postal buses",
+        "Mount Titlis cable car ticket including the 360-degree Rotair and Glacier Cave entry",
+        "Jungfraujoch 'Top of Europe' mountain railway pass via the Eiger Express gondola",
+        "Scenic Lake Lucerne cruise ticket aboard a historic lake paddle steamer",
+        "Rhine Falls waterfall excursion including the rock bastion boat ride",
+        "24x7 European concierge assistance and comprehensive digital Swiss travel guidebook"
+      ],
+      "exclusions": [
+        "International roundtrip airfare to and from Zurich (ZRH)",
+        "Schengen Tourist Visa fee and VFS biometric appointment processing fees",
+        "Lunches, daytime snacks, and alcoholic beverages not specified in the meal plan",
+        "Adventure activities in Interlaken (tandem paragliding, canyoning, skydiving)",
+        "Personal expenses such as hotel city taxes (CHF 3-5 / night), phone calls, and tips",
+        "Comprehensive international travel medical and baggage insurance",
+        "Any private taxi or chauffeur services outside the Swiss Rail network",
+        "Optional excursions not listed in the standard tour itinerary"
+      ],
+      "departures": [
+        {
+          "date": "2026-11-20",
+          "seatsTotal": 14,
+          "seatsAvailable": 5,
+          "priceOverride": "1,35,000",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2026-12-15",
+          "seatsTotal": 16,
+          "seatsAvailable": 8,
+          "priceOverride": "1,45,000",
+          "status": "Open"
+        },
+        {
+          "date": "2026-12-24",
+          "seatsTotal": 16,
+          "seatsAvailable": 2,
+          "priceOverride": "1,65,000",
+          "status": "Filling Fast"
+        },
+        {
+          "date": "2027-01-20",
+          "seatsTotal": 14,
+          "seatsAvailable": 9,
+          "priceOverride": "1,38,000",
+          "status": "Open"
+        }
+      ],
+      "captain": {
+        "name": "Captain Rohan Shah",
+        "role": "Lead Expedition Specialist",
+        "bio": "Expert in curated itineraries, cultural storytelling, and on-ground logistics.",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200",
+        "rating": 5,
+        "trips": 45
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Zurich & Old Town Evening Promenade",
+          "description": "Touch down at Zurich International Airport (ZRH), where your Swiss rail host meets you with your Swiss Travel Pass. Take a smooth 12-minute train directly into Zurich Hauptbahnhof and check into your handpicked 4-star city hotel. In the late afternoon, embark on a scenic walking tour through Zurich's charming historic Altstadt (Old Town). Wander cobblestone lanes flanking the Limmat River, admire the twin Romanesque spires of Grossmünster cathedral, and stroll down world-famous Bahnhofstrasse, renowned for luxury horology and Swiss chocolatiers. Enjoy a welcoming Swiss fondue and multi-course dinner.",
+          "activities": [
+            "Airport Meet & Greet",
+            "Train to Zurich Center",
+            "Altstadt Old Town Walk",
+            "Bahnhofstrasse Shopping"
+          ],
+          "meals": "Dinner Included",
+          "stay": "4-Star City Hotel, Zurich"
+        },
+        {
+          "day": 2,
+          "title": "Rhine Falls Natural Wonder & Historic Stein am Rhein",
+          "description": "After a rich buffet breakfast, take a scenic northward train to Schaffhausen to witness the roaring grandeur of the Rhine Falls, Europe's most powerful natural waterfall. Feel the spray of thunderous tumbling glacial waters on a boat ride right up to the central rock bastion in the middle of the falls. Continue to the storybook medieval village of Stein am Rhein, famous for its exceptionally preserved painted half-timbered merchant houses and peaceful riverfront cafes. Return to Zurich by late afternoon to relax by Lake Zurich before dinner.",
+          "activities": [
+            "Rhine Falls Waterfall",
+            "Rock Bastion Boat Ride",
+            "Stein am Rhein Village Walk"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star City Hotel, Zurich"
+        },
+        {
+          "day": 3,
+          "title": "Scenic Train to Lucerne, Chapel Bridge & Lake Steamer Cruise",
+          "description": "Board a scenic morning train tracing sparkling Lake Zug toward Lucerne, nestled beneath the imposing pyramid peaks of Mount Pilatus. Check in to your lakeside hotel and explore the city on foot. Walk across the 14th-century wooden Chapel Bridge adorned with medieval ceiling paintings, visit the poignant Lion Monument carved into natural sandstone cliff, and stroll the lakeside promenade. In the late afternoon, board a historic paddle steamer for a relaxing 1-hour cruise across Lake Lucerne's fjord-like bays, admiring mountain reflections on the water before dinner.",
+          "activities": [
+            "Scenic Train to Lucerne",
+            "Chapel Bridge (Kapellbrücke)",
+            "Lion Monument",
+            "Lake Lucerne Steamer Cruise"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Lakefront Hotel, Lucerne"
+        },
+        {
+          "day": 4,
+          "title": "Mount Titlis Glacier Expedition: Rotair & Cliff Walk",
+          "description": "Take the scenic train to the alpine valley town of Engelberg and board a series of cable cars, culminating in the world's first revolving Titlis Rotair, which rotates a full 360 degrees as you ascend to 3,020 meters altitude. Step out onto eternal snow to cross the Titlis Cliff Walk—Europe's highest suspension bridge—hanging 500 meters above the abyss. Venture deep inside the natural Glacier Cave carved 20 meters beneath the ice surface, and ride the Ice Flyer chairlift over glacial crevasses. Return to Lucerne in the late afternoon for dinner.",
+          "activities": [
+            "Titlis Rotair Revolving Gondola",
+            "Titlis Cliff Walk Suspension Bridge",
+            "Glacier Cave Walk",
+            "Ice Flyer Chairlift"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Lakefront Hotel, Lucerne"
+        },
+        {
+          "day": 5,
+          "title": "GoldenPass Scenic Railway to Interlaken & Grindelwald",
+          "description": "Embark on the world-renowned GoldenPass panoramic train, winding past three turquoise mountain lakes and climbing the Brunig Pass into Interlaken, the adventure hub nestled between Lake Thun and Lake Brienz. Check into your alpine hotel and take a regional train into the breathtaking glacier valley of Grindelwald. Stroll through the village under the shadow of the sheer North Face of the Eiger, taking in flower-adorned Swiss chalets and listening to cowbells echoing across meadows. Return to Interlaken for a stroll along the Hohematte park before dinner.",
+          "activities": [
+            "GoldenPass Panoramic Train",
+            "Grindelwald Alpine Village",
+            "Hohematte Promenade"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Alpine Resort, Interlaken"
+        },
+        {
+          "day": 6,
+          "title": "Jungfraujoch: Top of Europe Cogwheel Train at 3,454m",
+          "description": "Prepare for the pinnacle of your Swiss holiday. Board the modern Eiger Express tricable gondola from Grindelwald Terminal, soaring directly past the Eiger North Face to Eigergletscher station. Transfer to the historic electric cogwheel train burrowing through the Eiger mountain to Jungfraujoch at 3,454 meters, Europe's highest railway station. Step out onto the Sphinx Observation Deck for jaw-dropping views of the 23-kilometer Great Aletsch Glacier, explore the illuminated Ice Palace, and visit the Lindt Swiss Chocolate Heaven before returning to Interlaken for a celebratory gala dinner.",
+          "activities": [
+            "Eiger Express Gondola",
+            "Jungfraujoch Cogwheel Train",
+            "Sphinx Glacier Deck",
+            "Ice Palace Sculpture Walk"
+          ],
+          "meals": "Breakfast, Dinner Included",
+          "stay": "4-Star Alpine Resort, Interlaken"
+        },
+        {
+          "day": 7,
+          "title": "Interlaken to Zurich Airport & Departure",
+          "description": "Enjoy a relaxed Swiss breakfast featuring alpine cheeses, artisan pastries, and hot chocolate. Use your Swiss Travel Pass to board the direct intercity train from Interlaken Ost back to Zurich International Airport (ZRH). Savor final glimpses of snowy peaks, mirror-like lakes, and peaceful pastures from your comfortable panoramic carriage before boarding your international flight back home with cherished memories of Switzerland.",
+          "activities": [
+            "Alpine Breakfast",
+            "Scenic Train to Zurich Airport",
+            "Flight Departure"
+          ],
+          "meals": "Breakfast Included",
+          "stay": "Departure Day (No Overnight), Zurich"
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Do Indian travelers need a visa for Switzerland?",
+          "a": "Yes, Indian citizens require a valid Schengen Visa. Our visa documentation desk provides personalized appointment booking assistance, verified cover letters, and insurance vouchers."
+        },
+        {
+          "q": "How does the Swiss Travel Pass work for transport?",
+          "a": "The Swiss Travel Pass provides seamless hop-on hop-off access on all Swiss national trains, city trams, buses, and scenic lake ferries without having to buy separate tickets for each journey."
+        },
+        {
+          "q": "Is Jungfraujoch excursion included in the price?",
+          "a": "Yes, full return tickets for the modern Eiger Express gondola and electric cogwheel train to the Top of Europe at 3,454 meters, including the Ice Palace and Sphinx Terrace, are included."
+        },
+        {
+          "q": "Can I find vegetarian and Indian food in Switzerland?",
+          "a": "Yes! Switzerland is extremely welcoming to Indian travelers. Cities like Zurich, Lucerne, and Interlaken feature numerous authentic Indian restaurants as well as vegetarian-friendly cafes."
+        },
+        {
+          "q": "Is luggage transfer between cities manageable by train?",
+          "a": "Yes, Swiss trains feature spacious luggage racks at coach entrances and overhead. In addition, Swiss rail offers station-to-station luggage forward services if you prefer hands-free travel."
+        },
+        {
+          "q": "What is the local currency and are credit cards accepted?",
+          "a": "The currency is the Swiss Franc (CHF). International Visa and Mastercard credit and debit cards, as well as forex cards, are accepted virtually everywhere, even for minor purchases."
+        }
+      ],
+      "slug": "switzerland-alpine-wonders",
+      "tagline": "Snow peaks of Mount Titlis, cogwheel train to the Top of Europe at Jungfraujoch, and glassy waters of Lake Lucerne.",
+      "destination": "Switzerland",
+      "region": "Central Europe",
+      "country": "Switzerland",
+      "priceBands": {
+        "standard": "1,35,000",
+        "deluxe": "1,75,000",
+        "premium": "2,45,000"
+      },
+      "bestTime": {
+        "months": [
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "December"
+        ],
+        "notes": "May through September brings verdant alpine meadows, blooming wildflowers, and mild hiking weather (18°C to 25°C); December offers magical snow-draped ski landscapes."
+      },
+      "difficulty": "Easy",
+      "visaInfo": "Schengen Visa (Short-stay Type C) required for Indian passport holders. Our visa operations desk provides comprehensive document checklists and appointment guidance.",
+      "hotels": [
+        {
+          "city": "Zurich",
+          "name": "Radisson Blu / Crowne Plaza Zurich",
+          "category": "4-Star Premium",
+          "nights": 2
+        },
+        {
+          "city": "Lucerne",
+          "name": "Hotel Monopol Luzern / Radisson Blu Lucerne",
+          "category": "4-Star Lakefront",
+          "nights": 2
+        },
+        {
+          "city": "Interlaken",
+          "name": "Hotel Interlaken / Metropole Swiss Quality",
+          "category": "4-Star Alpine Resort",
+          "nights": 2
+        }
+      ],
+      "transport": {
+        "mode": "Swiss Travel Pass (First-Class Rail & Scenic Mountain Trains)",
+        "details": "Unlimited travel across the world's most punctual train network, including lake steamers and alpine cogwheel trains."
+      },
+      "thingsToCarry": [
+        "Warm layered clothing, fleece jacket, windbreaker, and thermal gloves for mountain summits",
+        "Sturdy waterproof walking shoes with anti-slip tread for snow platforms",
+        "UV400 polarized sunglasses to protect against intense alpine glacier reflection",
+        "Universal electrical adapter (Type J Swiss 3-pin or Europlug Type C)"
+      ],
+      "tips": [
+        "Check daily mountain peak webcam feeds before heading up Titlis or Jungfraujoch for optimal visibility.",
+        "The Swiss Travel Pass also includes free admission to over 500 museums across Switzerland.",
+        "Carry a refillable water bottle; public mountain drinking fountains across Swiss towns offer pure alpine water."
+      ],
+      "cancellationPolicy": [
+        "Free cancellation with 100% refund up to 21 days before departure date",
+        "50% cancellation fee between 20 and 10 days prior to departure",
+        "Non-refundable within 9 days of departure"
+      ],
+      "paymentTerms": "Secure booking with 25% advance; remaining balance due 15 days before departure.",
+      "galleryDetailed": [
+        {
+          "src": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Breathtaking Lauterbrunnen valley with waterfalls and Swiss chalets",
+          "caption": "The dramatic cliffside waterfalls and alpine chalets of Lauterbrunnen near Interlaken",
+          "credit": "Tim Trad",
+          "creditUrl": "https://unsplash.com/@timtrad",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Snow covered peaks of Mount Titlis in Engelberg Switzerland",
+          "caption": "Pristine eternal snow and glacier formations atop Mount Titlis at 3,020 meters",
+          "credit": "Dino Reichmuth",
+          "creditUrl": "https://unsplash.com/@dinoreichmuth",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Turquoise waters of Lake Lucerne framed by historic Chapel Bridge",
+          "caption": "The medieval timber Chapel Bridge reflected in the clear waters of Lake Lucerne",
+          "credit": "Bailey Zindel",
+          "creditUrl": "https://unsplash.com/@baileyzindel",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1574870111867-089730e5a72b?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Panoramic red Swiss mountain train winding past snow capped peaks",
+          "caption": "The world-famous red cogwheel train winding along breathtaking alpine passes",
+          "credit": "Ricardo Gomez Angel",
+          "creditUrl": "https://unsplash.com/@rgaleriacom",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Lush green alpine meadows with wildflowers and grazing cows in Switzerland",
+          "caption": "Sunlit summer alpine meadows and cedar forests framing Grindelwald",
+          "credit": "Luca Bravo",
+          "creditUrl": "https://unsplash.com/@lucabravo",
+          "source": "Unsplash"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=1200",
+          "alt": "Rhine Falls the largest waterfall in Europe roaring with mist",
+          "caption": "The thunderous waters of the Rhine Falls surging past central limestone rocks",
+          "credit": "Marc Szeglat",
+          "creditUrl": "https://unsplash.com/@szeglat",
+          "source": "Unsplash"
+        }
+      ],
+      "seo": {
+        "title": "Switzerland Tour Package: 6N/7D Titlis & Jungfraujoch",
+        "description": "Book 6N/7D Switzerland tour package with infiYATRA. Explore Zurich, Lucerne, Mt Titlis, and Jungfraujoch Top of Europe with 4-star stays and Swiss Rail Pass."
+      }
+    },
+    {
       "id": 105,
-      "title": "Exotic Thailand: Coral Island, Alcazar & Bangkok Temples",
+      "title": "Thailand Explorer (5N/6D)",
       "location": "Thailand, Thailand",
       "price": "18,999",
       "rating": 4.9,

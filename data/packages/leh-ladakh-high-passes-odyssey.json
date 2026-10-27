@@ -1,0 +1,254 @@
+{
+  "id": 109,
+  "slug": "leh-ladakh-high-passes-odyssey",
+  "title": "Leh Ladakh Odyssey (6N/7D)",
+  "tagline": "Azure expanse of Pangong Tso, high passes of Khardung La and Chang La, and sand dunes of Nubra Valley.",
+  "destination": "Ladakh",
+  "region": "Trans-Himalayas",
+  "country": "India",
+  "category": ["adventure", "nature", "culture", "backpacking"],
+  "duration": {
+    "nights": 6,
+    "days": 7
+  },
+  "route": [
+    { "city": "Leh", "nights": 3 },
+    { "city": "Nubra Valley", "nights": 2 },
+    { "city": "Pangong Tso", "nights": 1 }
+  ],
+  "price": {
+    "from": "27,999",
+    "currency": "INR",
+    "per": "person twin sharing",
+    "priceBands": {
+      "standard": "27,999",
+      "deluxe": "37,999",
+      "premium": "56,999"
+    },
+    "offerBadge": "Popular"
+  },
+  "bestTime": {
+    "months": ["May", "June", "July", "August", "September"],
+    "notes": "Peak travel season from late May to late September with clear blue skies, open high passes, daytime temperatures between 15°C and 24°C, and night temperatures dipping to 5°C."
+  },
+  "difficulty": "Moderate",
+  "groupType": "Adventure Seekers, Couples & Small Groups",
+  "minAge": 8,
+  "visaInfo": "Inner Line Permits (ILP) are mandatory for all domestic tourists visiting Nubra and Pangong; handled and included directly by our operations team.",
+  "overview": "Embark on an unforgettable high-altitude expedition across Ladakh, the Land of High Passes, where dramatic lunar valleys meet azure glacial lakes beneath the rooftop of the world. Begin in Leh with essential acclimatization, discovering the sacred halls of Thiksey Monastery, the cliffside historic Leh Palace, and the gravity-defying marvel of Magnetic Hill. Ascend through the legendary Khardung La at 17,982 feet into the fertile oasis of Nubra Valley. Ride double-humped Bactrian camels across the silver sand dunes of Hunder against a backdrop of snow-capped peaks, and visit the serene 106-foot golden Maitreya Buddha at Diskit Monastery. Traverse the rugged Shyok canyon route to reach the ethereal, color-shifting waters of Pangong Tso Lake at 14,270 feet, spending a starlit night in luxury insulated lakeside camps. Steered by certified high-altitude mountain drivers in 4x4 vehicles with onboard medical oxygen, heated rooms, and warm meals, this expedition promises the ultimate Himalayan journey.",
+  "highlights": [
+    "Ascent across world-famous Khardung La pass at 17,982 feet elevation",
+    "Overnight stay beside the color-changing blue waters of Pangong Tso lake",
+    "Double-humped Bactrian camel safari across Hunder sand dunes in Nubra Valley",
+    "Visit to the monumental 106-foot Maitreya Buddha and Diskit Monastery",
+    "Scenic stop at Magnetic Hill and the sacred confluence of Indus & Zanskar rivers",
+    "Spiritual sunrise prayer experience at the multi-tiered Thiksey Monastery",
+    "Inner Line Permits (ILP) and Wildlife Environment fees included with full oxygen backup"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Leh & Crucial High-Altitude Acclimatization",
+      "location": "Leh Arrival & Rest",
+      "description": "Touch down at Kushok Bakula Rimpochee Airport in Leh at 11,500 feet altitude, surrounded by dramatic barren peaks. Meet your local Ladakhi escort and transfer to your hotel. Strict complete rest is mandatory for the remainder of the day to allow your body to comfortably acclimatize to the thin mountain air. Drink plenty of warm water, ginger-lemon tea, and garlic soup. In the evening, take a gentle stroll around Leh Market or admire the illuminated white dome of Shanti Stupa in the distance before an early dinner.",
+      "activities": ["Airport Pickup", "Acclimatization Rest", "Gentle Evening Stroll"],
+      "meals": { "breakfast": false, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Mountain View Resort", "city": "Leh" },
+      "transferInfo": "Private AC Vehicle (Airport to Hotel, 6 km, 15 mins)"
+    },
+    {
+      "day": 2,
+      "title": "Sham Valley: Hall of Fame, Magnetic Hill & Sangam Confluence",
+      "location": "Leh & Sham Valley Excursion",
+      "description": "After a hearty breakfast, set out along the picturesque Leh-Srinagar highway to explore the cultural landmarks of Sham Valley. Pay homage to brave soldiers at the Indian Army Hall of Fame museum. Experience the gravity-defying optical phenomenon at Magnetic Hill, where vehicles appear to roll uphill in neutral. Stop at Gurudwara Pathar Sahib, maintained by army regiments. Continue to the dramatic confluence of the muddy Indus River and turquoise Zanskar River at Nimmu. Return to Leh in the late afternoon to visit the Shanti Stupa for sunset over the Zanskar range.",
+      "activities": ["Hall of Fame", "Magnetic Hill Phenomenon", "Indus-Zanskar Sangam", "Shanti Stupa Sunset"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Mountain View Resort", "city": "Leh" },
+      "transferInfo": "Private 4x4 / Mountain Vehicle (70 km roundtrip)"
+    },
+    {
+      "day": 3,
+      "title": "Leh to Nubra Valley via Majestic Khardung La Pass",
+      "location": "Leh to Nubra Valley",
+      "description": "Depart early after breakfast for an exhilarating mountain drive over Khardung La, one of the highest motorable mountain passes on Earth at 17,982 feet. Pause at the summit prayer flags for triumphant photos of the snow-clad Karakoram Range before descending into the fertile Nubra Valley, historically part of the ancient Silk Route. Arrive at Diskit to witness the magnificent 106-foot statue of Maitreya Buddha perched over the valley. Continue to Hunder village, check into your luxury valley resort, and relax among apricot trees.",
+      "activities": ["Khardung La Pass Crossing", "Diskit Monastery Buddha", "Hunder Arrival"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Luxury Valley Resort", "city": "Nubra Valley" },
+      "transferInfo": "Private Mountain Vehicle (125 km, approx. 4.5 hours)"
+    },
+    {
+      "day": 4,
+      "title": "Hunder White Sand Dunes & Turtuk Border Village Excursion",
+      "location": "Nubra Valley & Turtuk",
+      "description": "Begin the day riding rare double-humped Bactrian camels across the silver sand dunes of Hunder, a surreal desert landscape nestled against icy peaks. Afterward, drive alongside the turquoise Shyok River to Turtuk, India's northernmost village near the Line of Control, opened to tourists only in 2010. Explore stone-paved lanes, apricot orchards, and the historic palace of the Yabgo royal dynasty in this unique Balti Muslim enclave. Taste fresh dried apricots and walnut chutney before returning to your Nubra resort for dinner under a brilliant canopy of stars.",
+      "activities": ["Bactrian Camel Safari", "Turtuk Border Village", "Balti Cultural Walk"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Luxury Valley Resort", "city": "Nubra Valley" },
+      "transferInfo": "Private Mountain Vehicle (160 km roundtrip)"
+    },
+    {
+      "day": 5,
+      "title": "Nubra Valley to Pangong Tso Lake via Shyok River Canyon",
+      "location": "Nubra to Pangong Tso",
+      "description": "After breakfast, depart Hunder along the rugged, dramatic canyon road of the Shyok River route directly connecting Nubra to Pangong Tso. As you climb the final ridge, the breathless sight of Pangong Tso opens up—a 134-kilometer-long lake extending into Tibet, shifting between shades of deep sapphire, cerulean, and emerald green under changing sunlight. Check into your deluxe lakeside camp at 14,270 feet. Walk along the tranquil shore, watch the sunset paint the barren mountains in violet and amber, and stargaze into the Milky Way after dinner.",
+      "activities": ["Shyok River Route", "First View of Pangong Tso", "Lakeside Sunset Stroll", "Milky Way Stargazing"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Luxury Lakeview Camp", "city": "Pangong Tso" },
+      "transferInfo": "Private Mountain Vehicle (160 km, approx. 5.5 hours)"
+    },
+    {
+      "day": 6,
+      "title": "Pangong Sunrise to Leh via Chang La Pass & Thiksey Monastery",
+      "location": "Pangong to Leh",
+      "description": "Wake early to witness a magical Himalayan sunrise reflecting across the glassy waters of Pangong Tso. After a warm breakfast, begin the return journey to Leh crossing the formidable Chang La pass at 17,590 feet altitude. Descend into the Indus Valley, stopping to explore the grand 12-story Thiksey Monastery, famed for its striking architectural resemblance to Lhasa's Potala Palace. Also pause at the historic Shey Palace before arriving in Leh by late afternoon. Spend your final evening shopping for pashmina shawls and prayer wheels before a celebratory farewell Ladakhi dinner.",
+      "activities": ["Pangong Lake Sunrise", "Chang La Pass Crossing", "Thiksey Monastery Guided Visit", "Leh Bazaar Shopping"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Mountain View Resort", "city": "Leh" },
+      "transferInfo": "Private Mountain Vehicle (150 km, approx. 5 hours)"
+    },
+    {
+      "day": 7,
+      "title": "Leh Farewell & Early Morning Flight Departure",
+      "location": "Leh Airport Departure",
+      "description": "Enjoy an early breakfast and bid farewell to the majestic mountains of Ladakh. Your private chauffeur will transfer you to Kushok Bakula Rimpochee Airport in Leh for your morning flight back home. Gaze out of your aircraft window as you soar above endless rows of snow-clad Himalayan peaks, concluding an inspiring expedition through the rooftop of the world.",
+      "activities": ["Farewell Mountain Breakfast", "Leh Airport Transfer"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "Departure Day (No Overnight)", "city": "Leh" },
+      "transferInfo": "Private AC Transfer to Leh Airport (6 km, 15 mins)"
+    }
+  ],
+  "inclusions": [
+    "6 nights verified 4-star stays (3N Leh, 2N Nubra Valley, 1N Pangong Luxury Camp)",
+    "Daily buffet breakfast and wholesome hot mountain dinner at all resorts and camps",
+    "Dedicated 4x4 SUV (Toyota Innova / Crysta / Scorpio) with experienced mountain driver",
+    "All Inner Line Permits (ILP), Wildlife Sanctuary fees, and Red Cross contributions",
+    "Emergency oxygen cylinder in the vehicle for high-altitude passes",
+    "Bactrian camel ride experience ticket on Hunder sand dunes in Nubra Valley",
+    "All toll taxes, parking fees, environmental cess, and driver allowances included",
+    "24x7 local Ladakhi logistics coordination and high-altitude emergency support"
+  ],
+  "exclusions": [
+    "Airfare to and from Leh (Kushok Bakula Rimpochee Airport)",
+    "Monument and monastery entry fees (Thiksey, Diskit, Leh Palace)",
+    "Lunches and extra snacks not specified in the itinerary meal plan",
+    "Personal expenses such as laundry, extra heating charges, and driver tips",
+    "ATV / quad biking rental charges at Hunder sand dunes",
+    "Personal travel and medical insurance with high-altitude evacuation coverage",
+    "Costs arising from sudden landslides, roadblocks, flight cancellations, or bad weather",
+    "Any personal vehicle usage beyond the scheduled tour itinerary"
+  ],
+  "hotels": [
+    { "city": "Leh", "name": "The Grand Dragon / Spic N Span Leh", "category": "4-Star Mountain View Resort", "nights": 3 },
+    { "city": "Nubra Valley", "name": "Stone Hedge / Nubra Organic Retreat", "category": "4-Star Luxury Valley Resort", "nights": 2 },
+    { "city": "Pangong Tso", "name": "Pangong Sarai Deluxe Luxury Camp", "category": "4-Star Luxury Lakeview Camp", "nights": 1 }
+  ],
+  "transport": {
+    "mode": "Private Mountain-Grade SUV (Innova / Crysta / 4x4)",
+    "details": "Dedicated high-clearance mountain vehicle equipped with emergency oxygen kit and experienced hill chauffeur."
+  },
+  "thingsToCarry": [
+    "Warm thermal innerwear, fleece sweaters, down jacket, and woolen beanie",
+    "High SPF 50+ sunscreen, cold cream, and medicated lip balm for dry air",
+    "Polarized sunglasses to protect eyes from intense high-altitude glare and snow reflection",
+    "Prescribed Diamox (for acclimatization) and personal first-aid medical kit"
+  ],
+  "tips": [
+    "Adhere strictly to 24 hours of complete rest upon arrival in Leh on Day 1; avoid running or strenuous effort.",
+    "Drink at least 3 to 4 liters of water and soups daily to keep your body well hydrated at high altitudes.",
+    "Postpaid BSNL, Airtel, and Jio SIM cards function in Leh and Nubra; prepaid SIM cards from outside J&K do not work."
+  ],
+  "cancellationPolicy": [
+    "Free cancellation with 100% refund up to 15 days before departure date",
+    "50% cancellation fee between 14 and 7 days prior to departure",
+    "Non-refundable within 6 days of departure"
+  ],
+  "paymentTerms": "Book with 25% advance token; balance payable 10 days before departure.",
+  "faqs": [
+    {
+      "question": "Is Acute Mountain Sickness (AMS) common, and how is it managed?",
+      "answer": "Because Leh sits at 11,500 feet, mild symptoms like light headaches can occur. Day 1 is dedicated entirely to acclimatization. We also carry medical oxygen cylinders in every vehicle and advise plenty of fluids."
+    },
+    {
+      "question": "Do I need special permits for Nubra and Pangong?",
+      "answer": "Yes, Inner Line Permits (ILP) are required for all domestic tourists visiting border regions like Nubra, Turtuk, and Pangong. Our operations team arranges all permits in advance, included in your package."
+    },
+    {
+      "question": "Are the luxury camps at Pangong Tso heated and comfortable?",
+      "answer": "Yes, our luxury partner camps at Pangong feature weather-insulated heavy canvas walls, attached private western toilets, hot water buckets, and warm thermal blankets."
+    },
+    {
+      "question": "What is the best month to book this Ladakh tour?",
+      "answer": "June through September is the prime window when all mountain passes including Khardung La and Chang La are clear of snow, roads are in optimal condition, and daytime weather is sunny and pleasant."
+    },
+    {
+      "question": "Can senior citizens or children join this tour?",
+      "answer": "Yes, healthy seniors and children above 8 years old routinely complete this tour comfortably. A routine doctor consultation regarding high altitude travel is recommended prior to booking."
+    },
+    {
+      "question": "Are pure vegetarian and Jain food options available in Ladakh?",
+      "answer": "Yes, all our partner resorts and luxury camps in Leh, Nubra, and Pangong provide freshly prepared pure vegetarian and Jain meals upon request."
+    }
+  ],
+  "departures": [
+    { "date": "2026-05-25", "price": "27,999", "seatsTotal": 14, "seatsLeft": 6, "status": "Filling Fast" },
+    { "date": "2026-06-15", "price": "29,999", "seatsTotal": 16, "seatsLeft": 9, "status": "Open" },
+    { "date": "2026-07-10", "price": "31,999", "seatsTotal": 16, "seatsLeft": 4, "status": "Filling Fast" },
+    { "date": "2026-08-20", "price": "28,999", "seatsTotal": 14, "seatsLeft": 8, "status": "Open" }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Crystal clear azure waters of Pangong Tso Lake reflecting barren mountain peaks",
+      "caption": "The shifting sapphire and turquoise shades of Pangong Tso Lake at 14,270 feet",
+      "credit": "Devesh Trivedi",
+      "creditUrl": "https://unsplash.com/@deveshtrivedi",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Hunder silver sand dunes in Nubra Valley Ladakh with double humped camels",
+      "caption": "Bactrian double-humped camels wandering the high-altitude sand dunes of Hunder",
+      "credit": "Bailey Zindel",
+      "creditUrl": "https://unsplash.com/@baileyzindel",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Monk in red robes looking out from Thiksey Monastery in Indus Valley Leh",
+      "caption": "The majestic multi-tiered Thiksey Monastery perched over the Indus Valley",
+      "credit": "Prateek Katyal",
+      "creditUrl": "https://unsplash.com/@prateekkatyal",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Khardung La mountain pass sign board at 17982 feet altitude in Ladakh",
+      "caption": "Prayer flags fluttering in strong mountain winds across the Khardung La summit",
+      "credit": "Vivek Sharma",
+      "creditUrl": "https://unsplash.com/@vivek_sharma",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Colossal 106-foot golden Maitreya Buddha statue in Diskit Nubra Valley",
+      "caption": "The colossal Maitreya Buddha statue gazing serenely over the Nubra Valley",
+      "credit": "Aditya Chache",
+      "creditUrl": "https://unsplash.com/@adityachache",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1510414842594-a61752afb392?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Scenic Sangam confluence of Indus and Zanskar rivers in Ladakh",
+      "caption": "The striking color contrast at the sacred confluence of Indus and Zanskar rivers",
+      "credit": "Jeremy Bishop",
+      "creditUrl": "https://unsplash.com/@jeremybishop",
+      "source": "Unsplash"
+    }
+  ],
+  "seo": {
+    "title": "Ladakh Tour Package: 6N/7D Leh, Nubra & Pangong Lake",
+    "description": "Book 6N/7D Leh Ladakh package with infiYATRA. Cross Khardung La, ride Bactrian camels in Nubra, and camp beside Pangong Tso with 4-star stays and 4x4 cab."
+  },
+  "status": "published",
+  "featured": true
+}

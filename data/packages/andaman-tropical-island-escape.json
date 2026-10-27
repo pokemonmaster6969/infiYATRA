@@ -1,0 +1,244 @@
+{
+  "id": 108,
+  "slug": "andaman-tropical-island-escape",
+  "title": "Andaman Tropical (5N/6D)",
+  "tagline": "Turquoise waters of Radhanagar Beach, historic Cellular Jail sound-and-light, and coral reefs of Havelock and Neil.",
+  "destination": "Andaman",
+  "region": "Bay of Bengal",
+  "country": "India",
+  "category": ["beach", "honeymoon", "adventure", "nature", "family"],
+  "duration": {
+    "nights": 5,
+    "days": 6
+  },
+  "route": [
+    { "city": "Port Blair", "nights": 2 },
+    { "city": "Havelock Island", "nights": 2 },
+    { "city": "Neil Island", "nights": 1 }
+  ],
+  "price": {
+    "from": "28,999",
+    "currency": "INR",
+    "per": "person twin sharing",
+    "priceBands": {
+      "standard": "28,999",
+      "deluxe": "38,999",
+      "premium": "59,999"
+    },
+    "offerBadge": "Popular"
+  },
+  "bestTime": {
+    "months": ["October", "November", "December", "January", "February", "March", "April", "May"],
+    "notes": "Ideal tropical island weather from October to May with crystal-clear turquoise seas, calm waters, and underwater visibility up to 25 meters."
+  },
+  "difficulty": "Easy",
+  "groupType": "Couples, Beach Lovers & Adventure Seekers",
+  "minAge": 5,
+  "visaInfo": "No passport or domestic permit needed for Indian citizens. Restricted Area Permit (RAP) is waived for standard tourist islands.",
+  "overview": "Escape to the pristine archipelago of the Andaman and Nicobar Islands, where powdery white coral sands merge into turquoise waters and dense tropical rainforests. Begin in Port Blair with an evocative journey through Indian freedom struggle history at the historic Cellular Jail, capped by its poignant evening Light and Sound show. Board an air-conditioned luxury catamaran across the open ocean to Havelock Island (Swaraj Dweep). Sunkissed hours await at Asia's celebrated Radhanagar Beach, consistently rated among the world's most breathtaking coastlines for its epic crimson sunsets, and at Elephant Beach with its vibrant fringing coral reefs teeming with marine life. Journey onward to peaceful Neil Island (Shaheed Dweep) to wander across the natural geological wonder of Howrah Bridge and relax on Bharatpur and Laxmanpur beaches. Complete with inter-island cruise transfers, verified beachfront four-star resorts, daily breakfasts and dinners, and round-the-clock island coordination, this tropical getaway guarantees an extraordinary island reverie.",
+  "highlights": [
+    "Historic Cellular Jail guided tour and evocative evening Sound & Light show",
+    "Scenic high-speed luxury catamaran cruise transfers across Andaman waters",
+    "Sunset at world-famous Radhanagar Beach (Beach No. 7) on Havelock Island",
+    "Snorkeling, sea walk, or glass-bottom boat ride at Elephant Beach coral reef",
+    "Exploration of the unique natural living rock formation at Howrah Bridge on Neil",
+    "Relaxed sunset stroll along the shell-strewn white sands of Laxmanpur Beach",
+    "Private air-conditioned transfers for all airport and jetty movements"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Port Blair & Historic Cellular Jail Light Show",
+      "location": "Port Blair Arrival",
+      "description": "Land at Veer Savarkar International Airport in Port Blair, greeted by ocean air and tropical warmth. Meet your private island escort and transfer to your seaside resort. After relaxing, visit the national memorial of Cellular Jail in the afternoon. Walk through its historic central tower and solitary confinement wings where Indian freedom fighters made untold sacrifices. At dusk, witness the deeply moving Light and Sound show narrating the epic struggle for independence under a star-filled island sky. Enjoy a coastal seafood dinner at your resort.",
+      "activities": ["Airport Meet & Greet", "Cellular Jail National Memorial", "Sound and Light Show"],
+      "meals": { "breakfast": false, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Seaside Resort", "city": "Port Blair" },
+      "transferInfo": "Private AC Vehicle (Airport to Hotel, 10 km, 20 mins)"
+    },
+    {
+      "day": 2,
+      "title": "Catamaran Cruise to Havelock & Radhanagar Sunset",
+      "location": "Port Blair to Havelock Island",
+      "description": "After an early breakfast, transfer to Phoenix Bay Jetty to board a high-speed luxury private catamaran (Makruzz or Green Ocean) bound for Havelock Island. Watch flying fish leap alongside the ship as you cruise across the deep blue Andaman Sea. Arrive at Havelock Jetty, transfer to your beachfront resort, and settle in among swaying coconut palms. In the late afternoon, head to world-renowned Radhanagar Beach (Beach No. 7). Walk along the wide white sands, swim in warm crystalline waters, and watch an unforgettable fiery sunset over the horizon.",
+      "activities": ["Catamaran Cruise", "Havelock Island Arrival", "Radhanagar Beach Sunset Walk"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Beachfront Resort", "city": "Havelock Island" },
+      "transferInfo": "Private AC transfers + Luxury Catamaran Cruise (approx. 2.5 hours cruise)"
+    },
+    {
+      "day": 3,
+      "title": "Elephant Beach Coral Reef Exploration & Water Sports",
+      "location": "Havelock Island Water Adventures",
+      "description": "Set out by speedboat in the morning to Elephant Beach, famous for its thriving near-shore coral reefs. Strap on snorkel gear or board a glass-bottom boat to witness vibrant brain corals, sea anemones, and schools of colorful clownfish and parrotfish gliding through warm tropical water. Thrill-seekers can try tandem jet skiing, banana boat rides, or undersea walking. Return to your resort by midday for an afternoon at leisure lounging by the pool or bicycling through village lanes. Relish a romantic candlelit dinner by the shore.",
+      "activities": ["Speedboat to Elephant Beach", "Coral Snorkeling", "Optional Undersea Walking", "Beach Leisure"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Beachfront Resort", "city": "Havelock Island" },
+      "transferInfo": "Private local transfers + Speedboat shuttle to Elephant Beach"
+    },
+    {
+      "day": 4,
+      "title": "Havelock to Neil Island: Natural Bridge & Laxmanpur Sunset",
+      "location": "Havelock to Neil Island",
+      "description": "Board a morning ferry from Havelock across to tranquil Neil Island (Shaheed Dweep), the vegetable bowl of the Andamans. Check in to your eco-resort and set off to explore the geological wonder of the Natural Rock Formation, locally known as Howrah Bridge, revealed during low tide along the dead coral beds. Continue to Laxmanpur Beach in the evening, a secluded white sand beach famous for its deep orange sunsets and scattered decorative seashells. Enjoy a relaxed tropical island dinner under the palms.",
+      "activities": ["Ferry to Neil Island", "Natural Living Rock Bridge", "Laxmanpur Sunset Point"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Island Resort", "city": "Neil Island" },
+      "transferInfo": "Private AC transfers + Inter-island Catamaran (approx. 1 hour)"
+    },
+    {
+      "day": 5,
+      "title": "Bharatpur Beach Coral Lagoon & Return to Port Blair",
+      "location": "Neil Island to Port Blair",
+      "description": "Spend a peaceful morning at Bharatpur Beach, renowned for its crystal-clear shallow lagoon and gentle turquoise waves ideal for swimming and glass-bottom coral viewing. Later, transfer to Neil Jetty for your return catamaran voyage back to Port Blair. Arrive by afternoon and check into your hotel. Spend the evening browsing Aberdeen Bazaar for unique Andaman sea-shell souvenirs, coconut shell lamps, and local island honey before a special farewell coastal dinner featuring fresh catch of the day.",
+      "activities": ["Bharatpur Beach Swimming", "Catamaran Cruise to Port Blair", "Aberdeen Bazaar Souvenirs"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Seaside Resort", "city": "Port Blair" },
+      "transferInfo": "Private AC transfers + Return Catamaran Cruise (approx. 2 hours)"
+    },
+    {
+      "day": 6,
+      "title": "Port Blair Farewell & Airport Departure",
+      "location": "Port Blair Departure",
+      "description": "Enjoy your final island breakfast with tropical fruits overlooking the Bay of Bengal. Take in the fresh ocean breeze and capture last photos of the palm-fringed shoreline. Your private chauffeur will transfer you comfortably to Veer Savarkar International Airport in Port Blair with ample time for your return flight home, carrying sun-kissed memories of emerald island waters and tropical tranquility.",
+      "activities": ["Resort Breakfast", "Souvenir Checkout", "Airport Departure Transfer"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "Departure Day (No Overnight)", "city": "Port Blair" },
+      "transferInfo": "Private AC Transfer to Port Blair Airport (10 km, 20 mins)"
+    }
+  ],
+  "inclusions": [
+    "5 nights verified 4-star beachfront stays (2N Port Blair, 2N Havelock, 1N Neil Island)",
+    "Daily buffet breakfast and multi-course coastal dinner at all island resorts",
+    "Confirmed high-speed luxury catamaran tickets (Makruzz / Nautika / Green Ocean)",
+    "Speedboat transfers and snorkeling gear session at Elephant Beach in Havelock",
+    "Entry tickets and reserved seating for the Cellular Jail Sound & Light show",
+    "All inter-island jetty and airport private transfers in air-conditioned vehicles",
+    "All applicable island taxes, parking permits, and driver charges included",
+    "24x7 local Andaman island coordinator and certified island travel concierge"
+  ],
+  "exclusions": [
+    "Airfare to and from Port Blair from the Indian mainland",
+    "Scuba diving, undersea walking, or jet ski fees (can be added on request)",
+    "Personal expenses such as laundry, room service, alcoholic drinks, and tips",
+    "Camera and professional photography fees at monuments and parks",
+    "Lunches and daytime snacks not specified in the meal plan",
+    "Costs incurred due to ferry schedule adjustments caused by stormy weather",
+    "Comprehensive personal travel insurance and medical evacuation expenses",
+    "Sightseeing or cab usage beyond designated itinerary hours"
+  ],
+  "hotels": [
+    { "city": "Port Blair", "name": "Sea Shell Port Blair / Symphony Samudra", "category": "4-Star Beach Resort", "nights": 2 },
+    { "city": "Havelock Island", "name": "Silver Sand Beach Resort / Barefoot", "category": "4-Star Beachfront Villa", "nights": 2 },
+    { "city": "Neil Island", "name": "Sea Shell Neil / Summer Sands", "category": "4-Star Island Resort", "nights": 1 }
+  ],
+  "transport": {
+    "mode": "Private AC Cab + Luxury Catamaran Ferry",
+    "details": "Dedicated air-conditioned road transfers on all islands plus premium reserved catamaran seats."
+  },
+  "thingsToCarry": [
+    "Comfortable beachwear, quick-dry swimsuits, and cotton resort outfits",
+    "Reef-safe sunscreen, polarized UV sunglasses, and wide-brim hat",
+    "Waterproof pouch for smartphones and dry bag for speedboat transfers",
+    "Valid government photo ID (Aadhaar or Passport) mandatory for all ferry boarding"
+  ],
+  "tips": [
+    "Always reach ferry jetties at least 45 minutes prior to scheduled catamaran departure times.",
+    "Do not collect or remove coral shells from beaches, as strict forest protection laws apply at airports.",
+    "ATMs on Havelock and Neil can run out of cash during peak holiday weekends; carry emergency cash from Port Blair."
+  ],
+  "cancellationPolicy": [
+    "Free cancellation with 100% refund up to 15 days before departure date",
+    "50% cancellation fee between 14 and 7 days prior to departure",
+    "Non-refundable within 6 days of departure"
+  ],
+  "paymentTerms": "Book with 25% advance token; balance payable 10 days before departure.",
+  "faqs": [
+    {
+      "question": "Do Indian citizens need a passport or visa to visit Andaman?",
+      "answer": "No, Indian citizens do not need a passport or visa. A valid government photo identity card (such as Aadhaar Card, Voter ID, or Driving License) is sufficient for all travel."
+    },
+    {
+      "question": "Which catamaran ferries are used for island transfers?",
+      "answer": "We book confirmed luxury air-conditioned catamarans such as Makruzz, Nautika, or Green Ocean with comfortable pushback seats, panoramic sea-view windows, and onboard snack kiosks."
+    },
+    {
+      "question": "Can non-swimmers try snorkeling and scuba diving?",
+      "answer": "Yes! Both snorkeling at Elephant Beach and introductory scuba diving are conducted with certified PADI divemasters who hold your hand throughout the experience with full safety gear."
+    },
+    {
+      "question": "Is Radhanagar Beach safe for swimming?",
+      "answer": "Yes, Radhanagar Beach has gentle slopes and clean waters, with trained lifeguards stationed during daylight hours, making it one of the safest beaches in Asia for family swimming."
+    },
+    {
+      "question": "How is mobile network connectivity in the Andaman Islands?",
+      "answer": "Airtel and BSNL provide reliable 4G connectivity across Port Blair, Havelock, and Neil Island. Resort Wi-Fi is available for essential messaging and browsing."
+    },
+    {
+      "question": "Are pure vegetarian and Jain meal options available on the islands?",
+      "answer": "Yes, all our verified partner beachfront resorts feature dedicated vegetarian cooking stations and offer delicious North and South Indian vegetarian meals including Jain preparations."
+    }
+  ],
+  "departures": [
+    { "date": "2026-11-12", "price": "28,999", "seatsTotal": 14, "seatsLeft": 6, "status": "Filling Fast" },
+    { "date": "2026-12-08", "price": "31,999", "seatsTotal": 16, "seatsLeft": 8, "status": "Open" },
+    { "date": "2026-12-23", "price": "36,999", "seatsTotal": 16, "seatsLeft": 3, "status": "Filling Fast" },
+    { "date": "2027-01-20", "price": "29,999", "seatsTotal": 14, "seatsLeft": 10, "status": "Open" }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Crystal clear turquoise water and pristine white sand of Radhanagar Beach",
+      "caption": "The powdery white sands and azure waves of world-famous Radhanagar Beach on Havelock",
+      "credit": "Tatiana Zhukova",
+      "creditUrl": "https://unsplash.com/@tatianazhukova",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Tropical palm trees framing tranquil turquoise Andaman lagoon",
+      "caption": "Verdant coconut palms leaning over gentle coral lagoons on Neil Island",
+      "credit": "Sean Oulashin",
+      "creditUrl": "https://unsplash.com/@oulashin",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Snorkeling and scuba diving along coral reef in Andaman sea",
+      "caption": "Thriving underwater coral gardens and tropical marine life at Elephant Beach",
+      "credit": "Sebastian Pena",
+      "creditUrl": "https://unsplash.com/@sebaspenalambarri",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1510414842594-a61752afb392?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Sunset over calm ocean waves on Laxmanpur beach Neil Island",
+      "caption": "Golden hour glow across the scattered shells and coral flats of Laxmanpur Beach",
+      "credit": "Jeremy Bishop",
+      "creditUrl": "https://unsplash.com/@jeremybishop",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Natural Bridge coral rock formation on Neil Island Andaman",
+      "caption": "The distinctive living rock bridge formation carved by tides on Neil Island",
+      "credit": "Bailey Zindel",
+      "creditUrl": "https://unsplash.com/@baileyzindel",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Secluded tropical beach resort with ocean view in Andaman",
+      "caption": "Private beachfront luxury cottages nestled along the peaceful coast of Havelock",
+      "credit": "Federico Bottos",
+      "creditUrl": "https://unsplash.com/@federicobottos",
+      "source": "Unsplash"
+    }
+  ],
+  "seo": {
+    "title": "Andaman Tour Package: 5N/6D Havelock & Neil Island",
+    "description": "Book 5N/6D Andaman package with infiYATRA. Visit Port Blair, Radhanagar Beach on Havelock, and Neil Island with 4-star stays, catamaran ferry and transfers."
+  },
+  "status": "published",
+  "featured": true
+}

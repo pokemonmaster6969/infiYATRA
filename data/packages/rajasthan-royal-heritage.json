@@ -1,0 +1,254 @@
+{
+  "id": 107,
+  "slug": "rajasthan-royal-heritage",
+  "title": "Royal Rajasthan (6N/7D)",
+  "tagline": "Gilded palaces of Jaipur, towering Mehrangarh in Jodhpur, and romantic sunset boat rides on Lake Pichola in Udaipur.",
+  "destination": "Rajasthan",
+  "region": "Northwest India",
+  "country": "India",
+  "category": ["heritage", "luxury", "culture", "family"],
+  "duration": {
+    "nights": 6,
+    "days": 7
+  },
+  "route": [
+    { "city": "Jaipur", "nights": 2 },
+    { "city": "Jodhpur", "nights": 1 },
+    { "city": "Udaipur", "nights": 3 }
+  ],
+  "price": {
+    "from": "26,999",
+    "currency": "INR",
+    "per": "person twin sharing",
+    "priceBands": {
+      "standard": "26,999",
+      "deluxe": "36,999",
+      "premium": "58,999"
+    },
+    "offerBadge": "Best Seller"
+  },
+  "bestTime": {
+    "months": ["October", "November", "December", "January", "February", "March"],
+    "notes": "Pleasant, sunny days and cool royal evenings (12°C to 26°C); ideal for sightseeing forts, palaces, and desert drives."
+  },
+  "difficulty": "Easy",
+  "groupType": "Couples, Families & Heritage Travelers",
+  "minAge": 5,
+  "visaInfo": "No visa or domestic permits required for Indian travelers. Valid government-issued photo ID required at hotels.",
+  "overview": "Step into the regal grandeur of the Land of Kings on an authentic journey through Rajasthan's three most fabled royal capitals: Jaipur, Jodhpur, and Udaipur. Ascend the imposing ramparts of Amber Fort in the Pink City, marvel at the intricate honeycomb façade of Hawa Mahal, and explore the astronomical wonders of Jantar Mantar. Travel west across arid desert scrubland to Jodhpur, the Blue City, where the sheer cliffside bastions of Mehrangarh Fort guard centuries of Rajput valor and Jaswant Thada's white marble shimmers. Wind south through the Aravalli hills to Udaipur, the City of Lakes. Wander through the sprawling courtyards of the City Palace, witness classical Rajasthani folk performances at Bagore Ki Haveli, and glide past the floating Lake Palace on a serene evening boat cruise across Lake Pichola. With verified heritage haveli stays, daily royal breakfasts and dinners, private air-conditioned vehicle transfers, and verified local historical guides, this journey brings Indian royal history to life with unmatched warmth.",
+  "highlights": [
+    "Grand exploration of Amber Fort, Hawa Mahal, and City Palace in Jaipur",
+    "Astronomical discoveries at UNESCO-listed Jantar Mantar observatory",
+    "Panoramic fortress views from Mehrangarh Fort towering above Jodhpur",
+    "Visit to the royal marble cenotaph of Jaswant Thada in the Blue City",
+    "Scenic drive through the scenic Aravalli hills to romantic Udaipur",
+    "Sunset boat cruise on Lake Pichola with views of the floating Lake Palace",
+    "Folk dance and puppet performance at historical Bagore Ki Haveli"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in the Pink City & Hawa Mahal Evening Exploration",
+      "location": "Jaipur Arrival",
+      "description": "Arrive at Jaipur International Airport or Railway Station, where your private chauffeur welcomes you with traditional Rajasthani warmth. Transfer to your handpicked heritage haveli, adorned with ornate arches and tranquil courtyards. In the late afternoon, take a relaxed drive past the iconic pink sandstone lattice facade of Hawa Mahal (Palace of Winds). Stroll through the lively Johari Bazaar and Bapu Bazaar, savoring fragrant kachoris and browsing colorful block-printed textiles and blue pottery. Return to your haveli for a welcoming royal Rajasthani dinner by candlelit courtyards.",
+      "activities": ["Chauffeur Pickup", "Hawa Mahal Photo Stop", "Bazaar Walking Tour"],
+      "meals": { "breakfast": false, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Heritage Haveli", "city": "Jaipur" },
+      "transferInfo": "Private AC Vehicle (Airport to Hotel, 15 km, 35 mins)"
+    },
+    {
+      "day": 2,
+      "title": "Amber Fort Ramparts, Jal Mahal & Royal City Palace",
+      "location": "Jaipur Sightseeing",
+      "description": "After a royal breakfast, journey to the rugged hills of Amer to explore the majestic Amber Fort. Marvel at the gleaming Sheesh Mahal (Mirror Palace) where candlelight creates a dazzling starry illusion, and admire the sweeping views over Maota Lake. Stop on your return to photograph the serene water palace of Jal Mahal resting gracefully in Man Sagar Lake. In the afternoon, visit the sprawling City Palace complex and the astronomical wonders of UNESCO World Heritage Jantar Mantar. Enjoy an authentic dinner featuring Dal Baati Churma in a heritage courtyard setting.",
+      "activities": ["Amber Fort Guided Tour", "Sheesh Mahal Mirrors", "Jal Mahal Viewpoint", "City Palace", "Jantar Mantar"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Heritage Haveli", "city": "Jaipur" },
+      "transferInfo": "Private AC Vehicle (Full day city touring, 45 km)"
+    },
+    {
+      "day": 3,
+      "title": "Jaipur to Jodhpur & Mehrangarh Sunset Ramparts",
+      "location": "Jaipur to Jodhpur",
+      "description": "Depart Jaipur after breakfast on a scenic western highway drive toward the sun-drenched Thar desert fringes of Jodhpur. Arrive by early afternoon in the Blue City and check in to your heritage hotel. Head straight to the monumental Mehrangarh Fort, perched atop a 400-foot cliff, to explore its royal palanquins, weaponry museum, and vast courtyards. Watch the sun dip over the sprawling sea of indigo-blue painted houses below from the fort's western cannon ramparts. Visit nearby Jaswant Thada, the serene white marble royal cenotaph, before an evening rooftop dinner.",
+      "activities": ["Intercity Scenic Drive", "Mehrangarh Fort Tour", "Jaswant Thada Cenotaph", "Rooftop Sunset Dinner"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Heritage Palace Hotel", "city": "Jodhpur" },
+      "transferInfo": "Private AC Vehicle (330 km, approx. 6 hours via NH25)"
+    },
+    {
+      "day": 4,
+      "title": "Jodhpur to Udaipur via Ranakpur Jain Temple",
+      "location": "Jodhpur to Udaipur",
+      "description": "Enjoy breakfast before driving south through the winding Aravalli Range toward Udaipur. Break your journey at Ranakpur to marvel at the 15th-century marble Jain Temple, renowned for its 1,444 uniquely carved pillars where no two carvings are identical. Continue through lush green valleys, arriving in the romantic City of Lakes by late afternoon. Check into your lakeview hotel, unwind with refreshing spiced tea, and take an evening promenade along Fateh Sagar Lake as decorative streetlights reflect softly across the ripples. Relish a lakeside multi-course dinner under starry skies.",
+      "activities": ["Aravalli Hills Drive", "Ranakpur Marble Temple Visit", "Fateh Sagar Lake Walk"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Lakeview Resort", "city": "Udaipur" },
+      "transferInfo": "Private AC Vehicle (260 km, approx. 5.5 hours)"
+    },
+    {
+      "day": 5,
+      "title": "Grand City Palace, Saheliyon Ki Bari & Sunset Pichola Cruise",
+      "location": "Udaipur Sightseeing",
+      "description": "Spend a captivating day uncovering Udaipur's royal heritage. Begin with a guided exploration of the magnificent City Palace, the largest palace complex in Rajasthan, admiring its peacocks mosaics, glass mirror chambers, and panoramic lake balconies. Visit Saheliyon Ki Bari (Garden of the Maids of Honor) with its lotus pools and marble elephant fountains. In the late afternoon, board a private boat on Lake Pichola, gliding past Jag Mandir and the world-famous Taj Lake Palace as the setting sun bathes the palace walls in brilliant gold. Enjoy dinner overlooking the illuminated lake.",
+      "activities": ["City Palace Guided Tour", "Saheliyon Ki Bari Fountains", "Lake Pichola Sunset Boat Ride"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Lakeview Resort", "city": "Udaipur" },
+      "transferInfo": "Private AC Vehicle (City transfers, 25 km)"
+    },
+    {
+      "day": 6,
+      "title": "Monsoon Palace Sajjangarh & Folk Cultural Evening",
+      "location": "Udaipur Leisure & Culture",
+      "description": "Drive up the winding peak to the hilltop Sajjangarh Fort (Monsoon Palace), which offers dramatic 360-degree vistas across the entire lake valley and surrounding mountain sanctuaries. Spend the afternoon shopping for authentic miniature paintings, silver jewelry, and handcrafted leather journals in the quaint artisan lanes near Jagdish Temple. At dusk, witness the celebrated Dharohar Rajasthani folk dance and puppet performance at historical Bagore Ki Haveli on Gangaur Ghat, followed by a celebratory farewell dinner featuring authentic Mewari specialties.",
+      "activities": ["Monsoon Palace Sajjangarh", "Artisan Miniature Paintings", "Bagore Ki Haveli Folk Dance"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Lakeview Resort", "city": "Udaipur" },
+      "transferInfo": "Private AC Vehicle (Local transfers, 30 km)"
+    },
+    {
+      "day": 7,
+      "title": "Udaipur Farewell & Airport Departure",
+      "location": "Udaipur Departure",
+      "description": "Savor your final breakfast overlooking the calm waters of Lake Pichola. Depending on your flight schedule, enjoy a relaxed morning walk around the heritage ghats or pick up last-minute handmade souvenirs and spices. Your chauffeur will assist with luggage and transfer you comfortably to Maharana Pratap Airport or Udaipur Railway Station for your flight home, concluding an unforgettable journey through the royal kingdoms of Rajasthan.",
+      "activities": ["Morning Lake Walk", "Souvenir Shopping", "Airport Transfer"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "Departure Day (No Overnight)", "city": "Udaipur" },
+      "transferInfo": "Private AC Transfer to Udaipur Airport (25 km, 45 mins)"
+    }
+  ],
+  "inclusions": [
+    "6 nights premium heritage accommodations (2N Jaipur, 1N Jodhpur, 3N Udaipur)",
+    "Daily royal buffet breakfast and multi-course chef-curated dinner at all hotels",
+    "Dedicated private air-conditioned sedan or SUV for all intercity transfers and tours",
+    "Sunset boat cruise ticket on Lake Pichola in Udaipur",
+    "Cultural Rajasthani folk dance evening show entry at Bagore Ki Haveli",
+    "All toll taxes, state road taxes, parking fees, and driver night allowances",
+    "All applicable goods and service taxes (GST) included with complete transparency",
+    "24x7 dedicated heritage travel concierge and certified expert royal chauffeur"
+  ],
+  "exclusions": [
+    "Airfare or train tickets to Jaipur and from Udaipur",
+    "Monument, museum, and fort entry tickets (Amber Fort, Mehrangarh, City Palace)",
+    "Lunches and daytime snacks not specified in the meal inclusions",
+    "Camera and professional photography permits at monuments",
+    "Personal expenses such as alcoholic beverages, laundry, and tipping",
+    "Optional elephant or jeep ride charges at Amber Fort",
+    "Travel insurance, medical expenses, or emergency evacuation costs",
+    "Any personal sightseeing or cab usage beyond the designated itinerary hours"
+  ],
+  "hotels": [
+    { "city": "Jaipur", "name": "Alsisar Haveli / Shahpura House", "category": "4-Star Heritage Haveli", "nights": 2 },
+    { "city": "Jodhpur", "name": "Ranbanka Palace / Ajit Bhawan", "category": "4-Star Heritage Palace", "nights": 1 },
+    { "city": "Udaipur", "name": "Fateh Garh / Trident Udaipur", "category": "4-Star Lakeview Resort", "nights": 3 }
+  ],
+  "transport": {
+    "mode": "Private AC Sedan / Innova Crysta",
+    "details": "Dedicated sanitized private vehicle with verified experienced chauffeur for all highway and local transfers."
+  },
+  "thingsToCarry": [
+    "Comfortable cotton clothing for daytime and light woolen jacket for chilly desert nights",
+    "Walking shoes or cushioned sandals suitable for cobbled fort ramparts",
+    "Sunglasses, wide-brim hat, and high SPF sunscreen lotion",
+    "Valid government photo ID cards for hotel check-in protocols"
+  ],
+  "tips": [
+    "Keep spare cash for local bazaar shopping as small artisans may not always accept cards.",
+    "Visit Mehrangarh Fort and Amber Fort in the early morning to beat afternoon heat and crowds.",
+    "Modest dress covering shoulders and knees is recommended when entering historical temples."
+  ],
+  "cancellationPolicy": [
+    "Free cancellation with 100% refund up to 15 days before departure date",
+    "50% cancellation fee between 14 and 7 days prior to departure",
+    "Non-refundable within 6 days of departure"
+  ],
+  "paymentTerms": "Secure your booking with 25% advance; remaining balance due 10 days before travel.",
+  "faqs": [
+    {
+      "question": "What is the best time of year to visit Rajasthan?",
+      "answer": "October through March is the ideal season, offering sunny pleasant daytime temperatures around 22°C to 26°C and cool crisp evenings, perfect for outdoor palace exploration."
+    },
+    {
+      "question": "Are the hotels authentic royal heritage properties?",
+      "answer": "Yes, we exclusively partner with verified heritage havelis and historic boutique palace hotels that feature traditional Rajasthani architecture, ornate jharokhas, and courtyard pools."
+    },
+    {
+      "question": "Is the Lake Pichola boat cruise included in the package?",
+      "answer": "Yes, standard boat cruise tickets across Lake Pichola offering close views of the Taj Lake Palace and Jag Mandir island are included in the package cost."
+    },
+    {
+      "question": "Can this itinerary be customized for different cities?",
+      "answer": "Absolutely. You can easily add extensions to the golden sand dunes of Jaisalmer or Pushkar by clicking the Customize Trip button on the site."
+    },
+    {
+      "question": "Is Rajasthan safe for family travel and senior citizens?",
+      "answer": "Rajasthan is one of the safest and most hospitable destinations in India. Our private vehicles and attentive drivers ensure senior citizens and children travel with complete comfort."
+    },
+    {
+      "question": "Are pure vegetarian and Jain meals available throughout the tour?",
+      "answer": "Yes, Rajasthan is world-renowned for its rich vegetarian cuisine. All our partner hotels and recommended restaurants provide authentic pure vegetarian and Jain meal preparations."
+    }
+  ],
+  "departures": [
+    { "date": "2026-11-10", "price": "26,999", "seatsTotal": 14, "seatsLeft": 5, "status": "Filling Fast" },
+    { "date": "2026-11-28", "price": "28,999", "seatsTotal": 16, "seatsLeft": 8, "status": "Open" },
+    { "date": "2026-12-18", "price": "32,999", "seatsTotal": 16, "seatsLeft": 3, "status": "Filling Fast" },
+    { "date": "2027-01-15", "price": "27,999", "seatsTotal": 14, "seatsLeft": 9, "status": "Open" }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Majestic Amber Fort reflecting in Maota Lake in Jaipur Rajasthan",
+      "caption": "The massive sandstone bastions of Amber Fort soaring above Maota Lake",
+      "credit": "Annie Spratt",
+      "creditUrl": "https://unsplash.com/@anniespratt",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Intricate pink sandstone Hawa Mahal Palace of Winds in Jaipur",
+      "caption": "The iconic honeycombed lattice facade of Hawa Mahal along Jaipur's street",
+      "credit": "Felipe Portella",
+      "creditUrl": "https://unsplash.com/@felipepelaquim",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1579613832125-5d34a13ffe0a?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Mehrangarh Fort towering on high cliff above indigo Blue City Jodhpur",
+      "caption": "Mehrangarh Fort rising dramatically above the vibrant blue houses of Jodhpur",
+      "credit": "Sudipta Mondal",
+      "creditUrl": "https://unsplash.com/@sudiptamondal",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Lake Pichola boat cruise in Udaipur with City Palace background",
+      "caption": "Sunset boat ride on Lake Pichola with the glowing City Palace on the shore",
+      "credit": "Aditya Chache",
+      "creditUrl": "https://unsplash.com/@adityachache",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Ornate white marble pillars of Ranakpur Jain Temple in Rajasthan",
+      "caption": "The exquisite 1,444 uniquely carved marble columns of Ranakpur Jain Temple",
+      "credit": "Prateek Katyal",
+      "creditUrl": "https://unsplash.com/@prateekkatyal",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Historic Bagore Ki Haveli courtyard by Gangaur Ghat on Lake Pichola",
+      "caption": "Heritage lakeside architecture of Bagore Ki Haveli at Gangaur Ghat",
+      "credit": "Sylwia Bartyzel",
+      "creditUrl": "https://unsplash.com/@sylwiabartyzel",
+      "source": "Unsplash"
+    }
+  ],
+  "seo": {
+    "title": "Rajasthan Tour Package: 6N/7D Jaipur, Jodhpur & Udaipur",
+    "description": "Book 6N/7D Royal Rajasthan package with infiYATRA. Explore Jaipur forts, Mehrangarh in Jodhpur, and Lake Pichola in Udaipur with heritage stays and private cab."
+  },
+  "status": "published",
+  "featured": true
+}

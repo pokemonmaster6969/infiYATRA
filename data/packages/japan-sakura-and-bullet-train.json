@@ -1,0 +1,256 @@
+{
+  "id": 113,
+  "slug": "japan-sakura-and-bullet-train",
+  "title": "Classic Japan (6N/7D)",
+  "tagline": "Bullet trains across Honshu, glowing Shinjuku skyscapes, sacred Mount Fuji in Hakone, and thousand-torii gates of Kyoto.",
+  "destination": "Japan",
+  "region": "East Asia",
+  "country": "Japan",
+  "category": ["international", "luxury", "culture", "nature", "family"],
+  "duration": {
+    "nights": 6,
+    "days": 7
+  },
+  "route": [
+    { "city": "Tokyo", "nights": 3 },
+    { "city": "Hakone", "nights": 1 },
+    { "city": "Kyoto", "nights": 2 }
+  ],
+  "price": {
+    "from": "1,42,000",
+    "currency": "INR",
+    "per": "person twin sharing",
+    "priceBands": {
+      "standard": "1,42,000",
+      "deluxe": "1,85,000",
+      "premium": "2,55,000"
+    },
+    "offerBadge": "Bestseller"
+  },
+  "bestTime": {
+    "months": ["March", "April", "May", "October", "November"],
+    "notes": "Spring (late March to mid-April) brings blooming pink Sakura cherry blossoms; Autumn (October to November) features vibrant crimson Japanese maples and crystal-clear skies for Mount Fuji views."
+  },
+  "difficulty": "Easy",
+  "groupType": "Couples, Families & Solo Explorers",
+  "minAge": 5,
+  "visaInfo": "Single-entry Japan Tourist Visa required for Indian passport holders. Our visa operations desk provides end-to-end document review, appointment guidance, and confirmed itinerary vouchers.",
+  "overview": "Experience the magical harmony of ancient traditions and futuristic marvels with infiYATRA's 7-day Classic Japan Golden Route expedition. Your voyage commences amidst the neon skyscapes and bustling crosswalks of Tokyo, where century-old Senso-ji Temple rubs shoulders with vibrant Harajuku youth culture and cutting-edge digital art installations at teamLab Planets. Ascend into the peaceful mountain atmosphere of Hakone for postcard-perfect vistas of sacred Mount Fuji, taking an exhilarating ride on the Hakone Komagatake Ropeway and relaxing in therapeutic natural volcanic onsens followed by an authentic multi-course Kaiseki dinner. Board the lightning-fast Shinkansen bullet train hurtling across Honshu to Kyoto, the historic heart of Japan. Wander through thousands of vermilion torii gates at Fushimi Inari Taisha, listen to rustling green stalks in the ethereal Arashiyama Bamboo Grove, admire the glimmering gold pavilion of Kinkaku-ji, and stroll through lantern-lit alleyways of Gion seeking glimpses of graceful Geishas. With 4-star handpicked accommodations, dedicated English-speaking local guides, and seamless transport arrangements, Japan's finest wonders unfold effortlessly.",
+  "highlights": [
+    "Marvel at sacred Mount Fuji and cruise scenic Lake Ashi aboard a pirate ship",
+    "Ride the famous Shinkansen bullet train across Honshu at speeds up to 285 km/h",
+    "Immerse yourself in digital futuristic art exhibits at teamLab Planets Tokyo",
+    "Walk through thousands of iconic vermilion torii gates at Fushimi Inari Taisha",
+    "Wander amidst the whispering green stalks of the Arashiyama Bamboo Grove",
+    "Soak in restorative volcanic mineral hot springs (onsen) in Hakone",
+    "Explore historic Gion geisha district and the glittering Golden Pavilion Kinkaku-ji"
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Arrival in Tokyo | Welcome to Shinjuku",
+      "location": "Tokyo Arrival",
+      "description": "Touch down at Tokyo Haneda or Narita International Airport where an infiYATRA airport representative welcomes you and escorts you via private airport transfer to your upscale hotel in Shinjuku. After settling in and freshening up, take your first evening stroll into the bustling Shinjuku district. Marvel at the kaleidoscopic glow of digital billboards, wander past the legendary Godzilla head, and sample your first steaming bowls of artisanal ramen or crispy gyoza at local izakayas before resting up for an exhilarating adventure.",
+      "activities": ["Airport Meet & Greet", "Private Hotel Transfer", "Shinjuku Neon Evening Walk", "Ramen & Izakaya Dining"],
+      "meals": { "breakfast": false, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star City Hotel", "city": "Tokyo" },
+      "transferInfo": "Private Air-Conditioned Airport Chauffeur (approx. 45-60 mins)"
+    },
+    {
+      "day": 2,
+      "title": "Tokyo Metropolis: Senso-ji, Shibuya Crossing & Harajuku",
+      "location": "Tokyo City Sightseeing",
+      "description": "Begin your exploration with a hearty breakfast before meeting your guide for a full-day Tokyo immersion. Visit Senso-ji, Tokyo's oldest Buddhist temple in historic Asakusa, browsing lively Nakamise shopping street for traditional souvenirs and matcha treats. Next, immerse yourself in youth trends along Harajuku’s Takeshita Street before finding quiet serenity beneath the towering camphor trees of Meiji Jingu Shrine. Conclude your afternoon navigating the famous scramble crossing at Shibuya and snapping photos with the bronze statue of faithful Hachiko.",
+      "activities": ["Senso-ji Temple & Asakusa", "Nakamise Dori Shopping", "Meiji Jingu Shrine", "Harajuku Takeshita Street", "Shibuya Scramble Crossing"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star City Hotel", "city": "Tokyo" },
+      "transferInfo": "Private Sightseeing Coach with Licensed English Guide"
+    },
+    {
+      "day": 3,
+      "title": "TeamLab Planets, Akihabara & Tokyo Bay Cruise",
+      "location": "Toyosu & Akihabara",
+      "description": "Step into the future today with pre-booked morning admission to teamLab Planets in Toyosu, where you walk barefoot through immersive interactive digital water and blooming light crystal exhibits. Afterwards, head over to Akihabara Electric Town to discover multi-level electronics plazas and anime collectibles. Later in the afternoon, embark on a relaxing Tokyo Bay sightseeing cruise from Hinode Pier to Odaiba, admiring the illuminated Rainbow Bridge and miniature Statue of Liberty before enjoying dinner overlooking the bay waterfront.",
+      "activities": ["teamLab Planets Digital Museum", "Akihabara Electric Town", "Tokyo Bay Waterfront Cruise", "Odaiba Seaside Park"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star City Hotel", "city": "Tokyo" },
+      "transferInfo": "Private Coach & Tokyo Bay Sightseeing Cruise"
+    },
+    {
+      "day": 4,
+      "title": "Hakone & Mount Fuji Scenic Excursion & Onsen Kaiseki",
+      "location": "Hakone National Park",
+      "description": "Bid farewell to Tokyo as your private transfer heads toward picturesque Hakone National Park at the foot of Mount Fuji. Embark on a pirate ship cruise across shimmering Lake Ashi offering breathtaking views of sacred Fuji reflected on calm waters. Board the Hakone Ropeway gliding above smoking sulfuric vents of Owakudani volcanic valley, where you can taste boiled black eggs reputed to prolong longevity. Check into your traditional onsen resort, soak in mineral hot springs, and savor an authentic Kaiseki banquet dinner.",
+      "activities": ["Mount Fuji Vistas", "Lake Ashi Pirate Ship Cruise", "Hakone Ropeway Cable Car", "Owakudani Volcanic Valley", "Traditional Onsen Mineral Baths"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Onsen Resort", "city": "Hakone" },
+      "transferInfo": "Private Sightseeing Transfer (Tokyo to Hakone, approx. 1.5 hrs)"
+    },
+    {
+      "day": 5,
+      "title": "Shinkansen Bullet Train to Kyoto & Gion Geisha District",
+      "location": "Odawara to Kyoto",
+      "description": "Following breakfast, transfer to Odawara Station to board the sleek Shinkansen bullet train racing along the Pacific coastline to cultural Kyoto at speeds exceeding 285 km/h. Arrive in Kyoto by noon and check into your centrally located hotel. In the late afternoon, join a walking tour through historic Gion, Kyoto's premier geisha quarter. Amble down preserved wooden Machiya shopfronts of Hanami-koji Lane and Shirakawa canal, soaking in the timeless atmosphere as paper lanterns flicker to life at dusk.",
+      "activities": ["Shinkansen Bullet Train Ride", "Kyoto Arrival", "Historic Gion Walking Tour", "Hanami-koji Lantern Stroll"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Heritage Hotel", "city": "Kyoto" },
+      "transferInfo": "JR Shinkansen High-Speed Bullet Train (Reserved Seats, approx. 2 hrs)"
+    },
+    {
+      "day": 6,
+      "title": "Kyoto Shrines & Arashiyama Bamboo Grove",
+      "location": "Kyoto UNESCO Sights",
+      "description": "Embark on an enchanting full-day tour of Kyoto’s most treasured UNESCO World Heritage sites. Start early at Fushimi Inari Taisha, hiking through thousands of bright vermilion torii gates winding up the sacred forested mountain. Continue to western Kyoto to step inside the mesmerizing Arashiyama Bamboo Grove and cross the historic Togetsukyo Bridge. Conclude your journey admiring Kinkaku-ji, the Golden Pavilion whose top two floors are covered in pure gold leaf shimmering over a tranquil mirror pond.",
+      "activities": ["Fushimi Inari Torii Gate Hike", "Arashiyama Bamboo Sanctuary", "Togetsukyo Bridge", "Kinkaku-ji Golden Pavilion"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": true },
+      "stay": { "category": "4-Star Heritage Hotel", "city": "Kyoto" },
+      "transferInfo": "Private Kyoto Sightseeing Coach with Licensed Guide"
+    },
+    {
+      "day": 7,
+      "title": "Kyoto to Osaka Departure | Sayonara Japan",
+      "location": "Kyoto & Osaka Departure",
+      "description": "Savor your final Japanese breakfast at the hotel and spend your morning gathering handcrafted souvenirs, green tea delicacies, and ceramics in downtown Kyoto or Nishiki Market. At the scheduled time, our private transfer picks you up from the hotel lobby and drives you smoothly to Osaka Kansai International Airport (KIX) or Tokyo Haneda for your return flight back to India, carrying unforgettable memories of the Land of the Rising Sun with infiYATRA.",
+      "activities": ["Nishiki Food Market Morning Stroll", "Souvenir Shopping", "Hotel Checkout", "Airport Departure Transfer"],
+      "meals": { "breakfast": true, "lunch": false, "dinner": false },
+      "stay": { "category": "Departure Day (No Stay)", "city": "Kyoto" },
+      "transferInfo": "Private Chauffeur Transfer to Kansai Airport (KIX) (approx. 75 mins)"
+    }
+  ],
+  "inclusions": [
+    "6 nights accommodation in premium 4-star hotels and authentic Hakone Onsen resort",
+    "Daily buffet breakfast and 1 traditional multi-course Kaiseki dinner in Hakone",
+    "Shinkansen bullet train reserved ordinary car ticket from Odawara to Kyoto",
+    "Hakone sightseeing pass including Lake Ashi pirate cruise and Komagatake ropeway",
+    "Entry ticket to teamLab Planets Tokyo interactive digital art exhibition",
+    "Full-day guided Tokyo city sightseeing tour with English-speaking licensed guide",
+    "Full-day guided Kyoto sightseeing tour covering Fushimi Inari, Arashiyama, and Kinkaku-ji",
+    "Private airport transfers upon arrival in Tokyo and departure from Kyoto / Osaka",
+    "Pocket Wi-Fi device or Japan eSIM card with unlimited high-speed mobile data",
+    "All applicable Japanese consumption taxes, hotel bath taxes, and service charges"
+  ],
+  "exclusions": [
+    "International return economy flight tickets between India and Japan",
+    "Japan tourist visa processing and single-entry visa fee",
+    "Lunches and dinners not explicitly specified in the meal plan",
+    "Mandatory overseas travel insurance covering medical emergency and baggage loss",
+    "Optional activities such as traditional Kimono rental or tea ceremony experience",
+    "Early check-in and late checkout fees at hotels",
+    "Personal expenses including laundry, phone calls, beverages, and tips for guides",
+    "City tourist tax collected directly by Kyoto municipality (approx. 200-500 JPY per night)"
+  ],
+  "hotels": [
+    { "city": "Tokyo", "name": "Hotel Gracery Shinjuku / Shinjuku Granbell", "category": "4-Star City Hotel", "nights": 3 },
+    { "city": "Hakone", "name": "Hakone Ashinoko Hanaori Onsen Resort", "category": "4-Star Onsen Resort", "nights": 1 },
+    { "city": "Kyoto", "name": "Hotel Keihan Kyoto Grande / Miyako Hotel", "category": "4-Star Heritage Hotel", "nights": 2 }
+  ],
+  "transport": {
+    "mode": "JR Shinkansen Bullet Train & Private Transfers",
+    "details": "Reserved ordinary car Shinkansen ticket between Odawara and Kyoto, Hakone Freepass with pirate ship cruise and ropeway, and private airport arrival and departure transfers."
+  },
+  "thingsToCarry": [
+    "Comfortable slip-on walking shoes suitable for frequent temple visits",
+    "Japan Rail compatible lightweight luggage or small travel backpack for Hakone",
+    "Universal electrical travel adapter (Type A flat two-pin plugs used in Japan)",
+    "Small hand towel and waterproof bag for Hakone onsen visits"
+  ],
+  "tips": [
+    "Japan is predominantly cashless for transit cards (Suica/Pasmo), but carry 10,000-20,000 JPY cash for street food and temple souvenir stamps (Goshuin).",
+    "Tipping is not customary in Japan and can sometimes cause confusion; exceptional service is already standard and appreciated with a polite bow.",
+    "Utilize Takkyubin luggage delivery services to ship bulky suitcases ahead between Tokyo and Kyoto so you can explore Hakone unencumbered."
+  ],
+  "cancellationPolicy": [
+    "Free cancellation with 100% refund up to 30 days before departure date",
+    "50% cancellation fee between 29 and 15 days prior to departure",
+    "Non-refundable within 14 days of departure"
+  ],
+  "paymentTerms": "Secure booking with 25% advance; remaining balance due 20 days prior to departure.",
+  "faqs": [
+    {
+      "question": "What is the best season to book this Japan Golden Route tour?",
+      "answer": "Spring (late March to mid-April) is famed for cherry blossoms (Sakura), while autumn (October to November) offers glorious vibrant fall foliage and crisp clear skies with the best Fuji visibility. Both seasons are prime times to travel."
+    },
+    {
+      "question": "Do Indian passport holders require a tourist visa for Japan?",
+      "answer": "Yes, Indian citizens require a valid Japan tourist visa prior to departure. infiYATRA assists with full documentation guidance, hotel booking vouchers, and itinerary cover letters for submission to the VFS Japan application center."
+    },
+    {
+      "question": "Is luggage forwarding available between Tokyo and Kyoto?",
+      "answer": "Yes! Japan's luggage courier service (Takkyubin) is world-renowned. For overnight stays in Hakone, you can conveniently ship your large suitcase directly to Kyoto for approx. 2,000 JPY, traveling light with an overnight bag."
+    },
+    {
+      "question": "Are vegetarian and Indian food options readily available in Japan?",
+      "answer": "Yes, major cities like Tokyo and Kyoto have numerous authentic Indian restaurants. Furthermore, our guides help you navigate vegetarian-friendly Japanese ramen, soba, tempura, and convenience store favorites."
+    },
+    {
+      "question": "What are the rules for enjoying the traditional onsen hot springs in Hakone?",
+      "answer": "Traditional Japanese onsens are gender-separated and entered without clothing after thoroughly washing at the shower stations. Guests with small tattoos can be provided waterproof covers or book private family onsens."
+    },
+    {
+      "question": "How fast does the Shinkansen bullet train travel?",
+      "answer": "The Tokaido Shinkansen bullet train operates at operational speeds up to 285 km/h, delivering an ultra-smooth, punctually timed, and scenic journey between the Tokyo region and Kyoto in just over two hours."
+    }
+  ],
+  "departures": [
+    { "date": "2026-11-15", "price": "1,42,000", "seatsTotal": 14, "seatsLeft": 6, "status": "Filling Fast" },
+    { "date": "2026-12-05", "price": "1,48,000", "seatsTotal": 16, "seatsLeft": 9, "status": "Open" },
+    { "date": "2027-03-25", "price": "1,65,000", "seatsTotal": 16, "seatsLeft": 3, "status": "Filling Fast" },
+    { "date": "2027-04-05", "price": "1,68,000", "seatsTotal": 14, "seatsLeft": 4, "status": "Filling Fast" }
+  ],
+  "gallery": [
+    {
+      "src": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Kyoto Yasaka pagoda framed by blooming pink cherry blossom branches",
+      "caption": "Historic Yasaka Pagoda illuminated amidst springtime cherry blossoms in Kyoto",
+      "credit": "Su San Lee",
+      "creditUrl": "https://unsplash.com/@susan_lee",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Tokyo Tower rising majestically into vibrant twilight sky above city street",
+      "caption": "Iconic Tokyo Tower illuminating the metropolitan skyline as dusk settles",
+      "credit": "Louie Martinez",
+      "creditUrl": "https://unsplash.com/@louiemartinez",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1528164344705-475426879c0d?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Endless corridor of vibrant orange vermilion Torii gates at Fushimi Inari",
+      "caption": "Thousands of bright vermilion torii gates winding up sacred Mount Inari",
+      "credit": "Manuel Cosentino",
+      "creditUrl": "https://unsplash.com/@manuelcosentino",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Snow-capped summit of Mount Fuji rising gracefully behind five-story pagoda",
+      "caption": "Majestic snow-capped summit of sacred Mount Fuji towering over the Chureito Pagoda",
+      "credit": "Alain Wong",
+      "creditUrl": "https://unsplash.com/@alain_wong",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Lush green bamboo stalks reaching into sky along Arashiyama bamboo grove path",
+      "caption": "Ethereal natural sanctuary of the Arashiyama Bamboo Grove in western Kyoto",
+      "credit": "Sora Sagano",
+      "creditUrl": "https://unsplash.com/@sorasagano",
+      "source": "Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80&w=1200",
+      "alt": "Shibuya Crossing bustling with crowds under giant illuminated neon video billboards",
+      "caption": "The energetic pulse of Shibuya Scramble Crossing beneath neon skyscrapers",
+      "credit": "Jezael Melgoza",
+      "creditUrl": "https://unsplash.com/@jezael",
+      "source": "Unsplash"
+    }
+  ],
+  "seo": {
+    "title": "Japan Tour Package: 6N/7D Tokyo, Mt Fuji & Kyoto",
+    "description": "Book 6N/7D classic Japan tour package with infiYATRA. Shinkansen bullet train, Mt Fuji, Kyoto shrines, teamLab Tokyo, 4-star hotels, and onsen experience."
+  },
+  "status": "published",
+  "featured": true
+}
